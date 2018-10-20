@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AP">
+<Package name="ap_btr90m">
+<Container name="STR_VC">
+
+<Key ID="STR_BTR90M">
+<Original>BTR-90M</Original>
+<Russian>БТР-90М</Russian>
+</Key>
+
+<Key ID="STR_BTR90M_LIB">
+<Original>BTR-90 with a larger turret derived from the BMP-3</Original>
+<Russian>Модификация БТР-90М с установленым боевым отделением «Бахча-У»</Russian>
+</Key>
+
+</Container>
+</Package>
+</Project>
