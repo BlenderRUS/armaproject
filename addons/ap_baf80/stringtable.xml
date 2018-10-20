@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AP">
+<Package name="ap_baf80">
+<Container name="STR_VC">
+
+
+		<Key ID="STR_MILAN_NAME">
+			<Original>MILAN 2 ATMS</Original>
+			<Russian>ПТРК MILAN 2</Russian>
+		</Key>
+		<Key ID="STR_MILAN_DESCRIPTION">
+			<Original>The portable, medium-range anti-tank missile system.</Original>
+			<Russian>Франко-германский переносной противотанковый ракетный комплекс.</Russian>
+		</Key>		
+		<Key ID="STR_MILAN_MAG_NAME">
+			<Original>MILAN Missile</Original>
+			<Russian>ПТУР MILAN</Russian>
+		</Key>		
+		<Key ID="STR_MILAN_MAG_NAME_SHORT">
+			<Original>MILAN</Original>
+			<Russian>MILAN</Russian>
+		</Key>	
+		<Key ID="STR_MILAN_MAG_DESCRIPTION">
+			<Original>Anti-tank guided missile.</Original>
+			<Russian>Кумулятивная противотанковая управляемая ракета.</Russian>
+		</Key>
+
+		<Key ID="STR_L1A1_NAME">
+			<Original>L1A1</Original>
+			<Russian>L1A1</Russian>
+		</Key>
+		<Key ID="STR_L1A1_SUIT_NAME">
+			<Original>L1A1 SUIT</Original>
+			<Russian>L1A1 SUIT</Russian>
+		</Key>		
+		<Key ID="STR_L1A1_IWS_NAME">
+			<Original>L1A1 IWS</Original>
+			<Russian>L1A1 IWS</Russian>
+		</Key>
+		<Key ID="STR_L1A1_DESCRIPTION">
+			<Original>Self Loading Rifle, basing on FN-FAL construction without automatic fire mode.</Original>
+			<Russian>Самозарядная винтовка, основанная на конструкции FN-FAL без автоматического режима огня.</Russian>
+		</Key>
+
+		<Key ID="STR_BREN_NAME">
+			<Original>BREN L4A1</Original>
+			<Russian>BREN L4A1</Russian>
+		</Key>
+		<Key ID="STR_BREN_DESCRIPTION">
+			<Original>Light machine guns made by Britain</Original>
+			<Russian>Английский ручной пулемёт</Russian>
+		</Key>		
+		<Key ID="STR_BREN_MAG_NAME">
+			<Original>BREN Magazine</Original>
+			<Russian>Магазин BREN</Russian>
+		</Key>		
+		<Key ID="STR_BREN_MAG_DESCRIPTION">
+			<Original>Box magazine for 30 rounds 7,62×51mm</Original>
+			<Russian>Коробчатый магазин на 30 патронов 7,62×51мм</Russian>
+		</Key>
+		
+		<Key ID="STR_BREN_T_MAG_NAME">
+			<Original>BREN Magazine (Tracer)</Original>
+			<Russian>Магазин BREN (Трас.)</Russian>
+		</Key>		
+		<Key ID="STR_BREN_T_MAG_DESCRIPTION">
+			<Original>Box magazine for 30 tracer rounds 7,62×51mm</Original>
+			<Russian>Коробчатый магазин на 30 трассирующих патронов 7,62×51мм</Russian>
+		</Key>
+		
+		<Key ID="STR_MK4_NAME">
+			<Original>Sterling L2A3</Original>
+			<Russian>Sterling L2A3</Russian>
+		</Key>
+		<Key ID="STR_MK4_DESCRIPTION">
+			<Original>British submachine gun created at the end of the Second World War as a replacement for the traditional STEN.</Original>
+			<Russian>Британский пистолет-пулемёт, созданный в конце Второй мировой войны как замена традиционному STEN.</Russian>
+		</Key>		
+		<Key ID="STR_MK4_MAG_NAME">
+			<Original>Sterling Magazine</Original>
+			<Russian>Магазин Sterling</Russian>
+		</Key>		
+		<Key ID="STR_MK4_MAG_DESCRIPTION">
+			<Original>Box magazine for 34 rounds 9×19mm</Original>
+			<Russian>Коробчатый магазин на 34 патрона 9×19мм</Russian>
+		</Key>
+	
+		<Key ID="STR_MK4_SD_MAG_NAME">
+			<Original>Sterling Magazine (SD)</Original>
+			<Russian>Магазин Sterling (Дозв.)</Russian>
+		</Key>		
+		<Key ID="STR_MK4_SD_MAG_DESCRIPTION">
+			<Original>Box magazine for 34 suppressed rounds 9×19mm</Original>
+			<Russian>Коробчатый магазин на 34 дозвуковых патрона 9×19мм</Russian>
+		</Key>
+		
+		<Key ID="STR_L43A1_NAME">
+			<Original>Sterling L34A1</Original>
+			<Russian>Sterling L34A1</Russian>
+		</Key>
+		<Key ID="STR_L43A1_DESCRIPTION">
+			<Original>Sterling with integrated silencer.</Original>
+			<Russian>Sterling с интегрированным глушителем.</Russian>
+		</Key>
+		
+		
+		<Key ID="STR_GUSTAV_NAME">
+			<Original>Carl Gustav M2</Original>
+			<Russian>Carl Gustav M2</Russian>
+		</Key>
+		<Key ID="STR_GUSTAV_DESCRIPTION">
+			<Original>Swedish anti-tank grenade launcher.</Original>
+			<Russian>Шведский ручной противотанковый гранатомёт многоразового применения.</Russian>
+		</Key>		
+		
+		<Key ID="STR_GUSTAV_HEAT_MAG_NAME">
+			<Original>84 mm HEAT 551</Original>
+			<Russian>84 мм HEAT 551</Russian>
+		</Key>		
+		<Key ID="STR_GUSTAV_HEAT_MAG_DESCRIPTION">
+			<Original>Carl Gustav high explosive anti-tank rocket</Original>
+			<Russian>Кумулятивная граната к Carl Gustav</Russian>
+		</Key>
+		
+		<Key ID="STR_GUSTAV_HE_MAG_NAME">
+			<Original>84 мм HE 441D</Original>
+			<Russian>84 мм HE 441D</Russian>
+		</Key>		
+		<Key ID="STR_GUSTAV_HE_MAG_DESCRIPTION">
+			<Original>Carl Gustav high-explosive rocket</Original>
+			<Russian>Фугасная граната к Carl Gustav</Russian>
+		</Key>
+		
+		<Key ID="STR_GUSTAV_DP_MAG_NAME">
+			<Original>84 мм HEDP 502</Original>
+			<Russian>84 мм HEDP 502</Russian>
+		</Key>		
+		<Key ID="STR_GUSTAV_DP_MAG_DESCRIPTION">
+			<Original>Carl Gustav high explosive dual purpose rocket</Original>
+			<Russian>Бронебойно-осколочная граната к Carl Gustav</Russian>
+		</Key>
+		
+		
+		<Key ID="STR_L42_NAME">
+			<Original>L42A1</Original>
+			<Russian>L42A1</Russian>
+		</Key>
+		<Key ID="STR_L42_DESCRIPTION">
+			<Original>British Army sniper rifle chambered for the 7.62mm NATO cartridge</Original>
+			<Russian>Снайперская винтовка британской армии под патрон 7,62-мм НАТО</Russian>
+		</Key>		
+		<Key ID="STR_L42_MAG_NAME">
+			<Original>L42A1 Magazine</Original>
+			<Russian>Магазин L42A1</Russian>
+		</Key>		
+		<Key ID="STR_L42_MAG_DESCRIPTION">
+			<Original>Box magazine for 10 rounds 7,62×51mm</Original>
+			<Russian>Коробчатый магазин на 10 патронов 7,62×51мм</Russian>
+		</Key>
+		
+		<Key ID="STR_BLOWPIPE_NAME">
+			<Original>Blowpipe</Original>
+			<Russian>Blowpipe</Russian>
+		</Key>
+		<Key ID="STR_BLOWPIPE_DESCRIPTION">
+			<Original>British universal portable anti-aircraft missile system</Original>
+			<Russian>Британский универсальный переносной зенитно-ракетный комплекс</Russian>
+		</Key>		
+		<Key ID="STR_BLOWPIPE_MAG_NAME">
+			<Original>Blowpipe missile</Original>
+			<Russian>ЗУР Blowpipe</Russian>
+		</Key>		
+		<Key ID="STR_BLOWPIPE_MAG_DESCRIPTION">
+			<Original>HESH missile</Original>
+			<Russian>Кумулятивно-фугасная ракета</Russian>
+		</Key>
+
+</Container>
+</Package>
+</Project>
