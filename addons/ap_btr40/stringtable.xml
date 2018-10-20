@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AP">
+<Package name="ap_btr40">
+<Container name="STR_VC">
+
+<Key ID="STR_2xDSHKM">
+<Original>Twin DShKM</Original>
+<Russian>Спарка ДШКМ</Russian>
+</Key>
+
+<Key ID="STR_4xM2">
+<Original>M45 Quadmount M2</Original>
+<Russian>M45 Quadmount M2</Russian>
+</Key>
+
+<Key ID="STR_BTR40_ZU">
+<Original>BTR-40 (ZU-23-2)</Original>
+<Russian>БТР-40 (ЗУ-23-2)</Russian>
+</Key>
+
+<Key ID="STR_BTR40_2DSHK">
+<Original>BTR-40 (2xDShKM)</Original>
+<Russian>БТР-40 (2хДШКМ)</Russian>
+</Key>
+
+<Key ID="STR_BTR40_M45">
+<Original>BTR-40 (M45)</Original>
+<Russian>БТР-40 (М45)</Russian>
+</Key>
+
+<Key ID="STR_OPEN_HATCH">
+<Original>Open hatch</Original>
+<Russian>Открыть люк</Russian>
+</Key>
+
+<Key ID="STR_CLOSE_HATCH">
+<Original>Close hatch</Original>
+<Russian>Закрыть люк</Russian>
+</Key>
+
+</Container>
+</Package>
+</Project>

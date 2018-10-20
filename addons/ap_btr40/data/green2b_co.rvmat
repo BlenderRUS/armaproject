@@ -1,0 +1,42 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 5.66
+//'now' is Tue Aug 07 15:24:03 2018 : 'file' last modified on Sat Jul 26 12:41:57 2014
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class csj_uh1slick : t\green2b_co.rvmat{
+ambient[] = {1,1,1,1};
+diffuse[] = {1,1,1,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {0.22629413,0.22629413,0.22629413,1};
+specularPower = 45.2;
+PixelShaderID = "NormalMapSpecularDIMap";
+VertexShaderID = "NormalMap";
+class Stage1
+{
+	texture = "ap_btr40\data\green2b_nohq.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};
+class Stage2
+{
+	texture = "ap_btr40\data\metal_smdi.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};
+//};

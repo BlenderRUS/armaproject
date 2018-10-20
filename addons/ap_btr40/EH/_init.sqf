@@ -1,0 +1,1 @@
+Fired_MultiBarrel = compile preprocessFile "\ap_btr40\EH\fired\multiBarrel.sqf";
