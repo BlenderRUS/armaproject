@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AP">
+<Package name="ap_vodnik_kpvt">
+<Container name="STR_VC">
+
+<Key ID="STR_vodnik_kpvt">
+<English>GAZ-39371 Vodnik (KPVT)</English>
+<Russian>ГАЗ-39371 Водник (КПВТ)</Russian>
+</Key>
+
+</Container>
+</Package>
+</Project>
