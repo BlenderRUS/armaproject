@@ -45,7 +45,43 @@ else
 {
 	_modelPos = _unit selectionPosition format ["%1_%2", _BarrelName, _n + 1];
 	_newPos = _unit modelToWorld _modelPos;
+	
+	_bullet setPos _newPos;
+	
+	_anim = format ["Recoil_%1", _n + 1];
+	_unit animate [_anim,1];
+
+	_p3d = "ap_btr40\shells\casing_12.7mm.p3d";
+	_shposmem1 = _unit selectionPosition format ["eject_%1", _n + 1];
+	_shposmem2 = _unit selectionPosition format ["eject_dir_%1", _n + 1];
+	_vel = 0.3;
+	
+	_ejectWorldPos = _unit modelToWorld _shposmem1;
+	_ejectWorldDir = _unit modelToWorld _shposmem2;
+	_vector = [((_ejectWorldDir select 0) - (_ejectWorldPos select 0))*_vel, ((_ejectWorldDir select 1) - (_ejectWorldPos select 1))*_vel, -2];
+
+	_shell = "#particlesource" createVehicle getpos _unit;	
+	_shell setParticleRandom [0, [0.1, 0.1, 0.1], [0, 0, 0.5], 0, 0.1, [0, 0, 0, 0], 0, 1];
+	_shell setParticleParams [[_p3d, 1, 0, 1], "", "SpaceObject", 1, 42.5, _shposmem1, _vector, 1, 6, 1, 0, [0.9, 0.9], [[0.9,0.9,0.9,1]], [1000], 0.1, 0.05, "", "", _unit, 0];
+	_shell setDropInterval 60;
+	
+	sleep 0.1;
+	_unit animate [_anim,0.85];
+	sleep 1;
+	deleteVehicle _shell;	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 };
 
-_bullet setPos _newPos;
+
 exit
