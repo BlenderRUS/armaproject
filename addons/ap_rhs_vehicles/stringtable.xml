@@ -23,6 +23,46 @@
 <Russian>Cоветский бронетранспортёр, спроектированный в начале 80-х, как развитие бронетранспортёра БТР-70, с учётом выявленных в Афганской войне недостатков.</Russian>
 </Key>
 
+<Key ID="STR_2A75">
+<Original>2A75</Original>
+<Russian>2А75</Russian>
+</Key>
+
+<Key ID="STR_SPRUT">
+<Original>2S25 Sprut-SD</Original>
+<Russian>2С25 Спрут-СД</Russian>
+</Key>
+
+<Key ID="STR_SPRUT_LIB">
+<Original>Self-propelled tank destroyer</Original>
+<Russian>Авиадесантная самоходная противотанковая пушка</Russian>
+</Key>
+
+<Key ID="STR_BMD4M">
+<Original>BMD-4M</Original>
+<Russian>БМД-4М</Russian>
+</Key>
+
+<Key ID="STR_BMD4M_ARMOR">
+<Original>BMD-4M (armored)</Original>
+<Russian>БМД-4М (усилен. броня)</Russian>
+</Key>
+
+<Key ID="STR_BMD4M_LIB">
+<Original>Airborne tracked amphibious assault vehicle</Original>
+<Russian>Авиадесантная гусеничная плавающая машина</Russian>
+</Key>
+
+<Key ID="STR_MG_LEFT">
+<Original>Left machinegunner</Original>
+<Russian>Пулемётчик слева</Russian>
+</Key>
+
+<Key ID="STR_MG_RIGHT">
+<Original>Right machinegunner</Original>
+<Russian>Пулемётчик справа</Russian>
+</Key>
+
 </Container>
 </Package>
 </Project>

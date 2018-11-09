@@ -1,0 +1,91 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: rhs_bmd_34\data\rhs_dam_bmd4_02.rvmat
+//Produced from mikero's Dos Tools Dll version 6.34
+//'now' is Sun Oct 28 13:14:58 2018 : 'file' last modified on Wed Feb 25 11:20:47 2015
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+class StageTI
+{
+	texture = "ap_rhs_vehicles\data\rhs_bmd4_02_ti_ca.paa";
+};
+ambient[] = {1,1,1,1};
+diffuse[] = {1,1,1,1};
+forcedDiffuse[] = {0,0,0,1};
+emmisive[] = {0,0,0,0};
+specular[] = {1,1,1,1};
+specularPower = 100;
+PixelShaderID = "Super";
+VertexShaderID = "Super";
+class Stage1
+{
+	texture = "ap_rhs_vehicles\data\rhs_bmd4_02_nohq.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};
+class Stage2
+{
+	texture = "ap_rhs_vehicles\data\damage_metal_cdt.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {3.7,0,0};
+		up[] = {0,3.7,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};
+class Stage3
+{
+	texture = "ap_rhs_vehicles\data\damage_metal_mc.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {"cos(5)*2.9","sin(5)*2.9",0};
+		up[] = {"-sin(5)*2.9","cos(5)*2.9",0};
+		dir[] = {0,0,0};
+		pos[] = {0.28,0.15,0};
+	};
+};
+class Stage4
+{
+	texture = "#(argb,8,8,3)color(1,1,1,1,AS)";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};
+class Stage5
+{
+	texture = "ap_rhs_vehicles\data\rhs_bmd4_02_smdi.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};
+class Stage6
+{
+	texture = "#(ai,32,128,1)fresnel(0.6,0.16)";
+	uvSource = "none";
+};
+class Stage7
+{
+	texture = "ca\data\env_land_co.paa";
+	uvSource = "none";
+};
