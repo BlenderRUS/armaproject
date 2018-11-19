@@ -7,7 +7,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.04;
-		requiredAddons[] = {"tu_weapons_cfg","ace_c_weapon","ace_sys_crewserved"};
+		requiredAddons[] = {"tu_weapons_cfg","ace_c_weapon","ace_sys_crewserved","us_military_units"};
 	};
 };
 
@@ -30,6 +30,16 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "\ap_baf80\weapons\milan\anims\milan_gunner.rtm";
 			interpolateTo[] = {"KIA_SPG_Gunner",1};
 		};
+	};
+};
+
+class CfgFactionClasses
+{
+	class ap_baf80s
+	{
+		displayName = "British Armed Forces 80s";
+		priority = 109;
+		side = 1;
 	};
 };
 
@@ -223,6 +233,13 @@ class Mode_SemiAuto;
 class Mode_FullAuto;
 class cfgWeapons
 {
+	/*class ACE_PRC119;
+	class AP_st138_prc77: ACE_PRC119
+	{
+		displayName = "ST-138, AN/PRC-77";
+		model = "\ap_baf80\weapons\st138_prc77\st138_prc77.p3d";
+		picture = "\us_military_units\icons\pack_st138_prc77_icon_ca.paa";
+	};*/
 	
 	class huntingrifle;
 	class AP_L42 : huntingrifle 
@@ -569,6 +586,251 @@ class cfgWeapons
 
 class CfgVehicles
 {
+	class Man;
+	class CAManBase: Man
+	{
+		class TalkTopics;
+		class HitPoints
+		{
+			class HitHead;
+			class HitBody;
+		};
+	};
+	class SoldierWB: CAManBase
+	{
+		class Wounds;
+		class TalkTopics: TalkTopics{};
+	};
+	
+	class AP_SoldierUK: SoldierWB
+	{
+		canCarryBackPack = 1;
+		attendant = 1;
+		backpack = "";
+		displayName = "Rifleman";
+		faceType = "Man";
+		faction = "ap_baf80s";
+		fsmDanger = "ap_baf80\units\formationCDanger.fsm";
+		genericNames = "EnglishMen";
+		hiddenSelections[] = {"hs_camo1","hs_camo2","hs_scrim"};
+		hiddenSelectionsTextures[] = {"\ap_baf80\units\data\jacket_dpm_old_co.paa","\ap_baf80\units\data\pants_dpm_old_co.paa","\ap_baf80\units\data\ghillie_co.paa"};
+		identityTypes[] = {"Language_BAF","Head_BAF","Civ_Glasses","Civ_SunGlasses"};
+		languages[] = {"EN"};
+		model = "\ap_baf80\units\uk_soldier.p3d";
+		scope = 2;
+		side = 1;
+		threat[] = {1.0,0.1,0.1};
+		//vehicleClass = "_cwr2_group_men";
+		weapons[] = {"AP_L1A1","Throw","Put","ACE_Map","ItemCompass","ItemRadio","ItemWatch","ItemMap"};
+		magazines[] = {"20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","ACE_20Rnd_762x51_T_FAL","ACE_20Rnd_762x51_T_FAL","ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage","BAF_L109A1_HE","BAF_L109A1_HE","SmokeShell","SmokeShell"};
+		respawnWeapons[] = {};
+		respawnMagazines[] = {};
+		class HitPoints: HitPoints
+		{
+			class HitHead: HitHead
+			{
+				armor = 0.85;
+			};
+			class HitBody: HitBody
+			{
+				armor = 1;
+				passThrough = 0.8;
+			};
+		};
+		class TalkTopics
+		{
+			core_en = "Core_Full_E";
+		};
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"ap_baf80\units\data\jacket_dpm.rvmat","ap_baf80\units\data\jacket_dpm_wound1.rvmat","ap_baf80\units\data\jacket_dpm_wound2.rvmat","ap_baf80\units\data\pants_dpm.rvmat","ap_baf80\units\data\pants_dpm_wound1.rvmat","ap_baf80\units\data\pants_dpm_wound2.rvmat","ap_baf80\units\data\smock_sas.rvmat","ap_baf80\units\data\smock_sas_wound1.rvmat","ap_baf80\units\data\smock_sas_wound2.rvmat"};
+		};
+	};
+	
+	class AP_SoldierUK_Medic: AP_SoldierUK
+	{
+		displayName = "Medic";
+		hiddenSelections[] = {"hs_camo1","hs_camo2","hs_beret","hs_badge"};
+		hiddenSelectionsTextures[] = {"\ap_baf80\units\data\jacket_dpm_old_co.paa","\ap_baf80\units\data\pants_dpm_old_co.paa","\ap_baf80\units\data\beret_rifles_co.paa","\ap_baf80\units\data\badge_rifles_ca.paa"};
+		model = "\ap_baf80\units\uk_soldier_tl.p3d";
+		nameSound = "veh_Medic";
+		textPlural = "$STR_DN_Medics";
+		textSingular = "$STR_DN_Medic";
+		weapons[] = {"AP_Sterling","ACE_AssaultPack_BAF","Throw","Put","ACE_Map","ItemCompass","ItemRadio","ItemWatch","ItemMap"};
+		magazines[] = {"ap_mk4mag","ap_mk4mag","ap_mk4mag","ap_mk4mag","ap_mk4mag","ap_mk4mag","ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage","SmokeShell","SmokeShell","SmokeShell","SmokeShell"};
+		class Eventhandlers
+		{
+			init = "_this setVariable ['ace_w_ismedic', true, true];";
+		};
+	};
+	
+	class AP_SoldierUK_Engineer: AP_SoldierUK
+	{
+		ACE_CrewProtection = 1;
+		canDeactivateMines = 1;
+		displayName = "Engineer";
+		engineer = 1;
+		hiddenSelections[] = {"hs_camo1","hs_camo2","hs_medbag","hs_mine","hs_scrim"};
+		hiddenSelectionsTextures[] = {"\ap_baf80\units\data\jacket_dpm_old_co.paa","\ap_baf80\units\data\pants_dpm_old_co.paa","","\ca\weapons\data\at15_co.paa","\ap_baf80\units\data\ghillie_co.paa"};
+		model = "\ap_baf80\units\uk_soldier_medic.p3d";
+		threat[] = {1.0,0.5,0.1};
+		weapons[] = {"AP_Sterling","ACE_AssaultPack_BAF","Throw","Put","ACE_Map","ItemCompass","ItemRadio","ItemWatch","ItemMap"};
+		magazines[] = {"ap_mk4mag","ap_mk4mag","ap_mk4mag","ap_mk4mag","ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage","BAF_L109A1_HE","BAF_L109A1_HE","SmokeShell","SmokeShell"};
+	};
+	
+	class AP_SoldierUK_Sniper: AP_SoldierUK
+	{
+		nameSound = "veh_Sniper";
+		textPlural = "$STR_DN_Snipers";
+		textSingular = "$STR_DN_Sniper";
+		accuracy = 3.9;
+		camouflage = 0.5;
+		displayName = "Sniper";
+		model = "\ap_baf80\units\uk_soldier_scout.p3d";
+		threat[] = {1.0,0.2,0.1};
+		weapons[] = {"AP_L42","ACE_L9A1","Throw","Put","ACE_Map","ItemCompass","ItemRadio","ItemWatch","ItemMap","Binocular"};
+		magazines[] = {"AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","ACE_13Rnd_9x19_L9A1","ACE_13Rnd_9x19_L9A1","ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage","BAF_L109A1_HE","BAF_L109A1_HE","SmokeShell","SmokeShell"};
+	};
+	
+	class AP_OfficerUK: AP_SoldierUK
+	{
+		backpack = "";
+		displayName = "Officer";
+		hiddenSelections[] = {"hs_camo1","hs_camo2","hs_beret","hs_badge"};
+		hiddenSelectionsTextures[] = {"\ap_baf80\units\data\jacket_dpm_old_co.paa","\ap_baf80\units\data\pants_dpm_old_co.paa","\ap_baf80\units\data\beret_rifles_co.paa","\ap_baf80\units\data\badge_rifles_ca.paa"};
+		model = "\ap_baf80\units\uk_soldier_light.p3d";
+		nameSound = "veh_officer";
+		textPlural = "$STR_DN_officers";
+		textSingular = "$STR_DN_officer";
+		weapons[] = {"AP_Sterling","ACE_L9A1","Throw","Put","ACE_Map","ItemCompass","ItemRadio","ItemWatch","ItemMap","Binocular"};
+		magazines[] = {"ap_mk4mag","ap_mk4mag","ap_mk4mag","ap_mk4mag","ap_mk4mag","ap_mk4mag","ACE_13Rnd_9x19_L9A1","ACE_13Rnd_9x19_L9A1","ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage","BAF_L109A1_HE","BAF_L109A1_HE","SmokeShell","SmokeShell"};
+	};
+	
+	class AP_SoldierUK_SL: AP_SoldierUK
+	{
+		backpack = "";
+		displayName = "Section Leader";
+		hiddenSelections[] = {"hs_camo1","hs_camo2","hs_beret","hs_badge"};
+		hiddenSelectionsTextures[] = {"\ap_baf80\units\data\jacket_dpm_old_co.paa","\ap_baf80\units\data\pants_dpm_old_co.paa","\ap_baf80\units\data\beret_rifles_co.paa","\ap_baf80\units\data\badge_rifles_ca.paa"};
+		model = "\ap_baf80\units\uk_soldier_tl.p3d";
+		nameSound = "veh_officer";
+		textPlural = "$STR_DN_officers";
+		textSingular = "$STR_DN_officer";
+		weapons[] = {"AP_L1A1","ACE_L9A1","Throw","Put","ACE_Map","ItemCompass","ItemRadio","ItemWatch","ItemMap","Binocular"};
+		magazines[] = {"20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","ACE_20Rnd_762x51_T_FAL","ACE_20Rnd_762x51_T_FAL","ACE_13Rnd_9x19_L9A1","ACE_13Rnd_9x19_L9A1","ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage","BAF_L109A1_HE","BAF_L109A1_HE","SmokeShell","SmokeShell"};
+	};
+	
+	class AP_SoldierUK_TL: AP_SoldierUK
+	{
+		displayName = "Team Leader";
+		model = "\ap_baf80\units\uk_soldier_support.p3d";
+		weapons[] = {"AP_L1A1_SUIT","Throw","Put","ACE_Map","ItemCompass","ItemRadio","ItemWatch","ItemMap","Binocular"};
+		magazines[] = {"20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","ACE_20Rnd_762x51_T_FAL","ACE_20Rnd_762x51_T_FAL","ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage","BAF_L109A1_HE","BAF_L109A1_HE","SmokeShell","SmokeShell"};
+	};
+	
+	class AP_SoldierUK_Crew: AP_SoldierUK
+	{
+		ACE_isCrew = 1;
+		ACE_CrewProtection = 1;
+		displayName = "Crewman";
+		hiddenSelections[] = {"hs_camo1","hs_camo2","hs_beret","hs_badge"};
+		hiddenSelectionsTextures[] = {"\ap_baf80\units\data\jacket_khaki_co.paa","\ap_baf80\units\data\pants_dpm_old_co.paa","\ap_baf80\units\data\beret_rifles_co.paa","\ap_baf80\units\data\badge_rifles_ca.paa"};
+		model = "\ap_baf80\units\uk_soldier_crew.p3d";
+		nameSound = "veh_crew";
+		textPlural = "$STR_DN_crews";
+		textSingular = "$STR_DN_crew";
+		weapons[] = {"AP_Sterling","Throw","Put","ACE_Map","ItemCompass","ItemRadio","ItemWatch","ItemMap"};
+		magazines[] = {"ap_mk4mag","ap_mk4mag","ap_mk4mag","ap_mk4mag","ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage","BAF_L109A1_HE","BAF_L109A1_HE","SmokeShell","SmokeShell"};
+	};
+	
+	class AP_SoldierUK_Pilot: AP_SoldierUK
+	{
+		ACE_isPilot = 1;
+		ACE_CrewProtection = 1;
+		displayName = "Pilot";
+		glassesEnabled = 0;
+		hiddenSelections[] = {"hs_camo1"};
+		hiddenSelectionsTextures[] = {"\ap_baf80\units\data\body_pilot_co.paa"};
+		model = "ap_baf80\units\uk_soldier_pilot.p3d";
+		nameSound = "veh_pilot";
+		textPlural = "$STR_DN_pilots";
+		textSingular = "$STR_DN_pilot";
+		weapons[] = {"AP_Sterling","ACE_L9A1","Throw","Put","ACE_Map","ItemCompass","ItemRadio","ItemWatch","ItemMap"};
+		magazines[] = {"ap_mk4mag","ap_mk4mag","ap_mk4mag","ap_mk4mag","ACE_13Rnd_9x19_L9A1","ACE_13Rnd_9x19_L9A1","ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage","SmokeShellRed","SmokeShellGreen"};
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"ap_baf80\units\data\body_pilot.rvmat","ap_baf80\units\data\body_pilot_wound1.rvmat","ap_baf80\units\data\body_pilot_wound2.rvmat"};
+		};
+	};
+	class AP_SoldierUK_Light: AP_SoldierUK
+	{
+		displayName = "Soldier (Unarmed)";
+		hiddenSelections[] = {"hs_camo1","hs_camo2","hs_beret","hs_badge"};
+		hiddenSelectionsTextures[] = {"\ap_baf80\units\data\jacket_dpm_old_co.paa","\ap_baf80\units\data\pants_dpm_old_co.paa","",""};
+		model = "\ap_baf80\units\uk_soldier_light.p3d";
+		weapons[] = {"Throw","Put","ACE_Map","ItemCompass","ItemRadio","ItemWatch","ItemMap"};
+		magazines[] = {"ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage"};
+		class HitPoints: HitPoints
+		{
+			class HitHead: HitHead
+			{
+				armor = 0.6;
+			};
+		};
+	};
+	class AP_SoldierUK_SAS: AP_SoldierUK
+	{
+		canDeactivateMines = 1;
+		canHideBodies = 1;
+		displayName = "SAS Operator";
+		hiddenSelections[] = {"hs_camo1","hs_camo2","hs_scrim"};
+		hiddenSelectionsTextures[] = {"\ap_baf80\units\data\smock_sas_co.paa","\ap_baf80\units\data\pants_dpm_old_co.paa",""};
+		identityTypes[] = {"Language_BAF","Head_BAF","No_Glasses"};
+		minFireTime = 2.5;
+		model = "\ap_baf80\units\uk_soldier_sas.p3d";
+		nameSound = "veh_SpecialForce";
+		sensitivity = 3.0;
+		textPlural = "$STR_DN_SpecialForces";
+		textSingular = "$STR_DN_SpecialForce";
+		weapons[] = {"TU_M16A1_30","Throw","Put","ACE_Map","ItemCompass","ItemRadio","ItemWatch","ItemMap","Binocular"};
+		magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","ACE_30Rnd_556x45_T_Stanag","ACE_30Rnd_556x45_T_Stanag","ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage","BAF_L109A1_HE","BAF_L109A1_HE","SmokeShell","SmokeShell"};
+		class HitPoints: HitPoints
+		{
+			class HitHead: HitHead
+			{
+				armor = 0.6;
+			};
+		};
+	};
+	
+	class AP_SoldierUK_Night: AP_SoldierUK
+	{
+		displayName = "SAS Scout";
+		model = "\ap_baf80\units\uk_soldier_sas.p3d";
+		hiddenSelectionsTextures[] = {"\ap_baf80\units\data\smock_sas_co.paa","\ap_baf80\units\data\pants_dpm_old_co.paa","\ap_baf80\units\data\ghillie_co.paa"};
+		weapons[] = {"AP_SterlingSD","Throw","Put","ACE_Map","ItemCompass","ItemRadio","ItemWatch","ItemMap","Binocular"};
+		magazines[] = {"ap_l34a1mag","ap_l34a1mag","ap_l34a1mag","ap_l34a1mag","ap_l34a1mag","ap_l34a1mag","ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage","BAF_L109A1_HE","BAF_L109A1_HE","SmokeShell","SmokeShell"};
+	};
+	
+	class AP_SoldierUK_MG: AP_SoldierUK
+	{
+		displayName = "Machine Gunner";
+		hiddenSelections[] = {"hs_camo1","hs_camo2","hs_medbag","hs_mine","hs_scrim"};
+		hiddenSelectionsTextures[] = {"\ap_baf80\units\data\jacket_dpm_old_co.paa","\ap_baf80\units\data\pants_dpm_old_co.paa","\ca\characters2\blufor\data\equip_co.paa","","\ap_baf80\units\data\ghillie_co.paa"};
+		model = "\ap_baf80\units\uk_soldier_medic.p3d";
+		nameSound = "veh_mgunner";
+		textPlural = "$STR_DN_mgunners";
+		textSingular = "$STR_DN_mgunner";
+		threat[] = {1.0,0.1,0.6};
+		weapons[] = {"AP_Bren","ACE_L9A1","Throw","Put","ACE_Map","ItemCompass","ItemRadio","ItemWatch","ItemMap"};
+		magazines[] = {"AP_30rd_762x51_Ball_Bren","AP_30rd_762x51_Ball_Bren","AP_30rd_762x51_Ball_Bren","AP_30rd_762x51_Ball_Bren","AP_30rd_762x51_Ball_Bren","AP_30rd_762x51_Ball_Bren","AP_30rd_762x51_T_Bren","AP_30rd_762x51_T_Bren","ACE_13Rnd_9x19_L9A1","ACE_13Rnd_9x19_L9A1","ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage","BAF_L109A1_HE","BAF_L109A1_HE","SmokeShell","SmokeShell"};
+	};
+
+	
+	
+	
 	class Land;
 	class LandVehicle: Land
 	{
@@ -646,10 +908,9 @@ class CfgVehicles
 	
 	class AP_MILAN: ACE_Konkurs
 	{
-		crew="BAF_Soldier_W";	
+		crew="AP_SoldierUK";	
 		side = 1;
-		faction = BIS_BAF;
-		
+		faction = ap_baf80s;		
 		displayName = "$STR_MILAN_NAME";
 		icon = "\ap_baf80\weapons\milan\data\icon_static_milan_ca.paa";
 		mapSize = 3;
