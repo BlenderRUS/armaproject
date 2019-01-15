@@ -605,7 +605,7 @@ class CfgVehicles
 	class AP_SoldierUK: SoldierWB
 	{
 		canCarryBackPack = 1;
-		attendant = 1;
+		attendant = 0;
 		backpack = "";
 		displayName = "Rifleman";
 		faceType = "Man";
@@ -659,10 +659,7 @@ class CfgVehicles
 		textSingular = "$STR_DN_Medic";
 		weapons[] = {"AP_Sterling","ACE_AssaultPack_BAF","Throw","Put","ACE_Map","ItemCompass","ItemRadio","ItemWatch","ItemMap"};
 		magazines[] = {"ap_mk4mag","ap_mk4mag","ap_mk4mag","ap_mk4mag","ap_mk4mag","ap_mk4mag","ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage","SmokeShell","SmokeShell","SmokeShell","SmokeShell"};
-		class Eventhandlers
-		{
-			init = "_this setVariable ['ace_w_ismedic', true, true];";
-		};
+		attendant = 1;
 	};
 	
 	class AP_SoldierUK_Engineer: AP_SoldierUK
