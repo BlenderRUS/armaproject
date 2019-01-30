@@ -1,0 +1,10 @@
+Density=2000;
+rough=0.100000;
+dust=0.100000;
+bulletPenetrability=50;
+soundEnviron="Empty";
+isWater="false";
+friction=0.900000;
+restitution=0;
+impact="Hit_Concrete";
+soundHit="concrete";
