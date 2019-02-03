@@ -1,0 +1,9 @@
+surfaceInfo="Fortification\data\penetration\DOTconcrete.bisurf";
+ambient[]={0.741000,0.228000,0.217000,1.000000};
+diffuse[]={0.741000,0.228000,0.217000,1.000000};
+forcedDiffuse[]={0.000000,0.000000,0.000000,0.000000};
+emmisive[]={0.000000,0.000000,0.000000,1.000000};
+specular[]={0.000000,0.000000,0.000000,1.000000};
+specularPower=1.000000;
+PixelShaderID="Normal";
+VertexShaderID="Basic";
