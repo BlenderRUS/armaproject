@@ -278,6 +278,17 @@ class CfgVehicles
 		transportMaxBackpacks = 3;
 		transportMaxMagazines = 100;
 		transportMaxWeapons = 5;
+		
+		ace_minimalhit[] = {13,30};
+		ace_era = 0;
+		ace_p_detonation_hull = 0.2;
+		ace_p_detonation_turret = 0.0;
+		ace_p_detonation_engine = 0.1;
+		ace_p_fire_hull = 0.7;
+		ace_p_fire_turret = 0.7;
+		ace_p_fire_engine = 0.8;
+		ace_p_firedetonation = 0.5;
+		ace_armor_hull[] = {{ 8,8 },{ 6,6 },{ 6,6 },{ 6,6 },{ 0,0 },{ 3,3 }};	
 };
 
 	class ap_btr40_2dshk: ap_btr40_zu23
