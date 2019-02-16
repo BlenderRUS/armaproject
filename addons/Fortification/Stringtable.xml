@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project name="Fortification_AP">
+	<Package name="BuildingsFortAP">
+			<Key ID="STR_NAME_Fortification_AP">
+				<Original>Fortification AP</Original>
+				<English>Fortification AP</English>
+				<Russian>Фортификации АР</Russian>
+			</Key>
+			<Key ID="STR_NAME_Fortification_desert_AP">
+				<Original>Fortification AP Desert</Original>
+				<English>Fortification AP Desert</English>
+				<Russian>Фортификации АР Пустыня</Russian>
+			</Key>
+			<Key ID="STR_NAME_Dot_Big">
+				<Original>DOT Big</Original>
+				<English>DOT Big</English>
+				<Russian>ДОТ Большой</Russian>
+			</Key>
+			<Key ID="STR_NAME_Dot_Big_tr">
+				<Original>DOT Big Trench</Original>
+				<English>DOT BigTrench</English>
+				<Russian>ДОТ Большой c Траншеей</Russian>
+			</Key>
+
+			<Key ID="STR_NAME_Trench_L">
+				<Original>Trench Straight</Original>
+				<English>Trench Straight</English>
+				<Russian>Траншея Прямая</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_L_Cov">
+				<Original>Trench Straight (covered)</Original>
+				<English>Trench Straight (covered)</English>
+				<Russian>Траншея Прямая (крытая)</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_T">
+				<Original>Trench T-shaped</Original>
+				<English>Trench T-shaped</English>
+				<Russian>Траншея Т-отразная</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_T_Cov">
+				<Original>Trench T-shaped (covered)</Original>
+				<English>Trench T-shaped (covered)</English>
+				<Russian>Траншея Т-отразная (крытая)</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_F">
+				<Original>Trench Mach.Point</Original>
+				<English>Trench Mach.Point</English>
+				<Russian>Траншея Пул.Точка</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_F_Cov">
+				<Original>Trench Mach.Point (covered)</Original>
+				<English>Trench Mach.Point (covered)</English>
+				<Russian>Траншея Пул.Точка (крытая)</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_30">
+				<Original>Trench Turn30</Original>
+				<English>Trench Turn30</English>
+				<Russian>Траншея Поворот30</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_30_Cov">
+				<Original>Trench Turn30 (covered)</Original>
+				<English>Trench Turn30 (covered)</English>
+				<Russian>Траншея Поворот30 (крытая)</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_90">
+				<Original>Trench Turn90</Original>
+				<English>Trench Turn90</English>
+				<Russian>Траншея Поворот90</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_90_Cov">
+				<Original>Trench Turn90 (covered)</Original>
+				<English>Trench Turn90 (covered)</English>
+				<Russian>Траншея Поворот90 (крытая)</Russian>
+			</Key>
+
+			<Key ID="STR_NAME_Trench_L_D">
+				<Original>Trench Straight Desert</Original>
+				<English>Trench Straight Desert</English>
+				<Russian>Траншея Прямая Пустынная</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_L_Cov_D">
+				<Original>Trench Straight Desert (covered)</Original>
+				<English>Trench Straight Desert (covered)</English>
+				<Russian>Траншея Прямая Пустынная (крытая)</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_T_D">
+				<Original>Trench T-shaped Desert</Original>
+				<English>Trench T-shaped Desert</English>
+				<Russian>Траншея Т-отразная Пустынная</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_T_Cov_D">
+				<Original>Trench T-shaped Desert (covered)</Original>
+				<English>Trench T-shaped Desert (covered)</English>
+				<Russian>Траншея Т-отразная Пустынная (крытая)</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_F_D">
+				<Original>Trench Mach.Point Desert</Original>
+				<English>Trench Mach.Point Desert</English>
+				<Russian>Траншея Пул.Точка Пустынная</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_F_Cov_D">
+				<Original>Trench Mach.Point Desert (covered)</Original>
+				<English>Trench Mach.Point Desert (covered)</English>
+				<Russian>Траншея Пул.Точка Пустынная (крытая)</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_30_D">
+				<Original>Trench Turn30 Desert</Original>
+				<English>Trench Turn30 Desert</English>
+				<Russian>Траншея Поворот30 Пустынная</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_30_Cov_D">
+				<Original>Trench Turn30 Desert (covered)</Original>
+				<English>Trench Turn30 Desert (covered)</English>
+				<Russian>Траншея Поворот30 Пустынная (крытая)</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_90_D">
+				<Original>Trench Turn90 Desert</Original>
+				<English>Trench Turn90 Desert</English>
+				<Russian>Траншея Поворот90 Пустынная</Russian>
+			</Key>
+			<Key ID="STR_NAME_Trench_90_Cov_D">
+				<Original>Trench Turn90 Desert (covered)</Original>
+				<English>Trench Turn90 Desert (covered)</English>
+				<Russian>Траншея Поворот90 Пустынная (крытая)</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_pillbox">
+				<Original>HESCO Bunker</Original>
+				<English>HESCO Bunker</English>
+				<Russian>HESCO Бункер</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_triple">
+				<Original>HESCO Wall</Original>
+				<English>HESCO Wall</English>
+				<Russian>HESCO Стена</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_triple_W">
+				<Original>HESCO Wall climd</Original>
+				<English>HESCO Wall climd</English>
+				<Russian>HESCO Стена с подъемом</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_triple_WC">
+				<Original>HESCO Wall climd (covered)</Original>
+				<English>HESCO Wall climd (covered)</English>
+				<Russian>HESCO Стена с подъемом (крытая)</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_x1">
+				<Original>HESCO 1 Block</Original>
+				<English>HESCO 1 Block</English>
+				<Russian>HESCO 1 Блок</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_x2">
+				<Original>HESCO 2 Block's</Original>
+				<English>HESCO 2 Block's</English>
+				<Russian>HESCO 2 Блока</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_x3">
+				<Original>HESCO 3 Block's</Original>
+				<English>HESCO 3 Block's</English>
+				<Russian>HESCO 3 Блока</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_x4">
+				<Original>HESCO 4 Block's</Original>
+				<English>HESCO 4 Block's</English>
+				<Russian>HESCO 4 Блока</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_W2">
+				<Original>HESCO double</Original>
+				<English>HESCO double</English>
+				<Russian>HESCO двойной</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_pillbox_D">
+				<Original>HESCO Bunker Desert</Original>
+				<English>HESCO Bunker Desert</English>
+				<Russian>HESCO Бункер Пустынный</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_triple_D">
+				<Original>HESCO Wall Desert</Original>
+				<English>HESCO Wall Desert</English>
+				<Russian>HESCO Стена Пустынная</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_triple_W_D">
+				<Original>HESCO Wall climd Desert</Original>
+				<English>HESCO Wall climd Desert</English>
+				<Russian>HESCO Стена с подъемом Пустынная</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_triple_WC_D">
+				<Original>HESCO Wall climd Desert (covered)</Original>
+				<English>HESCO Wall climd Desert (covered)</English>
+				<Russian>HESCO Стена с подъемом Пустынная (крытая)</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_x1_D">
+				<Original>HESCO 1 Block Desert</Original>
+				<English>HESCO 1 Block Desert</English>
+				<Russian>HESCO 1 Блок Пустынный</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_x2_D">
+				<Original>HESCO 2 Block's Desert</Original>
+				<English>HESCO 2 Block's Desert</English>
+				<Russian>HESCO 2 Блока Пустынных</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_x3_D">
+				<Original>HESCO 3 Block's Desert</Original>
+				<English>HESCO 3 Block's Desert</English>
+				<Russian>HESCO 3 Блока Пустынных</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_x4_D">
+				<Original>HESCO 4 Block's Desert</Original>
+				<English>HESCO 4 Block's Desert</English>
+				<Russian>HESCO 4 Блока Пустынных</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_W2_D">
+				<Original>HESCO double Desert</Original>
+				<English>HESCO double Desert</English>
+				<Russian>HESCO двойной Пустынный</Russian>
+			</Key>
+	</Package>
+</Project>

@@ -180,9 +180,9 @@ class CfgVehicles
 					initAngleY = 0;
 					minAngleY = -150;
 					maxAngleY = 150;
-					initFov = 0.7;
-					minFov = 0.25;
-					maxFov = 1.1;
+					initFov=0.69999999;
+					minFov=0.25;
+					maxFov=1.1;
 				};
 				class ViewOptics
 				{
@@ -192,9 +192,9 @@ class CfgVehicles
 					initAngleY = 0;
 					minAngleY = -360;
 					maxAngleY = 360;
-					initFov = 0.093;
-					minFov = 0.093;
-					maxFov = 0.093;
+					initFov = 0.06;
+					minFov = 0.06;
+					maxFov = 0.06;
 					weaponInfoType = "RscWeaponZeroing";
 					discreteDistance[] = {250,500,750,1000,1250,1500,1750,2000,2500};
 					discreteDistanceInitIndex = 0;
@@ -351,9 +351,9 @@ class CfgVehicles
 					initAngleY = 0;
 					minAngleY = -360;
 					maxAngleY = 360;
-					initFov = 0.4;
-					minFov = 0.4;
-					maxFov = 0.4;
+					initFov=0.69999999;
+					minFov=0.25;
+					maxFov=1.1;
 				};
 				class ViewGunner
 				{
@@ -361,11 +361,11 @@ class CfgVehicles
 					minAngleX = -25;
 					maxAngleX = 80;
 					initAngleY = 0;
-					minAngleY = -360;
-					maxAngleY = 360;
-					initFov = 0.7;
-					minFov = 0.7;
-					maxFov = 0.7;
+					minAngleY = -150;
+					maxAngleY = 150;
+					initFov=0.69999999;
+					minFov=0.25;
+					maxFov=1.1;
 				};
 				selectionFireAnim = "FRONT_zasleh";			
 				gunBeg = "muzzle_1";
@@ -466,9 +466,9 @@ class CfgVehicles
 					initAngleY = 0;
 					minAngleY = -360;
 					maxAngleY = 360;
-					initFov = 0.4;
-					minFov = 0.4;
-					maxFov = 0.4;
+					initFov=0.69999999;
+					minFov=0.25;
+					maxFov=1.1;
 				};
 				class ViewGunner
 				{
@@ -476,11 +476,11 @@ class CfgVehicles
 					minAngleX = -25;
 					maxAngleX = 80;
 					initAngleY = 0;
-					minAngleY = -360;
-					maxAngleY = 360;
-					initFov = 0.7;
-					minFov = 0.7;
-					maxFov = 0.7;
+					minAngleY = -150;
+					maxAngleY = 150;
+					initFov=0.69999999;
+					minFov=0.25;
+					maxFov=1.1;
 				};
 			};
 		};
