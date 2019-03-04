@@ -3,8 +3,12 @@ class CfgPatches
 	class Fortification_Pack
 	{
 		units[]={
+			"Dot_Little",
+			"Dot_Little_F",
 			"Dot_Big",
 			"Dot_Big_tr",
+			"Dot_Big_tr_D",
+			
 			"Trench_L_Cov",
 			"Trench_T_Cov",
 			"Trench_F_Cov",
@@ -14,7 +18,38 @@ class CfgPatches
 			"Trench_T",
 			"Trench_F",
 			"Trench_30",
-			"Trench_90"
+			"Trench_90",
+			
+			"Trench_L_Cov_D",
+			"Trench_T_Cov_D",
+			"Trench_F_Cov_D",
+			"Trench_30_Cov_D",
+			"Trench_90_Cov_D",
+			"Trench_L_D",
+			"Trench_T_D",
+			"Trench_F_D",
+			"Trench_30_D",
+			"Trench_90_D",
+			
+			"Concertainer_pillbox",
+			"Concertainer_triple_WC",
+			"Concertainer_triple_W",
+			"Concertainer_triple",
+			"Concertainer_x1",
+			"Concertainer_x2",
+			"Concertainer_x3",
+			"Concertainer_x4",
+			"Concertainer_W2",
+			
+			"Concertainer_pillbox_D",
+			"Concertainer_triple_WC_D",
+			"Concertainer_triple_W_D",
+			"Concertainer_triple_D",
+			"Concertainer_x1_D",
+			"Concertainer_x2_D",
+			"Concertainer_x3_D",
+			"Concertainer_x4_D",
+			"Concertainer_W2_D"
 		};
 		weapons[]={};
 		requiredVersion=1.5;
@@ -26,23 +61,52 @@ class CfgPatches
 };
 class CfgVehicleClasses
 {
-	class Fortification_Pack_AP
+	class Fortification_Trench_AP
 	{
-		displayName="$STR_NAME_Fortification_AP";
+		displayName="$STR_NAME_Fortification_Trench_AP";
 	};
-	class Fortification_desert_Pack_AP
+	class Fortification_Concertainer_AP
 	{
-		displayName="$STR_NAME_Fortification_desert_AP";
+		displayName="$STR_NAME_Fortification_Concertainer_AP";
+	};
+	class Fortification_DOT_AP
+	{
+		displayName="$STR_NAME_Fortification_DOT_AP";
 	};
 };
 
 class CfgVehicles
 {
-	class HouseBase;
-	class Dot_Big: HouseBase
+
+	class Shed;
+	//ДОТы
+	class Dot_Little: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_DOT_AP";
+		displayName="$STR_NAME_Dot_little";
+		destrType = "DestructNo";
+		mapSize=48;
+		icon = "\Fortification\data\ico_Dot_little_ca.paa";
+		model="\Fortification\Dot_little.p3d";
+		ladders[]={};
+	};
+	class Dot_Little_F: Shed
+	{
+		scope=2;
+		vehicleClass="Fortification_DOT_AP";
+		displayName="$STR_NAME_Dot_little_F";
+		destrType = "DestructNo";
+		placement="vertical";
+		mapSize=48;
+		icon = "\Fortification\data\ico_Dot_little_ca.paa";
+		model="\Fortification\Dot_little_F.p3d";
+		ladders[]={};
+	};
+	class Dot_Big: Shed
+	{
+		scope=2;
+		vehicleClass="Fortification_DOT_AP";
 		displayName="$STR_NAME_Dot_Big";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -50,21 +114,11 @@ class CfgVehicles
 		icon = "\Fortification\data\ico_Dot_Big_ca.paa";
 		model="\Fortification\Dot_Big.p3d";
 		ladders[]={};
-		hiddenSelections[]=
-		{
-			"Nest",
-			"main"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"fortification\data\bagfence_co.paa",
-			"fortification\data\hlina_co.paa"
-		};
 	};
-	class Dot_Big_tr: HouseBase
+	class Dot_Big_tr: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_DOT_AP";
 		displayName="$STR_NAME_Dot_Big_tr";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -83,10 +137,26 @@ class CfgVehicles
 			"fortification\data\hlina_co.paa"
 		};
 	};
-	class Trench_L_Cov: HouseBase
+	class Dot_Big_tr_D: Dot_Big_tr
+	{
+		vehicleClass="Fortification_DOT_AP";
+		displayName="$STR_NAME_Dot_Big_tr_D";
+		hiddenSelections[]=
+		{
+			"Nest",
+			"main"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"fortification\data\bagfence_D_co.paa",
+			"fortification\data\hlina_D_co.paa"
+		};
+	};
+	//Траншеи
+	class Trench_L_Cov: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_L_Cov";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -105,10 +175,10 @@ class CfgVehicles
 			"fortification\data\hlina_co.paa"
 		};
 	};
-	class Trench_T_Cov: HouseBase
+	class Trench_T_Cov: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_T_Cov";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -127,10 +197,10 @@ class CfgVehicles
 			"fortification\data\hlina_co.paa"
 		};
 	};
-	class Trench_F_Cov: HouseBase
+	class Trench_F_Cov: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_F_Cov";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -149,10 +219,10 @@ class CfgVehicles
 			"fortification\data\hlina_co.paa"
 		};
 	};
-	class Trench_30_Cov: HouseBase
+	class Trench_30_Cov: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_30_Cov";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -171,10 +241,10 @@ class CfgVehicles
 			"fortification\data\hlina_co.paa"
 		};
 	};
-	class Trench_90_Cov: HouseBase
+	class Trench_90_Cov: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_90_Cov";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -193,10 +263,10 @@ class CfgVehicles
 			"fortification\data\hlina_co.paa"
 		};
 	};
-	class Trench_L: HouseBase
+	class Trench_L: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_L";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -215,10 +285,10 @@ class CfgVehicles
 			"fortification\data\hlina_co.paa"
 		};
 	};
-	class Trench_T: HouseBase
+	class Trench_T: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_T";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -237,10 +307,10 @@ class CfgVehicles
 			"fortification\data\hlina_co.paa"
 		};
 	};
-	class Trench_F: HouseBase
+	class Trench_F: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_F";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -259,10 +329,10 @@ class CfgVehicles
 			"fortification\data\hlina_co.paa"
 		};
 	};
-	class Trench_30: HouseBase
+	class Trench_30: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_30";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -281,10 +351,10 @@ class CfgVehicles
 			"fortification\data\hlina_co.paa"
 		};
 	};
-	class Trench_90: HouseBase
+	class Trench_90: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_90";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -306,7 +376,7 @@ class CfgVehicles
 	//Траншеи Пустыня
 	class Trench_L_D: Trench_L
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_L_D";
 		hiddenSelections[]=
 		{
@@ -321,7 +391,7 @@ class CfgVehicles
 	};
 	class Trench_L_Cov_D: Trench_L_Cov
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_L_Cov_D";
 		hiddenSelections[]=
 		{
@@ -336,7 +406,7 @@ class CfgVehicles
 	};
 	class Trench_T_D: Trench_T
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_T_D";
 		hiddenSelections[]=
 		{
@@ -351,7 +421,7 @@ class CfgVehicles
 	};
 	class Trench_T_Cov_D: Trench_T_Cov
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_T_Cov_D";
 		hiddenSelections[]=
 		{
@@ -366,7 +436,7 @@ class CfgVehicles
 	};
 	class Trench_F_D: Trench_F
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_F_D";
 		hiddenSelections[]=
 		{
@@ -381,7 +451,7 @@ class CfgVehicles
 	};
 	class Trench_F_Cov_D: Trench_F_Cov
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_F_Cov_D";
 		hiddenSelections[]=
 		{
@@ -396,7 +466,7 @@ class CfgVehicles
 	};
 	class Trench_30_D: Trench_30
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_30_D";
 		hiddenSelections[]=
 		{
@@ -411,7 +481,7 @@ class CfgVehicles
 	};
 	class Trench_30_Cov_D: Trench_30_Cov
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_30_Cov_D";
 		hiddenSelections[]=
 		{
@@ -426,7 +496,7 @@ class CfgVehicles
 	};
 	class Trench_90_D: Trench_90
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_90_D";
 		hiddenSelections[]=
 		{
@@ -441,7 +511,7 @@ class CfgVehicles
 	};
 	class Trench_90_Cov_D: Trench_90_Cov
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Trench_AP";
 		displayName="$STR_NAME_Trench_90_Cov_D";
 		hiddenSelections[]=
 		{
@@ -455,10 +525,10 @@ class CfgVehicles
 		};
 	};
 	//Экспорт с FATA, переделаны
-	class Concertainer_pillbox: HouseBase
+	class Concertainer_pillbox: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_pillbox";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -477,10 +547,10 @@ class CfgVehicles
 			"fortification\data\hesco_co.paa"
 		};
 	};
-	class Concertainer_triple_WC: HouseBase
+	class Concertainer_triple_WC: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_triple_WC";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -499,10 +569,10 @@ class CfgVehicles
 			"fortification\data\hesco_co.paa"
 		};
 	};
-	class Concertainer_triple_W: HouseBase
+	class Concertainer_triple_W: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_triple_W";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -519,10 +589,10 @@ class CfgVehicles
 			"fortification\data\hesco_co.paa"
 		};
 	};
-	class Concertainer_triple: HouseBase
+	class Concertainer_triple: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_triple";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -539,10 +609,10 @@ class CfgVehicles
 			"fortification\data\hesco_co.paa"
 		};
 	};
-	class Concertainer_x1: HouseBase
+	class Concertainer_x1: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_x1";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -559,10 +629,10 @@ class CfgVehicles
 			"fortification\data\hesco_co.paa"
 		};
 	};
-	class Concertainer_x2: HouseBase
+	class Concertainer_x2: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_x2";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -579,10 +649,10 @@ class CfgVehicles
 			"fortification\data\hesco_co.paa"
 		};
 	};
-	class Concertainer_x3: HouseBase
+	class Concertainer_x3: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_x3";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -599,10 +669,10 @@ class CfgVehicles
 			"fortification\data\hesco_co.paa"
 		};
 	};
-	class Concertainer_x4: HouseBase
+	class Concertainer_x4: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_x4";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -619,10 +689,10 @@ class CfgVehicles
 			"fortification\data\hesco_co.paa"
 		};
 	};
-	class Concertainer_W2: HouseBase
+	class Concertainer_W2: Shed
 	{
 		scope=2;
-		vehicleClass="Fortification_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_W2";
 		destrType = "DestructNo";
 		placement="vertical";
@@ -642,7 +712,7 @@ class CfgVehicles
 	//Экспорт с FATA, переделаны, Пустыня
 	class Concertainer_pillbox_D: Concertainer_pillbox
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_pillbox_D";
 		hiddenSelections[]=
 		{
@@ -657,7 +727,7 @@ class CfgVehicles
 	};
 	class Concertainer_triple_WC_D: Concertainer_triple_WC
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_triple_WC_D";
 		hiddenSelections[]=
 		{
@@ -672,7 +742,7 @@ class CfgVehicles
 	};
 	class Concertainer_triple_W_D: Concertainer_triple_W
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_triple_W_D";
 		hiddenSelections[]=
 		{
@@ -685,7 +755,7 @@ class CfgVehicles
 	};
 	class Concertainer_triple_D: Concertainer_triple
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_triple_D";
 		hiddenSelections[]=
 		{
@@ -698,7 +768,7 @@ class CfgVehicles
 	};
 	class Concertainer_x1_D: Concertainer_x1
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_x1_D";
 		hiddenSelections[]=
 		{
@@ -711,7 +781,7 @@ class CfgVehicles
 	};
 	class Concertainer_x2_D: Concertainer_x2
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_x2_D";
 		hiddenSelections[]=
 		{
@@ -724,7 +794,7 @@ class CfgVehicles
 	};
 	class Concertainer_x3_D: Concertainer_x3
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_x3_D";
 		hiddenSelections[]=
 		{
@@ -737,7 +807,7 @@ class CfgVehicles
 	};
 	class Concertainer_x4_D: Concertainer_x4
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_x4_D";
 		hiddenSelections[]=
 		{
@@ -750,7 +820,7 @@ class CfgVehicles
 	};
 	class Concertainer_W2_D: Concertainer_W2
 	{
-		vehicleClass="Fortification_desert_Pack_AP";
+		vehicleClass="Fortification_Concertainer_AP";
 		displayName="$STR_NAME_Concertainer_W2_D";
 		hiddenSelections[]=
 		{
