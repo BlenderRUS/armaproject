@@ -173,6 +173,7 @@ class CfgVehicles
 		};
 		ace_sys_turret_indicator_enable=0;
 		
+		viewDriverInExternal = 1;
 		class Library
 		{
 			libTextDesc="$STR_lib_M1129";
@@ -181,6 +182,13 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
+				primaryGunner = 1;
+				proxyIndex = 2;
+				outGunnerMayFire = 1;
+				gunnerForceOptics = 0;
+				viewGunnerInExternal = 1;
+				gunnerAction="TOW_Gunner";
+				gunnerInAction="TOW_Gunner";
 				weapons[]=
 				{
 					"M120_AP"
@@ -193,6 +201,7 @@ class CfgVehicles
 			};
 			class ObsTurret: ObsTurret
 			{
+				viewGunnerInExternal = 1;
 				weapons[]=
 				{
 					"ACE_MK19",
@@ -1186,6 +1195,7 @@ class CfGWeapons
 		ace_sa_TE_enabled = 1;
 		autoReload = 1;
 		displayName="120-mm";
+		dispersion=0.0094999997;
 		magazines[] =
 			{
 			"30Rnd_120mmHE_M120",
@@ -1200,6 +1210,7 @@ class CfGWeapons
 		ace_sa_TE_enabled = 1;
 		autoReload = 1;
 		displayName="105-mm";
+		dispersion=0.0094999997;
 		magazines[] =
 			{
 			"30Rnd_105mmHE_M103",
@@ -1219,7 +1230,7 @@ class CfgAmmo
 	class M120_Sh_120_HE: Sh_105_HE
 	{
 		CraterEffects="ArtyShellCrater";
-		ExplosionEffects="ARTY_ShellExplosionMedium";
+		ExplosionEffects="ARTY_ShellExplosionLarge";
 		explosive=0.69999999;
 		hit=380;
 		whistleDist=60;
@@ -1227,7 +1238,7 @@ class CfgAmmo
 	};
 	class M120_Sh_120_SMOKE: Sh_105_WP
 	{
-		ARTY_DeployOnImpact = "ARTY_SmokeShellWhite";
+		ARTY_DeployOnImpact = "ace_arty_WPExplosion";
 		CraterEffects = "ExploAmmoCrater";
 		ExplosionEffects = "WPExplosion";
 		explosive = 0.3;
@@ -1241,7 +1252,7 @@ class CfgAmmo
 	class M103_Sh_105_HE: Sh_105_HE
 	{
 		CraterEffects="ArtyShellCrater";
-		ExplosionEffects="ARTY_ShellExplosionMedium";
+		ExplosionEffects="ARTY_ShellExplosionLarge";
 		explosive=0.69999999;
 		hit=300;
 		whistleDist=60;
@@ -1249,7 +1260,7 @@ class CfgAmmo
 	};
 	class M103_Sh_105_SMOKE: Sh_105_WP
 	{
-		ARTY_DeployOnImpact = "ARTY_SmokeShellWhite";
+		ARTY_DeployOnImpact = "ace_arty_WPExplosion";
 		CraterEffects = "ExploAmmoCrater";
 		ExplosionEffects = "WPExplosion";
 		explosive = 0.3;

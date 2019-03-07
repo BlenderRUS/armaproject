@@ -86,7 +86,7 @@ class CfgVehicles
 		vehicleClass="Fortification_DOT_AP";
 		displayName="$STR_NAME_Dot_little";
 		destrType = "DestructNo";
-		mapSize=48;
+		mapSize=24;
 		icon = "\Fortification\data\ico_Dot_little_ca.paa";
 		model="\Fortification\Dot_little.p3d";
 		ladders[]={};
@@ -98,7 +98,7 @@ class CfgVehicles
 		displayName="$STR_NAME_Dot_little_F";
 		destrType = "DestructNo";
 		placement="vertical";
-		mapSize=48;
+		mapSize=24;
 		icon = "\Fortification\data\ico_Dot_little_ca.paa";
 		model="\Fortification\Dot_little_F.p3d";
 		ladders[]={};
@@ -532,8 +532,8 @@ class CfgVehicles
 		displayName="$STR_NAME_Concertainer_pillbox";
 		destrType = "DestructNo";
 		placement="vertical";
-		mapSize=24;
-		icon = "";
+		mapSize=28;
+		icon = "\Fortification\data\ico_Concertainer_pillbox_ca.paa";
 		model="\Fortification\Concertainer_pillbox.p3d";
 		ladders[]={};
 		hiddenSelections[]=
@@ -554,8 +554,8 @@ class CfgVehicles
 		displayName="$STR_NAME_Concertainer_triple_WC";
 		destrType = "DestructNo";
 		placement="vertical";
-		mapSize=24;
-		icon = "";
+		mapSize=28;
+		icon = "\Fortification\data\ico_Concertainer_triple_WC_ca.paa";
 		model="\Fortification\Concertainer_triple_WC.p3d";
 		ladders[]={};
 		hiddenSelections[]=
@@ -576,8 +576,8 @@ class CfgVehicles
 		displayName="$STR_NAME_Concertainer_triple_W";
 		destrType = "DestructNo";
 		placement="vertical";
-		mapSize=24;
-		icon = "";
+		mapSize=28;
+		icon = "\Fortification\data\ico_Concertainer_triple_W_ca.paa";
 		model="\Fortification\Concertainer_triple_W.p3d";
 		ladders[]={};
 		hiddenSelections[]=
@@ -596,8 +596,8 @@ class CfgVehicles
 		displayName="$STR_NAME_Concertainer_triple";
 		destrType = "DestructNo";
 		placement="vertical";
-		mapSize=24;
-		icon = "";
+		mapSize=28;
+		icon = "\Fortification\data\ico_Concertainer_triple_ca.paa";
 		model="\Fortification\Concertainer_triple.p3d";
 		ladders[]={};
 		hiddenSelections[]=
@@ -616,8 +616,8 @@ class CfgVehicles
 		displayName="$STR_NAME_Concertainer_x1";
 		destrType = "DestructNo";
 		placement="vertical";
-		mapSize=24;
-		icon = "";
+		mapSize=28;
+		icon = "\Fortification\data\ico_Concertainer_x1_ca.paa";
 		model="\Fortification\Concertainer_X1.p3d";
 		ladders[]={};
 		hiddenSelections[]=
@@ -636,8 +636,8 @@ class CfgVehicles
 		displayName="$STR_NAME_Concertainer_x2";
 		destrType = "DestructNo";
 		placement="vertical";
-		mapSize=24;
-		icon = "";
+		mapSize=28;
+		icon = "\Fortification\data\ico_Concertainer_x2_ca.paa";
 		model="\Fortification\Concertainer_X2.p3d";
 		ladders[]={};
 		hiddenSelections[]=
@@ -656,8 +656,8 @@ class CfgVehicles
 		displayName="$STR_NAME_Concertainer_x3";
 		destrType = "DestructNo";
 		placement="vertical";
-		mapSize=24;
-		icon = "";
+		mapSize=28;
+		icon = "\Fortification\data\ico_Concertainer_x3_ca.paa";
 		model="\Fortification\Concertainer_X3.p3d";
 		ladders[]={};
 		hiddenSelections[]=
@@ -676,8 +676,8 @@ class CfgVehicles
 		displayName="$STR_NAME_Concertainer_x4";
 		destrType = "DestructNo";
 		placement="vertical";
-		mapSize=24;
-		icon = "";
+		mapSize=28;
+		icon = "\Fortification\data\ico_Concertainer_x4_ca.paa";
 		model="\Fortification\Concertainer_X4.p3d";
 		ladders[]={};
 		hiddenSelections[]=
@@ -696,8 +696,8 @@ class CfgVehicles
 		displayName="$STR_NAME_Concertainer_W2";
 		destrType = "DestructNo";
 		placement="vertical";
-		mapSize=24;
-		icon = "";
+		mapSize=28;
+		icon = "\Fortification\data\ico_Concertainer_W2_ca.paa";
 		model="\Fortification\Concertainer_W2.p3d";
 		ladders[]={};
 		hiddenSelections[]=

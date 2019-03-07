@@ -1923,6 +1923,7 @@ class CfGWeapons
 	class D30;
 	class 2A31: D30
 	{
+		dispersion=0.0094999997;
 		displayName="2A31(122mm)";
 		magazines[]=
 		{
@@ -1933,6 +1934,7 @@ class CfGWeapons
 	};
 	class 2A51: D30
 	{
+		dispersion=0.0094999997;
 		displayName="2A51(120mm)";
 		magazines[]=
 		{
@@ -1948,7 +1950,7 @@ class CfgAmmo
 	class 2A31_Sh_122_HE: Sh_122_HE
 	{
 		CraterEffects="ArtyShellCrater";
-		ExplosionEffects="ARTY_ShellExplosionMedium";
+		ExplosionEffects="ARTY_ShellExplosionLarge";
 		explosive=0.80000001;
 		hit=400;
 		whistleDist=60;
@@ -1980,7 +1982,7 @@ class CfgAmmo
 	{
 		ARTY_DeployOnImpact = "ARTY_SmokeShellWhite";
 		CraterEffects = "ExploAmmoCrater";
-		ExplosionEffects = "WPExplosion";
+		ExplosionEffects = "ace_arty_WPExplosion";
 		explosive = 0.3;
 		hit = 10;
 		indirecthit = 5;
@@ -2000,7 +2002,7 @@ class CfgAmmo
 	{
 		ARTY_DeployOnImpact = "ARTY_SmokeShellWhite";
 		CraterEffects = "ExploAmmoCrater";
-		ExplosionEffects = "WPExplosion";
+		ExplosionEffects = "ace_arty_WPExplosion";
 		explosive = 0.3;
 		hit = 10;
 		indirecthit = 5;
