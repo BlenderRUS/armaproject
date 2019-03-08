@@ -1,11 +1,15 @@
 class CfgPatches 
 {
 
-	class SPArtilleryUS
+	class spartilleryus
 	{
 		units[]=
 		{
-			""
+			"M1129_MC_D",
+			"M1129_MC_G",
+			"M108",
+			"M108_D",
+			"M108_W"
 		};
 		requiredVersion=1;
 		requiredAddons[]=

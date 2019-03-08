@@ -1,13 +1,17 @@
 class CfgPatches
 {
-	class SPArtillery
+	class spartillery
 	{
 		units[]=
 		{
 			"2S1",
 			"2S1_desert",
 			"2S1_wood",
-			"2S9"
+			"2S1_TKA",
+			"2S9",
+			"2S9_VDV",
+			"2S9_desert",
+			"2S9_desert_VDV"
 		};
 		requiredVersion=1;
 		requiredAddons[]=
