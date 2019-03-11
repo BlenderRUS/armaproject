@@ -82,12 +82,12 @@ class CfgVehicles
 	};
 	class rhs_bmp_base: BMP2_Base
 	{
+		scope = 1;
 		class Sounds: Sounds
 		{
-			scope = 1;
 			class Engine: Engine
 			{
-				sound[] = {"\rhs\addons\rhs_bmp\sounds\UTD20.ogg",1,1,1000};
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\UTD20.ogg",1,1,800};
 				frequency = "(randomizer*0.05+0.8)*rpm";
 				volume = "engineOn*camPos*(rpm factor[0.4, 0.9])";
 			};
@@ -424,7 +424,113 @@ class CfgVehicles
 		class GPMGTurret1;
 		class LeftBack;
 		class RightBack;
-		class MainBack;		
+		class MainBack;
+		class Sounds: Sounds
+		{
+			class Engine: Engine
+			{
+				sound[] = {"\rhs\addons\rhs_bmd\sounds\rhs_bmd_engine.wss",1,1,800};
+				frequency = "(randomizer*0.05+0.8)*rpm";
+				volume = "engineOn*camPos*(rpm factor[0.2, 0.7])";
+			};
+			class IdleOut
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\UTD20_alap.ogg",0.562341, 1, 450};
+				frequency = "1";
+				volume = "engineOn*camPos*(rpm factor[0.6, 0.2])";
+				cone[] = {1.2,2.8,1.8,1.3};
+			};
+			class NoiseOut
+			{
+				sound[] = {"ca\sounds\Vehicles\Tracked\M1A1\ext\noise2",1,1,100};
+				frequency = "1";
+				volume = "camPos*(angVelocity max 0.04)*(speed factor[4, 15])";
+			};
+			class ThreadsOutH0
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_2.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*(1-camPos)*(1-grass)*((rpm factor[0.3, 0.6]) min (rpm factor[0.6, 0.3]))";
+			};
+			class ThreadsOutH1
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_2.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*(1-grass)*((rpm factor[0.5, 0.8]) min (rpm factor[0.8, 0.5]))";
+			};
+			class ThreadsOutH2
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_3.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*(1-grass)*((rpm factor[0.65, 0.9]) min (rpm factor[0.9, 0.65]))";
+			};
+			class ThreadsOutH3
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_4.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*(1-grass)*((rpm factor[0.8, 1.2]) min (rpm factor[1.2, 0.8]))";
+			};
+			class ThreadsOutH4
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_5.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*(1-grass)*((rpm factor[1, 2.0]) min (rpm factor[2.0, 1]))";
+			};
+			class ThreadsOutS0
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_2.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*grass*((rpm factor[0.3, 0.6]) min (rpm factor[0.6, 0.3]))";
+			};
+			class ThreadsOutS1
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_2.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*grass*((rpm factor[0.5, 0.8]) min (rpm factor[0.8, 0.5]))";
+			};
+			class ThreadsOutS2
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_3.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*grass*((rpm factor[0.65, 0.9]) min (rpm factor[0.9, 0.65]))";
+			};
+			class ThreadsOutS3
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_4.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*grass*((rpm factor[0.8, 1.2]) min (rpm factor[1.2, 0.8]))";
+			};
+			class ThreadsOutS4
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_5.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*grass*((rpm factor[1, 2.0]) min (rpm factor[2.0, 1]))";
+			};
+			class Movement: Movement
+			{
+				sound[] = {"",1.0,1.0};
+				frequency = "0";
+				volume = "0";
+			};
+			class EngineIn
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\UTD20_in.ogg",1,1};
+				frequency = "(randomizer*0.05+0.8)*rpm";
+				volume = "engineOn*(1-camPos)*(rpm factor[0.4, 1])";
+			};
+			class IdleIn
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\UTD20_in_alap.ogg",1,1};
+				frequency = "1";
+				volume = "engineOn*(1-camPos)*(rpm factor[0.6, 0.15])";
+			};
+			class NoiseIn
+			{
+				sound[] = {"ca\sounds\Vehicles\Tracked\M1A1\int\noise2",0.199526, 1};
+				frequency = "1";
+				volume = "(1-camPos)*(angVelocity max 0.04)*(speed factor[4, 15])";
+			};
+		};
 	};
 	class rhs_bmd2_base: rhs_bmd_base
 	{
