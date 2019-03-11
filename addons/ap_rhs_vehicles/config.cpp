@@ -812,7 +812,7 @@ class CfgVehicles
 		ace_p_fire_engine = 0.7;
 		ace_p_firedetonation = 0.5;
 		ace_armor_hull[] = {{30,30},{10,10},{10,10},{10,10},{10,10}};
-		ace_armor_turret[] = {{30,30},{10,10},{10,10},{10,10},{10,10}};
+		ace_armor_turret[] = {{30,30},{14,14},{14,14},{14,14},{14,14}};
 		
 		smokeLauncherGrenadeCount = 3;
 		smokeLauncherVelocity = 14;
@@ -1314,7 +1314,7 @@ class CfgVehicles
 		ace_tankfcs_digitsstyle = 1;
 		ace_tankfcs_rdystyle = 1;
 		ace_tankfcs_maxranges[] = {"250Rnd_30mmHE_2A72",3000,"250Rnd_30mmAP_2A72",3000,"34Rnd_100mm_HE_2A70",4000,"250Rnd_762x54_PKT_T90",1600};
-		ace_armor_hull[] = {{25,25},{12,12},{12,12},{12,12},{12,12}};
+		ace_armor_hull[] = {{30,30},{10,10},{10,10},{10,10},{10,10}};
 		ace_armor_turret[] = {{30,30},{16,16},{16,16},{16,16},{16,16}};
 		
 		driverAction = "Abrams_Driverout";
