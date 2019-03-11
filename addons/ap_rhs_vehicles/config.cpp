@@ -1447,7 +1447,7 @@ class CfgVehicles
 				animationSourceHatch = "HatchCargoR";
 				selectionFireAnim = "zasleh3";
 				gunnerName = "$STR_MG_RIGHT";
-				hasGunner = 0;
+				hasGunner = 1;
 				soundServo[] = {};
 				forceHideGunner = 0;
 				primaryObserver = 0;
@@ -1467,8 +1467,8 @@ class CfgVehicles
 				gunEnd = "main_chamber2";
 				memoryPointGun = "memorypointgun2";
 				memoryPointGunnerOptics = "gunnerview3";
-				memoryPointsGetInGunner = "pos cargo r ";
-				memoryPointsGetInGunnerDir = "pos cargo r dir";
+				memoryPointsGetInGunner = "pos commander";
+				memoryPointsGetInGunnerDir = "pos commander dir";
 				viewGunnerInExternal = 0;
 				startengine = 0;
 				class Turrets{};
@@ -1508,15 +1508,13 @@ class CfgVehicles
 				gunEnd = "main_chamber3";
 				memoryPointGun = "memorypointgun3";
 				memoryPointGunnerOptics = "gunnerview2";
-				//memorypointsgetingunner = "pos gunner";
-				//memorypointsgetingunnerdir = "pos gunner dir";
-				gunnerforceoptics = 0;
+				gunnerforceoptics = 1;
 				gunnergetinaction = "GetInMedium";
 				gunnergetoutaction = "GetOutMedium";
 				gunnerinaction = "BMP3_Commander";
 				gunnerAction = "sa_bmd2_mggunner";
-				memoryPointsGetInGunner = "pos cargo l ";
-				memoryPointsGetInGunnerDir = "pos cargo l dir";
+				memoryPointsGetInGunner = "pos gunner";
+				memoryPointsGetInGunnerDir = "pos gunner dir";
 			};
 			
 			
@@ -1535,8 +1533,8 @@ class CfgVehicles
 				maxTurn = 60;
 				maxHorizontalRotSpeed = 0;
 				maxVerticalRotSpeed = 0;
-				memoryPointsGetInGunner = "pos cargo";
-				memoryPointsGetInGunnerDir = "pos cargo dir";
+				memoryPointsGetInGunner = "pos gunner";
+				memoryPointsGetInGunnerDir = "pos gunner dir";
 				gunnerName = "$STR_ACE_BMD_CargoBackLeft";
 				commanding = 3;
 				gunBeg = "";
@@ -1548,7 +1546,7 @@ class CfgVehicles
 				weapons[] = {"FakeWeapon"};
 				magazines[] = {};
 				forceHideGunner = 1;
-				hasGunner = 0;
+				hasGunner = 1;
 				primaryGunner = 0;
 				primaryObserver = 0;
 				gunnerOpticsModel = "\x\acex_ru\addons\m_veh_bmd2\Sights\o915_TNPO170A_sight";
@@ -1578,8 +1576,10 @@ class CfgVehicles
 				maxTurn = -60;
 				gunnerName = "$STR_ACE_BMD_CargoBackRight";
 				memoryPointGunnerOptics = "rseat_view";
-				hasGunner = 0;
+				hasGunner = 1;
 				commanding = 2;
+				memoryPointsGetInGunner = "pos commander";
+				memoryPointsGetInGunnerDir = "pos commander dir";
 			};
 			class MainBack: LeftBack
 			{
@@ -1592,8 +1592,10 @@ class CfgVehicles
 				maxTurn = 180;
 				gunnerName = "$STR_ACE_BMD_CargoBackCenter";
 				memoryPointGunnerOptics = "bseat_view";
-				hasGunner = 0;
+				hasGunner = 1;
 				commanding = 1;
+				memoryPointsGetInGunner = "pos commander";
+				memoryPointsGetInGunnerDir = "pos commander dir";
 			};
 			
 			
