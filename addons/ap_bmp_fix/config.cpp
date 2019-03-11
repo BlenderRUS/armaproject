@@ -14,6 +14,41 @@ requiredAddons[] = {"rhs_c_bmp","acex_ru_veh_bmp2","rhs_c_bmd","tu_vehicles_sov"
 class Turrets;
 class MainTurret;
 class CommanderOptics;
+class DefaultEventHandlers;
+
+class CfgFactionClasses
+{
+	class rhs_faction_tv
+	{
+		displayName="$STR_rhs_faction_tv";
+		priority = 8;
+		side = "TEast";
+	};
+	class rhs_faction_msv
+	{
+		displayName="$STR_rhs_faction_msv";
+		priority = 8;
+		side = "TEast";
+	};
+	class rhs_faction_vmf
+	{
+		displayName="$STR_rhs_faction_vmf";
+		priority = 8;
+		side = "TEast";
+	};
+	class rhs_faction_vv
+	{
+		displayName="$STR_rhs_faction_vv";
+		priority = 8;
+		side = "TEast";
+	};
+	class rhs_faction_vdv
+	{
+		displayName="$STR_rhs_faction_vdv";
+		priority = 8;
+		side = "TEast";
+	};
+};
 
 class CfgVehicles
 {
@@ -23,9 +58,15 @@ class CfgVehicles
 		class Turrets;
 		class NewTurret;
 		class ViewOptics;
+		class Sounds;
 	};
 	class BMP2_Base: Tracked_APC
 	{
+		class Sounds: Sounds
+		{
+			class Engine;
+			class Movement;
+		};
 		class Turrets
 		{
 			class MainTurret: NewTurret
@@ -39,11 +80,148 @@ class CfgVehicles
 		class ViewPilot;
 		class ViewOptics;
 	};
-	class rhs_bmp_base: BMP2_Base {};
+	class rhs_bmp_base: BMP2_Base
+	{
+		class Sounds: Sounds
+		{
+			scope = 1;
+			class Engine: Engine
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\UTD20.ogg",1,1,1000};
+				frequency = "(randomizer*0.05+0.8)*rpm";
+				volume = "engineOn*camPos*(rpm factor[0.4, 0.9])";
+			};
+			class IdleOut
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\UTD20_alap.ogg",0.562341, 1, 450};
+				frequency = "1";
+				volume = "engineOn*camPos*(rpm factor[0.6, 0.2])";
+				cone[] = {1.2,2.8,1.8,1.3};
+			};
+			class NoiseOut
+			{
+				sound[] = {"ca\sounds\Vehicles\Tracked\M1A1\ext\noise2",1,1,100};
+				frequency = "1";
+				volume = "camPos*(angVelocity max 0.04)*(speed factor[4, 15])";
+			};
+			class ThreadsOutH0
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_2.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*(1-camPos)*(1-grass)*((rpm factor[0.3, 0.6]) min (rpm factor[0.6, 0.3]))";
+			};
+			class ThreadsOutH1
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_2.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*(1-grass)*((rpm factor[0.5, 0.8]) min (rpm factor[0.8, 0.5]))";
+			};
+			class ThreadsOutH2
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_3.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*(1-grass)*((rpm factor[0.65, 0.9]) min (rpm factor[0.9, 0.65]))";
+			};
+			class ThreadsOutH3
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_4.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*(1-grass)*((rpm factor[0.8, 1.2]) min (rpm factor[1.2, 0.8]))";
+			};
+			class ThreadsOutH4
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_5.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*(1-grass)*((rpm factor[1, 2.0]) min (rpm factor[2.0, 1]))";
+			};
+			class ThreadsOutS0
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_2.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*grass*((rpm factor[0.3, 0.6]) min (rpm factor[0.6, 0.3]))";
+			};
+			class ThreadsOutS1
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_2.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*grass*((rpm factor[0.5, 0.8]) min (rpm factor[0.8, 0.5]))";
+			};
+			class ThreadsOutS2
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_3.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*grass*((rpm factor[0.65, 0.9]) min (rpm factor[0.9, 0.65]))";
+			};
+			class ThreadsOutS3
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_4.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*grass*((rpm factor[0.8, 1.2]) min (rpm factor[1.2, 0.8]))";
+			};
+			class ThreadsOutS4
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_5.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*grass*((rpm factor[1, 2.0]) min (rpm factor[2.0, 1]))";
+			};
+			class Movement: Movement
+			{
+				sound[] = {"",1.0,1.0};
+				frequency = "0";
+				volume = "0";
+			};
+			class EngineIn
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\UTD20_in.ogg",1,1};
+				frequency = "(randomizer*0.05+0.8)*rpm";
+				volume = "engineOn*(1-camPos)*(rpm factor[0.4, 1])";
+			};
+			class IdleIn
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\UTD20_in_alap.ogg",1,1};
+				frequency = "1";
+				volume = "engineOn*(1-camPos)*(rpm factor[0.6, 0.15])";
+			};
+			class NoiseIn
+			{
+				sound[] = {"ca\sounds\Vehicles\Tracked\M1A1\int\noise2",0.199526, 1};
+				frequency = "1";
+				volume = "(1-camPos)*(angVelocity max 0.04)*(speed factor[4, 15])";
+			};
+		};
+		soundArmorCrash[] = {"ArmorCrash0", 0.25, "ArmorCrash1", 0.25, "ArmorCrash2", 0.25, "ArmorCrash3", 0.25};
+		soundBuildingCrash[] = {"buildCrash0", 0.25, "buildCrash1", 0.25, "buildCrash2", 0.25, "buildCrash3", 0.25};
+		soundEngineOffExt[] = {"ca\sounds\vehicles\Tracked\Other\ext\ext-tracked-stop-02.wss", 1, 0.8, 500};
+		soundEngineOffInt[] = {"ca\sounds\vehicles\Tracked\Other\int\int-tracked-stop-02.wss", 1, 1};
+		soundEngineOnExt[] = {"\rhs\addons\rhs_bmp\sounds\utd20_start.ogg", 2.51189, 1, 500};
+		soundEngineOnInt[] = {"\rhs\addons\rhs_bmp\sounds\tank_ind.ogg", 1, 1};
+		soundGear[] = {"", 5.62341E-5, 1};
+		soundEngine[] = {"", 1, 1};
+		soundGetIn[] = {"ca\SOUNDS\Vehicles\Tracked\M1A1\ext\ext-m1-door-1", 0.562341, 1};
+		soundGetOut[] = {"ca\SOUNDS\Vehicles\Tracked\M1A1\int\int-m1-door-1", 0.562341, 1, 60};
+		soundWoodCrash[] = {"woodCrash0", 0.25, "woodCrash1", 0.25, "woodCrash2", 0.25, "woodCrash3", 0.25};
+		class Turrets: Turrets
+		{
+			class Main_BMP1: MainTurret
+			{
+				class OpticsIn
+				{
+					class pn22m1
+					{
+						gunnerOpticsModel = "\ap_bmp_fix\rhs_1pn22m1";
+					};
+					class pn22m1n
+					{
+						gunnerOpticsModel = "\ap_bmp_fix\rhs_1pn22m1n";
+					};
+				};
+			};
+		};
+	};
 	class rhs_bmp1_vdv: rhs_bmp_base
 	{
 		class Main_BMP1;
-		class Com_BMP1;			
+		class Com_BMP1;
 	};
 	class rhs_bmp2e_vdv: rhs_bmp1_vdv
 	{
@@ -294,7 +472,7 @@ class CfgVehicles
 		ace_tankfcs_rdystyle = 1;
 		scope = 2;
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
-		displayName = "$STR_BMD2M_Name";
+		displayName = "БМД-2М";
 		transportSoldier = 0;
 		class Turrets: Turrets
 		{
@@ -427,5 +605,991 @@ class CfgVehicles
 	{
 		faction = "rhs_faction_vv";
 	};
-	
+	//спрятать эйс поломанные бмд (Использовать РХС)
+	class ACE_BMD_2_Base;
+	class ACE_BMD_1_Base;
+	class ACE_BMD_1P_Base;
+	class ACE_BMD_2_RU: ACE_BMD_2_Base
+	{
+		scope = 0;
+	};
+	class ACE_BMD_2_INS: ACE_BMD_2_Base
+	{
+		scope = 0;
+	};
+	class ACE_BMD_2_CDF: ACE_BMD_2_Base
+	{
+		scope = 0;
+	};
+	class ACE_BMD_2K_RU: ACE_BMD_2_RU
+	{
+		scope = 0;
+	};
+	class ACE_BMD_1_RU: ACE_BMD_1_Base
+	{
+		scope = 0;
+	};
+	class ACE_BMD_1_CDF: ACE_BMD_1_Base
+	{
+		scope = 0;
+	};
+	class ACE_BMD_1P_RU: ACE_BMD_1P_Base
+	{
+		scope = 0;
+	};
+	class ACE_BMD_1P_RUS: ACE_BMD_1P_RU
+	{
+		scope = 0;
+	};
+	//планки прицела БМД1 
+	class rhs_bmd1_base: rhs_bmd_base
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class OpticsIn
+				{
+					class pn22m1
+					{
+						gunnerOpticsModel = "\ap_bmp_fix\rhs_1pn22m1";
+					};
+					class pn22m1n
+					{
+						gunnerOpticsModel = "\ap_bmp_fix\rhs_1pn22m1n";
+					};
+				};
+			};
+		};
+	};
+	//пак скинов бмд1
+	class rhs_bmd1_rus1_base: rhs_bmd1_base
+	{
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"cwr2_vdv_bmd\mr_bmd1_01_rus1_co.paa",
+				"cwr2_vdv_bmd\mr_bmd1_02_rus1.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_rus1_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
+	class rhs_bmd1pk_rus1: rhs_bmd1_rus1_base
+	{
+		displayName = "БМД-1ПК (Камо1)";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1pk.p3d";
+		picture = "\rhs\addons\rhs_bmd\rhs_bmd1pk_pic_ca.paa";
+		scope = 2;
+
+	};
+	class rhs_bmd1p_rus1: rhs_bmd1_rus1_base
+	{
+		displayName = "БМД-1П (Камо1)";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1p.p3d";
+		scope = 2;
+	};
+	class rhs_bmd1k_rus1: rhs_bmd1_rus1_base
+	{
+		displayName = "БМД-1К (Камо1)";
+		scope = 2;
+	};
+	class rhs_bmd1_rus1: rhs_bmd1_rus1_base
+	{
+		displayName = "БМД-1 (Камо1)";
+		scope = 2;
+	};
+	class rhs_bmd1_rus2_base: rhs_bmd1_base
+	{
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"cwr2_vdv_bmd\mr_bmd1_01_rus2_co.paa",
+				"cwr2_vdv_bmd\mr_bmd1_02_rus2.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_rus2_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
+	class rhs_bmd1pk_rus2: rhs_bmd1_rus2_base
+	{
+		displayName = "БМД-1ПК (Камо2)";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1pk.p3d";
+		picture = "\rhs\addons\rhs_bmd\rhs_bmd1pk_pic_ca.paa";
+		scope = 2;
+
+	};
+	class rhs_bmd1p_rus2: rhs_bmd1_rus2_base
+	{
+		displayName = "БМД-1П (Камо2)";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1p.p3d";
+		scope = 2;
+	};
+	class rhs_bmd1k_rus2: rhs_bmd1_rus2_base
+	{
+		displayName = "БМД-1К (Камо2)";
+		scope = 2;
+	};
+	class rhs_bmd1_rus2: rhs_bmd1_rus2_base
+	{
+		displayName = "БМД-1 (Камо2)";
+		scope = 2;
+	};
+	class rhs_bmd1_des_base: rhs_bmd1_base
+	{
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"cwr2_vdv_bmd\mr_bmd1_01_des_co.paa",
+				"cwr2_vdv_bmd\mr_bmd1_02_des.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_des_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
+	class rhs_bmd1pk_des: rhs_bmd1_des_base
+	{
+		displayName = "БМД-1ПК (Камо3)";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1pk.p3d";
+		picture = "\rhs\addons\rhs_bmd\rhs_bmd1pk_pic_ca.paa";
+		scope = 2;
+
+	};
+	class rhs_bmd1p_des: rhs_bmd1_des_base
+	{
+		displayName = "БМД-1П (Камо3)";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1p.p3d";
+		scope = 2;
+	};
+	class rhs_bmd1k_des: rhs_bmd1_des_base
+	{
+		displayName = "БМД-1К (Камо3)";
+		scope = 2;
+	};
+	class rhs_bmd1_des: rhs_bmd1_des_base
+	{
+		displayName = "БМД-1 (Камо3)";
+		scope = 2;
+	};
+	class rhs_bmd1_peace_base: rhs_bmd1_base
+	{
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"cwr2_vdv_bmd\mr_bmd1_01_peace_co.paa",
+				"cwr2_vdv_bmd\mr_bmd1_02_peace.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_peace_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
+	class rhs_bmd1pk_peace: rhs_bmd1_peace_base
+	{
+		displayName = "БМД-1ПК (Камо4)";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1pk.p3d";
+		picture = "\rhs\addons\rhs_bmd\rhs_bmd1pk_pic_ca.paa";
+		scope = 2;
+
+	};
+	class rhs_bmd1p_peace: rhs_bmd1_peace_base
+	{
+		displayName = "БМД-1П (Камо4)";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1p.p3d";
+		scope = 2;
+	};
+	class rhs_bmd1k_peace: rhs_bmd1_peace_base
+	{
+		displayName = "БМД-1К (Камо4)";
+		scope = 2;
+	};
+	class rhs_bmd1_peace: rhs_bmd1_peace_base
+	{
+		displayName = "БМД-1 (Камо4)";
+		scope = 2;
+	};
+	class rhs_bmd1_cdf_base: rhs_bmd1_base
+	{
+		faction = "CDF";
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"cwr2_vdv_bmd\mr_bmd1_01_cdf_co.paa",
+				"cwr2_vdv_bmd\mr_bmd1_02_cdf.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_cdf_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
+	class rhs_bmd1pk_cdf: rhs_bmd1_cdf_base
+	{
+		displayName = "БМД-1ПК";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1pk.p3d";
+		picture = "\rhs\addons\rhs_bmd\rhs_bmd1pk_pic_ca.paa";
+		scope = 2;
+
+	};
+	class rhs_bmd1p_cdf: rhs_bmd1_cdf_base
+	{
+		displayName = "БМД-1П";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1p.p3d";
+		scope = 2;
+	};
+	class rhs_bmd1k_cdf: rhs_bmd1_cdf_base
+	{
+		displayName = "БМД-1К";
+		scope = 2;
+	};
+	class rhs_bmd1_cdf: rhs_bmd1_cdf_base
+	{
+		displayName = "БМД-1";
+		scope = 2;
+	};
+	class rhs_bmd1_ins_base: rhs_bmd1_base
+	{
+		faction = "INS";
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"cwr2_vdv_bmd\mr_bmd1_01_chdkz_co.paa",
+				"cwr2_vdv_bmd\mr_bmd1_02_cdkz.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_chdkz_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
+	class rhs_bmd1pk_ins: rhs_bmd1_ins_base
+	{
+		displayName = "БМД-1ПК";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1pk.p3d";
+		picture = "\rhs\addons\rhs_bmd\rhs_bmd1pk_pic_ca.paa";
+		scope = 2;
+
+	};
+	class rhs_bmd1p_ins: rhs_bmd1_ins_base
+	{
+		displayName = "БМД-1П";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1p.p3d";
+		scope = 2;
+	};
+	class rhs_bmd1k_ins: rhs_bmd1_ins_base
+	{
+		displayName = "БМД-1К";
+		scope = 2;
+	};
+	class rhs_bmd1_ins: rhs_bmd1_ins_base
+	{
+		displayName = "БМД-1";
+		scope = 2;
+	};
+	//паки скинов БМД2
+	class rhs_bmd2_rus1_base: rhs_bmd2_base
+	{
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_01_rus1_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_02_rus1_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_rus1_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
+	class rhs_bmd2_rus1: rhs_bmd2_rus1_base
+	{
+		displayName = "БМД-2 (Камо1)";
+		scope = 2;
+
+	};
+	class rhs_bmd2m_rus1: rhs_bmd2_rus1_base
+	{
+		ace_sys_reticles_gunneroptics = 0;
+		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
+		ace_tankfcs_digitsstyle = 1;
+		ace_tankfcs_enabled = 1;
+		ace_tankfcs_lrfaccuracy = 20;
+		ace_tankfcs_lrfcooldowntime = 3;
+		ace_tankfcs_maxlead = 2;
+		ace_tankfcs_maxlrfrange = 5200;
+		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
+		ace_tankfcs_minlrfrange = 200;
+		ace_tankfcs_rdystyle = 1;
+		scope = 2;
+		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
+		displayName = "БМД-2М (Камо1)";
+		transportSoldier = 0;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
+				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
+				turretInfoType = "rhs_gui_optic_thermalscreen";
+				class OpticsIn
+				{
+					class gunnerSightWide
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -110;
+						maxAngleY = 110;
+						opticsZoomMin = 0.14;
+						opticsZoomMax = 0.14;
+						distanceZoomMin = 200;
+						distanceZoomMax = 2000;
+						initFov = 0.14;
+						minFov = 0.14;
+						maxFov = 0.14;
+						visionMode[] = {"Normal","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+					};
+					class gunnerSightNarrow
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -110;
+						maxAngleY = 110;
+						opticsZoomMin = 0.047;
+						opticsZoomMax = 0.047;
+						distanceZoomMin = 200;
+						distanceZoomMax = 2000;
+						initFov = 0.047;
+						minFov = 0.047;
+						maxFov = 0.047;
+						visionMode[] = {"Normal","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+					};
+				};
+			};
+			class CommanderOptics2: CommanderOptics1{};
+			class GPMGTurretBMD2: GPMGTurretBMD1{};
+			class LeftBack2: LeftBack1{};
+			class RightBack2: RightBack1{};
+			class MainBack2: MainBack1{};
+		};
+	};
+	class rhs_bmd2k_rus1: rhs_bmd2_rus1_base
+	{
+		displayName = "БМД-2K (Камо1)";
+		scope = 2;
+	};
+	class rhs_bmd2_rus2_base: rhs_bmd2_base
+	{
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_01_rus2_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_02_rus2_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_rus2_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
+	class rhs_bmd2_rus2: rhs_bmd2_rus2_base
+	{
+		displayName = "БМД-2 (Камо2)";
+		scope = 2;
+
+	};
+	class rhs_bmd2m_rus2: rhs_bmd2_rus2_base
+	{
+		ace_sys_reticles_gunneroptics = 0;
+		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
+		ace_tankfcs_digitsstyle = 1;
+		ace_tankfcs_enabled = 1;
+		ace_tankfcs_lrfaccuracy = 20;
+		ace_tankfcs_lrfcooldowntime = 3;
+		ace_tankfcs_maxlead = 2;
+		ace_tankfcs_maxlrfrange = 5200;
+		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
+		ace_tankfcs_minlrfrange = 200;
+		ace_tankfcs_rdystyle = 1;
+		scope = 2;
+		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
+		displayName = "БМД-2М (Камо2)";
+		transportSoldier = 0;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
+				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
+				turretInfoType = "rhs_gui_optic_thermalscreen";
+				class OpticsIn
+				{
+					class gunnerSightWide
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -110;
+						maxAngleY = 110;
+						opticsZoomMin = 0.14;
+						opticsZoomMax = 0.14;
+						distanceZoomMin = 200;
+						distanceZoomMax = 2000;
+						initFov = 0.14;
+						minFov = 0.14;
+						maxFov = 0.14;
+						visionMode[] = {"Normal","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+					};
+					class gunnerSightNarrow
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -110;
+						maxAngleY = 110;
+						opticsZoomMin = 0.047;
+						opticsZoomMax = 0.047;
+						distanceZoomMin = 200;
+						distanceZoomMax = 2000;
+						initFov = 0.047;
+						minFov = 0.047;
+						maxFov = 0.047;
+						visionMode[] = {"Normal","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+					};
+				};
+			};
+			class CommanderOptics2: CommanderOptics1{};
+			class GPMGTurretBMD2: GPMGTurretBMD1{};
+			class LeftBack2: LeftBack1{};
+			class RightBack2: RightBack1{};
+			class MainBack2: MainBack1{};
+		};
+	};
+	class rhs_bmd2k_rus2: rhs_bmd2_rus2_base
+	{
+		displayName = "БМД-2K (Камо2)";
+		scope = 2;
+	};
+	class rhs_bmd2_des_base: rhs_bmd2_base
+	{
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_01_des_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_02_des_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_des_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
+	class rhs_bmd2_des: rhs_bmd2_des_base
+	{
+		displayName = "БМД-2 (Камо3)";
+		scope = 2;
+
+	};
+	class rhs_bmd2m_des: rhs_bmd2_des_base
+	{
+		ace_sys_reticles_gunneroptics = 0;
+		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
+		ace_tankfcs_digitsstyle = 1;
+		ace_tankfcs_enabled = 1;
+		ace_tankfcs_lrfaccuracy = 20;
+		ace_tankfcs_lrfcooldowntime = 3;
+		ace_tankfcs_maxlead = 2;
+		ace_tankfcs_maxlrfrange = 5200;
+		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
+		ace_tankfcs_minlrfrange = 200;
+		ace_tankfcs_rdystyle = 1;
+		scope = 2;
+		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
+		displayName = "БМД-2М (Камо3)";
+		transportSoldier = 0;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
+				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
+				turretInfoType = "rhs_gui_optic_thermalscreen";
+				class OpticsIn
+				{
+					class gunnerSightWide
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -110;
+						maxAngleY = 110;
+						opticsZoomMin = 0.14;
+						opticsZoomMax = 0.14;
+						distanceZoomMin = 200;
+						distanceZoomMax = 2000;
+						initFov = 0.14;
+						minFov = 0.14;
+						maxFov = 0.14;
+						visionMode[] = {"Normal","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+					};
+					class gunnerSightNarrow
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -110;
+						maxAngleY = 110;
+						opticsZoomMin = 0.047;
+						opticsZoomMax = 0.047;
+						distanceZoomMin = 200;
+						distanceZoomMax = 2000;
+						initFov = 0.047;
+						minFov = 0.047;
+						maxFov = 0.047;
+						visionMode[] = {"Normal","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+					};
+				};
+			};
+			class CommanderOptics2: CommanderOptics1{};
+			class GPMGTurretBMD2: GPMGTurretBMD1{};
+			class LeftBack2: LeftBack1{};
+			class RightBack2: RightBack1{};
+			class MainBack2: MainBack1{};
+		};
+	};
+	class rhs_bmd2k_des: rhs_bmd2_des_base
+	{
+		displayName = "БМД-2K (Камо3)";
+		scope = 2;
+	};
+	class rhs_bmd2_peace_base: rhs_bmd2_base
+	{
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_01_peace_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_02_peace_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_peace_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
+	class rhs_bmd2_peace: rhs_bmd2_peace_base
+	{
+		displayName = "БМД-2 (Камо4)";
+		scope = 2;
+
+	};
+	class rhs_bmd2m_peace: rhs_bmd2_peace_base
+	{
+		ace_sys_reticles_gunneroptics = 0;
+		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
+		ace_tankfcs_digitsstyle = 1;
+		ace_tankfcs_enabled = 1;
+		ace_tankfcs_lrfaccuracy = 20;
+		ace_tankfcs_lrfcooldowntime = 3;
+		ace_tankfcs_maxlead = 2;
+		ace_tankfcs_maxlrfrange = 5200;
+		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
+		ace_tankfcs_minlrfrange = 200;
+		ace_tankfcs_rdystyle = 1;
+		scope = 2;
+		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
+		displayName = "БМД-2М (Камо4)";
+		transportSoldier = 0;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
+				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
+				turretInfoType = "rhs_gui_optic_thermalscreen";
+				class OpticsIn
+				{
+					class gunnerSightWide
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -110;
+						maxAngleY = 110;
+						opticsZoomMin = 0.14;
+						opticsZoomMax = 0.14;
+						distanceZoomMin = 200;
+						distanceZoomMax = 2000;
+						initFov = 0.14;
+						minFov = 0.14;
+						maxFov = 0.14;
+						visionMode[] = {"Normal","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+					};
+					class gunnerSightNarrow
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -110;
+						maxAngleY = 110;
+						opticsZoomMin = 0.047;
+						opticsZoomMax = 0.047;
+						distanceZoomMin = 200;
+						distanceZoomMax = 2000;
+						initFov = 0.047;
+						minFov = 0.047;
+						maxFov = 0.047;
+						visionMode[] = {"Normal","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+					};
+				};
+			};
+			class CommanderOptics2: CommanderOptics1{};
+			class GPMGTurretBMD2: GPMGTurretBMD1{};
+			class LeftBack2: LeftBack1{};
+			class RightBack2: RightBack1{};
+			class MainBack2: MainBack1{};
+		};
+	};
+	class rhs_bmd2k_peace: rhs_bmd2_peace_base
+	{
+		displayName = "БМД-2K (Камо4)";
+		scope = 2;
+	};
+	class rhs_bmd2_cdf_base: rhs_bmd2_base
+	{
+		faction = "CDF";
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_01_cdf_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_02_cdf_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_cdf_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
+	class rhs_bmd2_cdf: rhs_bmd2_cdf_base
+	{
+		displayName = "БМД-2";
+		scope = 2;
+
+	};
+	class rhs_bmd2m_cdf: rhs_bmd2_cdf_base
+	{
+		ace_sys_reticles_gunneroptics = 0;
+		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
+		ace_tankfcs_digitsstyle = 1;
+		ace_tankfcs_enabled = 1;
+		ace_tankfcs_lrfaccuracy = 20;
+		ace_tankfcs_lrfcooldowntime = 3;
+		ace_tankfcs_maxlead = 2;
+		ace_tankfcs_maxlrfrange = 5200;
+		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
+		ace_tankfcs_minlrfrange = 200;
+		ace_tankfcs_rdystyle = 1;
+		scope = 2;
+		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
+		displayName = "БМД-2М";
+		transportSoldier = 0;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
+				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
+				turretInfoType = "rhs_gui_optic_thermalscreen";
+				class OpticsIn
+				{
+					class gunnerSightWide
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -110;
+						maxAngleY = 110;
+						opticsZoomMin = 0.14;
+						opticsZoomMax = 0.14;
+						distanceZoomMin = 200;
+						distanceZoomMax = 2000;
+						initFov = 0.14;
+						minFov = 0.14;
+						maxFov = 0.14;
+						visionMode[] = {"Normal","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+					};
+					class gunnerSightNarrow
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -110;
+						maxAngleY = 110;
+						opticsZoomMin = 0.047;
+						opticsZoomMax = 0.047;
+						distanceZoomMin = 200;
+						distanceZoomMax = 2000;
+						initFov = 0.047;
+						minFov = 0.047;
+						maxFov = 0.047;
+						visionMode[] = {"Normal","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+					};
+				};
+			};
+			class CommanderOptics2: CommanderOptics1{};
+			class GPMGTurretBMD2: GPMGTurretBMD1{};
+			class LeftBack2: LeftBack1{};
+			class RightBack2: RightBack1{};
+			class MainBack2: MainBack1{};
+		};
+	};
+	class rhs_bmd2k_cdf: rhs_bmd2_cdf_base
+	{
+		displayName = "БМД-2K";
+		scope = 2;
+	};
+	class rhs_bmd2_ins_base: rhs_bmd2_base
+	{
+		faction = "INS";
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_01_chdkz_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_02_chdkz_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_chdkz_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
+	class rhs_bmd2_ins: rhs_bmd2_ins_base
+	{
+		displayName = "БМД-2";
+		scope = 2;
+
+	};
+	class rhs_bmd2m_ins: rhs_bmd2_ins_base
+	{
+		ace_sys_reticles_gunneroptics = 0;
+		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
+		ace_tankfcs_digitsstyle = 1;
+		ace_tankfcs_enabled = 1;
+		ace_tankfcs_lrfaccuracy = 20;
+		ace_tankfcs_lrfcooldowntime = 3;
+		ace_tankfcs_maxlead = 2;
+		ace_tankfcs_maxlrfrange = 5200;
+		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
+		ace_tankfcs_minlrfrange = 200;
+		ace_tankfcs_rdystyle = 1;
+		scope = 2;
+		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
+		displayName = "БМД-2М";
+		transportSoldier = 0;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
+				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
+				turretInfoType = "rhs_gui_optic_thermalscreen";
+				class OpticsIn
+				{
+					class gunnerSightWide
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -110;
+						maxAngleY = 110;
+						opticsZoomMin = 0.14;
+						opticsZoomMax = 0.14;
+						distanceZoomMin = 200;
+						distanceZoomMax = 2000;
+						initFov = 0.14;
+						minFov = 0.14;
+						maxFov = 0.14;
+						visionMode[] = {"Normal","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+					};
+					class gunnerSightNarrow
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -110;
+						maxAngleY = 110;
+						opticsZoomMin = 0.047;
+						opticsZoomMax = 0.047;
+						distanceZoomMin = 200;
+						distanceZoomMax = 2000;
+						initFov = 0.047;
+						minFov = 0.047;
+						maxFov = 0.047;
+						visionMode[] = {"Normal","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+					};
+				};
+			};
+			class CommanderOptics2: CommanderOptics1{};
+			class GPMGTurretBMD2: GPMGTurretBMD1{};
+			class LeftBack2: LeftBack1{};
+			class RightBack2: RightBack1{};
+			class MainBack2: MainBack1{};
+		};
+	};
+	class rhs_bmd2k_ins: rhs_bmd2_ins_base
+	{
+		displayName = "БМД-2K";
+		scope = 2;
+	};
 };

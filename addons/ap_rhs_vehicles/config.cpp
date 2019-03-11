@@ -873,7 +873,123 @@ class CfgVehicles
 				radius = 0.3;
 			};
 		};
-		
+		class Sounds: Sounds
+		{
+			class Engine: Engine
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\UTD20.ogg",1,1,1000};
+				frequency = "(randomizer*0.05+0.8)*rpm";
+				volume = "engineOn*camPos*(rpm factor[0.4, 0.9])";
+			};
+			class IdleOut
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\UTD20_alap.ogg",0.562341, 1, 450};
+				frequency = "1";
+				volume = "engineOn*camPos*(rpm factor[0.6, 0.2])";
+				cone[] = {1.2,2.8,1.8,1.3};
+			};
+			class NoiseOut
+			{
+				sound[] = {"ca\sounds\Vehicles\Tracked\M1A1\ext\noise2",1,1,100};
+				frequency = "1";
+				volume = "camPos*(angVelocity max 0.04)*(speed factor[4, 15])";
+			};
+			class ThreadsOutH0
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_2.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*(1-camPos)*(1-grass)*((rpm factor[0.3, 0.6]) min (rpm factor[0.6, 0.3]))";
+			};
+			class ThreadsOutH1
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_2.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*(1-grass)*((rpm factor[0.5, 0.8]) min (rpm factor[0.8, 0.5]))";
+			};
+			class ThreadsOutH2
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_3.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*(1-grass)*((rpm factor[0.65, 0.9]) min (rpm factor[0.9, 0.65]))";
+			};
+			class ThreadsOutH3
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_4.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*(1-grass)*((rpm factor[0.8, 1.2]) min (rpm factor[1.2, 0.8]))";
+			};
+			class ThreadsOutH4
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_5.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*(1-grass)*((rpm factor[1, 2.0]) min (rpm factor[2.0, 1]))";
+			};
+			class ThreadsOutS0
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_2.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*grass*((rpm factor[0.3, 0.6]) min (rpm factor[0.6, 0.3]))";
+			};
+			class ThreadsOutS1
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_2.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*grass*((rpm factor[0.5, 0.8]) min (rpm factor[0.8, 0.5]))";
+			};
+			class ThreadsOutS2
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_3.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*grass*((rpm factor[0.65, 0.9]) min (rpm factor[0.9, 0.65]))";
+			};
+			class ThreadsOutS3
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_4.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*grass*((rpm factor[0.8, 1.2]) min (rpm factor[1.2, 0.8]))";
+			};
+			class ThreadsOutS4
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\lanc_5.ogg",1,1,200};
+				frequency = "1";
+				volume = "engineOn*camPos*grass*((rpm factor[1, 2.0]) min (rpm factor[2.0, 1]))";
+			};
+			class Movement: Movement
+			{
+				sound[] = {"",1.0,1.0};
+				frequency = "0";
+				volume = "0";
+			};
+			class EngineIn
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\UTD20_in.ogg",1,1};
+				frequency = "(randomizer*0.05+0.8)*rpm";
+				volume = "engineOn*(1-camPos)*(rpm factor[0.4, 1])";
+			};
+			class IdleIn
+			{
+				sound[] = {"\rhs\addons\rhs_bmp\sounds\UTD20_in_alap.ogg",1,1};
+				frequency = "1";
+				volume = "engineOn*(1-camPos)*(rpm factor[0.6, 0.15])";
+			};
+			class NoiseIn
+			{
+				sound[] = {"ca\sounds\Vehicles\Tracked\M1A1\int\noise2",0.199526, 1};
+				frequency = "1";
+				volume = "(1-camPos)*(angVelocity max 0.04)*(speed factor[4, 15])";
+			};
+		};
+		soundArmorCrash[] = {"ArmorCrash0", 0.25, "ArmorCrash1", 0.25, "ArmorCrash2", 0.25, "ArmorCrash3", 0.25};
+		soundBuildingCrash[] = {"buildCrash0", 0.25, "buildCrash1", 0.25, "buildCrash2", 0.25, "buildCrash3", 0.25};
+		soundEngineOffExt[] = {"ca\sounds\vehicles\Tracked\Other\ext\ext-tracked-stop-02.wss", 1, 0.8, 500};
+		soundEngineOffInt[] = {"ca\sounds\vehicles\Tracked\Other\int\int-tracked-stop-02.wss", 1, 1};
+		soundEngineOnExt[] = {"\rhs\addons\rhs_bmp\sounds\utd20_start.ogg", 2.51189, 1, 500};
+		soundEngineOnInt[] = {"\rhs\addons\rhs_bmp\sounds\tank_ind.ogg", 1, 1};
+		soundGear[] = {"", 5.62341E-5, 1};
+		soundEngine[] = {"", 1, 1};
+		soundGetIn[] = {"ca\SOUNDS\Vehicles\Tracked\M1A1\ext\ext-m1-door-1", 0.562341, 1};
+		soundGetOut[] = {"ca\SOUNDS\Vehicles\Tracked\M1A1\int\int-m1-door-1", 0.562341, 1, 60};
+		soundWoodCrash[] = {"woodCrash0", 0.25, "woodCrash1", 0.25, "woodCrash2", 0.25, "woodCrash3", 0.25};
 		
 		class Turrets: Turrets
 		{

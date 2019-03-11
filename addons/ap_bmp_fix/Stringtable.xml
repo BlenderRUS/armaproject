@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project name="ap_bmp_fix">
+	<Package name="bmp/bmd">
+			<Key ID="STR_rhs_faction_tv">
+				<Original>Russia (TV)</Original>
+				<English>Russia (TV)</English>
+				<Russian>Россия (ТВ)</Russian>
+			</Key>
+			<Key ID="STR_rhs_faction_msv">
+				<Original>Russia (MSV)</Original>
+				<English>Russia (MSV)</English>
+				<Russian>Россия (МСВ)</Russian>
+			</Key>
+			<Key ID="STR_rhs_faction_vmf">
+				<Original>Russia (VMF)</Original>
+				<English>Russia (VMF)</English>
+				<Russian>Россия (ВМФ)</Russian>
+			</Key>
+			<Key ID="STR_rhs_faction_vv">
+				<Original>Russia (VV)</Original>
+				<English>Russia (VV)</English>
+				<Russian>Россия (ВВ)</Russian>
+			</Key>
+			<Key ID="STR_rhs_faction_vdv">
+				<Original>Russia (VDV)</Original>
+				<English>Russia (VDV)</English>
+				<Russian>Россия (ВДВ)</Russian>
+			</Key>
+	</Package>
+</Project>
