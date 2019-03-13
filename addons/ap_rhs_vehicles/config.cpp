@@ -686,19 +686,14 @@ class CfgVehicles
 	class ACE_BMD_2_Base: BMP2_Base {};
 	class AP_SPRUT_base: ACE_BMD_2_Base {
 		
-		model = "ap_rhs_vehicles\rhs_sprut";
+		model = "\ap_rhs_vehicles\rhs_sprut.p3d";
 		displayName = "$STR_SPRUT";		
 		picture = "\ap_rhs_vehicles\data\rhs_2s25_pic_ca.paa";
 		Icon = "\ap_rhs_vehicles\data\ico_sprutsd_ca.paa";
 		mapSize = 11;
 		transportSoldier = 0;
-		hiddenSelections[] = {"camo1","camo2","camo3"};
-		hiddenSelectionsTextures[] = 
-		{
-			"ap_rhs_vehicles\data\sprut_hull_co.paa",
-			"ap_rhs_vehicles\data\sprut_turret_co.paa",
-			"ap_rhs_vehicles\data\bmd34roadwheel_co.paa"
-		};
+		//hiddenSelections[] = {"camo1","camo2","camo3"};
+		//hiddenSelectionsTextures[] = {"ap_rhs_vehicles\data\sprut_hull_co.paa","ap_rhs_vehicles\data\sprut_turret_co.paa","ap_rhs_vehicles\data\bmd34roadwheel_co.paa"};
 		
 		class Eventhandlers: Eventhandlers
 		{
@@ -756,10 +751,11 @@ class CfgVehicles
 				
 				"ap_rhs_vehicles\data\rhs_bmd34roadwheel.rvmat",
 				"ap_rhs_vehicles\data\rhs_dam_bmd34roadwheel.rvmat",
-				"ap_rhs_vehicles\data\rhs_destr_bmd34roadwheel.rvmat",
-				
+				"ap_rhs_vehicles\data\rhs_destr_bmd34roadwheel.rvmat"			
 			};
 		};
+		
+
 		
 		
 		class UserActions
@@ -1162,27 +1158,21 @@ class CfgVehicles
 	
 		class AP_SPRUT : AP_SPRUT_base 
 		{
-			scope = 2;			
+			scope = 2;		
 		};
 		
 		
 		class AP_BMD4M : AP_SPRUT_base 
 		{
 			scope = 2;	
-			model = "ap_rhs_vehicles\rhs_bmd_4m";
+			model = "\ap_rhs_vehicles\rhs_bmd_4m.p3d";
 			displayName = "$STR_BMD4M";		
 			picture = "\ap_rhs_vehicles\data\rhs_bmd4m_pic_ca.paa";			
 			Icon = "\ap_rhs_vehicles\data\bmd4_mapicon_ca.paa";
 			mapSize = 6.5;
 			transportSoldier = 0;
-			hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
-			hiddenSelectionsTextures[] = 
-			{
-				"ap_rhs_vehicles\data\rhs_bmd4m_01_co.paa",
-				"ap_rhs_vehicles\data\rhs_bmd4m_02a_co.paa",
-				"ap_rhs_vehicles\data\rhs_bmd4m_w_co.paa",
-				"ap_rhs_vehicles\data\rhs_bmd4_03_co.paa"
-			};
+			//hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
+			//hiddenSelectionsTextures[] = {"ap_rhs_vehicles\data\rhs_bmd4m_01_co.paa","ap_rhs_vehicles\data\rhs_bmd4m_02a_co.paa","ap_rhs_vehicles\data\rhs_bmd4m_w_co.paa","ap_rhs_vehicles\data\rhs_bmd4_03_co.paa"};
 			
 			maxSpeed = 50;
 			waterspeedcoef = 0.2;
