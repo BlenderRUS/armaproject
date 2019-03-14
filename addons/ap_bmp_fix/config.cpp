@@ -278,8 +278,11 @@ class CfgVehicles
 		smokeLauncherVelocity = 14;
 		smokeLauncherOnTurret = 1;
 		smokeLauncherAngle = 60;
-		
-		
+		hiddenSelectionsTextures[] =
+		{
+				"\x\acex_ru\addons\t_veh_bmp2\bmp2_01_ru_co.paa",
+				"\x\acex_ru\addons\t_veh_bmp2\bmp2_02_ru_co.paa"
+		};
 		class Turrets: Turrets
 			{
 				
@@ -401,7 +404,41 @@ class CfgVehicles
 					};
 			};
 	};
-
+	class ACE_BMP2_RU2: ACE_BMP2_RU
+	{
+		hiddenSelectionsTextures[] =
+		{
+			"\ap_bmp_fix\data\bmp2m_co.paa",
+			"\x\acex_ru\addons\t_veh_bmp2\bmp2_01_co.paa"
+		};
+	};
+	class ACE_BMP2_des: ACE_BMP2_RU
+	{
+		displayName = "$STR_ace_bmp2_des";
+		hiddenSelectionsTextures[] =
+		{
+			"\ap_bmp_fix\data\bmp2_01_des_co.paa",
+			"\ap_bmp_fix\data\bmp2_02_des_co.paa"
+		};
+	};
+	class TU_BMP2M;
+	class ACE_BMP2M_ru1: TU_BMP2M
+	{
+		hiddenselectionstextures[] =
+		{
+			"\ap_bmp_fix\data\bmp2m_co.paa",
+			"\x\acex_ru\addons\t_veh_bmp2\bmp2_01_co.paa"
+		};
+	};
+	class ACE_BMP2M_des: TU_BMP2M
+	{
+		displayName = "$STR_ace_bmp2m_des";
+		hiddenselectionstextures[] =
+		{
+			"\ap_bmp_fix\data\bmp2m_des_co.paa",
+			"\ap_bmp_fix\data\bmp2_01_des_co.paa"
+		};
+	};
 	class ACE_BMP2D_RU: ACE_BMP2_RU
 	{
 		accuracy = 1.5;
@@ -413,12 +450,116 @@ class CfgVehicles
 			mat[] = {"ca\tracked_e\bmp\data\bmp2_01.rvmat","ca\tracked_e\bmp\data\bmp2_01_damage.rvmat","ca\tracked_e\bmp\data\bmp2_01_destruct.rvmat","ca\tracked_e\bmp\data\bmp2_02.rvmat","ca\tracked_e\bmp\data\bmp2_02_damage.rvmat","ca\tracked_e\bmp\data\bmp2_02_destruct.rvmat","ca\tracked_e\bmp\data\bmp_hq.rvmat","ca\tracked_e\bmp\data\bmp_hq_damage.rvmat","ca\tracked_e\bmp\data\bmp_hq_destruct.rvmat","ca\tracked_e\bmp\data\bmp2_pasy.rvmat","ca\tracked_e\bmp\data\bmp2_pasy_damage.rvmat","ca\tracked_e\bmp\data\bmp2_pasy_destruct.rvmat","x\acex\addons\c_veh_bmp2\bmp2_03.rvmat","x\acex\addons\c_veh_bmp2\bmp2_03_damage.rvmat","x\acex\addons\c_veh_bmp2\bmp2_03_destruct.rvmat"};
 		};
 		canfloat = 0;
+		scope = 2;
 		ace_armor_hull[] = {{40,40},{28,33},{28,33},{16,16},{16,16},{50,50}};
 		ace_armor_turret[] = {{33,33},{19,19},{19,19},{25,25},{16,16}};
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"\x\acex_ru\addons\t_veh_bmp2\bmp2_01_ru_co.paa",
+			"\x\acex_ru\addons\t_veh_bmp2\bmp2_02_ru_co.paa",
+			"\x\acex_ru\addons\t_veh_bmp2\bmp2_03_ru_co.paa"
+		};
 	};
-	
-	
-	
+	class ACE_BMP2D_TK: ACE_BMP2_RU
+	{
+		scope = 2;
+		displayName = "$STR_DN_ACE_BMP2D_RU";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\ca\Tracked_E\BMP\data\BMP2_01_TKA_CO",
+			"\ca\Tracked_E\BMP\data\BMP2_02_TKA_CO",
+			"\x\acex\addons\t_veh_bmp2\bmp2_03_tka_co.paa"
+		};
+	};
+	class ACE_BMP2D_RU2: ACE_BMP2D_RU
+	{
+		hiddenSelectionsTextures[] =
+		{
+			"\x\acex_ru\addons\t_veh_bmp2\bmp2_01_co.paa",
+			"\x\acex_ru\addons\t_veh_bmp2\bmp2_02_co.paa",
+			"\x\acex_ru\addons\t_veh_bmp2\bmp2_03_co.paa"
+		};
+	};
+	class ACE_BMP2D_des: ACE_BMP2D_RU
+	{
+		displayName = "$STR_ace_bmp2d_des";
+		hiddenSelectionsTextures[] =
+		{
+			"\ap_bmp_fix\data\bmp2_01_des_co.paa",
+			"\ap_bmp_fix\data\bmp2_02_des_co.paa",
+			"\ap_bmp_fix\data\bmp2_03_des_co.paa"
+		};
+	};
+	//БМП2 МЕД
+	class BMP2_Ambul_Base;
+	class BMP2_Ambul_RU: BMP2_Ambul_Base
+	{
+		accuracy = 0.5;
+		crew = "RU_Soldier_Crew";
+		faction = "RU";
+		hiddenSelectionsTextures[] =
+		{
+			"\x\acex_ru\addons\t_veh_bmp2\bmp2_01_ru_co.paa",
+			"\x\acex_ru\addons\t_veh_bmp2\bmp2_02_ru_co.paa"
+		};
+		scope = 2;
+		side = 0;
+		typicalCargo[] = {"RU_Soldier_Crew", "RU_Soldier_Crew"};
+	};
+	class BMP2_Ambul_RU2: BMP2_Ambul_Base
+	{
+		accuracy = 0.5;
+		crew = "RU_Soldier_Crew";
+		faction = "RU";
+		hiddenSelectionsTextures[] =
+		{
+			"\x\acex_ru\addons\t_veh_bmp2\bmp2_01_co.paa",
+			"\x\acex_ru\addons\t_veh_bmp2\bmp2_02_co.paa"
+		};
+		scope = 2;
+		side = 0;
+		typicalCargo[] = {"RU_Soldier_Crew", "RU_Soldier_Crew"};
+	};
+	class BMP2_Ambul_des: BMP2_Ambul_Base
+	{
+		accuracy = 0.5;
+		crew = "RU_Soldier_Crew";
+		faction = "RU";
+		hiddenSelectionsTextures[] =
+		{
+			"\ap_bmp_fix\data\bmp2_01_des_co.paa",
+			"\ap_bmp_fix\data\bmp2_02_des_co.paa"
+		};
+		scope = 2;
+		side = 0;
+		typicalCargo[] = {"RU_Soldier_Crew", "RU_Soldier_Crew"};
+	};
+	class BMP2_Ambul_TK: BMP2_Ambul_Base
+	{
+		accuracy = 0.5;
+		crew = "RU_Soldier_Crew";
+		faction = "BIS_TK";
+		hiddenSelectionsTextures[] =
+		{
+			"\ca\Tracked_E\BMP\data\BMP2_01_TKA_CO",
+			"\ap_bmp_fix\data\BMP2_02_TKA_CO"
+		};
+		scope = 2;
+		side = 0;
+		typicalCargo[] = {"RU_Soldier_Crew", "RU_Soldier_Crew"};
+	};
 	class rhs_bmd_base: BMP2_Base
 	{
 		class GPMGTurret1;
@@ -561,6 +702,7 @@ class CfgVehicles
 	
 	class rhs_bmd2: rhs_bmd2_base
 	{
+		displayName = "$STR_rhs_bmd2";
 		scope = 2;
 	};
 	class rhs_bmd2m: rhs_bmd2
@@ -578,7 +720,7 @@ class CfgVehicles
 		ace_tankfcs_rdystyle = 1;
 		scope = 2;
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
-		displayName = "БМД-2М";
+		displayName = "$STR_rhs_bmd2m";
 		transportSoldier = 0;
 		class Turrets: Turrets
 		{
@@ -640,7 +782,7 @@ class CfgVehicles
 	};
 	class rhs_bmd2k: rhs_bmd2
 	{
-		displayName = "$STR_BMD2K_Name";
+		displayName = "$STR_rhs_bmd2k";
 		hiddenSelectionsTextures[] = {"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa","rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa","rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa","rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa","rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa","\rhs\addons\rhs_bmd\data\sa_bmd2_01_co.paa","\rhs\addons\rhs_bmd\data\sa_bmd2_02_co.paa","\rhs\addons\rhs_bmd\data\sa_bmd2_03_co.paa","\rhs\addons\rhs_bmd\data\sa_bmd2_01_co.paa"};
 	};
 	
@@ -768,6 +910,30 @@ class CfgVehicles
 			};
 		};
 	};
+	//имена англ и рус
+	class rhs_bmd1pk: rhs_bmd1_base
+	{
+		displayName = "$STR_rhs_bmd1pk";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1pk.p3d";
+		picture = "\rhs\addons\rhs_bmd\rhs_bmd1pk_pic_ca.paa";
+		scope = 2;
+	};
+	class rhs_bmd1p: rhs_bmd1_base
+	{
+		displayName = "$STR_rhs_bmd1p";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1p.p3d";
+		scope = 2;
+	};
+	class rhs_bmd1k: rhs_bmd1_base
+	{
+		displayName = "$STR_rhs_bmd1k";
+		scope = 2;
+	};
+	class rhs_bmd1: rhs_bmd1_base
+	{
+		displayName = "$STR_rhs_bmd1";
+		scope = 2;
+	};
 	//пак скинов бмд1
 	class rhs_bmd1_rus1_base: rhs_bmd1_base
 	{
@@ -793,7 +959,7 @@ class CfgVehicles
 	};
 	class rhs_bmd1pk_rus1: rhs_bmd1_rus1_base
 	{
-		displayName = "БМД-1ПК (Камо1)";
+		displayName = "$STR_rhs_bmd1pk_c1";
 		model = "\rhs\addons\rhs_bmd\rhs_bmd1pk.p3d";
 		picture = "\rhs\addons\rhs_bmd\rhs_bmd1pk_pic_ca.paa";
 		scope = 2;
@@ -801,67 +967,21 @@ class CfgVehicles
 	};
 	class rhs_bmd1p_rus1: rhs_bmd1_rus1_base
 	{
-		displayName = "БМД-1П (Камо1)";
+		displayName = "$STR_rhs_bmd1p_c1";
 		model = "\rhs\addons\rhs_bmd\rhs_bmd1p.p3d";
 		scope = 2;
 	};
 	class rhs_bmd1k_rus1: rhs_bmd1_rus1_base
 	{
-		displayName = "БМД-1К (Камо1)";
+		displayName = "$STR_rhs_bmd1k_c1";
 		scope = 2;
 	};
 	class rhs_bmd1_rus1: rhs_bmd1_rus1_base
 	{
-		displayName = "БМД-1 (Камо1)";
+		displayName = "$STR_rhs_bmd1_c1";
 		scope = 2;
 	};
 	class rhs_bmd1_rus2_base: rhs_bmd1_base
-	{
-		hiddenSelectionsTextures[] =
-			{
-				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
-				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
-				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
-				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
-				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
-				"cwr2_vdv_bmd\mr_bmd1_01_rus2_co.paa",
-				"cwr2_vdv_bmd\mr_bmd1_02_rus2.paa",
-				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_rus2_co.paa",
-				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
-			};
-		class EventHandlers: DefaultEventHandlers
-			{
-				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
-				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
-				killed = "_this call RHS_bmd_Effects_EH_Killed;";
-			};
-
-	};
-	class rhs_bmd1pk_rus2: rhs_bmd1_rus2_base
-	{
-		displayName = "БМД-1ПК (Камо2)";
-		model = "\rhs\addons\rhs_bmd\rhs_bmd1pk.p3d";
-		picture = "\rhs\addons\rhs_bmd\rhs_bmd1pk_pic_ca.paa";
-		scope = 2;
-
-	};
-	class rhs_bmd1p_rus2: rhs_bmd1_rus2_base
-	{
-		displayName = "БМД-1П (Камо2)";
-		model = "\rhs\addons\rhs_bmd\rhs_bmd1p.p3d";
-		scope = 2;
-	};
-	class rhs_bmd1k_rus2: rhs_bmd1_rus2_base
-	{
-		displayName = "БМД-1К (Камо2)";
-		scope = 2;
-	};
-	class rhs_bmd1_rus2: rhs_bmd1_rus2_base
-	{
-		displayName = "БМД-1 (Камо2)";
-		scope = 2;
-	};
-	class rhs_bmd1_des_base: rhs_bmd1_base
 	{
 		hiddenSelectionsTextures[] =
 			{
@@ -883,9 +1003,147 @@ class CfgVehicles
 			};
 
 	};
+	class rhs_bmd1pk_rus2: rhs_bmd1_rus2_base
+	{
+		displayName = "$STR_rhs_bmd1pk_c2";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1pk.p3d";
+		picture = "\rhs\addons\rhs_bmd\rhs_bmd1pk_pic_ca.paa";
+		scope = 2;
+
+	};
+	class rhs_bmd1p_rus2: rhs_bmd1_rus2_base
+	{
+		displayName = "$STR_rhs_bmd1p_c2";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1p.p3d";
+		scope = 2;
+	};
+	class rhs_bmd1k_rus2: rhs_bmd1_rus2_base
+	{
+		displayName = "$STR_rhs_bmd1k_c2";
+		scope = 2;
+	};
+	class rhs_bmd1_rus2: rhs_bmd1_rus2_base
+	{
+		displayName = "$STR_rhs_bmd1_c2";
+		scope = 2;
+	};
+	class rhs_bmd1_rus3_base: rhs_bmd1_base
+	{
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"cwr2_vdv_bmd\mr_bmd1_01_rus4_co.paa",
+				"cwr2_vdv_bmd\mr_bmd1_02_rus4.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_rus4_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
+	class rhs_bmd1pk_rus3: rhs_bmd1_rus3_base
+	{
+		displayName = "$STR_rhs_bmd1pk_c3";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1pk.p3d";
+		picture = "\rhs\addons\rhs_bmd\rhs_bmd1pk_pic_ca.paa";
+		scope = 2;
+
+	};
+	class rhs_bmd1p_rus3: rhs_bmd1_rus3_base
+	{
+		displayName = "$STR_rhs_bmd1p_c3";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1p.p3d";
+		scope = 2;
+	};
+	class rhs_bmd1k_rus3: rhs_bmd1_rus3_base
+	{
+		displayName = "$STR_rhs_bmd1k_c3";
+		scope = 2;
+	};
+	class rhs_bmd1_rus3: rhs_bmd1_rus3_base
+	{
+		displayName = "$STR_rhs_bmd1_c3";
+		scope = 2;
+	};
+	class rhs_bmd1_dirt_base: rhs_bmd1_base
+	{
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"cwr2_vdv_bmd\mr_bmd1_01_ua_co.paa",
+				"cwr2_vdv_bmd\mr_bmd1_02_ua.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_ua_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
+	class rhs_bmd1pk_dirt: rhs_bmd1_dirt_base
+	{
+		displayName = "$STR_rhs_bmd1pk_dirt";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1pk.p3d";
+		picture = "\rhs\addons\rhs_bmd\rhs_bmd1pk_pic_ca.paa";
+		scope = 2;
+
+	};
+	class rhs_bmd1p_dirt: rhs_bmd1_dirt_base
+	{
+		displayName = "$STR_rhs_bmd1p_dirt";
+		model = "\rhs\addons\rhs_bmd\rhs_bmd1p.p3d";
+		scope = 2;
+	};
+	class rhs_bmd1k_dirt: rhs_bmd1_dirt_base
+	{
+		displayName = "$STR_rhs_bmd1k_dirt";
+		scope = 2;
+	};
+	class rhs_bmd1_dirt: rhs_bmd1_dirt_base
+	{
+		displayName = "$STR_rhs_bmd1_dirt";
+		scope = 2;
+	};
+	class rhs_bmd1_des_base: rhs_bmd1_base
+	{
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"cwr2_vdv_bmd\mr_bmd1_01_rus2_co.paa",
+				"cwr2_vdv_bmd\mr_bmd1_02_rus2.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_rus2_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
 	class rhs_bmd1pk_des: rhs_bmd1_des_base
 	{
-		displayName = "БМД-1ПК (Камо3)";
+		displayName = "$STR_rhs_bmd1pk_des";
 		model = "\rhs\addons\rhs_bmd\rhs_bmd1pk.p3d";
 		picture = "\rhs\addons\rhs_bmd\rhs_bmd1pk_pic_ca.paa";
 		scope = 2;
@@ -893,18 +1151,18 @@ class CfgVehicles
 	};
 	class rhs_bmd1p_des: rhs_bmd1_des_base
 	{
-		displayName = "БМД-1П (Камо3)";
+		displayName = "$STR_rhs_bmd1p_des";
 		model = "\rhs\addons\rhs_bmd\rhs_bmd1p.p3d";
 		scope = 2;
 	};
 	class rhs_bmd1k_des: rhs_bmd1_des_base
 	{
-		displayName = "БМД-1К (Камо3)";
+		displayName = "$STR_rhs_bmd1k_des";
 		scope = 2;
 	};
 	class rhs_bmd1_des: rhs_bmd1_des_base
 	{
-		displayName = "БМД-1 (Камо3)";
+		displayName = "$STR_rhs_bmd1_des";
 		scope = 2;
 	};
 	class rhs_bmd1_peace_base: rhs_bmd1_base
@@ -931,7 +1189,7 @@ class CfgVehicles
 	};
 	class rhs_bmd1pk_peace: rhs_bmd1_peace_base
 	{
-		displayName = "БМД-1ПК (Камо4)";
+		displayName = "$STR_rhs_bmd1pk_c4";
 		model = "\rhs\addons\rhs_bmd\rhs_bmd1pk.p3d";
 		picture = "\rhs\addons\rhs_bmd\rhs_bmd1pk_pic_ca.paa";
 		scope = 2;
@@ -939,18 +1197,18 @@ class CfgVehicles
 	};
 	class rhs_bmd1p_peace: rhs_bmd1_peace_base
 	{
-		displayName = "БМД-1П (Камо4)";
+		displayName = "$STR_rhs_bmd1p_c4";
 		model = "\rhs\addons\rhs_bmd\rhs_bmd1p.p3d";
 		scope = 2;
 	};
 	class rhs_bmd1k_peace: rhs_bmd1_peace_base
 	{
-		displayName = "БМД-1К (Камо4)";
+		displayName = "$STR_rhs_bmd1k_c4";
 		scope = 2;
 	};
 	class rhs_bmd1_peace: rhs_bmd1_peace_base
 	{
-		displayName = "БМД-1 (Камо4)";
+		displayName = "$STR_rhs_bmd1_c4";
 		scope = 2;
 	};
 	class rhs_bmd1_cdf_base: rhs_bmd1_base
@@ -978,7 +1236,7 @@ class CfgVehicles
 	};
 	class rhs_bmd1pk_cdf: rhs_bmd1_cdf_base
 	{
-		displayName = "БМД-1ПК";
+		displayName = "$STR_rhs_bmd1pk";
 		model = "\rhs\addons\rhs_bmd\rhs_bmd1pk.p3d";
 		picture = "\rhs\addons\rhs_bmd\rhs_bmd1pk_pic_ca.paa";
 		scope = 2;
@@ -986,18 +1244,18 @@ class CfgVehicles
 	};
 	class rhs_bmd1p_cdf: rhs_bmd1_cdf_base
 	{
-		displayName = "БМД-1П";
+		displayName = "$STR_rhs_bmd1p";
 		model = "\rhs\addons\rhs_bmd\rhs_bmd1p.p3d";
 		scope = 2;
 	};
 	class rhs_bmd1k_cdf: rhs_bmd1_cdf_base
 	{
-		displayName = "БМД-1К";
+		displayName = "$STR_rhs_bmd1k";
 		scope = 2;
 	};
 	class rhs_bmd1_cdf: rhs_bmd1_cdf_base
 	{
-		displayName = "БМД-1";
+		displayName = "$STR_rhs_bmd1";
 		scope = 2;
 	};
 	class rhs_bmd1_ins_base: rhs_bmd1_base
@@ -1025,7 +1283,7 @@ class CfgVehicles
 	};
 	class rhs_bmd1pk_ins: rhs_bmd1_ins_base
 	{
-		displayName = "БМД-1ПК";
+		displayName = "$STR_rhs_bmd1pk";
 		model = "\rhs\addons\rhs_bmd\rhs_bmd1pk.p3d";
 		picture = "\rhs\addons\rhs_bmd\rhs_bmd1pk_pic_ca.paa";
 		scope = 2;
@@ -1033,18 +1291,18 @@ class CfgVehicles
 	};
 	class rhs_bmd1p_ins: rhs_bmd1_ins_base
 	{
-		displayName = "БМД-1П";
+		displayName = "$STR_rhs_bmd1p";
 		model = "\rhs\addons\rhs_bmd\rhs_bmd1p.p3d";
 		scope = 2;
 	};
 	class rhs_bmd1k_ins: rhs_bmd1_ins_base
 	{
-		displayName = "БМД-1К";
+		displayName = "$STR_rhs_bmd1k";
 		scope = 2;
 	};
 	class rhs_bmd1_ins: rhs_bmd1_ins_base
 	{
-		displayName = "БМД-1";
+		displayName = "$STR_rhs_bmd1";
 		scope = 2;
 	};
 	//паки скинов БМД2
@@ -1072,7 +1330,7 @@ class CfgVehicles
 	};
 	class rhs_bmd2_rus1: rhs_bmd2_rus1_base
 	{
-		displayName = "БМД-2 (Камо1)";
+		displayName = "$STR_rhs_bmd2_c1";
 		scope = 2;
 
 	};
@@ -1091,7 +1349,7 @@ class CfgVehicles
 		ace_tankfcs_rdystyle = 1;
 		scope = 2;
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
-		displayName = "БМД-2М (Камо1)";
+		displayName = "$STR_rhs_bmd2m_c1";
 		transportSoldier = 0;
 		class Turrets: Turrets
 		{
@@ -1153,7 +1411,7 @@ class CfgVehicles
 	};
 	class rhs_bmd2k_rus1: rhs_bmd2_rus1_base
 	{
-		displayName = "БМД-2K (Камо1)";
+		displayName = "$STR_rhs_bmd2k_c1";
 		scope = 2;
 	};
 	class rhs_bmd2_rus2_base: rhs_bmd2_base
@@ -1165,9 +1423,9 @@ class CfgVehicles
 				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
 				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
 				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
-				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_01_rus2_co.paa",
-				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_02_rus2_co.paa",
-				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_rus2_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_01_des_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_02_des_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_des_co.paa",
 				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
 			};
 		class EventHandlers: DefaultEventHandlers
@@ -1180,7 +1438,7 @@ class CfgVehicles
 	};
 	class rhs_bmd2_rus2: rhs_bmd2_rus2_base
 	{
-		displayName = "БМД-2 (Камо2)";
+		displayName = "$STR_rhs_bmd2_c2";
 		scope = 2;
 
 	};
@@ -1199,7 +1457,7 @@ class CfgVehicles
 		ace_tankfcs_rdystyle = 1;
 		scope = 2;
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
-		displayName = "БМД-2М (Камо2)";
+		displayName = "$STR_rhs_bmd2m_c2";
 		transportSoldier = 0;
 		class Turrets: Turrets
 		{
@@ -1261,7 +1519,115 @@ class CfgVehicles
 	};
 	class rhs_bmd2k_rus2: rhs_bmd2_rus2_base
 	{
-		displayName = "БМД-2K (Камо2)";
+		displayName = "$STR_rhs_bmd2k_c2";
+		scope = 2;
+	};
+	class rhs_bmd2_rus3_base: rhs_bmd2_base
+	{
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_01_rus4_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_02_rus4_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_rus4_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
+	class rhs_bmd2_rus3: rhs_bmd2_rus3_base
+	{
+		displayName = "$STR_rhs_bmd2_c3";
+		scope = 2;
+
+	};
+	class rhs_bmd2m_rus3: rhs_bmd2_rus3_base
+	{
+		ace_sys_reticles_gunneroptics = 0;
+		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
+		ace_tankfcs_digitsstyle = 1;
+		ace_tankfcs_enabled = 1;
+		ace_tankfcs_lrfaccuracy = 20;
+		ace_tankfcs_lrfcooldowntime = 3;
+		ace_tankfcs_maxlead = 2;
+		ace_tankfcs_maxlrfrange = 5200;
+		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
+		ace_tankfcs_minlrfrange = 200;
+		ace_tankfcs_rdystyle = 1;
+		scope = 2;
+		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
+		displayName = "$STR_rhs_bmd2m_c3";
+		transportSoldier = 0;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
+				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
+				turretInfoType = "rhs_gui_optic_thermalscreen";
+				class OpticsIn
+				{
+					class gunnerSightWide
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -110;
+						maxAngleY = 110;
+						opticsZoomMin = 0.14;
+						opticsZoomMax = 0.14;
+						distanceZoomMin = 200;
+						distanceZoomMax = 2000;
+						initFov = 0.14;
+						minFov = 0.14;
+						maxFov = 0.14;
+						visionMode[] = {"Normal","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+					};
+					class gunnerSightNarrow
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -110;
+						maxAngleY = 110;
+						opticsZoomMin = 0.047;
+						opticsZoomMax = 0.047;
+						distanceZoomMin = 200;
+						distanceZoomMax = 2000;
+						initFov = 0.047;
+						minFov = 0.047;
+						maxFov = 0.047;
+						visionMode[] = {"Normal","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+					};
+				};
+			};
+			class CommanderOptics2: CommanderOptics1{};
+			class GPMGTurretBMD2: GPMGTurretBMD1{};
+			class LeftBack2: LeftBack1{};
+			class RightBack2: RightBack1{};
+			class MainBack2: MainBack1{};
+		};
+	};
+	class rhs_bmd2k_rus3: rhs_bmd2_rus3_base
+	{
+		displayName = "$STR_rhs_bmd2k_c3";
 		scope = 2;
 	};
 	class rhs_bmd2_des_base: rhs_bmd2_base
@@ -1273,9 +1639,9 @@ class CfgVehicles
 				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
 				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
 				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
-				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_01_des_co.paa",
-				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_02_des_co.paa",
-				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_des_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_01_rus2_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_02_rus2_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_rus2_co.paa",
 				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
 			};
 		class EventHandlers: DefaultEventHandlers
@@ -1288,7 +1654,7 @@ class CfgVehicles
 	};
 	class rhs_bmd2_des: rhs_bmd2_des_base
 	{
-		displayName = "БМД-2 (Камо3)";
+		displayName = "$STR_rhs_bmd2_des";
 		scope = 2;
 
 	};
@@ -1307,7 +1673,7 @@ class CfgVehicles
 		ace_tankfcs_rdystyle = 1;
 		scope = 2;
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
-		displayName = "БМД-2М (Камо3)";
+		displayName = "$STR_rhs_bmd2m_des";
 		transportSoldier = 0;
 		class Turrets: Turrets
 		{
@@ -1369,7 +1735,115 @@ class CfgVehicles
 	};
 	class rhs_bmd2k_des: rhs_bmd2_des_base
 	{
-		displayName = "БМД-2K (Камо3)";
+		displayName = "$STR_rhs_bmd2k_des";
+		scope = 2;
+	};
+	class rhs_bmd2_dirt_base: rhs_bmd2_base
+	{
+		hiddenSelectionsTextures[] =
+			{
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_01_ua_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_02_ua_co.paa",
+				"\x\acex_ru\addons\t_veh_bmd2\sa_bmd2_03_ua_co.paa",
+				"rhs\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+			};
+		class EventHandlers: DefaultEventHandlers
+			{
+				init = "_this call compile preProcessFile ""\ap_bmp_fix\bmdRU_init.sqf""";
+				fired = "_this call RHS_bmd_Effects_EH_Fired;_this spawn DFS_bmd2at14_fired;_this spawn rhs_30mmcart_fired;_this spawn rhs_9m14_fired;";
+				killed = "_this call RHS_bmd_Effects_EH_Killed;";
+			};
+
+	};
+	class rhs_bmd2_dirt: rhs_bmd2_dirt_base
+	{
+		displayName = "$STR_rhs_bmd2_dirt";
+		scope = 2;
+
+	};
+	class rhs_bmd2m_dirt: rhs_bmd2_dirt_base
+	{
+		ace_sys_reticles_gunneroptics = 0;
+		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
+		ace_tankfcs_digitsstyle = 1;
+		ace_tankfcs_enabled = 1;
+		ace_tankfcs_lrfaccuracy = 20;
+		ace_tankfcs_lrfcooldowntime = 3;
+		ace_tankfcs_maxlead = 2;
+		ace_tankfcs_maxlrfrange = 5200;
+		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
+		ace_tankfcs_minlrfrange = 200;
+		ace_tankfcs_rdystyle = 1;
+		scope = 2;
+		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
+		displayName = "$STR_rhs_bmd2m_dirt";
+		transportSoldier = 0;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
+				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
+				turretInfoType = "rhs_gui_optic_thermalscreen";
+				class OpticsIn
+				{
+					class gunnerSightWide
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -110;
+						maxAngleY = 110;
+						opticsZoomMin = 0.14;
+						opticsZoomMax = 0.14;
+						distanceZoomMin = 200;
+						distanceZoomMax = 2000;
+						initFov = 0.14;
+						minFov = 0.14;
+						maxFov = 0.14;
+						visionMode[] = {"Normal","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+					};
+					class gunnerSightNarrow
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -110;
+						maxAngleY = 110;
+						opticsZoomMin = 0.047;
+						opticsZoomMax = 0.047;
+						distanceZoomMin = 200;
+						distanceZoomMax = 2000;
+						initFov = 0.047;
+						minFov = 0.047;
+						maxFov = 0.047;
+						visionMode[] = {"Normal","Ti"};
+						thermalMode[] = {0,1};
+						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+					};
+				};
+			};
+			class CommanderOptics2: CommanderOptics1{};
+			class GPMGTurretBMD2: GPMGTurretBMD1{};
+			class LeftBack2: LeftBack1{};
+			class RightBack2: RightBack1{};
+			class MainBack2: MainBack1{};
+		};
+	};
+	class rhs_bmd2k_dirt: rhs_bmd2_dirt_base
+	{
+		displayName = "$STR_rhs_bmd2k_dirt";
 		scope = 2;
 	};
 	class rhs_bmd2_peace_base: rhs_bmd2_base
@@ -1396,7 +1870,7 @@ class CfgVehicles
 	};
 	class rhs_bmd2_peace: rhs_bmd2_peace_base
 	{
-		displayName = "БМД-2 (Камо4)";
+		displayName = "$STR_rhs_bmd2_c4";
 		scope = 2;
 
 	};
@@ -1415,7 +1889,7 @@ class CfgVehicles
 		ace_tankfcs_rdystyle = 1;
 		scope = 2;
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
-		displayName = "БМД-2М (Камо4)";
+		displayName = "$STR_rhs_bmd2m_c4";
 		transportSoldier = 0;
 		class Turrets: Turrets
 		{
@@ -1477,7 +1951,7 @@ class CfgVehicles
 	};
 	class rhs_bmd2k_peace: rhs_bmd2_peace_base
 	{
-		displayName = "БМД-2K (Камо4)";
+		displayName = "$STR_rhs_bmd2k_c4";
 		scope = 2;
 	};
 	class rhs_bmd2_cdf_base: rhs_bmd2_base
@@ -1505,7 +1979,7 @@ class CfgVehicles
 	};
 	class rhs_bmd2_cdf: rhs_bmd2_cdf_base
 	{
-		displayName = "БМД-2";
+		displayName = "$STR_rhs_bmd2";
 		scope = 2;
 
 	};
@@ -1524,7 +1998,7 @@ class CfgVehicles
 		ace_tankfcs_rdystyle = 1;
 		scope = 2;
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
-		displayName = "БМД-2М";
+		displayName = "$STR_rhs_bmd2m";
 		transportSoldier = 0;
 		class Turrets: Turrets
 		{
@@ -1586,7 +2060,7 @@ class CfgVehicles
 	};
 	class rhs_bmd2k_cdf: rhs_bmd2_cdf_base
 	{
-		displayName = "БМД-2K";
+		displayName = "$STR_rhs_bmd2k";
 		scope = 2;
 	};
 	class rhs_bmd2_ins_base: rhs_bmd2_base
@@ -1614,7 +2088,7 @@ class CfgVehicles
 	};
 	class rhs_bmd2_ins: rhs_bmd2_ins_base
 	{
-		displayName = "БМД-2";
+		displayName = "$STR_rhs_bmd2";
 		scope = 2;
 
 	};
@@ -1633,7 +2107,7 @@ class CfgVehicles
 		ace_tankfcs_rdystyle = 1;
 		scope = 2;
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
-		displayName = "БМД-2М";
+		displayName = "$STR_rhs_bmd2m";
 		transportSoldier = 0;
 		class Turrets: Turrets
 		{
@@ -1695,7 +2169,7 @@ class CfgVehicles
 	};
 	class rhs_bmd2k_ins: rhs_bmd2_ins_base
 	{
-		displayName = "БМД-2K";
+		displayName = "$STR_rhs_bmd2k";
 		scope = 2;
 	};
 };

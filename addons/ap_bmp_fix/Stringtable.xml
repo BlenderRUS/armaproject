@@ -26,5 +26,270 @@
 				<English>Russia (VDV)</English>
 				<Russian>Россия (ВДВ)</Russian>
 			</Key>
+			
+			<Key ID="STR_ace_bmp2_des">
+				<Original>BMP-2 (Desert)</Original>
+				<English>BMP-2 (Desert)</English>
+				<Russian>БМП-2 (Пустыня)</Russian>
+			</Key>
+			<Key ID="STR_ace_bmp2d_des">
+				<Original>BMP-2D (Desert)</Original>
+				<English>BMP-2D (Desert)</English>
+				<Russian>БМП-2Д (Пустыня)</Russian>
+			</Key>
+			<Key ID="STR_ace_bmp2m_des">
+				<Original>BMP-2M (Desert)</Original>
+				<English>BMP-2M (Desert)</English>
+				<Russian>БМП-2М (Пустыня)</Russian>
+			</Key>
+			
+			<Key ID="STR_rhs_bmd2">
+				<Original>BMD-2</Original>
+				<English>BMD-2</English>
+				<Russian>БМД-2</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2k">
+				<Original>BMD-2K</Original>
+				<English>BMD-2K</English>
+				<Russian>БМД-2К</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2m">
+				<Original>BMD-2M</Original>
+				<English>BMD-2M</English>
+				<Russian>БМД-2М</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2_c1">
+				<Original>BMD-2 (Camo1)</Original>
+				<English>BMD-2 (Camo1)</English>
+				<Russian>БМД-2 (Камо1)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2k_c1">
+				<Original>BMD-2K (Camo1)</Original>
+				<English>BMD-2K (Camo1)</English>
+				<Russian>БМД-2К (Камо1)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2m_c1">
+				<Original>BMD-2M (Camo1)</Original>
+				<English>BMD-2M (Camo1)</English>
+				<Russian>БМД-2М (Камо1)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2_c2">
+				<Original>BMD-2 (Camo2)</Original>
+				<English>BMD-2 (Camo2)</English>
+				<Russian>БМД-2 (Камо2)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2k_c2">
+				<Original>BMD-2K (Camo2)</Original>
+				<English>BMD-2K (Camo2)</English>
+				<Russian>БМД-2К (Камо2)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2m_c2">
+				<Original>BMD-2M (Camo2)</Original>
+				<English>BMD-2M (Camo2)</English>
+				<Russian>БМД-2М (Камо2)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2_c3">
+				<Original>BMD-2 (Camo3)</Original>
+				<English>BMD-2 (Camo3)</English>
+				<Russian>БМД-2 (Камо3)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2k_c3">
+				<Original>BMD-2K (Camo3)</Original>
+				<English>BMD-2K (Camo3)</English>
+				<Russian>БМД-2К (Камо3)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2m_c3">
+				<Original>BMD-2M (Camo3)</Original>
+				<English>BMD-2M (Camo3)</English>
+				<Russian>БМД-2М (Камо3)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2_c4">
+				<Original>BMD-2 (Camo4)</Original>
+				<English>BMD-2 (Camo4)</English>
+				<Russian>БМД-2 (Камо4)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2k_c4">
+				<Original>BMD-2K (Camo4)</Original>
+				<English>BMD-2K (Camo4)</English>
+				<Russian>БМД-2К (Камо4)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2m_c4">
+				<Original>BMD-2M (Camo4)</Original>
+				<English>BMD-2M (Camo4)</English>
+				<Russian>БМД-2М (Камо4)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2_des">
+				<Original>BMD-2 (Desert)</Original>
+				<English>BMD-2 (Desert)</English>
+				<Russian>БМД-2 (Пустыня)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2k_des">
+				<Original>BMD-2K (Desert)</Original>
+				<English>BMD-2K (Desert)</English>
+				<Russian>БМД-2К (Пустыня)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2m_des">
+				<Original>BMD-2M (Desert)</Original>
+				<English>BMD-2M (Desert)</English>
+				<Russian>БМД-2М (Пустыня)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2_dirt">
+				<Original>BMD-2 (Dirt)</Original>
+				<English>BMD-2 (Dirt)</English>
+				<Russian>БМД-2 (Грязь)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2k_dirt">
+				<Original>BMD-2K (Dirt)</Original>
+				<English>BMD-2K (Dirt)</English>
+				<Russian>БМД-2К (Грязь)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd2m_dirt">
+				<Original>BMD-2M (Dirt)</Original>
+				<English>BMD-2M (Dirt)</English>
+				<Russian>БМД-2М (Грязь)</Russian>
+			</Key>
+
+			
+			<Key ID="STR_rhs_bmd1pk">
+				<Original>BMD-1PK</Original>
+				<English>BMD-1PK</English>
+				<Russian>БМД-1ПК</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1p">
+				<Original>BMD-1P</Original>
+				<English>BMD-1P</English>
+				<Russian>БМД-1П</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1k">
+				<Original>BMD-1K</Original>
+				<English>BMD-1K</English>
+				<Russian>БМД-1К</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1">
+				<Original>BMD-1</Original>
+				<English>BMD-1</English>
+				<Russian>БМД-1</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1pk_c1">
+				<Original>BMD-1PK (Camo1)</Original>
+				<English>BMD-1PK (Camo1)</English>
+				<Russian>БМД-1ПК (Камо1)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1p_c1">
+				<Original>BMD-1P (Camo1)</Original>
+				<English>BMD-1P (Camo1)</English>
+				<Russian>БМД-1П (Камо1)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1k_c1">
+				<Original>BMD-1K (Camo1)</Original>
+				<English>BMD-1K (Camo1)</English>
+				<Russian>БМД-1К (Камо1)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1_c1">
+				<Original>BMD-1 (Camo1)</Original>
+				<English>BMD-1 (Camo1)</English>
+				<Russian>БМД-1 (Камо1)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1pk_c2">
+				<Original>BMD-1PK (Camo2)</Original>
+				<English>BMD-1PK (Camo2)</English>
+				<Russian>БМД-1ПК (Камо2)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1p_c2">
+				<Original>BMD-1P (Camo2)</Original>
+				<English>BMD-1P (Camo2)</English>
+				<Russian>БМД-1П (Камо2)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1k_c2">
+				<Original>BMD-1K (Camo2)</Original>
+				<English>BMD-1K (Camo2)</English>
+				<Russian>БМД-1К (Камо2)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1_c2">
+				<Original>BMD-1 (Camo2)</Original>
+				<English>BMD-1 (Camo2)</English>
+				<Russian>БМД-1 (Камо2)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1pk_c3">
+				<Original>BMD-1PK (Camo3)</Original>
+				<English>BMD-1PK (Camo3)</English>
+				<Russian>БМД-1ПК (Камо3)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1p_c3">
+				<Original>BMD-1P (Camo3)</Original>
+				<English>BMD-1P (Camo3)</English>
+				<Russian>БМД-1П (Камо3)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1k_c3">
+				<Original>BMD-1K (Camo3)</Original>
+				<English>BMD-1K (Camo3)</English>
+				<Russian>БМД-1К (Камо3)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1_c3">
+				<Original>BMD-1 (Camo3)</Original>
+				<English>BMD-1 (Camo3)</English>
+				<Russian>БМД-1 (Камо3)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1pk_c4">
+				<Original>BMD-1PK (Camo4)</Original>
+				<English>BMD-1PK (Camo4)</English>
+				<Russian>БМД-1ПК (Камо4)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1p_c4">
+				<Original>BMD-1P (Camo4)</Original>
+				<English>BMD-1P (Camo4)</English>
+				<Russian>БМД-1П (Камо4)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1k_c4">
+				<Original>BMD-1K (Camo4)</Original>
+				<English>BMD-1K (Camo4)</English>
+				<Russian>БМД-1К (Камо4)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1_c4">
+				<Original>BMD-1 (Camo4)</Original>
+				<English>BMD-1 (Camo4)</English>
+				<Russian>БМД-1 (Камо4)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1pk_des">
+				<Original>BMD-1PK (Desert)</Original>
+				<English>BMD-1PK (Desert)</English>
+				<Russian>БМД-1ПК (Пустыня)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1p_des">
+				<Original>BMD-1P (Desert)</Original>
+				<English>BMD-1P (Desert)</English>
+				<Russian>БМД-1П (Пустыня)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1k_des">
+				<Original>BMD-1K (Desert)</Original>
+				<English>BMD-1K (Desert)</English>
+				<Russian>БМД-1К (Пустыня)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1_des">
+				<Original>BMD-1 (Desert)</Original>
+				<English>BMD-1 (Desert)</English>
+				<Russian>БМД-1 (Пустыня)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1pk_dirt">
+				<Original>BMD-1PK (Dirt)</Original>
+				<English>BMD-1PK (Dirt)</English>
+				<Russian>БМД-1ПК (Грязь)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1p_dirt">
+				<Original>BMD-1P (Dirt)</Original>
+				<English>BMD-1P (Dirt)</English>
+				<Russian>БМД-1П (Грязь)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1k_dirt">
+				<Original>BMD-1K (Dirt)</Original>
+				<English>BMD-1K (Dirt)</English>
+				<Russian>БМД-1К (Грязь)</Russian>
+			</Key>
+			<Key ID="STR_rhs_bmd1_dirt">
+				<Original>BMD-1 (Dirt)</Original>
+				<English>BMD-1 (Dirt)</English>
+				<Russian>БМД-1 (Грязь)</Russian>
+			</Key>
+			
 	</Package>
 </Project>

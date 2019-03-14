@@ -140,6 +140,98 @@ switch (_class) do
 			]
 		];
 	};
+	case "rhs_bmd1pk_rus3":
+	{
+		_params = [
+			_bmd,
+			[
+				["Number", cBMD3NumberPlaces, "Default"],  // Set number (random)
+				["Label", cBMDPlnSymPlaces, "Platoon",11],
+				["Label", cBMDArmySymPlaces, "Army", 2]
+			]
+		];
+	};
+	
+	case "rhs_bmd1p_rus3":
+	{
+		_params = [
+			_bmd,
+			[
+				["Number", cBMD3NumberPlaces, "Default"],  // Set number (random)
+				["Label", cBMDPlnSymPlaces, "Platoon",11],
+				["Label", cBMDArmySymPlaces, "Army", 2]
+			]
+		];
+	};
+	
+	case "rhs_bmd1k_rus3":
+	{
+		_params = [
+			_bmd,
+			[
+				["Number", cBMD3NumberPlaces, "Default"],  // Set number (random)
+				["Label", cBMDPlnSymPlaces, "Platoon",11],
+				["Label", cBMDArmySymPlaces, "Army", 2]
+			]
+		];
+	};
+	case "rhs_bmd1_rus3":
+	{
+		_params = [
+			_bmd,
+			[
+				["Number", cBMD3NumberPlaces, "Default"],  // Set number (random)
+				["Label", cBMDPlnSymPlaces, "Platoon",11],
+				["Label", cBMDArmySymPlaces, "Army", 2]
+			]
+		];
+	};
+	case "rhs_bmd1pk_dirt":
+	{
+		_params = [
+			_bmd,
+			[
+				["Number", cBMD3NumberPlaces, "Default"],  // Set number (random)
+				["Label", cBMDPlnSymPlaces, "Platoon",11],
+				["Label", cBMDArmySymPlaces, "Army", 2]
+			]
+		];
+	};
+	
+	case "rhs_bmd1p_dirt":
+	{
+		_params = [
+			_bmd,
+			[
+				["Number", cBMD3NumberPlaces, "Default"],  // Set number (random)
+				["Label", cBMDPlnSymPlaces, "Platoon",11],
+				["Label", cBMDArmySymPlaces, "Army", 2]
+			]
+		];
+	};
+	
+	case "rhs_bmd1k_dirt":
+	{
+		_params = [
+			_bmd,
+			[
+				["Number", cBMD3NumberPlaces, "Default"],  // Set number (random)
+				["Label", cBMDPlnSymPlaces, "Platoon",11],
+				["Label", cBMDArmySymPlaces, "Army", 2]
+			]
+		];
+	};
+	case "rhs_bmd1_dirt":
+	{
+		_params = [
+			_bmd,
+			[
+				["Number", cBMD3NumberPlaces, "Default"],  // Set number (random)
+				["Label", cBMDPlnSymPlaces, "Platoon",11],
+				["Label", cBMDArmySymPlaces, "Army", 2]
+			]
+		];
+	};
 	case "rhs_bmd1pk_des":
 	{
 		_params = [
@@ -382,6 +474,74 @@ switch (_class) do
 		];
 	};
 	case "rhs_bmd2k_rus2":
+	{
+		_params = [
+			_bmd,
+			[
+				["Number", cBMD3NumberPlaces, "Default"],  // Set number (random)
+				["Label", cBMDPlnSymPlaces, "Platoon",11],
+				["Label", cBMDArmySymPlaces, "Army", 2]
+			]
+		];
+	};
+	case "rhs_bmd2_rus3":
+	{
+		_params = [
+			_bmd,
+			[
+				["Number", cBMD3NumberPlaces, "Default"],  // Set number (random)
+				["Label", cBMDPlnSymPlaces, "Platoon",11],
+				["Label", cBMDArmySymPlaces, "Army", 2]
+			]
+		];
+	};
+	
+	case "rhs_bmd2m_rus3":
+	{
+		_params = [
+			_bmd,
+			[
+				["Number", cBMD3NumberPlaces, "Default"],  // Set number (random)
+				["Label", cBMDPlnSymPlaces, "Platoon",11],
+				["Label", cBMDArmySymPlaces, "Army", 2]
+			]
+		];
+	};
+	case "rhs_bmd2k_rus3":
+	{
+		_params = [
+			_bmd,
+			[
+				["Number", cBMD3NumberPlaces, "Default"],  // Set number (random)
+				["Label", cBMDPlnSymPlaces, "Platoon",11],
+				["Label", cBMDArmySymPlaces, "Army", 2]
+			]
+		];
+	};
+	case "rhs_bmd2_dirt":
+	{
+		_params = [
+			_bmd,
+			[
+				["Number", cBMD3NumberPlaces, "Default"],  // Set number (random)
+				["Label", cBMDPlnSymPlaces, "Platoon",11],
+				["Label", cBMDArmySymPlaces, "Army", 2]
+			]
+		];
+	};
+	
+	case "rhs_bmd2m_dirt":
+	{
+		_params = [
+			_bmd,
+			[
+				["Number", cBMD3NumberPlaces, "Default"],  // Set number (random)
+				["Label", cBMDPlnSymPlaces, "Platoon",11],
+				["Label", cBMDArmySymPlaces, "Army", 2]
+			]
+		];
+	};
+	case "rhs_bmd2k_dirt":
 	{
 		_params = [
 			_bmd,
