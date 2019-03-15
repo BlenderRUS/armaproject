@@ -33,13 +33,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 	};
 };
 
-class CfgFactionClasses
+class CfgvehicleClasses
 {
 	class ap_baf80s
 	{
-		displayName = "British Armed Forces 80s";
-		priority = 109;
-		side = 1;
+		displayName = "$STR_BAF80_NAME";
 	};
 };
 
@@ -145,6 +143,7 @@ class CfgMagazines
 	{
 		displayName="$STR_MILAN_MAG_NAME";
 		displayNameShort="$STR_MILAN_MAG_NAME_SHORT";
+		scope = 2;	
 		ACE_Weight=6.73;
 		ACE_Size=25500;
 		picture="\ap_baf80\weapons\milan\data\milan_missile_ico.paa";
@@ -609,7 +608,7 @@ class CfgVehicles
 		backpack = "";
 		displayName = "Rifleman";
 		faceType = "Man";
-		faction = "ap_baf80s";
+		faction="BIS_BAF";
 		fsmDanger = "ap_baf80\units\formationCDanger.fsm";
 		genericNames = "EnglishMen";
 		hiddenSelections[] = {"hs_camo1","hs_camo2","hs_scrim"};
@@ -620,11 +619,11 @@ class CfgVehicles
 		scope = 2;
 		side = 1;
 		threat[] = {1.0,0.1,0.1};
-		//vehicleClass = "_cwr2_group_men";
 		weapons[] = {"AP_L1A1","Throw","Put","ACE_Map","ItemCompass","ItemRadio","ItemWatch","ItemMap"};
 		magazines[] = {"20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","20Rnd_762x51_FNFAL","ACE_20Rnd_762x51_T_FAL","ACE_20Rnd_762x51_T_FAL","ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage","BAF_L109A1_HE","BAF_L109A1_HE","SmokeShell","SmokeShell"};
 		respawnWeapons[] = {};
 		respawnMagazines[] = {};
+		vehicleClass = "ap_baf80s";
 		class HitPoints: HitPoints
 		{
 			class HitHead: HitHead
@@ -907,7 +906,7 @@ class CfgVehicles
 	{
 		crew="AP_SoldierUK";	
 		side = 1;
-		faction = ap_baf80s;		
+		faction="BIS_BAF";		
 		displayName = "$STR_MILAN_NAME";
 		icon = "\ap_baf80\weapons\milan\data\icon_static_milan_ca.paa";
 		mapSize = 3;

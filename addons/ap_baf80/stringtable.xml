@@ -4,6 +4,10 @@
 <Container name="STR_VC">
 
 
+		<Key ID="STR_BAF80_NAME">
+			<Original>British Armed Forces 80s</Original>
+			<Russian>Британские вооруженные силы 80-х годов</Russian>
+		</Key>
 		<Key ID="STR_MILAN_NAME">
 			<Original>MILAN 2 ATMS</Original>
 			<Russian>ПТРК MILAN 2</Russian>
