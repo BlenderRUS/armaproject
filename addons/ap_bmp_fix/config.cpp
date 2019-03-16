@@ -408,8 +408,8 @@ class CfgVehicles
 	{
 		hiddenSelectionsTextures[] =
 		{
-			"\ap_bmp_fix\data\bmp2m_co.paa",
-			"\x\acex_ru\addons\t_veh_bmp2\bmp2_01_co.paa"
+			"\x\acex_ru\addons\t_veh_bmp2\bmp2_01_co.paa",
+			"\x\acex_ru\addons\t_veh_bmp2\bmp2_02_co.paa"
 		};
 	};
 	class ACE_BMP2_des: ACE_BMP2_RU
