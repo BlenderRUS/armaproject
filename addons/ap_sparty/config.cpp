@@ -776,6 +776,8 @@ class CfgVehicles
 					1,
 					10
 				};
+				maxVerticalRotSpeed= 0.2;
+				maxHorizontalRotSpeed= 0.2;
 				minElev=-3;
 				maxElev=70;
 				memoryPointGun="kulas";
@@ -1678,6 +1680,8 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
+				maxVerticalRotSpeed= 0.2;
+				maxHorizontalRotSpeed= 0.2;
 				gunnerName="$STR_GN_BMP3_MainTurret";
 				gunnerAction="BMP3_Gunner_OUT";
 				gunnerInAction="BMP3_Gunner";

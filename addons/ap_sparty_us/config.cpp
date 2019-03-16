@@ -186,6 +186,8 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
+				maxVerticalRotSpeed= 0.2;
+				maxHorizontalRotSpeed= 0.2;
 				primaryGunner = 1;
 				proxyIndex = 2;
 				outGunnerMayFire = 1;
@@ -951,6 +953,8 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
+				maxVerticalRotSpeed= 0.2;
+				maxHorizontalRotSpeed= 0.2;
 				body="OtocVez";
 				gun="OtocHlaven";
 				animationSourceBody="mainTurret";
