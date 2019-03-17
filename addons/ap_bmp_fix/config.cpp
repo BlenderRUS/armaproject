@@ -2,13 +2,13 @@
 
 class CfgPatches
 {
-class ap_bmp_fix
-{
-units[] = {};
-weapons[] = {};
-requiredVersion = 1.04;
-requiredAddons[] = {"rhs_c_bmp","acex_ru_veh_bmp2","rhs_c_bmd","tu_vehicles_sov"};
-};
+	class ap_bmp_fix
+	{
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 1.04;
+		requiredAddons[] = {"rhs_c_bmp","acex_ru_veh_bmp2","rhs_c_bmd","tu_vehicles_sov"};
+	};
 };
 
 class Turrets;
