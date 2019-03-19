@@ -59,34 +59,6 @@ class CfgWeapons
 class WeaponCloudsMGun;
 class CfgVehicles
 {
-	class Logic;
-	class RHS_CargoSystem_Enable: Logic
-	{
-		rhs_version = 0.6047;
-		displayName = "$STR_rhs_cargosystem_modul";
-		icon = "\rhs_cargosystem\img\rhs_cargosystem_icon.paa";
-		picture = "\rhs_cargosystem\img\rhs_cargosystem_icon.paa";
-		vehicleClass = "Modules";
-		class Eventhandlers
-		{
-			init = "MoveOnCargo = compile preprocessFileLineNumbers '\rhs_cargosystem\scripts\bgr_MoveOnCargo.sqf'; rhs_enableCS = compile preprocessFileLineNumbers '\rhs_cargosystem\scripts\enableCS.sqf'; RHS_cargoSystem_geton_group = compile preprocessFileLineNumbers '\rhs_cargosystem\scripts\f_geton_group.sqf'; _ok = _this execVM '\rhs_cargosystem\scripts\cargoSystem_init.sqf';";
-		};
-		RHS_cargoSystem_wfList[] = {{"AP_BMD4MA","not"},{"AP_BMD4M","not"},{"AP_SPRUT","not"},{"AP_BTR80","rhs_cargo_btr80"},{"AP_BTR82A","rhs_cargo_btr82a"},{"T90","not"},{"T72_Base","rhs_cargo_t72"},{"T55_Base","rhs_cargo_t55"},{"BMP2_Ambul_Base","rhs_cargo_bmp2ambul"},{"ACE_BMP2D_RU","rhs_cargo_bmp2aceD"},{"BMP2_HQ_Base","not"},{"BMP2_Base","rhs_cargo_bmp2"},{"HA_rhs_btr70p","rhs_cargo_btr70p"},{"rhs_btr70_base","rhs_cargo_btr70"},{"ACE_BTR70_Base","rhs_cargo_btr70ace"},{"BTR60_TK_EP1","rhs_cargo_btr60"},{"BRDM2_ATGM_Base","not"},{"BRDM2_HQ_Base","not"},{"BRDM2_Base","rhs_cargo_brdm2"}};
-	};
-	
-	class rhs_cargo_btr70;
-	class rhs_cargo_btr80: rhs_cargo_btr70
-	{
-		RHS_attachToPos[] = {0,-0.62,0.85};
-		RHS_animPos[] = {{-2.5,0.5,3},{-2.5,3.5,3},{2,0.5,3},{2,-0.5,3},{2,2,3},{-2.5,-0.5,3},{2,3,3}};
-		RHS_animDeg[] = {-90,-45,90,90,70,-90,30};
-		RHS_ejectZPos[] = {-5,-5,-5,-5,-5,-5,-5};
-	};
-	class rhs_cargo_btr82a: rhs_cargo_btr80
-	{
-		RHS_attachToPos[] = {0,-0.9,0.70};
-	};
-	
 	class LandVehicle;
 	class Car: LandVehicle
 	{
