@@ -1,0 +1,21 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: data_f\Lights\Car_PanelsGreen.rvmat
+//Produced from mikero's Dos Tools Dll version 6.34
+//'now' is Thu Mar 14 17:48:22 2019 : 'file' last modified on Fri Feb 09 05:02:23 2018
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+class StageTI
+{
+	texture = "ap_rhs_vehicles\data\default_vehicle_ti_ca.paa";
+};
+ambient[] = {1,1,1,1};
+diffuse[] = {1,1,1,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {20,60,20,1};
+specular[] = {0,0,0,1};
+specularPower = 1;
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";

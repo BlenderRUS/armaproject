@@ -7,7 +7,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.04;
-		requiredAddons[] = {"ace_main","ace_c_vehicle","CATracked2","CAWheeled2","balca_CE","retex_vehicles","acex_veh_btr70","rhs_cargosystem","ace_sys_reticles"};
+		requiredAddons[] = {"ace_main","ace_c_vehicle","CATracked2","CAWheeled2","balca_CE","retex_vehicles","acex_veh_btr70","rhs_cargosystem","ace_sys_reticles","ExA_HRG31","acex_veh_5ton"};
 	};
 };
 
@@ -63,11 +63,33 @@ class CfgVehicles
 	class Car: LandVehicle
 	{
 		class NewTurret;
+		class HitPoints
+		{
+			class HitLFWheel;
+			class HitLBWheel;
+			class HitRFWheel;
+			class HitRBWheel;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitBody;
+		};
+		class Turrets
+		{
+			class MainTurret;
+		};
 	};
 	class Wheeled_APC: Car {};
+	class Truck: Car {};
+	class ACE_Truck5tMG_Base : Truck {};
 	class BRDM2_Base: Wheeled_APC
 	{
-		class Turrets;
+		class Turrets
+		{
+			class MainTurret;
+		};
+		class AnimationSources;
 	};
 	class BTR60_TK_EP1: BRDM2_Base
 	{
@@ -1209,8 +1231,8 @@ class CfgVehicles
 		ace_tankfcs_maxranges[] = {"ACE_3BM42M",3000,"ACE_3BK29M",3000,"ACE_8Rnd_3OF26",4000,"250Rnd_762x54_PKT_T90",1600};
 		
 		
-				class Reflectors
-					{
+		class Reflectors
+		{
 					class Left
 					{
 						color[] = {19,13,9.5};
@@ -1705,13 +1727,896 @@ class CfgVehicles
 		
 		
 		
+
+	class AP_M1117_base: BRDM2_Base
+	{
+		scope = 0;
+		
+		ace_dmgsys_enable=1;
+		ace_firepos[]={0,0,0};
+		ace_minimalhit[]={13,50};
+		ace_era=0;
+		ace_p_detonation_hull=0.2;
+		ace_p_detonation_turret=0.2;
+		ace_p_detonation_engine=0;
+		ace_p_fire_hull=0.5;
+		ace_p_fire_turret=0.2;
+		ace_p_fire_engine=0.80000001;
+		ace_p_firedetonation=0.5;
+		ace_armor_hull[]=
+		{
+			{20,20},
+			{20,20},
+			{20,20},
+			{20,20},
+			{20,20},
+			{20,20}
+		};
+		ace_armor_turret[]=
+		{
+			{20,20},
+			{20,20},
+			{20,20},
+			{20,20},
+			{20,20}
+		};
+		ACE_exposed=0;
+		ACE_Cargo_exposed=0;
+		ace_sys_eject_side=0;
+		ace_sys_eject_weaponCheck=0;
+		ace_sys_repair_spare_tyres=1;
+		ace_sys_repair_tyre_type="ACE_Spare_Tyre_HDAPC";
+		
+		smokeLauncherGrenadeCount = 4;
+		smokeLauncherVelocity = 14;
+		smokeLauncherOnTurret = 1;
+		smokeLauncherAngle = 60;
+				
+		armor=80;
+		displayName="M1117 Guardian ASV";
+		displayNameShort="M1117 ASV";
+		model = "ap_rhs_vehicles\blx_M1117";
+		picture = "ap_rhs_vehicles\data\picture_m1117_ca.paa";
+		Icon = "ap_rhs_vehicles\data\icon_m1117_ca.paa";
+		mapSize = 6.0;
+		enableManualFire = 0;
+		transportSoldier = 5;
+		maxSpeed = 100;
+		fuelCapacity = 350;
+		brakeIdleSpeed = 2;
+		canFloat = 0;
+		class Library
+		{
+			libTextDesc = "M1117_Guardian ASV";
+		};
+		weapons[] = {"TruckHorn"};
+		magazines[] = {};
+		enableGPS = 1;
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {
+				
+			"ap_rhs_vehicles\data\m1117_tex1.rvmat",
+			"ap_rhs_vehicles\data\m1117_tex1_damage.rvmat",
+			"ap_rhs_vehicles\data\m1117_tex1_destruct.rvmat",
+			
+			"ap_rhs_vehicles\data\m1117_armour.rvmat",
+			"ap_rhs_vehicles\data\m1117_armour_damage.rvmat",
+			"ap_rhs_vehicles\data\m1117_armour_destruct.rvmat",
+			
+			"ap_rhs_vehicles\data\m1117_turret.rvmat",
+			"ap_rhs_vehicles\data\m1117_turret_damage.rvmat",
+			"ap_rhs_vehicles\data\m1117_turret_destruct.rvmat",
+			
+			"ap_rhs_vehicles\data\m1117_wheel.rvmat",
+			"ap_rhs_vehicles\data\m1117_wheel_damage.rvmat",
+			"ap_rhs_vehicles\data\m1117_wheel_destruct.rvmat",
+			
+			"ap_rhs_vehicles\data\periscope_int.rvmat",
+			"ap_rhs_vehicles\data\periscope_int_damage.rvmat",
+			"ap_rhs_vehicles\data\periscope_int_destroyed.rvmat",
+			
+			"ap_rhs_vehicles\data\opticsblue.rvmat",
+			"ap_rhs_vehicles\data\opticsblue.rvmat",
+			"ap_rhs_vehicles\data\periscope_int_destroyed.rvmat",
+			
+			"ca\data\mirror.rvmat",
+			"ca\data\mirror.rvmat",
+			"ap_rhs_vehicles\data\periscope_int_destroyed.rvmat",
+			
+			"ap_rhs_vehicles\data\glassz.rvmat",
+			"ap_rhs_vehicles\data\glass_damage.rvmat",
+			"ap_rhs_vehicles\data\glass_damage.rvmat",
+			
+			"ap_rhs_vehicles\data\glass_veh_int.rvmat",
+			"ap_rhs_vehicles\data\glass_damage.rvmat",
+			"ap_rhs_vehicles\data\glass_damage.rvmat"};
+		};
+		
+		driverAction="BRDM2_Driver";		
+		cargoAction[] = {"BRDM2_Cargo01","BRDM2_Cargo02"};
+		
+		memoryPointsGetInCargo[] = {"pos gunner","pos cargo b","pos cargo","pos gunner"};
+		memoryPointsGetInCargoDir[] = {"pos gunner dir","pos cargo b dir","pos cargo dir","pos gunner dir"};
+		
+		
+		memoryPointDriverOptics = "driverview";
+		class ViewOptics
+		{
+			initFov = 0.8;
+			minFov = 0.8;
+			maxFov = 0.8;
+			initAngleX = 0;
+			minAngleX = -45;
+			maxAngleX = 30;
+			initAngleY = 0;
+			minAngleY = -90;
+			maxAngleY = 90;
+			visionMode[] = {"Normal"};
+			thermalMode[] = {0,1};
+		};
+		class CargoTurret;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				proxyType = "CPGunner";
+				proxyIndex = 1;
+				commanding = -1;
+				primaryGunner = 1;
+				primaryObserver = 0;
+				hasGunner = 1;
+				gunnerForceOptics = 1;
+				gunnerAction = "AAV_Gunner_OUT";
+				gunnerInAction = "AAV_Gunner";
+				memoryPointsGetInGunner = "pos gunner";
+				memoryPointsGetInGunnerDir = "pos gunner dir";
+				weapons[]= {"M2","ACE_MK19","SmokeLauncher"};
+				magazines[]=
+				{
+					"48Rnd_40mm_MK19","48Rnd_40mm_MK19","48Rnd_40mm_MK19","48Rnd_40mm_MK19","48Rnd_40mm_MK19",
+					"100Rnd_127x99_M2","100Rnd_127x99_M2","100Rnd_127x99_M2","100Rnd_127x99_M2","100Rnd_127x99_M2",
+					"SmokeLauncherMag"
+				};
+				soundServo[] = {"\ca\wheeled\Data\Sound\servo4",0.0056234132,1.0,15};
+				
+				class GunFire: WeaponCloudsMGun
+				{
+					interval = 0.01;
+				};
+				
+				startEngine = 0;
+				minElev = -5;
+				maxElev = 60;
+				initElev = 0;
+				minTurn = -360;
+				maxTurn = 360;
+				initTurn = 0;
+				canHideGunner = 0;
+				forceHideGunner = 0;
+				gunnerOpticsModel = "\ca\Tracked\optika_stryker_gunner";
+				gunnerOutOpticsModel = "";
+				memoryPointGunnerOptics = "gunnerview";
+				memoryPointGunnerOutOptics = "gunnerview";
+				discreteDistance[] = {};
+				discreteDistanceInitIndex = 0;
+				turretInfoType = "RscWeaponZeroing";
+				canUseScanners = 0;
+				allowTabLock = 0;
+				memoryPointGun = "kulas";
+				selectionFireAnim = "zasleh1";
+				gunBeg = "usti hlavne";
+				gunEnd = "konec hlavne";
+				body = "MainTurret";
+				gun = "MainGun";
+				animationSourceBody = "MainTurret";
+				animationSourceGun = "MainGun";
+				outGunnerMayFire = 1;
+				inGunnerMayFire = 1;
+				viewGunnerInExternal = 1;
+				stabilizedInAxes = 3;
+				class ViewOptics
+				{
+					visionMode[] = {"Normal","TI"};
+					thermalMode[] = {2,3};
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = "+30";
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = "+100";
+					initFov = 0.4;
+					minFov = 0.2;
+					maxFov = 0.4;
+				};
+				class OpticsIn {
+					class Wide {
+						gunnerOpticsModel = "\ca\Tracked\optika_stryker_gunner";
+						initanglex = 0;
+						initangley = 0;
+						initfov = "0.33333/ 1.2";
+						maxanglex = 30;
+						maxangley = 100;
+						maxfov = "0.33333/ 1.2";
+						minanglex = -30;
+						minangley = -100;
+						minfov = "0.33333/ 1.2";
+						visionMode[] = {"Normal"};
+					};
+					class Medium: Wide {
+						initfov = "0.33333/ 4";
+						maxfov = "0.33333/ 4";
+						minfov = "0.33333/ 4";
+					};
+				};			
+				class HitPoints: HitPoints
+				{
+					class HitTurret
+					{
+						armor = 0.3;
+						material = -1;
+						name = "vez";
+						visual = "otocvez";
+						passThrough = 0;
+						explosionShielding = 0.5;
+						radius = 0.15;
+					};
+					class HitGun
+					{
+						armor = 2;
+						material = -1;
+						name = "zbran";
+						visual = "-";
+						passThrough = 0;
+						explosionShielding = 0.5;
+						radius = 0.15;
+					};
+				};
+				class ViewGunner
+				{
+					initAngleX = 5;
+					minAngleX = -60;
+					maxAngleX = "+85";
+					initAngleY = 0;
+					minAngleY = -150;
+					maxAngleY = "+150";
+					initFov = 0.7;
+					minFov = 0.25;
+					maxFov = 0.7;
+				};
+				armorLights = 0.1;
+			};
+			
+		};
+		
+		class AnimationSources: AnimationSources
+		{
+			class recoil_source
+			{
+				source = "reload";
+				weapon = "M2";
+			};
+			class hatch_commander
+			{
+				source = "door";
+				animperiod = 1;
+				initPhase = 0;
+			};
+			class hatch_driver: hatch_commander{};
+			class hatch_gunner: hatch_commander{};
+			
+			class HitGlass1
+			{
+				source = "Hit";
+				hitpoint = "HitGlass1";
+			};
+			class HitGlass2: HitGlass1
+			{
+				hitpoint = "HitGlass2";
+			};
+			class HitGlass3: HitGlass1
+			{
+				hitpoint = "HitGlass3";
+			};
+			class HitGlass4: HitGlass1
+			{
+				hitpoint = "HitGlass4";
+			};
+			class HitGlass5: HitGlass1
+			{
+				hitpoint = "HitGlass5";
+			};
+			class HitGlass6: HitGlass1
+			{
+				hitpoint = "HitGlass6";
+			};
+			class HitPeriscope1
+			{
+				source = "Hit";
+				hitpoint = "HitPeriscope1";
+			};
+			class HitPeriscope2: HitPeriscope1
+			{
+				hitpoint = "HitPeriscope2";
+			};
+			class HitPeriscope3: HitPeriscope1
+			{
+				hitpoint = "HitPeriscope3";
+			};
+			class HitPeriscope4: HitPeriscope1
+			{
+				hitpoint = "HitPeriscope4";
+			};
+			class HitPeriscope5: HitPeriscope1
+			{
+				hitpoint = "HitPeriscope5";
+			};
+			class HitPeriscope6: HitPeriscope1
+			{
+				hitpoint = "HitPeriscope6";
+			};
+			class HitPeriscope7: HitPeriscope1
+			{
+				hitpoint = "HitPeriscope7";
+			};
+			class HitMainSight: HitPeriscope1
+			{
+				hitpoint = "HitMainSight";
+			};
+		};
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel: HitLFWheel
+			{
+				armor = 0.4;
+				name = "wheel_1_1_steering";
+			};
+			class HitLBWheel: HitLFWheel
+			{
+				armor = 0.4;
+				name = "wheel_1_2_steering";
+			};
+			class HitRFWheel: HitRFWheel
+			{
+				armor = 0.4;
+				name = "wheel_2_1_steering";
+			};
+			class HitRBWheel: HitRFWheel
+			{
+				armor = 0.4;
+				name = "wheel_2_2_steering";
+			};
+			class HitBody
+			{
+				armor = 0.8;
+				material = -1;
+				name = "karoserie";
+				visual = "zbytek";
+				passThrough = 0;
+			};
+			class HitFuel
+			{
+				armor = 1;
+				material = -1;
+				name = "palivo";
+				passThrough = 0;
+			};
+			class HitEngine
+			{
+				armor = 2;
+				material = -1;
+				name = "engine";
+				visual = "zbytek";
+				passThrough = 0;
+			};
+			class HitGlass1: HitGlass1
+			{
+				armor = 1;
+			};
+			class HitGlass2: HitGlass1 {};
+			class HitGlass3: HitGlass1 {};
+			class HitGlass4: HitGlass1 {};
+			class HitGlass5: HitGlass1 {};
+			class HitGlass6: HitGlass1 {};
+			
+			class HitPeriscope1: HitGlass1
+			{
+				armor = 0.8;
+				name = "periscope1";
+				visual = "periscope1";
+				explosionShielding = 0.5;
+				radius = 0.05;
+			};
+			class HitPeriscope2: HitGlass1
+			{
+				armor = 0.8;
+				name = "periscope2";
+				visual = "periscope2";
+				explosionShielding = 0.5;
+				radius = 0.05;
+			};
+			class HitPeriscope3: HitGlass1
+			{
+				armor = 0.8;
+				name = "periscope3";
+				visual = "periscope3";
+				explosionShielding = 0.5;
+				radius = 0.05;
+			};
+			class HitPeriscope4: HitGlass1
+			{
+				armor = 0.8;
+				name = "periscope4";
+				visual = "periscope4";
+				explosionShielding = 0.5;
+				radius = 0.05;
+			};
+			class HitPeriscope5: HitGlass1
+			{
+				armor = 0.8;
+				name = "periscope5";
+				visual = "periscope5";
+				explosionShielding = 0.5;
+				radius = 0.05;
+			};
+			class HitPeriscope6: HitGlass1
+			{
+				armor = 0.8;
+				name = "periscope6";
+				visual = "periscope6";
+				explosionShielding = 0.5;
+				radius = 0.05;
+			};
+			class HitPeriscope7: HitGlass1
+			{
+				armor = 0.8;
+				name = "periscope7";
+				visual = "periscope7";
+				explosionShielding = 0.5;
+				radius = 0.05;
+			};
+			class HitMainSight: HitGlass1
+			{
+				armor = 1.2;
+				explosionShielding = 0.3;
+				name = "mainSight";
+				visual = "mainSight";
+				radius = 0.05;
+			};
+		};
+		
+		class Reflectors
+		{
+			class Left
+			{
+				color[] = {19,13,9.5};
+				ambient[] = {0.1,0.1,0.1,1};
+				position = "R svetlo";
+				direction = "konec R svetla";
+				hitpoint = "R svetlo";
+				selection = "R svetlo";
+				size = 0.4;
+				brightness = 0.4;
+			};
+			class Right: Left
+			{
+				position = "L svetlo";
+				direction = "konec L svetla";
+				hitpoint = "L svetlo";
+				selection = "L svetlo";
+			};
+			class Pravo: Left
+			{
+				position = "P svetlo";
+				direction = "konec P svetla";
+				hitpoint = "P svetlo";
+				selection = "P svetlo";
+			};
+		};
+		hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6"};
+		hiddenSelectionsTextures[] = {
+			"ap_rhs_vehicles\data\m1117_tex1_co.paa",
+			"ap_rhs_vehicles\data\m1117_armour_co.paa",
+			"ap_rhs_vehicles\data\m1117_turret_co.paa",
+			"ap_rhs_vehicles\data\m1117_wheel_co.paa",
+			"ap_rhs_vehicles\data\A2_parts_D_co.paa",
+			"ap_rhs_vehicles\data\duke_antennae_d_co.paa"
+		};
+		
+	};
+	class AP_M1117_D: AP_M1117_base
+	{
+		scope = 2;
+		side = 1;
+		displayName = "M1117 ASV (D)";
+		faction = "BIS_US";
+		//typicalCargo[] = {"US_Soldier_EP1"};
+	};
+	
+	class AP_M1117_W: AP_M1117_D
+	{
+		faction = "USMC";
+		//typicalCargo[] = {"USMC_Soldier"};
+		displayName = "M1117 ASV (W)";
+		hiddenSelectionsTextures[] = {
+			"ap_rhs_vehicles\data\m1117_tex1_green_co.paa",
+			"ap_rhs_vehicles\data\m1117_armour_green_co.paa",
+			"ap_rhs_vehicles\data\m1117_turret_green_co.paa",
+			"ap_rhs_vehicles\data\m1117_wheel_green_co.paa",
+			"ap_rhs_vehicles\data\A2_parts_g_co.paa",
+			"ap_rhs_vehicles\data\duke_antennae_wd_co.paa"
+		};
+	};
+	class AP_M1117_OD: AP_M1117_W
+	{
+		faction = "USMC";
+		displayName = "M1117 ASV (OD)";
+		//typicalCargo[] = {"USMC_Soldier"};
+		hiddenSelectionsTextures[] = {
+			"ap_rhs_vehicles\data\M1117_tex1_OD_co.paa",
+			"ap_rhs_vehicles\data\M1117_armour_od_co.paa",
+			"ap_rhs_vehicles\data\M1117_turret_od_co.paa",
+			"ap_rhs_vehicles\data\m1117_wheel_green_co.paa",
+			"ap_rhs_vehicles\data\A2_parts_g_co.paa",
+			"ap_rhs_vehicles\data\duke_antennae_wd_co.paa"
+		};
+	};
+	class AP_M1117_UN: AP_M1117_W
+	{
+		side = 2;
+		faction = "BIS_UN";
+		displayName = "M1117 ASV (UN)";
+		//typicalCargo[] = {"UN_CDF_Soldier_Crew_EP1"};
+		hiddenSelectionsTextures[] = {
+			"ap_rhs_vehicles\data\M1117_tex1_UN_co.paa",
+			"ap_rhs_vehicles\data\M1117_armour_UN_co.paa",
+			"ap_rhs_vehicles\data\M1117_turret_UN_co.paa",
+			"ap_rhs_vehicles\data\M1117_wheel_UN_co.paa",
+			"ap_rhs_vehicles\data\A2_parts_g_co.paa",
+			"ap_rhs_vehicles\data\duke_antennae_wd_co.paa"
+		};
+	};
 		
 		
 		
+	class AP_FMTV_base: ACE_Truck5tMG_Base
+	{
+		scope = 0;
+		side = 1;
+		enableGPS = 1;
+		faction = "USMC";
+		driverAction = "MTVR_Driver";
+		cargoAction[] =
+		{
+			Truck_Cargo01, Truck_Cargo01, Truck_Cargo04, Truck_Cargo04, Truck_Cargo02, Truck_Cargo03,
+			Truck_Cargo04, Truck_Cargo02, Truck_Cargo04, Truck_Cargo04, Truck_Cargo04, Truck_Cargo04
+		};
+		fuelCapacity = 303;
+		maxSpeed = 105;
+		typicalCargo[] = {"USMC_Soldier"};
+		displayName = "FMTV";
+		model = "\ap_rhs_vehicles\M1078A1P2.p3d";
+		picture = "\ap_rhs_vehicles\data\rhs_M1078A1P2_pic_ca.paa";
+		Icon = "\ap_rhs_vehicles\data\ico_m1078_flat.paa";
+		mapSize = 8.02;
+		transportSoldier = 14;
+		memoryPointsGetInCargo[] = {"pos codriver","pos codriver","pos cargo"};
+		memoryPointsGetInCargoDir[] = {"pos codriver dir","pos codriver dir","pos cargo dir"};
+		
+		hiddenSelections[] = {"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[] = {
+			"ap_rhs_vehicles\data\fmtv_chassis_co.paa",
+			"ap_rhs_vehicles\data\fmtv_25trear_co.paa",
+			"ap_rhs_vehicles\data\fmtv_cab_co.paa"
+		};
+		
+		ace_sa_enabled = 1;
+		ace_sa_adj_mode = "range";
+		ace_sa_defaultwindage = 0;
+		ace_sa_minelevation = 100;
+		ace_sa_stepelevation = 100;
+		ace_sa_windage = 10;
+		ace_sa_stepwindage = 1;
+		ace_sa_elev_unit = "mil";
+		ace_sa_wind_unit = "mil";
+		ace_sa_TE_enabled = 0;
+		ace_sa_defaultelevation = 0;
+		ace_sa_maxelevation = 2600;
+		ace_sa_range_unit = "yards";
+		ace_sa_table_elev[] = {{ 0,0 },{ 100,0.52 },{ 200,1.21 },{ 300,1.89 },{ 400,2.62 },{ 500,3.41 },{ 600,4.21 },{ 700,5.11 },{ 800,6.09 },{ 900,7.03 },{ 1000,8.13 },{ 1100,9.35 },{ 1200,10.63 },{ 1300,12 },{ 1400,13.53 },{ 1500,15.14 },{ 1600,16.9 },{ 1700,18.79 },{ 1800,20.8 },{ 1900,22.99 },{ 2000,25.35 },{ 2100,27.94 },{ 2200,30.76 },{ 2300,33.77 },{ 2400,36.95 },{ 2500,40.55 },{ 2600,44.56 }};
+		
+	
+		
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				ACE_Exposed = "true";
+				body = "mainTurret";
+				gun = "mainGun";
+				hasGunner = 1;
+				weapons[] = {"M2"};
+				minElev = -15;
+				maxElev = +30;
+				magazines[] = {
+					"100Rnd_127x99_M2",
+					"100Rnd_127x99_M2",
+					"100Rnd_127x99_M2",
+					"100Rnd_127x99_M2",
+					"100Rnd_127x99_M2"
+				};
+				soundServo[] = {"\ca\wheeled\Data\Sound\servo3","db-75",0.9};
+				gunnerAction="rg31_Gunner";
+				gunnerInAction="rg31_Gunner_Turnin";
+				castGunnerShadow = 1;
+				viewGunnerShadow = 1;
+				class ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = "0.33333+ 0.41667";
+					minFov = "0.33333/ 1";
+					maxFov = "0.33333+ 0.41667";
+				};
+				class ViewGunner
+				{
+					initAngleX = 5;
+					minAngleX = -65;
+					maxAngleX = 85;
+					initAngleY = 0;
+					minAngleY = -150;
+					maxAngleY = 150;
+					initFov = "0.33333+ 0.41667";
+					minFov = "0.33333/ 1";
+					maxFov = "0.33333+ 0.41667";
+				};
+				gunnerForceOptics = 0;
+				gunnerOutOpticsShowCursor = 0;
+				gunnerOpticsShowCursor = 0;
+				memoryPointsGetInGunner = "pos gunner";
+				memoryPointsGetInGunnerDir = "pos gunner dir";
+				memoryPointGunnerOptics = "gunnerview";
+				selectionFireAnim = "zasleh1";				
+				stabilizedInAxes = StabilizedInAxesNone;
+			};
+		};
+		
+
+		class HitPoints: HitPoints
+		{
+				class HitGlass1 {armor=1.0;material=-1;name="glass1";visual="glass1";passThrough=0;};
+				class HitGlass2 {armor=1.0;material=-1;name="glass2";visual="glass2";passThrough=0;};
+				class HitGlass3 {armor=1.0;material=-1;name="glass3";visual="glass3";passThrough=0;};
+				class HitGlass4 {armor=1.0;material=-1;name="glass4";visual="glass4";passThrough=0;};
+				class HitGlass5 {armor=1.0;material=-1;name="glass5";visual="glass5";passThrough=0;};
+				class HitGlass6 {armor=1.0;material=-1;name="glass6";visual="glass6";passThrough=0;};
+				
+				class HitGlass10 {armor=1.0;material=-1;name="glass10";visual="glass10";passThrough=0;};
+				class HitGlass11 {armor=1.0;material=-1;name="glass11";visual="glass11";passThrough=0;};
+				class HitGlass12 {armor=1.0;material=-1;name="glass12";visual="glass12";passThrough=0;};
+				class HitGlass13 {armor=1.0;material=-1;name="glass13";visual="glass13";passThrough=0;};
+				class HitGlass14 {armor=1.0;material=-1;name="glass14";visual="glass14";passThrough=0;};
+				class HitGlass15 {armor=1.0;material=-1;name="glass15";visual="glass15";passThrough=0;};
+				
+			class HitLFWheel: HitLFWheel
+			{
+				armor = 0.5;
+				name = "wheel_1_1_steering";
+			};
+			class HitLBWheel: HitLBWheel
+			{
+				armor = 0.5;
+				name = "wheel_1_2_steering";
+			};
+			class HitRFWheel: HitRFWheel
+			{
+				armor = 0.5;
+				name = "wheel_2_1_steering";
+			};	
+			class HitRBWheel: HitRBWheel
+			{
+				armor = 0.5;
+				name = "wheel_2_2_steering";
+			};
+			
+			class HitFuel
+			{
+				armor = 0.5;
+				material = -1;
+				name = "palivo";
+				visual = "-";
+				passThrough = 0.2;
+			};
+			class HitEngine
+			{
+				armor = 0.5;
+				material = -1;
+				name = "motor";
+				visual = "zbytek";
+				passThrough = 0.2;
+			};
+			class HitBody: HitBody
+			{
+				name = "";
+				visual = "zbytek";
+				passThrough = 1;
+			};
+		};
+		class Reflectors
+		{
+			class Left
+			{
+				color[] = {19,13,9.5};
+				ambient[] = {0.1,0.1,0.1,1};
+				position = "P_svetlo";
+				direction = "konec_P_svetla";
+				hitpoint = "P_svetlo";
+				selection = "P_svetlo";
+				size = 0.4;
+				brightness = 0.4;
+			};
+			class Right: Left
+			{
+				position = "L_svetlo";
+				direction = "konec_L_svetla";
+				hitpoint = "L_svetlo";
+				selection = "L_svetlo";
+			};
+		};
+
+		wheelCircumference = 3.705;
+		brakeIdleSpeed = 2.0;
+		canFloat = 0;
+		thrustDelay = 0.5;
+		engineBrakeCoef = 0.8;
+
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {
+				"ap_rhs_vehicles\data\glass_veh.rvmat",
+				"ap_rhs_vehicles\data\glass_veh_armored_damage.rvmat",
+				"ap_rhs_vehicles\data\glass_veh_armored_damage.rvmat",
+				
+				"ap_rhs_vehicles\data\FMTV_Cab.rvmat",
+				"ap_rhs_vehicles\data\FMTV_Cab_dam.rvmat",
+				"ap_rhs_vehicles\data\fmtv_destruction.rvmat",
+				
+				"ap_rhs_vehicles\data\FMTV_25TRear.rvmat",
+				"ap_rhs_vehicles\data\FMTV_25TRear_dam.rvmat",
+				"ap_rhs_vehicles\data\fmtv_destruction.rvmat",
+				
+				"ap_rhs_vehicles\data\FMTV_Int.rvmat",
+				"ap_rhs_vehicles\data\FMTV_Int_dam.rvmat",
+				"ap_rhs_vehicles\data\fmtv_destruction.rvmat",
+				
+				"ap_rhs_vehicles\data\FMTV_Chassis.rvmat",
+				"ap_rhs_vehicles\data\FMTV_Chassis_dam.rvmat",
+				"ap_rhs_vehicles\data\fmtv_destruction.rvmat",
+				
+				"ap_rhs_vehicles\data\FMTV_BKIT.rvmat",
+				"ap_rhs_vehicles\data\FMTV_BKIT_dam.rvmat",
+				"ap_rhs_vehicles\data\fmtv_destruction.rvmat",
+				
+				"ap_rhs_vehicles\data\FMTV_wheel.rvmat",
+				"ap_rhs_vehicles\data\FMTV_Wheel_dam.rvmat",
+				"ap_rhs_vehicles\data\fmtv_destruction.rvmat",
+				
+				"ap_rhs_vehicles\data\mk64mount.rvmat",
+				"ap_rhs_vehicles\data\mk64mount.rvmat",
+				"ap_rhs_vehicles\data\fmtv_destruction.rvmat",
+				
+				"ca\data\mirror.rvmat",
+				"ca\data\mirror.rvmat",
+				"ap_rhs_vehicles\data\periscope_int_destroyed.rvmat",
+				
+				"ap_rhs_vehicles\data\ogpk_base.rvmat",
+				"ap_rhs_vehicles\data\ogpk_base_dam.rvmat",
+				"ap_rhs_vehicles\data\ogpk_base_destr.rvmat",
+				
+				"ap_rhs_vehicles\data\kamaz_glass_in.rvmat",
+				"ap_rhs_vehicles\data\glass_veh_armored_damage.rvmat",
+				"ap_rhs_vehicles\data\glass_veh_armored_damage.rvmat"
+				};
+		};	
+		
+
+
+	
+	};	
+		
+		class AP_FMTV_W: AP_FMTV_base
+		{
+			scope = 2;	
+			displayName = "M1078A1P2";
+			class Turrets {};
+			
+			class HitPoints: HitPoints
+			{
+				class HitGlass1 {armor=0.1;material=-1;name="glass1";visual="glass1";passThrough=0;};
+				class HitGlass2 {armor=0.1;material=-1;name="glass2";visual="glass2";passThrough=0;};
+				class HitGlass3 {armor=0.1;material=-1;name="glass3";visual="glass3";passThrough=0;};
+				class HitGlass4 {armor=0.1;material=-1;name="glass4";visual="glass4";passThrough=0;};
+				class HitGlass5 {armor=0.1;material=-1;name="glass5";visual="glass5";passThrough=0;};
+			};
+		};	
+		
+		class AP_FMTV_D: AP_FMTV_W
+		{
+			faction = "BIS_US";
+			typicalCargo[] = {"US_Soldier_EP1"};
+			hiddenSelectionsTextures[] = {
+			"ap_rhs_vehicles\data\FMTV_Chassis_D_CO.paa",
+			"ap_rhs_vehicles\data\FMTV_25TRear_D_CO.paa",
+			"ap_rhs_vehicles\data\FMTV_Cab_D_CO.paa"
+			};
+		};	
+		
+		class AP_FMTV_ARMOR_W: AP_FMTV_base
+		{
+			scope = 2;	
+			displayName = "M1078A1P2-B";
+			model = "\ap_rhs_vehicles\M1078A1P2_B.p3d";
+			picture = "\ap_rhs_vehicles\data\rhs_M1078A1P2_B_pic_ca.paa";
+			class Turrets {};
+			hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
+			hiddenSelectionsTextures[] = {
+			"ap_rhs_vehicles\data\fmtv_chassis_co.paa",
+			"ap_rhs_vehicles\data\fmtv_25trear_co.paa",
+			"ap_rhs_vehicles\data\fmtv_cab_co.paa",
+			"ap_rhs_vehicles\data\fmtv_bkit_co.paa"
+			};		
+		};	
+		
+		class AP_FMTV_ARMOR_D: AP_FMTV_ARMOR_W
+		{
+			faction = "BIS_US";
+			typicalCargo[] = {"US_Soldier_EP1"};
+			hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
+			hiddenSelectionsTextures[] = {
+			"ap_rhs_vehicles\data\FMTV_Chassis_D_CO.paa",
+			"ap_rhs_vehicles\data\FMTV_25TRear_D_CO.paa",
+			"ap_rhs_vehicles\data\FMTV_Cab_D_CO.paa",
+			"ap_rhs_vehicles\data\fmtv_bkit_D_co.paa"
+			};
+		};
 		
 		
+		class AP_FMTV_ARMOR_M2_W: AP_FMTV_base
+		{
+			scope = 2;	
+			displayName = "M1078A1P2-B (M2)";
+			model = "\ap_rhs_vehicles\M1078A1P2_B_M2.p3d";
+			picture = "\ap_rhs_vehicles\data\rhs_M1078A1P2_B_GPK_pic_ca.paa";
 		
+			hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5"};
+			hiddenSelectionsTextures[] = {
+			"ap_rhs_vehicles\data\fmtv_chassis_co.paa",
+			"ap_rhs_vehicles\data\fmtv_25trear_co.paa",
+			"ap_rhs_vehicles\data\fmtv_cab_co.paa",
+			"ap_rhs_vehicles\data\fmtv_bkit_co.paa",
+			"ap_rhs_vehicles\data\rg33_turretwd_co.paa"
+			};			
+		};	
 		
+		class AP_FMTV_ARMOR_M2_D: AP_FMTV_ARMOR_M2_W
+		{
+			faction = "BIS_US";
+			typicalCargo[] = {"US_Soldier_EP1"};
+			hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5"};
+			hiddenSelectionsTextures[] = {
+			"ap_rhs_vehicles\data\FMTV_Chassis_D_CO.paa",
+			"ap_rhs_vehicles\data\FMTV_25TRear_D_CO.paa",
+			"ap_rhs_vehicles\data\FMTV_Cab_D_CO.paa",
+			"ap_rhs_vehicles\data\fmtv_bkit_D_co.paa",
+			"ap_rhs_vehicles\data\RG33_TurretD_CO.paa"
+			};
+		};
 	
 	
 	
