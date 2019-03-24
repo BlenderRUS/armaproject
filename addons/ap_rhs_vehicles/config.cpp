@@ -7,7 +7,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.04;
-		requiredAddons[] = {"ace_main","ace_c_vehicle","CATracked2","CAWheeled2","balca_CE","retex_vehicles","acex_veh_btr70","rhs_cargosystem","ace_sys_reticles","ExA_HRG31","acex_veh_5ton"};
+		requiredAddons[] = {"ace_main","ace_c_vehicle","CATracked2","CAWheeled2","balca_CE","retex_vehicles","acex_veh_btr70","rhs_cargosystem","ace_sys_reticles","acex_veh_5ton"};
 	};
 };
 
@@ -1854,7 +1854,6 @@ class CfgVehicles
 			minAngleY = -90;
 			maxAngleY = 90;
 			visionMode[] = {"Normal"};
-			thermalMode[] = {0,1};
 		};
 		class CargoTurret;
 		class Turrets: Turrets
@@ -1942,7 +1941,8 @@ class CfgVehicles
 						minanglex = -30;
 						minangley = -100;
 						minfov = "0.33333/ 1.2";
-						visionMode[] = {"Normal"};
+						visionMode[] = {"Normal","NVG","Ti"};
+						thermalmode[] = {2};
 					};
 					class Medium: Wide {
 						initfov = "0.33333/ 4";
@@ -2224,12 +2224,28 @@ class CfgVehicles
 			"ap_rhs_vehicles\data\duke_antennae_d_co.paa"
 		};
 		
+		ace_sa_enabled = 1;
+		ace_sa_adj_mode = "range";
+		ace_sa_defaultwindage = 0;
+		ace_sa_minelevation = 100;
+		ace_sa_stepelevation = 100;
+		ace_sa_windage = 10;
+		ace_sa_stepwindage = 1;
+		ace_sa_elev_unit = "mil";
+		ace_sa_wind_unit = "mil";
+		ace_sa_TE_enabled = 1;
+		ace_sa_defaultelevation = 0;
+		ace_sa_maxelevation = 2600;
+		ace_sa_range_unit = "yards";
+		ace_sa_table_elev[] = {{ 0,0 },{ 100,0.52 },{ 200,1.21 },{ 300,1.89 },{ 400,2.62 },{ 500,3.41 },{ 600,4.21 },{ 700,5.11 },{ 800,6.09 },{ 900,7.03 },{ 1000,8.13 },{ 1100,9.35 },{ 1200,10.63 },{ 1300,12 },{ 1400,13.53 },{ 1500,15.14 },{ 1600,16.9 },{ 1700,18.79 },{ 1800,20.8 },{ 1900,22.99 },{ 2000,25.35 },{ 2100,27.94 },{ 2200,30.76 },{ 2300,33.77 },{ 2400,36.95 },{ 2500,40.55 },{ 2600,44.56 }};
+		
 	};
 	class AP_M1117_D: AP_M1117_base
 	{
 		scope = 2;
 		side = 1;
 		displayName = "M1117 ASV (D)";
+		vehicleClass="ArmouredD";
 		faction = "BIS_US";
 		//typicalCargo[] = {"US_Soldier_EP1"};
 	};
@@ -2239,6 +2255,7 @@ class CfgVehicles
 		faction = "USMC";
 		//typicalCargo[] = {"USMC_Soldier"};
 		displayName = "M1117 ASV (W)";
+		vehicleClass="ArmouredW";
 		hiddenSelectionsTextures[] = {
 			"ap_rhs_vehicles\data\m1117_tex1_green_co.paa",
 			"ap_rhs_vehicles\data\m1117_armour_green_co.paa",
@@ -2252,6 +2269,7 @@ class CfgVehicles
 	{
 		faction = "USMC";
 		displayName = "M1117 ASV (OD)";
+		vehicleClass="ArmouredW";
 		//typicalCargo[] = {"USMC_Soldier"};
 		hiddenSelectionsTextures[] = {
 			"ap_rhs_vehicles\data\M1117_tex1_OD_co.paa",
@@ -2298,7 +2316,8 @@ class CfgVehicles
 		displayName = "FMTV";
 		model = "\ap_rhs_vehicles\M1078A1P2.p3d";
 		picture = "\ap_rhs_vehicles\data\rhs_M1078A1P2_pic_ca.paa";
-		Icon = "\ap_rhs_vehicles\data\ico_m1078_flat.paa";
+		
+		Icon = "\ap_rhs_vehicles\data\ico_m1078_flat_m2.paa";
 		mapSize = 8.02;
 		transportSoldier = 14;
 		memoryPointsGetInCargo[] = {"pos codriver","pos codriver","pos cargo"};
@@ -2365,11 +2384,16 @@ class CfgVehicles
 					"100Rnd_127x99_M2",
 					"100Rnd_127x99_M2",
 					"100Rnd_127x99_M2",
+					"100Rnd_127x99_M2",
+					"100Rnd_127x99_M2",
+					"100Rnd_127x99_M2",
+					"100Rnd_127x99_M2",
+					"100Rnd_127x99_M2",
 					"100Rnd_127x99_M2"
 				};
 				soundServo[] = {"\ca\wheeled\Data\Sound\servo3","db-75",0.9};
-				gunnerAction="rg31_Gunner";
-				gunnerInAction="rg31_Gunner_Turnin";
+				gunnerAction = "Truck_Gunner";
+				gunnerInAction = "Truck_Gunner";
 				castGunnerShadow = 1;
 				viewGunnerShadow = 1;
 				class ViewOptics
@@ -2520,12 +2544,24 @@ class CfgVehicles
 				"ap_rhs_vehicles\data\FMTV_Chassis_dam.rvmat",
 				"ap_rhs_vehicles\data\fmtv_destruction.rvmat",
 				
+				"ap_rhs_vehicles\data\fmtv_chassis1.rvmat",
+				"ap_rhs_vehicles\data\FMTV_Chassis1_dam.rvmat",
+				"ap_rhs_vehicles\data\fmtv_destruction.rvmat",
+				
 				"ap_rhs_vehicles\data\FMTV_BKIT.rvmat",
 				"ap_rhs_vehicles\data\FMTV_BKIT_dam.rvmat",
 				"ap_rhs_vehicles\data\fmtv_destruction.rvmat",
 				
 				"ap_rhs_vehicles\data\FMTV_wheel.rvmat",
 				"ap_rhs_vehicles\data\FMTV_Wheel_dam.rvmat",
+				"ap_rhs_vehicles\data\fmtv_destruction.rvmat",
+				
+				"ap_rhs_vehicles\data\FMTV_SOVRear.rvmat",
+				"ap_rhs_vehicles\data\FMTV_SOVRear_dam.rvmat",
+				"ap_rhs_vehicles\data\fmtv_destruction.rvmat",
+				
+				"ap_rhs_vehicles\data\FMTV_SOVCab.rvmat",
+				"ap_rhs_vehicles\data\FMTV_SOVCab_dam.rvmat",
 				"ap_rhs_vehicles\data\fmtv_destruction.rvmat",
 				
 				"ap_rhs_vehicles\data\mk64mount.rvmat",
@@ -2555,6 +2591,7 @@ class CfgVehicles
 		{
 			scope = 2;	
 			displayName = "M1078A1P2";
+			Icon = "\ap_rhs_vehicles\data\ico_m1078_flat.paa";
 			class Turrets {};
 			
 			class HitPoints: HitPoints
@@ -2570,6 +2607,7 @@ class CfgVehicles
 		class AP_FMTV_D: AP_FMTV_W
 		{
 			faction = "BIS_US";
+			vehicleClass="CarD";
 			typicalCargo[] = {"US_Soldier_EP1"};
 			hiddenSelectionsTextures[] = {
 			"ap_rhs_vehicles\data\FMTV_Chassis_D_CO.paa",
@@ -2584,6 +2622,7 @@ class CfgVehicles
 			displayName = "M1078A1P2-B";
 			model = "\ap_rhs_vehicles\M1078A1P2_B.p3d";
 			picture = "\ap_rhs_vehicles\data\rhs_M1078A1P2_B_pic_ca.paa";
+			Icon = "\ap_rhs_vehicles\data\ico_m1078_flat.paa";
 			class Turrets {};
 			hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
 			hiddenSelectionsTextures[] = {
@@ -2597,6 +2636,7 @@ class CfgVehicles
 		class AP_FMTV_ARMOR_D: AP_FMTV_ARMOR_W
 		{
 			faction = "BIS_US";
+			vehicleClass="CarD";
 			typicalCargo[] = {"US_Soldier_EP1"};
 			hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
 			hiddenSelectionsTextures[] = {
@@ -2614,7 +2654,7 @@ class CfgVehicles
 			displayName = "M1078A1P2-B (M2)";
 			model = "\ap_rhs_vehicles\M1078A1P2_B_M2.p3d";
 			picture = "\ap_rhs_vehicles\data\rhs_M1078A1P2_B_GPK_pic_ca.paa";
-		
+			
 			hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5"};
 			hiddenSelectionsTextures[] = {
 			"ap_rhs_vehicles\data\fmtv_chassis_co.paa",
@@ -2628,6 +2668,7 @@ class CfgVehicles
 		class AP_FMTV_ARMOR_M2_D: AP_FMTV_ARMOR_M2_W
 		{
 			faction = "BIS_US";
+			vehicleClass="CarD";
 			typicalCargo[] = {"US_Soldier_EP1"};
 			hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5"};
 			hiddenSelectionsTextures[] = {
@@ -2636,6 +2677,38 @@ class CfgVehicles
 			"ap_rhs_vehicles\data\FMTV_Cab_D_CO.paa",
 			"ap_rhs_vehicles\data\fmtv_bkit_D_co.paa",
 			"ap_rhs_vehicles\data\RG33_TurretD_CO.paa"
+			};
+		};
+		
+		class AP_FMTV_SOV_M2_W: AP_FMTV_base
+		{
+			scope = 2;	
+			displayName = "M1078A1R SOV (M2)";
+			model = "\ap_rhs_vehicles\M1078A1R_SOV_M2.p3d";
+			Icon = "\ap_rhs_vehicles\data\ico_m1078_flat.paa";
+			transportSoldier = 5;
+			hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
+			hiddenSelectionsTextures[] = {
+			"ap_rhs_vehicles\data\FMTV_SOVChassis_WD_CO.paa",
+			"ap_rhs_vehicles\data\FMTV_SOVCab_W_CO.paa",
+			"ap_rhs_vehicles\data\FMTV_SOVRear_W_CO.paa",
+			"ap_rhs_vehicles\data\mk64mount_w_co.paa"
+			};	
+
+			class UserActions {};
+		};	
+		
+		class AP_FMTV_SOV_M2_D: AP_FMTV_SOV_M2_W
+		{
+			faction = "BIS_US";
+			vehicleClass="CarD";
+			typicalCargo[] = {"US_Soldier_EP1"};
+			hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
+			hiddenSelectionsTextures[] = {
+			"ap_rhs_vehicles\data\fmtv_sovchassis_co.paa",
+			"ap_rhs_vehicles\data\fmtv_sovcab_co.paa",
+			"ap_rhs_vehicles\data\fmtv_sovrear_co.paa",
+			"ap_rhs_vehicles\data\mk64mount_d_co.paa"
 			};
 		};
 	
