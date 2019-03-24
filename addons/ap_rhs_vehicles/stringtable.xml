@@ -63,6 +63,16 @@
 <Russian>Пулемётчик справа</Russian>
 </Key>
 
+<Key ID="STR_UNHIDE_TENT">
+<Original>Set up tent</Original>
+<Russian>Установить тент</Russian>
+</Key>
+
+<Key ID="STR_HIDE_TENT">
+<Original>Fold tent</Original>
+<Russian>Сложить тент</Russian>
+</Key>
+
 </Container>
 </Package>
 </Project>

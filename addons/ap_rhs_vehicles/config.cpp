@@ -2326,6 +2326,27 @@ class CfgVehicles
 		ace_sa_range_unit = "yards";
 		ace_sa_table_elev[] = {{ 0,0 },{ 100,0.52 },{ 200,1.21 },{ 300,1.89 },{ 400,2.62 },{ 500,3.41 },{ 600,4.21 },{ 700,5.11 },{ 800,6.09 },{ 900,7.03 },{ 1000,8.13 },{ 1100,9.35 },{ 1200,10.63 },{ 1300,12 },{ 1400,13.53 },{ 1500,15.14 },{ 1600,16.9 },{ 1700,18.79 },{ 1800,20.8 },{ 1900,22.99 },{ 2000,25.35 },{ 2100,27.94 },{ 2200,30.76 },{ 2300,33.77 },{ 2400,36.95 },{ 2500,40.55 },{ 2600,44.56 }};
 		
+		class UserActions
+		{
+			class UNHIDE_TENT
+			{
+			displayName = "$STR_UNHIDE_TENT";
+			position = "vtv_cargo_2";
+			onlyforplayer = true;
+			radius = 3.5;
+			condition="(alive this) and !(player in (crew this)) and (speed this < 1) and (this animationPhase 'tent_woodland_unhide' < 0.9) and (this animationPhase 'tent_desert_unhide' < 0.9)";
+			statement="[this,player] execvm 'ap_rhs_vehicles\scripts\unhide_tent.sqf'";
+			};
+			class HIDE_TENT
+			{
+			displayName = "$STR_HIDE_TENT";
+			position = "vtv_cargo_2";
+			onlyforplayer = true;
+			radius = 3.5;
+			condition="(alive this) and !(player in (crew this)) and (speed this < 1) and ((this animationPhase 'tent_woodland_unhide' > 0) or (this animationPhase 'tent_desert_unhide' > 0))";
+			statement="[this,player] execvm 'ap_rhs_vehicles\scripts\hide_tent.sqf'";
+			};
+		};
 	
 		
 		class Turrets: Turrets
