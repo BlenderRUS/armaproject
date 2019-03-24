@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project name="DLC_BAF">
+	<Package name="GB">
+			<Key ID="STR_BAF">
+				<Original>British Armed Forces</Original>
+				<English>British Armed Forces</English>
+				<Russian>Армия Великобритании</Russian>
+			</Key>
+			<Key ID="STR_PMC">
+				<Original>Private military campaign</Original>
+				<English>Private military campaign</English>
+				<Russian>Частная военная кампания</Russian>
+			</Key>
+	</Package>
+</Project>
