@@ -1855,13 +1855,15 @@ class CfgVehicles
 			maxAngleY = 90;
 			visionMode[] = {"Normal"};
 		};
+		ace_sa_defaultelevation = 0;
+		ace_sa_defaultwindage = 0;
+		ace_sa_enabled = 1;
+		ace_sa_te_enabled = 1;
 		class CargoTurret;
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
 			{
-				ace_sa_enabled = 1;
-				ace_sa_TE_enabled = 1;
 				proxyType = "CPGunner";
 				proxyIndex = 1;
 				commanding = -1;
@@ -1876,8 +1878,8 @@ class CfgVehicles
 				weapons[]= {"M2","ACE_MK19","SmokeLauncher"};
 				magazines[]=
 				{
-					"48Rnd_40mm_MK19","48Rnd_40mm_MK19","48Rnd_40mm_MK19","48Rnd_40mm_MK19","48Rnd_40mm_MK19",
 					"100Rnd_127x99_M2","100Rnd_127x99_M2","100Rnd_127x99_M2","100Rnd_127x99_M2","100Rnd_127x99_M2",
+					"48Rnd_40mm_MK19","48Rnd_40mm_MK19","48Rnd_40mm_MK19","48Rnd_40mm_MK19","48Rnd_40mm_MK19",
 					"SmokeLauncherMag"
 				};
 				soundServo[] = {"\ca\wheeled\Data\Sound\servo4",0.0056234132,1.0,15};
