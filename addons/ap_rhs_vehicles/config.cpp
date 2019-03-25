@@ -1770,6 +1770,9 @@ class CfgVehicles
 		ace_sys_repair_spare_tyres=1;
 		ace_sys_repair_tyre_type="ACE_Spare_Tyre_HDAPC";
 		
+		ace_sys_reticles_gunneroptics = 1;
+		ace_sys_reticles_gunnersight = "AP_m36";
+		
 		smokeLauncherGrenadeCount = 4;
 		smokeLauncherVelocity = 14;
 		smokeLauncherOnTurret = 1;
@@ -1843,6 +1846,10 @@ class CfgVehicles
 		memoryPointsGetInCargo[] = {"pos gunner","pos cargo b","pos cargo","pos gunner"};
 		memoryPointsGetInCargoDir[] = {"pos gunner dir","pos cargo b dir","pos cargo dir","pos gunner dir"};
 		
+		ace_sa_defaultelevation = 35;
+		ace_sa_defaultwindage = -8;
+		ace_sa_enabled = 0;
+		ace_sa_TE_enabled = 1;
 		
 		memoryPointDriverOptics = "driverview";
 		class ViewOptics
@@ -1897,7 +1904,7 @@ class CfgVehicles
 				initTurn = 0;
 				canHideGunner = 0;
 				forceHideGunner = 0;
-				gunnerOpticsModel = "\ca\Tracked\optika_stryker_gunner";
+				gunnerOpticsModel = "\x\ace\addons\sys_reticles\ACE_optics_empty.p3d";
 				gunnerOutOpticsModel = "";
 				memoryPointGunnerOptics = "gunnerview";
 				memoryPointGunnerOutOptics = "gunnerview";
@@ -1934,7 +1941,7 @@ class CfgVehicles
 				};
 				class OpticsIn {
 					class Wide {
-						gunnerOpticsModel = "\ca\Tracked\optika_stryker_gunner";
+						gunnerOpticsModel = "\x\ace\addons\sys_reticles\ACE_optics_empty.p3d";
 						initanglex = 0;
 						initangley = 0;
 						initfov = "0.33333/ 1.2";
@@ -2754,6 +2761,20 @@ class ACE_Config
 			ace_sys_reticles_texsize = 4096;
 			ace_sys_reticles_texstatic = "\ap_rhs_vehicles\data\1PZ-7.paa";
 		};
+		class AP_m36: BPK_2_42
+		{
+			ace_sys_reticles_checkweapon = "M2";
+			ace_sys_reticles_fov0 = "0.33333/ 4";
+			ace_sys_reticles_horizshift = 0;
+			ace_sys_reticles_illum = 1;
+			ace_sys_reticles_illumcolor[] = {0.7412, 0, 0, 1};
+			ace_sys_reticles_pxmil = 0;
+			ace_sys_reticles_texmap = 1;
+			ace_sys_reticles_texsize = 4096;
+			ace_sys_reticles_texstatic = "\ap_rhs_vehicles\data\destruct_ti_ca.paa";
+			ace_sys_reticles_texreticle = "\ap_rhs_vehicles\data\rhs_optics_m36.paa";
+			ace_sys_reticles_texreticle_n = "\ap_rhs_vehicles\data\rhs_optics_m36.paa";
+		};
 	};
 };
 
@@ -2764,6 +2785,12 @@ class PreloadTextures
 		class cfgVehicleOpticsReticles
 		{
 			class BPK_2_72
+			{
+				ace_sys_reticles_texstatic = "*";
+				ace_sys_reticles_texreticle = "*";
+				ace_sys_reticles_texreticle_n = "*";
+			};
+			class AP_m36
 			{
 				ace_sys_reticles_texstatic = "*";
 				ace_sys_reticles_texreticle = "*";
