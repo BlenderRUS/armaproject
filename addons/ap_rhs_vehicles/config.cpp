@@ -2226,23 +2226,8 @@ class CfgVehicles
 			"ap_rhs_vehicles\data\A2_parts_D_co.paa",
 			"ap_rhs_vehicles\data\duke_antennae_d_co.paa"
 		};
-		
-		ace_sa_enabled = 1;
-		ace_sa_adj_mode = "range";
-		ace_sa_defaultwindage = 0;
-		ace_sa_minelevation = 100;
-		ace_sa_stepelevation = 100;
-		ace_sa_windage = 10;
-		ace_sa_stepwindage = 1;
-		ace_sa_elev_unit = "mil";
-		ace_sa_wind_unit = "mil";
-		ace_sa_TE_enabled = 1;
-		ace_sa_defaultelevation = 0;
-		ace_sa_maxelevation = 2600;
-		ace_sa_range_unit = "yards";
-		ace_sa_table_elev[] = {{ 0,0 },{ 100,0.52 },{ 200,1.21 },{ 300,1.89 },{ 400,2.62 },{ 500,3.41 },{ 600,4.21 },{ 700,5.11 },{ 800,6.09 },{ 900,7.03 },{ 1000,8.13 },{ 1100,9.35 },{ 1200,10.63 },{ 1300,12 },{ 1400,13.53 },{ 1500,15.14 },{ 1600,16.9 },{ 1700,18.79 },{ 1800,20.8 },{ 1900,22.99 },{ 2000,25.35 },{ 2100,27.94 },{ 2200,30.76 },{ 2300,33.77 },{ 2400,36.95 },{ 2500,40.55 },{ 2600,44.56 }};
-		
 	};
+	
 	class AP_M1117_D: AP_M1117_base
 	{
 		scope = 2;
