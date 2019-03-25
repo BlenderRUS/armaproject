@@ -82,7 +82,10 @@ class CfgVehicles
 	};
 	class Wheeled_APC: Car {};
 	class Truck: Car {};
-	class ACE_Truck5tMG_Base : Truck {};
+	class ACE_Truck5tMG_Base : Truck 
+	{
+		class AnimationSources;
+	};
 	class BRDM2_Base: Wheeled_APC
 	{
 		class Turrets
@@ -2431,22 +2434,47 @@ class CfgVehicles
 			};
 		};
 		
-
+		class AnimationSources: AnimationSources
+		{
+			class HitGlass1
+			{
+				source = "Hit";
+				raw = 1;
+				hitpoint = "HitGlass1";
+			};
+			class HitGlass2: HitGlass1
+			{
+				hitpoint = "HitGlass2";
+			};
+			class HitGlass3: HitGlass1
+			{
+				hitpoint = "HitGlass3";
+			};
+			class HitGlass4: HitGlass1
+			{
+				hitpoint = "HitGlass4";
+			};
+			class HitGlass5: HitGlass1
+			{
+				hitpoint = "HitGlass5";
+			};
+		};
+		
 		class HitPoints: HitPoints
 		{
-				class HitGlass1 {armor=1.0;material=-1;name="glass1";visual="glass1";passThrough=0;};
-				class HitGlass2 {armor=1.0;material=-1;name="glass2";visual="glass2";passThrough=0;};
-				class HitGlass3 {armor=1.0;material=-1;name="glass3";visual="glass3";passThrough=0;};
-				class HitGlass4 {armor=1.0;material=-1;name="glass4";visual="glass4";passThrough=0;};
-				class HitGlass5 {armor=1.0;material=-1;name="glass5";visual="glass5";passThrough=0;};
-				class HitGlass6 {armor=1.0;material=-1;name="glass6";visual="glass6";passThrough=0;};
+				class HitGlass1 {armor=1.2;material=-1;name="glass1";visual="glass1";passThrough=0;};
+				class HitGlass2 {armor=1.2;material=-1;name="glass2";visual="glass2";passThrough=0;};
+				class HitGlass3 {armor=1.2;material=-1;name="glass3";visual="glass3";passThrough=0;};
+				class HitGlass4 {armor=1.2;material=-1;name="glass4";visual="glass4";passThrough=0;};
+				class HitGlass5 {armor=1.2;material=-1;name="glass5";visual="glass5";passThrough=0;};
+				class HitGlass6 {armor=1.2;material=-1;name="glass6";visual="glass6";passThrough=0;};
 				
-				class HitGlass10 {armor=1.0;material=-1;name="glass10";visual="glass10";passThrough=0;};
-				class HitGlass11 {armor=1.0;material=-1;name="glass11";visual="glass11";passThrough=0;};
-				class HitGlass12 {armor=1.0;material=-1;name="glass12";visual="glass12";passThrough=0;};
-				class HitGlass13 {armor=1.0;material=-1;name="glass13";visual="glass13";passThrough=0;};
-				class HitGlass14 {armor=1.0;material=-1;name="glass14";visual="glass14";passThrough=0;};
-				class HitGlass15 {armor=1.0;material=-1;name="glass15";visual="glass15";passThrough=0;};
+				class HitGlass10 {armor=1.2;material=-1;name="glass10";visual="glass10";passThrough=0;};
+				class HitGlass11 {armor=1.2;material=-1;name="glass11";visual="glass11";passThrough=0;};
+				class HitGlass12 {armor=1.2;material=-1;name="glass12";visual="glass12";passThrough=0;};
+				class HitGlass13 {armor=1.2;material=-1;name="glass13";visual="glass13";passThrough=0;};
+				class HitGlass14 {armor=1.2;material=-1;name="glass14";visual="glass14";passThrough=0;};
+				class HitGlass15 {armor=1.2;material=-1;name="glass15";visual="glass15";passThrough=0;};
 				
 			class HitLFWheel: HitLFWheel
 			{
