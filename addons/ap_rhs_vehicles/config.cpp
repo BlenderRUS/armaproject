@@ -1858,10 +1858,6 @@ class CfgVehicles
 			maxAngleY = 90;
 			visionMode[] = {"Normal"};
 		};
-		ace_sa_defaultelevation = 0;
-		ace_sa_defaultwindage = 0;
-		ace_sa_enabled = 1;
-		ace_sa_te_enabled = 1;
 		class CargoTurret;
 		class Turrets: Turrets
 		{
@@ -1881,8 +1877,8 @@ class CfgVehicles
 				weapons[]= {"M2","ACE_MK19","SmokeLauncher"};
 				magazines[]=
 				{
-					"100Rnd_127x99_M2","100Rnd_127x99_M2","100Rnd_127x99_M2","100Rnd_127x99_M2","100Rnd_127x99_M2",
 					"48Rnd_40mm_MK19","48Rnd_40mm_MK19","48Rnd_40mm_MK19","48Rnd_40mm_MK19","48Rnd_40mm_MK19",
+					"100Rnd_127x99_M2","100Rnd_127x99_M2","100Rnd_127x99_M2","100Rnd_127x99_M2","100Rnd_127x99_M2",
 					"SmokeLauncherMag"
 				};
 				soundServo[] = {"\ca\wheeled\Data\Sound\servo4",0.0056234132,1.0,15};
@@ -2229,7 +2225,23 @@ class CfgVehicles
 			"ap_rhs_vehicles\data\m1117_wheel_co.paa",
 			"ap_rhs_vehicles\data\A2_parts_D_co.paa",
 			"ap_rhs_vehicles\data\duke_antennae_d_co.paa"
-		};	
+		};
+		
+		ace_sa_enabled = 1;
+		ace_sa_adj_mode = "range";
+		ace_sa_defaultwindage = 0;
+		ace_sa_minelevation = 100;
+		ace_sa_stepelevation = 100;
+		ace_sa_windage = 10;
+		ace_sa_stepwindage = 1;
+		ace_sa_elev_unit = "mil";
+		ace_sa_wind_unit = "mil";
+		ace_sa_TE_enabled = 1;
+		ace_sa_defaultelevation = 0;
+		ace_sa_maxelevation = 2600;
+		ace_sa_range_unit = "yards";
+		ace_sa_table_elev[] = {{ 0,0 },{ 100,0.52 },{ 200,1.21 },{ 300,1.89 },{ 400,2.62 },{ 500,3.41 },{ 600,4.21 },{ 700,5.11 },{ 800,6.09 },{ 900,7.03 },{ 1000,8.13 },{ 1100,9.35 },{ 1200,10.63 },{ 1300,12 },{ 1400,13.53 },{ 1500,15.14 },{ 1600,16.9 },{ 1700,18.79 },{ 1800,20.8 },{ 1900,22.99 },{ 2000,25.35 },{ 2100,27.94 },{ 2200,30.76 },{ 2300,33.77 },{ 2400,36.95 },{ 2500,40.55 },{ 2600,44.56 }};
+		
 	};
 	class AP_M1117_D: AP_M1117_base
 	{
@@ -2450,19 +2462,11 @@ class CfgVehicles
 		
 		class HitPoints: HitPoints
 		{
-				class HitGlass1 {armor=1.2;material=-1;name="glass1";visual="glass1";passThrough=0;};
-				class HitGlass2 {armor=1.2;material=-1;name="glass2";visual="glass2";passThrough=0;};
-				class HitGlass3 {armor=1.2;material=-1;name="glass3";visual="glass3";passThrough=0;};
-				class HitGlass4 {armor=1.2;material=-1;name="glass4";visual="glass4";passThrough=0;};
-				class HitGlass5 {armor=1.2;material=-1;name="glass5";visual="glass5";passThrough=0;};
-				class HitGlass6 {armor=1.2;material=-1;name="glass6";visual="glass6";passThrough=0;};
-				
-				class HitGlass10 {armor=1.2;material=-1;name="glass10";visual="glass10";passThrough=0;};
-				class HitGlass11 {armor=1.2;material=-1;name="glass11";visual="glass11";passThrough=0;};
-				class HitGlass12 {armor=1.2;material=-1;name="glass12";visual="glass12";passThrough=0;};
-				class HitGlass13 {armor=1.2;material=-1;name="glass13";visual="glass13";passThrough=0;};
-				class HitGlass14 {armor=1.2;material=-1;name="glass14";visual="glass14";passThrough=0;};
-				class HitGlass15 {armor=1.2;material=-1;name="glass15";visual="glass15";passThrough=0;};
+				class HitGlass1 {armor=2;material=-1;name="glass1";visual="glass1";passThrough=0;};
+				class HitGlass2 {armor=2;material=-1;name="glass2";visual="glass2";passThrough=0;};
+				class HitGlass3 {armor=2;material=-1;name="glass3";visual="glass3";passThrough=0;};
+				class HitGlass4 {armor=2;material=-1;name="glass4";visual="glass4";passThrough=0;};
+				class HitGlass5 {armor=2;material=-1;name="glass5";visual="glass5";passThrough=0;};
 				
 			class HitLFWheel: HitLFWheel
 			{
