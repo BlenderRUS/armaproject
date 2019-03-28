@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AP">
+<Package name="ap_l129a1">
+<Container name="STR_L129a1">
+
+<Key ID="STR_NAME_L129A1">
+<Original>L129A1</Original>
+</Key>
+
+<Key ID="STR_NAME_L129A1_CCO">
+<Original>L129A1 CCO</Original>
+</Key>
+
+<Key ID="STR_NAME_L129A1_ACOG">
+<Original>L129A1 ACOG</Original>
+</Key>
+
+<Key ID="STR_NAME_L129A1_SV">
+<Original>L129A1 SV</Original>
+</Key>
+
+<Key ID="STR_NAME_L129A1_SV_NV">
+<Original>L129A1 SV NV</Original>
+</Key>
+
+<Key ID="STR_NAME_L129A1_ACOG_NV">
+<Original>L129A1 ACOG NV</Original>
+</Key>
+
+<Key ID="STR_NAME_L129A1_B">
+<Original>L129A1 (Black)</Original>
+</Key>
+
+<Key ID="STR_NAME_L129A1_CCO_B">
+<Original>L129A1 CCO (Black)</Original>
+</Key>
+
+<Key ID="STR_NAME_L129A1_ACOG_B">
+<Original>L129A1 ACOG (Black)</Original>
+</Key>
+
+<Key ID="STR_NAME_L129A1_SV_B">
+<Original>L129A1 SV (Black)</Original>
+</Key>
+
+<Key ID="STR_NAME_L129A1_SV_NV_B">
+<Original>L129A1 SV NV (Black)</Original>
+</Key>
+
+<Key ID="STR_NAME_L129A1_ACOG_NV_B">
+<Original>L129A1 ACOG NV (Black)</Original>
+</Key>
+
+</Container>
+</Package>
+</Project>
