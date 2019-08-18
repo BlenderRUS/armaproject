@@ -1,0 +1,19 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: pracs_infantry\equip_g\ar\war_gog_gl.rvmat
+//Produced from mikero's Dos Tools Dll version 6.24
+//'now' is Thu Aug 15 19:17:24 2019 : 'file' last modified on Sun Feb 07 21:00:53 2016
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {0.439,0.439,0.439,1};
+diffuse[] = {0.439,0.439,0.439,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {0.196,0.175,0.15,0};
+specularPower = 11;
+renderFlags[] = {"NoAlphaWrite"};
+nextPass = "CA\data\sklo-pass2.rvmat";
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";

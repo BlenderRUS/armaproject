@@ -1,0 +1,56 @@
+////////// Skin value /////////////////////
+// UnsCattered Layer color (0,0,0)> UnsCattered weight (alfa)
+ambient[]={0.54000,0.58000,0.52000,3.5};
+diffuse[]={0.500000,0.5500000,0.500000,1.0};
+// Epidermal mul par. > Epidermal add par. > Epidermal dark rim factor > Epidermal weight
+forcedDiffuse[]={0.12,0.3,0.32,0.7};
+// Subdermal mul par. > Subdermal add par. > Subdermal dark rim factor > Subdermal weight
+emmisive[]={0.5,0.8,0.7,0.12};
+//-----------------------------------------
+
+specular[]={0.026000,0.0250000,0.0250,0.3};
+specularPower=120.000000;
+PixelShaderID="Skin";
+VertexShaderID="Skin";
+class Stage1
+{
+	texture="CA\characters\Heads\Male\DefaultHead\Data\hhl_NOHQ.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1.000000,0.000000,0.000000};
+		up[]={0.000000,1.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage2
+{
+	texture="ca\characters\hhl\hhl_wound1_mc.tga";
+	uvSource="tex";
+};
+class Stage3
+{
+	//texture="#(argb,8,8,3)color(1,1,1,1.0,SDM)";
+	texture="CA\characters\Heads\Male\DefaultHead\Data\hhl_white_SDM.paa";
+	uvSource="tex";
+};
+class Stage4
+{
+	//texture="#(argb,8,8,3)color(1.0,1.0,1.0,1,AS)";
+	texture="CA\Characters\Heads\Male\DefaultHead\data\hhl_AS.paa";
+	uvSource="tex";
+};
+class Stage5
+{
+	//texture="#(argb,8,8,3)color(1,0.35,1,1,SMDI)";
+	texture="CA\characters\Heads\Male\DefaultHead\Data\hhl_white_SMDI.paa";
+	uvSource="tex";
+};
+class Stage6
+{
+	//texture="#(ai,64,1,1)fresnel(0.8,0.2)";
+	//texture="#(ai,64,1,1)fresnel(6.2,9.1)";
+	texture="#(ai,64,1,1)fresnel(1.2,1.6)";
+	uvSource="none";
+};
