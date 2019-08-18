@@ -25,41 +25,6 @@ class CfgVehicles
 		{
 			
 			armor = 60;
-			class HitPoints : HitPoints
-			{
-				class HitVRotor
-				{
-					armor=4;
-					material=1;
-					name="motor";
-					visual="velka vrtule staticka";
-					passThrough=0.8;
-				};
-				class HitHRotor  
-				{
-					armor=0.2;
-					material=1;
-					name="motor";
-					visual="mala vrtule staticka";
-					passThrough=0.8;
-				};
-				class HitEngine
-				{
-					armor=2;
-					material=1;
-					name="motor";
-					visual="trup";
-					passThrough=0.5;
-				};
-				class HitHull
-				{
-					armor=20;
-					material=1;
-					name="NEtrup";
-					visual="trup";
-					passThrough=0.5;
-				};
-			};
 		};
 	class CH_47F_BAF: CH_47F_EP1
 	{

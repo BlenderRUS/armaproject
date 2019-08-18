@@ -2228,45 +2228,37 @@ class CfgVehicles
 			{
 				armor=0.5;
 			};
-			class HitHull
-			{
-				armor=20;
-				material=1;
-				name="NEtrup";
-				visual="trup";
-				passThrough=0.5;
-			};
 			class HitEngine
 			{
-				armor=2;
-				material=2;
-				name="motor";
-				visual="trup";
-				passThrough=0.5;
+				armor = 0.5;
+				material = 2;
+				name = "motor";
+				visual = "motor";
+				passThrough = 0.5;
 			};
 			class HitAvionics
 			{
-				armor=0.15000001;
-				material=51;
-				name="elektronika";
-				visual="elektronika";
-				passThrough=0.2;
+				armor = 0.15;
+				material = 51;
+				name = "elektronika";
+				visual = "elektronika";
+				passThrough = 0.2;
 			};
 			class HitVRotor
 			{
-				armor=0.30000001;
-				material=51;
-				name="mala vrtule";
-				visual="mala vrtule staticka";
-				passThrough=0.1;
+				armor = 0.3;
+				material = 51;
+				name = "mala vrtule";
+				visual = "mala vrtule staticka";
+				passThrough = 0.1;
 			};
 			class HitHRotor
 			{
-				armor=0.2;
-				material=51;
-				name="velka vrtule";
-				visual="velka vrtule staticka";
-				passThrough=0.1;
+				armor = 0.2;
+				material = 51;
+				name = "velka vrtule";
+				visual = "velka vrtule staticka";
+				passThrough = 0.1;
 			};
 			class HitGlass6
 			{
@@ -2728,45 +2720,37 @@ class CfgVehicles
 		destrType="DestructWreck";
 		class HitPoints: HitPoints
 		{
-			class HitHull
-			{
-				armor=20;
-				material=1;
-				name="NEtrup";
-				visual="trup";
-				passThrough=0.5;
-			};
 			class HitEngine
 			{
-				armor=2;
-				material=1;
-				name="motor";
-				visual="trup";
-				passThrough=0.5;
+				armor = 0.5;
+				material = 2;
+				name = "motor";
+				visual = "motor";
+				passThrough = 0.5;
 			};
 			class HitAvionics
 			{
-				armor=0.15000001;
-				material=51;
-				name="elektronika";
-				visual="elektronika";
-				passThrough=0.2;
+				armor = 0.15;
+				material = 51;
+				name = "elektronika";
+				visual = "elektronika";
+				passThrough = 0.2;
 			};
 			class HitVRotor
 			{
-				armor=0.30000001;
-				material=51;
-				name="mala vrtule";
-				visual="mala vrtule staticka";
-				passThrough=0.1;
+				armor = 0.3;
+				material = 51;
+				name = "mala vrtule";
+				visual = "mala vrtule staticka";
+				passThrough = 0.1;
 			};
 			class HitHRotor
 			{
-				armor=0.2;
-				material=51;
-				name="velka vrtule";
-				visual="velka vrtule staticka";
-				passThrough=0.1;
+				armor = 0.2;
+				material = 51;
+				name = "velka vrtule";
+				visual = "velka vrtule staticka";
+				passThrough = 0.1;
 			};
 			class HitGlass1: HitGlass1
 			{
