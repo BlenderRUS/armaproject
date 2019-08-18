@@ -226,7 +226,7 @@ class CfgVehicles
 		{
 			init = "MoveOnCargo = compile preprocessFileLineNumbers '\rhs_cargosystem\scripts\bgr_MoveOnCargo.sqf'; rhs_enableCS = compile preprocessFileLineNumbers '\rhs_cargosystem\scripts\enableCS.sqf'; RHS_cargoSystem_geton_group = compile preprocessFileLineNumbers '\rhs_cargosystem\scripts\f_geton_group.sqf'; _ok = _this execVM '\rhs_cargosystem\scripts\cargoSystem_init.sqf';";
 		};
-		RHS_cargoSystem_wfList[] = {{"AP_M1117_base","not"},{"T90","not"},{"ACE_M88","not"},{"ACE_Vulcan","not"},{"p85_m88a1_base","not"},{"pzn_chaparel_base","not"},{"pzn_mtlbu_base","not"},{"pzn_mtlb_sa13_base","not"},{"AP_SPRUT_base","not"},{"pzn_mtlb_amb_base","rhs_cargo_mtlbR"},{"pzn_mtlb_apc_base","rhs_cargo_mtlb"},{"M113Ambul_Base","rhs_cargo_m113ambul"},{"m113_Base","rhs_cargo_m113"},{"TU_BTRRD","rhs_cargo_btrd"},{"TU_BTRD","rhs_cargo_btrd"},{"TU_BTRZD","rhs_cargo_btrd"},{"T72_Base","rhs_cargo_t72"},{"T55_Base","rhs_cargo_t55"},{"BMP2_Ambul_Base","rhs_cargo_bmp2ambul"},{"ACE_BMP2D_RU","rhs_cargo_bmp2aceD"},{"rhs_bmp_base","rhs_cargo_bmp2RHS"},{"rhs_bmd_base","rhs_cargo_bmd2"},{"BMP2_HQ_Base","not"},{"BMP2_Base","rhs_cargo_bmp2"},{"ACE_BTR70_Base","rhs_cargo_btr70"},{"AP_BTR80","rhs_cargo_btr80"},{"AP_BTR82A","rhs_cargo_btr82a"},{"BTR60_TK_EP1","rhs_cargo_btr60"},{"BRDM2_ATGM_Base","not"},{"BRDM2_HQ_Base","not"},{"BRDM2_Base","rhs_cargo_brdm2"}};
+		RHS_cargoSystem_wfList[] = {{"PRACS_m577_MHQ","not"},{"PRACS_M901_ITV","rhs_cargo_M901_ITV"},{"AP_M1117_base","not"},{"T90","not"},{"ACE_M88","not"},{"ACE_Vulcan","not"},{"p85_m88a1_base","not"},{"pzn_chaparel_base","not"},{"pzn_mtlbu_base","not"},{"pzn_mtlb_sa13_base","not"},{"AP_SPRUT_base","not"},{"pzn_mtlb_amb_base","rhs_cargo_mtlbR"},{"pzn_mtlb_apc_base","rhs_cargo_mtlb"},{"PRACS_M113_Mk19","rhs_cargo_m113_mk19"},{"M113Ambul_Base","rhs_cargo_m113ambul"},{"m113_Base","rhs_cargo_m113"},{"TU_BTRRD","rhs_cargo_btrd"},{"TU_BTRD","rhs_cargo_btrd"},{"TU_BTRZD","rhs_cargo_btrd"},{"T72_Base","rhs_cargo_t72"},{"T55_Base","rhs_cargo_t55"},{"BMP2_Ambul_Base","rhs_cargo_bmp2ambul"},{"ACE_BMP2D_RU","rhs_cargo_bmp2aceD"},{"rhs_bmp_base","rhs_cargo_bmp2RHS"},{"rhs_bmd_base","rhs_cargo_bmd2"},{"BMP2_HQ_Base","not"},{"BMP2_Base","rhs_cargo_bmp2"},{"ACE_BTR70_Base","rhs_cargo_btr70"},{"AP_BTR80","rhs_cargo_btr80"},{"AP_BTR82A","rhs_cargo_btr82a"},{"BTR60_TK_EP1","rhs_cargo_btr60"},{"BRDM2_ATGM_Base","not"},{"BRDM2_HQ_Base","not"},{"BRDM2_Base","rhs_cargo_brdm2"}};
 	};
 	class StaticCannon;
 	class rhs_cargo_base: StaticCannon
@@ -279,6 +279,14 @@ class CfgVehicles
 	class rhs_cargo_m113ambul: rhs_cargo_m113
 	{
 		RHS_attachToPos[] = {0,2.9,-0.6};
+	};
+	class rhs_cargo_m113_mk19: rhs_cargo_m113
+	{
+		RHS_attachToPos[] = {0,-0.6,-0.6};
+	};
+	class rhs_cargo_M901_ITV: rhs_cargo_m113
+	{
+		RHS_attachToPos[] = {0,-0.35,-0.6};
 	};
 	class rhs_cargo_btr70: rhs_cargo_base
 	{
