@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project name="pracs_Armored">
+	<Package name="Armored">
+			<Key ID="STR_ArmoredPRACS">
+				<English>Armored Sahrani</English>
+				<German>Armored Sahrani</German>
+				<Italian>Armored Sahrani</Italian>
+				<Spanish>Armored Sahrani</Spanish>
+				<Czech>Armored Sahrani</Czech>
+				<Russian>Бронетехника Сахрани</Russian>
+				<Polish>Armored Sahrani</Polish>
+				<Hungarian>Armored Sahrani</Hungarian>
+				<French>Armored Sahrani</French>
+			</Key>
+			<Key ID="STR_CarPRACS">
+				<English>Car Sahrani</English>
+				<German>Car Sahrani</German>
+				<Italian>Car Sahrani</Italian>
+				<Spanish>Car Sahrani</Spanish>
+				<Czech>Car Sahrani</Czech>
+				<Russian>Машины Сахрани</Russian>
+				<Polish>Car Sahrani</Polish>
+				<Hungarian>Car Sahrani</Hungarian>
+				<French>Car Sahrani</French>
+			</Key>
+			<Key ID="STR_pracs_FV101">
+				<Original>FV101 'Scorpion'</Original>
+				<English>FV101 'Scorpion'</English>
+				<Russian>FV101 'Scorpion'</Russian>
+			</Key>
+			<Key ID="STR_pracs_FV107">
+				<Original>FV107 'Scimitar'</Original>
+				<English>FV107 'Scimitar'</English>
+				<Russian>FV107 'Scimitar'</Russian>
+			</Key>
+			<Key ID="STR_POSITION_LEFTM60GUNNER">
+				<Original>Left Gunner M60</Original>
+				<English>Left Gunner M60</English>
+				<Russian>Левый Стрелок М60</Russian>
+			</Key>
+			<Key ID="STR_POSITION_RIGHTM60GUNNER">
+				<Original>Right Gunner M60</Original>
+				<English>Right Gunner M60</English>
+				<Russian>Правый Стрелок М60</Russian>
+			</Key>
+	</Package>
+</Project>

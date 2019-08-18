@@ -1,0 +1,105 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: pracs_tracked 2\tex\M60\m60_wheel02.rvmat
+//Produced from mikero's Dos Tools Dll version 6.24
+//'now' is Sat Jul 13 14:24:06 2019 : 'file' last modified on Mon Aug 27 18:45:33 2012
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {1,1,1,1};
+diffuse[] = {1,1,1,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {1,1,1,0};
+specularPower = 30;
+PixelShaderID = "Super";
+VertexShaderID = "Super";
+class StageTI
+{
+	texture = "pracs_tracked\tex\M60\wheel_2_G_ti_ca.paa";
+};
+class Stage1
+{
+	texture = "PRACS_Tracked\tex\M60\wheel_2_G_nohq.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,1};
+		pos[] = {0,0,0};
+	};
+};
+class Stage2
+{
+	texture = "#(argb,8,8,3)color(0.5,0.5,0.5,1,DT)";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,1};
+		pos[] = {0,0,0};
+	};
+};
+class Stage3
+{
+	texture = "#(argb,8,8,3)color(0,0,0,0,MC)";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,1};
+		pos[] = {0,0,0};
+	};
+};
+class Stage4
+{
+	texture = "#(argb,8,8,3)color(1,1,1,1,AS)";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,1};
+		pos[] = {0,0,0};
+	};
+};
+class Stage5
+{
+	texture = "PRACS_Tracked\tex\M60\wheel_2_G_smdi.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,1};
+		pos[] = {0,0,0};
+	};
+};
+class Stage6
+{
+	texture = "#(ai,32,128,1)fresnel(0.45,0.35)";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,1};
+		pos[] = {0,0,0};
+	};
+};
+class Stage7
+{
+	texture = "ca\data\env_land_co.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,1};
+		pos[] = {0,0,0};
+	};
+};

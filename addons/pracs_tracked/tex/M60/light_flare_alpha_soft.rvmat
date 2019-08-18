@@ -1,0 +1,18 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: pracs_tracked 2\tex\M60\light_flare_alpha_soft.rvmat
+//Produced from mikero's Dos Tools Dll version 6.24
+//'now' is Sat Jul 13 14:24:06 2019 : 'file' last modified on Mon Aug 27 18:45:33 2012
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {0.5,0.5,0.5,1.0};
+diffuse[] = {0.5,0.5,0.5,1.0};
+forcedDiffuse[] = {0.005,0.005,0.005,0.0};
+emmisive[] = {0.5,0.5,0.5,1.0};
+specular[] = {0.0,0.0,0.0,0.0};
+specularPower = 0.0;
+renderFlags[] = {"NoZWrite","NoAlphaWrite","AddBlend"};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
