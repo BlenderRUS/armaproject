@@ -1,0 +1,2147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX">
+<Package name="tu_uh60">
+<Container name="STR">
+<Key ID="STR_TU_FOLD_WINGS">
+<English>Fold wings</English>
+<Czech>Fold wings</Czech>
+<German>Fold wings</German>
+<Polish>Fold wings</Polish>
+<Russian>Сложить крылья</Russian>
+<French>Fold wings</French>
+<Spanish>Fold wings</Spanish>
+<Italian>Fold wings</Italian>
+<Hungarian>Fold wings</Hungarian>
+</Key>
+<Key ID="STR_TU_UNFOLD_WINGS">
+<English>Unfold wings</English>
+<Czech>Unfold wings</Czech>
+<German>Unfold wings</German>
+<Polish>Unfold wings</Polish>
+<Russian>Разложить крылья</Russian>
+<French>Unfold wings</French>
+<Spanish>Unfold wings</Spanish>
+<Italian>Unfold wings</Italian>
+<Hungarian>Unfold wings</Hungarian>
+</Key>
+<Key ID="STR_TU_KA50">
+<English>Ka-50</English>
+<German>Ka-50</German>
+<Italian>Ka-50</Italian>
+<Spanish>Ka-50</Spanish>
+<Czech>Ka-50</Czech>
+<Russian>Ка-50</Russian>
+<Polish>Ka-50</Polish>
+<Hungarian>Ka-50</Hungarian>
+<French>Ka-50</French>
+</Key>
+<Key ID="STR_TU_KA50_OD">
+<English>Ka-50 w OD</English>
+<German>Ka-50 w OD</German>
+<Italian>Ka-50 w OD</Italian>
+<Spanish>Ka-50 w OD</Spanish>
+<Czech>Ka-50 w OD</Czech>
+<Russian>Ка-50 с БКО</Russian>
+<Polish>Ka-50 w OD</Polish>
+<Hungarian>Ka-50 w OD</Hungarian>
+<French>Ka-50 w OD</French>
+</Key>
+<Key ID="STR_TU_KA52_OD">
+<English>Ka-52 w OD</English>
+<German>Ka-52 w OD</German>
+<Italian>Ka-52 w OD</Italian>
+<Spanish>Ka-52 w OD</Spanish>
+<Czech>Ka-52 w OD</Czech>
+<Russian>Ка-52 с БКО</Russian>
+<Polish>Ka-52 w OD</Polish>
+<Hungarian>Ka-52 w OD</Hungarian>
+<French>Ka-52 w OD</French>
+</Key>
+<Key ID="STR_TU_KA52B_OD">
+<English>Ka-52 black w OD</English>
+<German>Ka-52 black w OD</German>
+<Italian>Ka-52 black w OD</Italian>
+<Spanish>Ka-52 black w OD</Spanish>
+<Czech>Ka-52 black w OD</Czech>
+<Russian>Ка-52 черный с БКО</Russian>
+<Polish>Ka-52 black w OD</Polish>
+<Hungarian>Ka-52 black w OD</Hungarian>
+<French>Ka-52 black w OD</French>
+</Key>
+<Key ID="STR_TU_KA52">
+<English>Ka-52</English>
+<German>Ka-52</German>
+<Italian>Ka-52</Italian>
+<Spanish>Ka-52</Spanish>
+<Czech>Ka-52</Czech>
+<Russian>Ка-52</Russian>
+<Polish>Ka-52</Polish>
+<Hungarian>Ka-52</Hungarian>
+<French>Ka-52</French>
+</Key>
+<Key ID="STR_TU_KA52B">
+<English>Ka-52 black</English>
+<German>Ka-52 black</German>
+<Italian>Ka-52 black</Italian>
+<Spanish>Ka-52 black</Spanish>
+<Czech>Ka-52 black</Czech>
+<Russian>Ка-52 черный</Russian>
+<Polish>Ka-52 black</Polish>
+<Hungarian>Ka-52 black</Hungarian>
+<French>Ka-52 black</French>
+</Key>
+<Key ID="STR_TU_KA52_OD_ATAKA">
+<English>Ka-52 w OD (Ataka)</English>
+<German>Ka-52 w OD (Ataka)</German>
+<Italian>Ka-52 w OD (Ataka)</Italian>
+<Spanish>Ka-52 w OD (Ataka)</Spanish>
+<Czech>Ka-52 w OD (Ataka)</Czech>
+<Russian>Ка-52 с БКО (Атака)</Russian>
+<Polish>Ka-52 w OD (Ataka)</Polish>
+<Hungarian>Ka-52 w OD (Ataka)</Hungarian>
+<French>Ka-52 w OD (Ataka)</French>
+</Key>
+<Key ID="STR_TU_KA52B_OD_ATAKA">
+<English>Ka-52 black w OD (Ataka)</English>
+<German>Ka-52 black w OD (Ataka)</German>
+<Italian>Ka-52 black w OD (Ataka)</Italian>
+<Spanish>Ka-52 black w OD (Ataka)</Spanish>
+<Czech>Ka-52 black w OD (Ataka)</Czech>
+<Russian>Ка-52 черный с БКО (Атака)</Russian>
+<Polish>Ka-52 black w OD (Ataka)</Polish>
+<Hungarian>Ka-52 black w OD (Ataka)</Hungarian>
+<French>Ka-52 black w OD (Ataka)</French>
+</Key>
+<Key ID="STR_TU_KA52_ATAKA">
+<English>Ka-52 (Ataka)</English>
+<German>Ka-52 (Ataka)</German>
+<Italian>Ka-52 (Ataka)</Italian>
+<Spanish>Ka-52 (Ataka)</Spanish>
+<Czech>Ka-52 (Ataka)</Czech>
+<Russian>Ка-52 (Атака)</Russian>
+<Polish>Ka-52 (Ataka)</Polish>
+<Hungarian>Ka-52 (Ataka)</Hungarian>
+<French>Ka-52 (Ataka)</French>
+</Key>
+<Key ID="STR_TU_KA52B_ATAKA">
+<English>Ka-52 black (Ataka)</English>
+<German>Ka-52 black (Ataka)</German>
+<Italian>Ka-52 black (Ataka)</Italian>
+<Spanish>Ka-52 black (Ataka)</Spanish>
+<Czech>Ka-52 black (Ataka)</Czech>
+<Russian>Ка-52 черный (Атака)</Russian>
+<Polish>Ka-52 black (Ataka)</Polish>
+<Hungarian>Ka-52 black (Ataka)</Hungarian>
+<French>Ka-52 black (Ataka)</French>
+</Key>
+<Key ID="STR_TU_KA52_OD_KH25">
+<English>Ka-52 w OD (Kh-25ML)</English>
+<German>Ka-52 w OD (Kh-25ML)</German>
+<Italian>Ka-52 w OD (Kh-25ML)</Italian>
+<Spanish>Ka-52 w OD (Kh-25ML)</Spanish>
+<Czech>Ka-52 w OD (Kh-25ML)</Czech>
+<Russian>Ка-52 с БКО (Х-25МЛ)</Russian>
+<Polish>Ka-52 w OD (Kh-25ML)</Polish>
+<Hungarian>Ka-52 w OD (Kh-25ML)</Hungarian>
+<French>Ka-52 w OD (Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_KA52B_OD_KH25">
+<English>Ka-52 black w OD (Kh-25ML)</English>
+<German>Ka-52 black w OD (Kh-25ML)</German>
+<Italian>Ka-52 black w OD (Kh-25ML)</Italian>
+<Spanish>Ka-52 black w OD (Kh-25ML)</Spanish>
+<Czech>Ka-52 black w OD (Kh-25ML)</Czech>
+<Russian>Ка-52 черный с БКО (Х-25МЛ)</Russian>
+<Polish>Ka-52 black w OD (Kh-25ML)</Polish>
+<Hungarian>Ka-52 black w OD (Kh-25ML)</Hungarian>
+<French>Ka-52 black w OD (Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_KA52_KH25">
+<English>Ka-52 (Kh-25ML)</English>
+<German>Ka-52 (Kh-25ML)</German>
+<Italian>Ka-52 (Kh-25ML)</Italian>
+<Spanish>Ka-52 (Kh-25ML)</Spanish>
+<Czech>Ka-52 (Kh-25ML)</Czech>
+<Russian>Ка-52 (Х-25МЛ)</Russian>
+<Polish>Ka-52 (Kh-25ML)</Polish>
+<Hungarian>Ka-52 (Kh-25ML)</Hungarian>
+<French>Ka-52 (Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_KA52B_KH25">
+<English>Ka-52 black (Kh-25ML)</English>
+<German>Ka-52 black (Kh-25ML)</German>
+<Italian>Ka-52 black (Kh-25ML)</Italian>
+<Spanish>Ka-52 black (Kh-25ML)</Spanish>
+<Czech>Ka-52 black (Kh-25ML)</Czech>
+<Russian>Ка-52 черный (Х-25МЛ)</Russian>
+<Polish>Ka-52 black (Kh-25ML)</Polish>
+<Hungarian>Ka-52 black (Kh-25ML)</Hungarian>
+<French>Ka-52 black (Kh-25ML)</French>
+</Key>
+<Key ID="STR_KA60_B">
+<Original>Ka-60 black</Original>
+<English>Ka-60 black</English>
+<Czech>Ka-60 black</Czech>
+<German>Ka-60 black</German>
+<Russian>Ка-60 'Касатка' черный</Russian>
+<Polish>Ka-60 black</Polish>
+<Hungarian>Ka-60 black</Hungarian>
+<Italian>Ka-60 black</Italian>
+<Spanish>Ka-60 black</Spanish>
+<French>Ka-60 black</French>
+</Key>
+<Key ID="STR_TU_MiG29_LIB">
+<German>The Mikoyan MiG-29 (Russian: Микоян МиГ-29; NATO reporting name: "Fulcrum") is a jet fighter aircraft designed in the Soviet Union.</German>
+<English>The Mikoyan MiG-29 (Russian: Микоян МиГ-29; NATO reporting name: "Fulcrum") is a jet fighter aircraft designed in the Soviet Union.</English>
+<Italian>The Mikoyan MiG-29 (Russian: Микоян МиГ-29; NATO reporting name: "Fulcrum") is a jet fighter aircraft designed in the Soviet Union.</Italian>
+<Spanish>The Mikoyan MiG-29 (Russian: Микоян МиГ-29; NATO reporting name: "Fulcrum") is a jet fighter aircraft designed in the Soviet Union.</Spanish>
+<French>The Mikoyan MiG-29 (Russian: Микоян МиГ-29; NATO reporting name: "Fulcrum") is a jet fighter aircraft designed in the Soviet Union.</French>
+<Czech>The Mikoyan MiG-29 (Russian: Микоян МиГ-29; NATO reporting name: "Fulcrum") is a jet fighter aircraft designed in the Soviet Union.</Czech>
+<Russian>МиГ-29 (изделие 9-12, по кодификации НАТО: Fulcrum — точка опоры) — советский/российский многоцелевой истребитель четвёртого поколения, разработанный в ОКБ МиГ.</Russian>
+<Polish>The Mikoyan MiG-29 (Russian: Микоян МиГ-29; NATO reporting name: "Fulcrum") is a jet fighter aircraft designed in the Soviet Union.</Polish>
+<Hungarian>The Mikoyan MiG-29 (Russian: Микоян МиГ-29; NATO reporting name: "Fulcrum") is a jet fighter aircraft designed in the Soviet Union.</Hungarian>
+</Key>
+<Key ID="STR_TU_MiG29_R73M">
+<English>MiG-29 9-13S (CAP)</English>
+<German>MiG-29 9-13S (CAP)</German>
+<Italian>MiG-29 9-13S (CAP)</Italian>
+<Spanish>MiG-29 9-13S (CAP)</Spanish>
+<Czech>MiG-29 9-13S (CAP)</Czech>
+<Russian>МиГ-29 9-13С (В-В)</Russian>
+<Polish>MiG-29 9-13S (CAP)</Polish>
+<Hungarian>MiG-29 9-13S (CAP)</Hungarian>
+<French>MiG-29 9-13S (CAP)</French>
+</Key>
+<Key ID="STR_TU_MiG29_R77">
+<English>MiG-29 9-13S (CAP2)</English>
+<German>MiG-29 9-13S (CAP2)</German>
+<Italian>MiG-29 9-13S (CAP2)</Italian>
+<Spanish>MiG-29 9-13S (CAP2)</Spanish>
+<Czech>MiG-29 9-13S (CAP2)</Czech>
+<Russian>МиГ-29 9-13С (В-В2)</Russian>
+<Polish>MiG-29 9-13S (CAP2)</Polish>
+<Hungarian>MiG-29 9-13S (CAP2)</Hungarian>
+<French>MiG-29 9-13S (CAP2)</French>
+</Key>
+<Key ID="STR_TU_MiG29_4FAB250">
+<English>MiG-29 9-13S (FAB-250)</English>
+<German>MiG-29 9-13S (FAB-250)</German>
+<Italian>MiG-29 9-13S (FAB-250)</Italian>
+<Spanish>MiG-29 9-13S (FAB-250)</Spanish>
+<Czech>MiG-29 9-13S (FAB-250)</Czech>
+<Russian>МиГ-29 9-13С (ФАБ-250)</Russian>
+<Polish>MiG-29 9-13S (FAB-250)</Polish>
+<Hungarian>MiG-29 9-13S (FAB-250)</Hungarian>
+<French>MiG-29 9-13S (FAB-250)</French>
+</Key>
+<Key ID="STR_TU_MiG29_4FAB500">
+<English>MiG-29 9-13S (FAB-500)</English>
+<German>MiG-29 9-13S (FAB-500)</German>
+<Italian>MiG-29 9-13S (FAB-500)</Italian>
+<Spanish>MiG-29 9-13S (FAB-500)</Spanish>
+<Czech>MiG-29 9-13S (FAB-500)</Czech>
+<Russian>МиГ-29 9-13С (ФАБ-500)</Russian>
+<Polish>MiG-29 9-13S (FAB-500)</Polish>
+<Hungarian>MiG-29 9-13S (FAB-500)</Hungarian>
+<French>MiG-29 9-13S (FAB-500)</French>
+</Key>
+<Key ID="STR_TU_MiG29_4S8">
+<English>MiG-29 9-13S (S-8)</English>
+<German>MiG-29 9-13S (S-8)</German>
+<Italian>MiG-29 9-13S (S-8)</Italian>
+<Spanish>MiG-29 9-13S (S-8)</Spanish>
+<Czech>MiG-29 9-13S (S-8)</Czech>
+<Russian>МиГ-29 9-13С (С-8)</Russian>
+<Polish>MiG-29 9-13S (S-8)</Polish>
+<Hungarian>MiG-29 9-13S (S-8)</Hungarian>
+<French>MiG-29 9-13S (S-8)</French>
+</Key>
+<Key ID="STR_TU_MiG29_Kh29">
+<English>MiG-29 9-13S (2xR-73M/2xKh-29L)</English>
+<German>MiG-29 9-13S (2xR-73M/2xKh-29L)</German>
+<Italian>MiG-29 9-13S (2xR-73M/2xKh-29L)</Italian>
+<Spanish>MiG-29 9-13S (2xR-73M/2xKh-29L)</Spanish>
+<Czech>MiG-29 9-13S (2xR-73M/2xKh-29L)</Czech>
+<Russian>МиГ-29 9-13С (2xР-73М/2xХ-29Л)</Russian>
+<Polish>MiG-29 9-13S (2xR-73M/2xKh-29L)</Polish>
+<Hungarian>MiG-29 9-13S (2xR-73M/2xKh-29L)</Hungarian>
+<French>MiG-29 9-13S (2xR-73M/2xKh-29L)</French>
+</Key>
+<Key ID="STR_TU_MiG29_Kh29_BKO">
+<English>MiG-29 9-13S w OD (2xR-73M/2xKh-29L)</English>
+<German>MiG-29 9-13S w OD (2xR-73M/2xKh-29L)</German>
+<Italian>MiG-29 9-13S w OD (2xR-73M/2xKh-29L)</Italian>
+<Spanish>MiG-29 9-13S w OD (2xR-73M/2xKh-29L)</Spanish>
+<Czech>MiG-29 9-13S w OD (2xR-73M/2xKh-29L)</Czech>
+<Russian>МиГ-29 9-13С с БКО (2xР-73М/2xХ-29Л)</Russian>
+<Polish>MiG-29 9-13S w OD (2xR-73M/2xKh-29L)</Polish>
+<Hungarian>MiG-29 9-13S w OD (2xR-73M/2xKh-29L)</Hungarian>
+<French>MiG-29 9-13S w OD (2xR-73M/2xKh-29L)</French>
+</Key>
+<Key ID="STR_TU_MiG29_R73M_BKO">
+<English>MiG-29 9-13S w OD (CAP)</English>
+<German>MiG-29 9-13S w OD (CAP)</German>
+<Italian>MiG-29 9-13S w OD (CAP)</Italian>
+<Spanish>MiG-29 9-13S w OD (CAP)</Spanish>
+<Czech>MiG-29 9-13S w OD (CAP)</Czech>
+<Russian>МиГ-29 9-13С с БКО (В-В)</Russian>
+<Polish>MiG-29 9-13S w OD (CAP)</Polish>
+<Hungarian>MiG-29 9-13S w OD (CAP)</Hungarian>
+<French>MiG-29 9-13S w OD (CAP)</French>
+</Key>
+<Key ID="STR_TU_MiG29_R77_BKO">
+<English>MiG-29 9-13S w OD (CAP2)</English>
+<German>MiG-29 9-13S w OD (CAP2)</German>
+<Italian>MiG-29 9-13S w OD (CAP2)</Italian>
+<Spanish>MiG-29 9-13S w OD (CAP2)</Spanish>
+<Czech>MiG-29 9-13S w OD (CAP2)</Czech>
+<Russian>МиГ-29 9-13С с БКО (В-В2)</Russian>
+<Polish>MiG-29 9-13S w OD (CAP2)</Polish>
+<Hungarian>MiG-29 9-13S w OD (CAP2)</Hungarian>
+<French>MiG-29 9-13S w OD (CAP2)</French>
+</Key>
+<Key ID="STR_TU_MiG29_4FAB250_BKO">
+<English>MiG-29 9-13S w OD (FAB-250)</English>
+<German>MiG-29 9-13S w OD (FAB-250)</German>
+<Italian>MiG-29 9-13S w OD (FAB-250)</Italian>
+<Spanish>MiG-29 9-13S w OD (FAB-250)</Spanish>
+<Czech>MiG-29 9-13S w OD (FAB-250)</Czech>
+<Russian>МиГ-29 9-13С с БКО (ФАБ-250)</Russian>
+<Polish>MiG-29 9-13S w OD (FAB-250)</Polish>
+<Hungarian>MiG-29 9-13S w OD (FAB-250)</Hungarian>
+<French>MiG-29 9-13S w OD (FAB-250)</French>
+</Key>
+<Key ID="STR_TU_MiG29_4FAB500_BKO">
+<English>MiG-29 9-13S w OD (FAB-500)</English>
+<German>MiG-29 9-13S w OD (FAB-500)</German>
+<Italian>MiG-29 9-13S w OD (FAB-500)</Italian>
+<Spanish>MiG-29 9-13S w OD (FAB-500)</Spanish>
+<Czech>MiG-29 9-13S w OD (FAB-500)</Czech>
+<Russian>МиГ-29 9-13С с БКО (ФАБ-500)</Russian>
+<Polish>MiG-29 9-13S w OD (FAB-500)</Polish>
+<Hungarian>MiG-29 9-13S w OD (FAB-500)</Hungarian>
+<French>MiG-29 9-13S w OD (FAB-500)</French>
+</Key>
+<Key ID="STR_TU_MiG29_4S8_BKO">
+<English>MiG-29 9-13S w OD (S-8)</English>
+<German>MiG-29 9-13S w OD (S-8)</German>
+<Italian>MiG-29 9-13S w OD (S-8)</Italian>
+<Spanish>MiG-29 9-13S w OD (S-8)</Spanish>
+<Czech>MiG-29 9-13S w OD (S-8)</Czech>
+<Russian>МиГ-29 9-13С с БКО (С-8)</Russian>
+<Polish>MiG-29 9-13S w OD (S-8)</Polish>
+<Hungarian>MiG-29 9-13S w OD (S-8)</Hungarian>
+<French>MiG-29 9-13S w OD (S-8)</French>
+</Key>
+<Key ID="STR_TU_MiG29_R73A_CDF">
+<English>MiG-29 9-12A (CAP)</English>
+<German>MiG-29 9-12A (CAP)</German>
+<Italian>MiG-29 9-12A (CAP)</Italian>
+<Spanish>MiG-29 9-12A (CAP)</Spanish>
+<Czech>MiG-29 9-12A (CAP)</Czech>
+<Russian>МиГ-29 9-12А (В-В)</Russian>
+<Polish>MiG-29 9-12A (CAP)</Polish>
+<Hungarian>MiG-29 9-12A (CAP)</Hungarian>
+<French>MiG-29 9-12A (CAP)</French>
+</Key>
+<Key ID="STR_TU_MiG29_R27_CDF">
+<English>MiG-29 9-12A (CAP2)</English>
+<German>MiG-29 9-12A (CAP2)</German>
+<Italian>MiG-29 9-12A (CAP2)</Italian>
+<Spanish>MiG-29 9-12A (CAP2)</Spanish>
+<Czech>MiG-29 9-12A (CAP2)</Czech>
+<Russian>МиГ-29 9-12А (В-В2)</Russian>
+<Polish>MiG-29 9-12A (CAP2)</Polish>
+<Hungarian>MiG-29 9-12A (CAP2)</Hungarian>
+<French>MiG-29 9-12A (CAP2)</French>
+</Key>
+<Key ID="STR_TU_MiG29_4FAB250_CDF">
+<English>MiG-29 9-12A (FAB-250)</English>
+<German>MiG-29 9-12A (FAB-250)</German>
+<Italian>MiG-29 9-12A (FAB-250)</Italian>
+<Spanish>MiG-29 9-12A (FAB-250)</Spanish>
+<Czech>MiG-29 9-12A (FAB-250)</Czech>
+<Russian>МиГ-29 9-12А (ФАБ-250)</Russian>
+<Polish>MiG-29 9-12A (FAB-250)</Polish>
+<Hungarian>MiG-29 9-12A (FAB-250)</Hungarian>
+<French>MiG-29 9-12A (FAB-250)</French>
+</Key>
+<Key ID="STR_TU_MiG29_4FAB500_CDF">
+<English>MiG-29 9-12A (FAB-500)</English>
+<German>MiG-29 9-12A (FAB-500)</German>
+<Italian>MiG-29 9-12A (FAB-500)</Italian>
+<Spanish>MiG-29 9-12A (FAB-500)</Spanish>
+<Czech>MiG-29 9-12A (FAB-500)</Czech>
+<Russian>МиГ-29 9-12А (ФАБ-500)</Russian>
+<Polish>MiG-29 9-12A (FAB-500)</Polish>
+<Hungarian>MiG-29 9-12A (FAB-500)</Hungarian>
+<French>MiG-29 9-12A (FAB-500)</French>
+</Key>
+<Key ID="STR_TU_MiG29_4S8_CDF">
+<English>MiG-29 9-12A (S-8)</English>
+<German>MiG-29 9-12A (S-8)</German>
+<Italian>MiG-29 9-12A (S-8)</Italian>
+<Spanish>MiG-29 9-12A (S-8)</Spanish>
+<Czech>MiG-29 9-12A (S-8)</Czech>
+<Russian>МиГ-29 9-12А (С-8)</Russian>
+<Polish>MiG-29 9-12A (S-8)</Polish>
+<Hungarian>MiG-29 9-12A (S-8)</Hungarian>
+<French>MiG-29 9-12A (S-8)</French>
+</Key>
+<Key ID="STR_POPIS">
+<German>UH-60A with upgraded T700-GE-701C engines, improved durability gearbox, and updated flight control system. Produced 1989–2007. UH-60Ls are also being equipped with the GE T700-GE-701D engine.</German>
+<English>UH-60A with upgraded T700-GE-701C engines, improved durability gearbox, and updated flight control system. Produced 1989–2007. UH-60Ls are also being equipped with the GE T700-GE-701D engine.</English>
+<Italian>UH-60A with upgraded T700-GE-701C engines, improved durability gearbox, and updated flight control system. Produced 1989–2007. UH-60Ls are also being equipped with the GE T700-GE-701D engine.</Italian>
+<Spanish>UH-60A with upgraded T700-GE-701C engines, improved durability gearbox, and updated flight control system. Produced 1989–2007. UH-60Ls are also being equipped with the GE T700-GE-701D engine.</Spanish>
+<French>UH-60A with upgraded T700-GE-701C engines, improved durability gearbox, and updated flight control system. Produced 1989–2007. UH-60Ls are also being equipped with the GE T700-GE-701D engine.</French>
+<Czech>UH-60A with upgraded T700-GE-701C engines, improved durability gearbox, and updated flight control system. Produced 1989–2007. UH-60Ls are also being equipped with the GE T700-GE-701D engine.</Czech>
+<Russian>UH-60A with upgraded T700-GE-701C engines, improved durability gearbox, and updated flight control system. Produced 1989–2007. UH-60Ls are also being equipped with the GE T700-GE-701D engine.</Russian>
+<Polish>UH-60A with upgraded T700-GE-701C engines, improved durability gearbox, and updated flight control system. Produced 1989–2007. UH-60Ls are also being equipped with the GE T700-GE-701D engine.</Polish>
+<Hungarian>UH-60A with upgraded T700-GE-701C engines, improved durability gearbox, and updated flight control system. Produced 1989–2007. UH-60Ls are also being equipped with the GE T700-GE-701D engine.</Hungarian>
+</Key>
+<Key ID="STR_POPIS_2">
+<German>The SH-60B LAMPS Mk III is deployed primarily aboard frigates, destroyers, and cruisers. The primary missions of the SH-60B are surface warfare and anti-submarine warfare.</German>
+<English>The SH-60B LAMPS Mk III is deployed primarily aboard frigates, destroyers, and cruisers. The primary missions of the SH-60B are surface warfare and anti-submarine warfare.</English>
+<Italian>The SH-60B LAMPS Mk III is deployed primarily aboard frigates, destroyers, and cruisers. The primary missions of the SH-60B are surface warfare and anti-submarine warfare.</Italian>
+<Spanish>The SH-60B LAMPS Mk III is deployed primarily aboard frigates, destroyers, and cruisers. The primary missions of the SH-60B are surface warfare and anti-submarine warfare.</Spanish>
+<French>The SH-60B LAMPS Mk III is deployed primarily aboard frigates, destroyers, and cruisers. The primary missions of the SH-60B are surface warfare and anti-submarine warfare.</French>
+<Czech>The SH-60B LAMPS Mk III is deployed primarily aboard frigates, destroyers, and cruisers. The primary missions of the SH-60B are surface warfare and anti-submarine warfare.</Czech>
+<Russian>The SH-60B LAMPS Mk III is deployed primarily aboard frigates, destroyers, and cruisers. The primary missions of the SH-60B are surface warfare and anti-submarine warfare.</Russian>
+<Polish>The SH-60B LAMPS Mk III is deployed primarily aboard frigates, destroyers, and cruisers. The primary missions of the SH-60B are surface warfare and anti-submarine warfare.</Polish>
+<Hungarian>The SH-60B LAMPS Mk III is deployed primarily aboard frigates, destroyers, and cruisers. The primary missions of the SH-60B are surface warfare and anti-submarine warfare.</Hungarian>
+</Key>
+<Key ID="STR_POPIS_3">
+<German>Special operations modification, used by the U.S. Army's 160th Special Operations Aviation Regiment ("Night Stalkers"), based on the UH-60L with T700-701C engines. It was developed as an interim version in the late 1980s pending fielding of the MH-60K. Equipped with many of the systems used on MH-60K, including FLIR, terrain-following radar, color weather map generator, auxiliary fuel system, and laser rangefinder/designator. A total of 37 MH-60Ls were built and some 10 had received an in-flight refueling probe by 2003.</German>
+<English>Special operations modification, used by the U.S. Army's 160th Special Operations Aviation Regiment ("Night Stalkers"), based on the UH-60L with T700-701C engines. It was developed as an interim version in the late 1980s pending fielding of the MH-60K. Equipped with many of the systems used on MH-60K, including FLIR, terrain-following radar, color weather map generator, auxiliary fuel system, and laser rangefinder/designator. A total of 37 MH-60Ls were built and some 10 had received an in-flight refueling probe by 2003.</English>
+<Italian>Special operations modification, used by the U.S. Army's 160th Special Operations Aviation Regiment ("Night Stalkers"), based on the UH-60L with T700-701C engines. It was developed as an interim version in the late 1980s pending fielding of the MH-60K. Equipped with many of the systems used on MH-60K, including FLIR, terrain-following radar, color weather map generator, auxiliary fuel system, and laser rangefinder/designator. A total of 37 MH-60Ls were built and some 10 had received an in-flight refueling probe by 2003.</Italian>
+<Spanish>Special operations modification, used by the U.S. Army's 160th Special Operations Aviation Regiment ("Night Stalkers"), based on the UH-60L with T700-701C engines. It was developed as an interim version in the late 1980s pending fielding of the MH-60K. Equipped with many of the systems used on MH-60K, including FLIR, terrain-following radar, color weather map generator, auxiliary fuel system, and laser rangefinder/designator. A total of 37 MH-60Ls were built and some 10 had received an in-flight refueling probe by 2003.</Spanish>
+<French>Special operations modification, used by the U.S. Army's 160th Special Operations Aviation Regiment ("Night Stalkers"), based on the UH-60L with T700-701C engines. It was developed as an interim version in the late 1980s pending fielding of the MH-60K. Equipped with many of the systems used on MH-60K, including FLIR, terrain-following radar, color weather map generator, auxiliary fuel system, and laser rangefinder/designator. A total of 37 MH-60Ls were built and some 10 had received an in-flight refueling probe by 2003.</French>
+<Czech>Special operations modification, used by the U.S. Army's 160th Special Operations Aviation Regiment ("Night Stalkers"), based on the UH-60L with T700-701C engines. It was developed as an interim version in the late 1980s pending fielding of the MH-60K. Equipped with many of the systems used on MH-60K, including FLIR, terrain-following radar, color weather map generator, auxiliary fuel system, and laser rangefinder/designator. A total of 37 MH-60Ls were built and some 10 had received an in-flight refueling probe by 2003.</Czech>
+<Russian>Special operations modification, used by the U.S. Army's 160th Special Operations Aviation Regiment ("Night Stalkers"), based on the UH-60L with T700-701C engines. It was developed as an interim version in the late 1980s pending fielding of the MH-60K. Equipped with many of the systems used on MH-60K, including FLIR, terrain-following radar, color weather map generator, auxiliary fuel system, and laser rangefinder/designator. A total of 37 MH-60Ls were built and some 10 had received an in-flight refueling probe by 2003.</Russian>
+<Polish>Special operations modification, used by the U.S. Army's 160th Special Operations Aviation Regiment ("Night Stalkers"), based on the UH-60L with T700-701C engines. It was developed as an interim version in the late 1980s pending fielding of the MH-60K. Equipped with many of the systems used on MH-60K, including FLIR, terrain-following radar, color weather map generator, auxiliary fuel system, and laser rangefinder/designator. A total of 37 MH-60Ls were built and some 10 had received an in-flight refueling probe by 2003.</Polish>
+<Hungarian>Special operations modification, used by the U.S. Army's 160th Special Operations Aviation Regiment ("Night Stalkers"), based on the UH-60L with T700-701C engines. It was developed as an interim version in the late 1980s pending fielding of the MH-60K. Equipped with many of the systems used on MH-60K, including FLIR, terrain-following radar, color weather map generator, auxiliary fuel system, and laser rangefinder/designator. A total of 37 MH-60Ls were built and some 10 had received an in-flight refueling probe by 2003.</Hungarian>
+</Key>
+<Key ID="STR_Su25BKO_Kh25">
+<English>Su-25 w OD (Kh-25)</English>
+<Czech>Su-25 w OD (Ch-25)</Czech>
+<German>Su-25 w OD (Kh-25)</German>
+<Polish>Su-25 w OD (Ch-25)</Polish>
+<Russian>Су-25 с БКО (Х-25)</Russian>
+<French>Su-25 w OD (Kh-25)</French>
+<Spanish>Su-25 w OD (Kh-25)</Spanish>
+<Italian>Su-25 w OD (Kh-25)</Italian>
+<Hungarian>Szu-25 w OD (Kh-25)</Hungarian>
+</Key>
+<Key ID="STR_Su25_Kh25">
+<English>Su-25 (Kh-25)</English>
+<Czech>Su-25 (Ch-25)</Czech>
+<German>Su-25 (Kh-25)</German>
+<Polish>Su-25 (Ch-25)</Polish>
+<Russian>Су-25 (Х-25)</Russian>
+<French>Su-25 (Kh-25)</French>
+<Spanish>Su-25 (Kh-25)</Spanish>
+<Italian>Su-25 (Kh-25)</Italian>
+<Hungarian>Szu-25 (Kh-25)</Hungarian>
+</Key>
+<Key ID="STR_Su25BKO">
+<English>Su-25 w OD (FAB-250)</English>
+<Czech>Su-25 w OD (FAB-250)</Czech>
+<German>Su-25 w OD (FAB-250)</German>
+<Polish>Su-25 w OD (FAB-250)</Polish>
+<Russian>Су-25 с БКО (ФАБ-250)</Russian>
+<French>Su-25 w OD (FAB-250)</French>
+<Spanish>Su-25 w OD (FAB-250)</Spanish>
+<Italian>Su-25 w OD (FAB-250)</Italian>
+<Hungarian>Szu-25 w OD (FAB-250)</Hungarian>
+</Key>
+<Key ID="STR_Su25BKO_Kh29">
+<English>Su-25 w OD (Kh-29)</English>
+<Czech>Su-25 w OD (Ch-29)</Czech>
+<German>Su-25 w OD (Kh-29)</German>
+<Polish>Su-25 w OD (Ch-29)</Polish>
+<Russian>Су-25 с БКО (Х-29)</Russian>
+<French>Su-25 w OD (Kh-29)</French>
+<Spanish>Su-25 w OD (Kh-29)</Spanish>
+<Italian>Su-25 w OD (Kh-29)</Italian>
+<Hungarian>Szu-25 w OD (Kh-29)</Hungarian>
+</Key>
+<Key ID="STR_Su34">
+<English>Su-34 Fullback (Kh-29L)</English>
+<Czech>Su-34 Fullback (Kh-29L)</Czech>
+<German>Su-34 Fullback (Kh-29L)</German>
+<Polish>Su-34 Fullback (Kh-29L)</Polish>
+<Russian>Су-34 (Х-29Л)</Russian>
+<French>Su-34 Fullback (Kh-29L)</French>
+<Spanish>Su-34 Fullback (Kh-29L)</Spanish>
+<Italian>Su-34 Fullback (Kh-29L)</Italian>
+<Hungarian>Su-34 Fullback (Kh-29L)</Hungarian>
+</Key>
+<Key ID="STR_Su34_MR">
+<English>Su-34 Fullback (KAB-500L)</English>
+<Czech>Su-34 Fullback (KAB-500L)</Czech>
+<German>Su-34 Fullback (KAB-500L)</German>
+<Polish>Su-34 Fullback (KAB-500L)</Polish>
+<Russian>Су-34 (КАБ-500Л)</Russian>
+<French>Su-34 Fullback (KAB-500L)</French>
+<Spanish>Su-34 Fullback (KAB-500L)</Spanish>
+<Italian>Su-34 Fullback (KAB-500L)</Italian>
+<Hungarian>Su-34 Fullback (KAB-500L)</Hungarian>
+</Key>
+<Key ID="STR_Su34_KAB1500">
+<English>Su-34 Fullback (KAB-1500L)</English>
+<Czech>Su-34 Fullback (KAB-1500L)</Czech>
+<German>Su-34 Fullback (KAB-1500L)</German>
+<Polish>Su-34 Fullback (KAB-1500L)</Polish>
+<Russian>Су-34 (КАБ-1500Л)</Russian>
+<French>Su-34 Fullback (KAB-1500L)</French>
+<Spanish>Su-34 Fullback (KAB-1500L)</Spanish>
+<Italian>Su-34 Fullback (KAB-1500L)</Italian>
+<Hungarian>Su-34 Fullback (KAB-1500L)</Hungarian>
+</Key>
+<Key ID="STR_Su30">
+<English>Su-30 Flanker-C (Kh-29L)</English>
+<Czech>Su-30 Flanker-C (Kh-29L)</Czech>
+<German>Su-30 Flanker-C (Kh-29L)</German>
+<Polish>Su-30 Flanker-C (Kh-29L)</Polish>
+<Russian>Су-30 (Х-29Л)</Russian>
+<French>Su-30 Flanker-C (Kh-29L)</French>
+<Spanish>Su-30 Flanker-C (Kh-29L)</Spanish>
+<Italian>Su-30 Flanker-C (Kh-29L)</Italian>
+<Hungarian>Su-30 Flanker-C (Kh-29L)</Hungarian>
+</Key>
+<Key ID="STR_Su30_MR">
+<English>Su-30 Flanker-C (KAB-500L)</English>
+<Czech>Su-30 Flanker-C (KAB-500L)</Czech>
+<German>Su-30 Flanker-C (KAB-500L)</German>
+<Polish>Su-30 Flanker-C (KAB-500L)</Polish>
+<Russian>Су-30 (КАБ-500Л)</Russian>
+<French>Su-30 Flanker-C (KAB-500L)</French>
+<Spanish>Su-30 Flanker-C (KAB-500L)</Spanish>
+<Italian>Su-30 Flanker-C (KAB-500L)</Italian>
+<Hungarian>Su-30 Flanker-C (KAB-500L)</Hungarian>
+</Key>
+<Key ID="STR_Su30_KAB250">
+<English>Su-30 Flanker-C (KAB-250L)</English>
+<Czech>Su-30 Flanker-C (KAB-250L)</Czech>
+<German>Su-30 Flanker-C (KAB-250L)</German>
+<Polish>Su-30 Flanker-C (KAB-250L)</Polish>
+<Russian>Су-30 (КАБ-250Л)</Russian>
+<French>Su-30 Flanker-C (KAB-250L)</French>
+<Spanish>Su-30 Flanker-C (KAB-250L)</Spanish>
+<Italian>Su-30 Flanker-C (KAB-250L)</Italian>
+<Hungarian>Su-30 Flanker-C (KAB-250L)</Hungarian>
+</Key>
+<Key ID="STR_Su30_CAP">
+<English>Su-30 Flanker-C (В-В)</English>
+<Czech>Su-30 Flanker-C (В-В)</Czech>
+<German>Su-30 Flanker-C (В-В)</German>
+<Polish>Su-30 Flanker-C (В-В)</Polish>
+<Russian>Су-30 (В-В)</Russian>
+<French>Su-30 Flanker-C (В-В)</French>
+<Spanish>Su-30 Flanker-C (В-В)</Spanish>
+<Italian>Su-30 Flanker-C (В-В)</Italian>
+<Hungarian>Su-30 Flanker-C (В-В)</Hungarian>
+</Key>
+<Key ID="STR_Su30_Kh29">
+<English>Su-30 Flanker-C (2xKh-29T/4xKh-29L/CAP2)</English>
+<Czech>Su-30 Flanker-C (2xKh-29T/4xKh-29L/CAP2)</Czech>
+<German>Su-30 Flanker-C (2xKh-29T/4xKh-29L/CAP2)</German>
+<Polish>Su-30 Flanker-C (2xKh-29T/4xKh-29L/CAP2)</Polish>
+<Russian>Су-30 (2xХ-29Т/4xХ-29Л/В-В2)</Russian>
+<French>Su-30 Flanker-C (2xKh-29T/4xKh-29L/CAP2)</French>
+<Spanish>Su-30 Flanker-C (2xKh-29T/4xKh-29L/CAP2)</Spanish>
+<Italian>Su-30 Flanker-C (2xKh-29T/4xKh-29L/CAP2)</Italian>
+<Hungarian>Su-30 Flanker-C (2xKh-29T/4xKh-29L/CAP2)</Hungarian>
+</Key>
+<Key ID="STR_Su30BKO">
+<English>Su-30SM Flanker-C (Kh-29L)</English>
+<Czech>Su-30SM Flanker-C (Kh-29L)</Czech>
+<German>Su-30SM Flanker-C (Kh-29L)</German>
+<Polish>Su-30SM Flanker-C (Kh-29L)</Polish>
+<Russian>Су-30СМ (Х-29Л)</Russian>
+<French>Su-30SM Flanker-C (Kh-29L)</French>
+<Spanish>Su-30SM Flanker-C (Kh-29L)</Spanish>
+<Italian>Su-30SM Flanker-C (Kh-29L)</Italian>
+<Hungarian>Su-30SM Flanker-C (Kh-29L)</Hungarian>
+</Key>
+<Key ID="STR_Su30BKO_MR">
+<English>Su-30SM Flanker-C (KAB-500L)</English>
+<Czech>Su-30SM Flanker-C (KAB-500L)</Czech>
+<German>Su-30SM Flanker-C (KAB-500L)</German>
+<Polish>Su-30SM Flanker-C (KAB-500L)</Polish>
+<Russian>Су-30СМ (КАБ-500Л)</Russian>
+<French>Su-30SM Flanker-C (KAB-500L)</French>
+<Spanish>Su-30SM Flanker-C (KAB-500L)</Spanish>
+<Italian>Su-30SM Flanker-C (KAB-500L)</Italian>
+<Hungarian>Su-30SM Flanker-C (KAB-500L)</Hungarian>
+</Key>
+<Key ID="STR_Su30BKO_KAB250">
+<English>Su-30SM Flanker-C (KAB-250L)</English>
+<Czech>Su-30SM Flanker-C (KAB-250L)</Czech>
+<German>Su-30SM Flanker-C (KAB-250L)</German>
+<Polish>Su-30SM Flanker-C (KAB-250L)</Polish>
+<Russian>Су-30СМ (КАБ-250Л)</Russian>
+<French>Su-30SM Flanker-C (KAB-250L)</French>
+<Spanish>Su-30SM Flanker-C (KAB-250L)</Spanish>
+<Italian>Su-30SM Flanker-C (KAB-250L)</Italian>
+<Hungarian>Su-30SM Flanker-C (KAB-250L)</Hungarian>
+</Key>
+<Key ID="STR_Su30BKO_CAP">
+<English>Su-30SM Flanker-C (В-В)</English>
+<Czech>Su-30SM Flanker-C (В-В)</Czech>
+<German>Su-30SM Flanker-C (В-В)</German>
+<Polish>Su-30SM Flanker-C (В-В)</Polish>
+<Russian>Су-30СМ (В-В)</Russian>
+<French>Su-30SM Flanker-C (В-В)</French>
+<Spanish>Su-30SM Flanker-C (В-В)</Spanish>
+<Italian>Su-30SM Flanker-C (В-В)</Italian>
+<Hungarian>Su-30SM Flanker-C (В-В)</Hungarian>
+</Key>
+<Key ID="STR_Su30BKO_Kh29">
+<English>Su-30SM Flanker-C (2xKh-29T/4xKh-29L/CAP2)</English>
+<Czech>Su-30SM Flanker-C (2xKh-29T/4xKh-29L/CAP2)</Czech>
+<German>Su-30SM Flanker-C (2xKh-29T/4xKh-29L/CAP2)</German>
+<Polish>Su-30SM Flanker-C (2xKh-29T/4xKh-29L/CAP2)</Polish>
+<Russian>Су-30СМ (2xХ-29Т/4xХ-29Л/В-В2)</Russian>
+<French>Su-30SM Flanker-C (2xKh-29T/4xKh-29L/CAP2)</French>
+<Spanish>Su-30SM Flanker-C (2xKh-29T/4xKh-29L/CAP2)</Spanish>
+<Italian>Su-30SM Flanker-C (2xKh-29T/4xKh-29L/CAP2)</Italian>
+<Hungarian>Su-30SM Flanker-C (2xKh-29T/4xKh-29L/CAP2)</Hungarian>
+</Key>
+<Key ID="STR_Su27_CAP">
+<English>Su-27S Flanker-B (CAP)</English>
+<German>Su-27S Flanker-B (CAP)</German>
+<Italian>Su-27S Flanker-B (CAP)</Italian>
+<Spanish>Su-27S Flanker-B (CAP)</Spanish>
+<Czech>Su-27S Flanker-B (CAP)</Czech>
+<Russian>Су-27С (В-В)</Russian>
+<Polish>Su-27S Flanker-B (CAP)</Polish>
+<Hungarian>Su-27S Flanker-B (CAP)</Hungarian>
+<French>Su-27S Flanker-B (CAP)</French>
+</Key>
+<Key ID="STR_Su27_CAP2">
+<English>Su-27S Flanker-B (CAP2)</English>
+<German>Su-27S Flanker-B (CAP2)</German>
+<Italian>Su-27S Flanker-B (CAP2)</Italian>
+<Spanish>Su-27S Flanker-B (CAP2)</Spanish>
+<Czech>Su-27S Flanker-B (CAP2)</Czech>
+<Russian>Су-27С (В-В2)</Russian>
+<Polish>Su-27S Flanker-B (CAP2)</Polish>
+<Hungarian>Su-27S Flanker-B (CAP2)</Hungarian>
+<French>Su-27S Flanker-B (CAP2)</French>
+</Key>
+<Key ID="STR_Su27_CASP">
+<English>Su-27S Flanker-B (CAS\CAP)</English>
+<German>Su-27S Flanker-B (CAS\CAP)</German>
+<Italian>Su-27S Flanker-B (CAS\CAP)</Italian>
+<Spanish>Su-27S Flanker-B (CAS\CAP)</Spanish>
+<Czech>Su-27S Flanker-B (CAS\CAP)</Czech>
+<Russian>Су-27С (В-П\В-В)</Russian>
+<Polish>Su-27S Flanker-B (CAS\CAP)</Polish>
+<Hungarian>Su-27S Flanker-B (CAS\CAP)</Hungarian>
+<French>Su-27S Flanker-B (CAS\CAP)</French>
+</Key>
+<Key ID="STR_Su27_CAS">
+<English>Su-27S Flanker-B (CAS)</English>
+<German>Su-27S Flanker-B (CAS)</German>
+<Italian>Su-27S Flanker-B (CAS)</Italian>
+<Spanish>Su-27S Flanker-B (CAS)</Spanish>
+<Czech>Su-27S Flanker-B (CAS)</Czech>
+<Russian>Су-27С (В-П)</Russian>
+<Polish>Su-27S Flanker-B (CAS)</Polish>
+<Hungarian>Su-27S Flanker-B (CAS)</Hungarian>
+<French>Su-27S Flanker-B (CAS)</French>
+</Key>
+<Key ID="STR_Su27BKO_CAP">
+<English>Su-27S w OD Flanker-B (CAP)</English>
+<German>Su-27S w OD Flanker-B (CAP)</German>
+<Italian>Su-27S w OD Flanker-B (CAP)</Italian>
+<Spanish>Su-27S w OD Flanker-B (CAP)</Spanish>
+<Czech>Su-27S w OD Flanker-B (CAP)</Czech>
+<Russian>Су-27С с БКО (В-В)</Russian>
+<Polish>Su-27S w OD Flanker-B (CAP)</Polish>
+<Hungarian>Su-27S w OD Flanker-B (CAP)</Hungarian>
+<French>Su-27S w OD Flanker-B (CAP)</French>
+</Key>
+<Key ID="STR_Su27BKO_CAP2">
+<English>Su-27S w OD Flanker-B (CAP2)</English>
+<German>Su-27S w OD Flanker-B (CAP2)</German>
+<Italian>Su-27S w OD Flanker-B (CAP2)</Italian>
+<Spanish>Su-27S w OD Flanker-B (CAP2)</Spanish>
+<Czech>Su-27S w OD Flanker-B (CAP2)</Czech>
+<Russian>Су-27С с БКО (В-В2)</Russian>
+<Polish>Su-27S w OD Flanker-B (CAP2)</Polish>
+<Hungarian>Su-27S w OD Flanker-B (CAP2)</Hungarian>
+<French>Su-27S w OD Flanker-B (CAP2)</French>
+</Key>
+<Key ID="STR_Su27BKO_CASP">
+<English>Su-27S w OD Flanker-B (CAS\CAP)</English>
+<German>Su-27S w OD Flanker-B (CAS\CAP)</German>
+<Italian>Su-27S w OD Flanker-B (CAS\CAP)</Italian>
+<Spanish>Su-27S w OD Flanker-B (CAS\CAP)</Spanish>
+<Czech>Su-27S w OD Flanker-B (CAS\CAP)</Czech>
+<Russian>Су-27С с БКО (В-П\В-В)</Russian>
+<Polish>Su-27S w OD Flanker-B (CAS\CAP)</Polish>
+<Hungarian>Su-27S w OD Flanker-B (CAS\CAP)</Hungarian>
+<French>Su-27S w OD Flanker-B (CAS\CAP)</French>
+</Key>
+<Key ID="STR_Su27BKO_CAS">
+<English>Su-27S w OD Flanker-B (CAS)</English>
+<German>Su-27S w OD Flanker-B (CAS)</German>
+<Italian>Su-27S w OD Flanker-B (CAS)</Italian>
+<Spanish>Su-27S w OD Flanker-B (CAS)</Spanish>
+<Czech>Su-27S w OD Flanker-B (CAS)</Czech>
+<Russian>Су-27С с БКО (В-П)</Russian>
+<Polish>Su-27S w OD Flanker-B (CAS)</Polish>
+<Hungarian>Su-27S w OD Flanker-B (CAS)</Hungarian>
+<French>Su-27S w OD Flanker-B (CAS)</French>
+</Key>
+<Key ID="STR_Mi25">
+<English>Mi-25</English>
+<Czech>Mi-25</Czech>
+<German>Mi-25</German>
+<Polish>Mi-25</Polish>
+<Russian>Ми-25</Russian>
+<French>Mi-25</French>
+<Spanish>Mi-25</Spanish>
+<Italian>Mi-25</Italian>
+<Hungarian>Mi-25</Hungarian>
+</Key>
+<Key ID="STR_Mi35">
+<English>Mi-35</English>
+<Czech>Mi-35</Czech>
+<German>Mi-35</German>
+<Polish>Mi-35</Polish>
+<Russian>Ми-35</Russian>
+<French>Mi-35</French>
+<Spanish>Mi-35</Spanish>
+<Italian>Mi-35</Italian>
+<Hungarian>Mi-35</Hungarian>
+</Key>
+<Key ID="STR_Mi35_8AT">
+<English>Mi-35 (AT)</English>
+<Czech>Mi-35 (AT)</Czech>
+<German>Mi-35 (AT)</German>
+<Polish>Mi-35 (AT)</Polish>
+<Russian>Ми-35 (ПТ)</Russian>
+<French>Mi-35 (AT)</French>
+<Spanish>Mi-35 (AT)</Spanish>
+<Italian>Mi-35 (AT)</Italian>
+<Hungarian>Mi-35 (AT)</Hungarian>
+</Key>
+<Key ID="STR_Mi35_8AA">
+<English>Mi-35 (CAP)</English>
+<Czech>Mi-35 (CAP)</Czech>
+<German>Mi-35 (CAP)</German>
+<Polish>Mi-35 (CAP)</Polish>
+<Russian>Ми-35 (В-В)</Russian>
+<French>Mi-35 (CAP)</French>
+<Spanish>Mi-35 (CAP)</Spanish>
+<Italian>Mi-35 (CAP)</Italian>
+<Hungarian>Mi-35 (CAP)</Hungarian>
+</Key>
+<Key ID="STR_Mi35_4AT_4AA">
+<English>Mi-35 (Multirole)</English>
+<Czech>Mi-35 (Multirole)</Czech>
+<German>Mi-35 (Multirole)</German>
+<Polish>Mi-35 (Multirole)</Polish>
+<Russian>Ми-35 (В-П/В-В)</Russian>
+<French>Mi-35 (Multirole)</French>
+<Spanish>Mi-35 (Multirole)</Spanish>
+<Italian>Mi-35 (Multirole)</Italian>
+<Hungarian>Mi-35 (Multirole)</Hungarian>
+</Key>
+<Key ID="STR_Mi35_4AA">
+<English>Mi-35 (CAP)</English>
+<Czech>Mi-35 (CAP)</Czech>
+<German>Mi-35 (CAP)</German>
+<Polish>Mi-35 (CAP)</Polish>
+<Russian>Ми-35 (В-В)</Russian>
+<French>Mi-35 (CAP)</French>
+<Spanish>Mi-35 (CAP)</Spanish>
+<Italian>Mi-35 (CAP)</Italian>
+<Hungarian>Mi-35 (CAP)</Hungarian>
+</Key>
+<Key ID="STR_MI35_FAB250">
+<English>Mi-35 (FAB-250)</English>
+<Czech>Mi-35 (FAB-250)</Czech>
+<German>Mi-35 (FAB-250)</German>
+<Polish>Mi-35 (FAB-250)</Polish>
+<Russian>Ми-35 (ФАБ-250)</Russian>
+<French>Mi-35 (FAB-250)</French>
+<Spanish>Mi-35 (FAB-250)</Spanish>
+<Italian>Mi-35 (FAB-250)</Italian>
+<Hungarian>Mi-35 (FAB-250)</Hungarian>
+</Key>
+<Key ID="STR_MI35_UPK23">
+<English>Mi-35 (UPK-23)</English>
+<Czech>Mi-35 (UPK-23)</Czech>
+<German>Mi-35 (UPK-23)</German>
+<Polish>Mi-35 (UPK-23)</Polish>
+<Russian>Ми-35 (УПК-23)</Russian>
+<French>Mi-35 (UPK-23)</French>
+<Spanish>Mi-35 (UPK-23)</Spanish>
+<Italian>Mi-35 (UPK-23)</Italian>
+<Hungarian>Mi-35 (UPK-23)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP">
+<English>Mi-24VP</English>
+<Czech>Mi-24VP</Czech>
+<German>Mi-24WP</German>
+<Polish>Mi-24WP</Polish>
+<Russian>Ми-24ВП</Russian>
+<French>Mi-24VP</French>
+<Spanish>Mi-24VP</Spanish>
+<Italian>Mi-24VP</Italian>
+<Hungarian>Mi-24VP</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP2">
+<English>Mi-24VP 2</English>
+<Czech>Mi-24VP 2</Czech>
+<German>Mi-24WP 2</German>
+<Polish>Mi-24WP 2</Polish>
+<Russian>Ми-24ВП 2</Russian>
+<French>Mi-24VP 2</French>
+<Spanish>Mi-24VP 2</Spanish>
+<Italian>Mi-24VP 2</Italian>
+<Hungarian>Mi-24VP 2</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP_8AT">
+<English>Mi-24VP (AT)</English>
+<Czech>Mi-24VP (AT)</Czech>
+<German>Mi-24WP (AT)</German>
+<Polish>Mi-24WP (AT)</Polish>
+<Russian>Ми-24ВП (ПТ)</Russian>
+<French>Mi-24VP (AT)</French>
+<Spanish>Mi-24VP (AT)</Spanish>
+<Italian>Mi-24VP (AT)</Italian>
+<Hungarian>Mi-24VP (AT)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP_AA">
+<English>Mi-24VP (CAP)</English>
+<Czech>Mi-24VP (CAP)</Czech>
+<German>Mi-24WP (CAP)</German>
+<Polish>Mi-24WP (CAP)</Polish>
+<Russian>Ми-24ВП (В-В)</Russian>
+<French>Mi-24VP (CAP)</French>
+<Spanish>Mi-24VP (CAP)</Spanish>
+<Italian>Mi-24VP (CAP)</Italian>
+<Hungarian>Mi-24VP (CAP)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP_4AT_4AA">
+<English>Mi-24VP (Multirole)</English>
+<Czech>Mi-24VP (Multirole)</Czech>
+<German>Mi-24WP (Multirole)</German>
+<Polish>Mi-24WP (Multirole)</Polish>
+<Russian>Ми-24ВП (В-П/В-В)</Russian>
+<French>Mi-24VP (Multirole)</French>
+<Spanish>Mi-24VP (Multirole)</Spanish>
+<Italian>Mi-24VP (Multirole)</Italian>
+<Hungarian>Mi-24VP (Multirole)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP_4AT_2AA">
+<English>Mi-24VP (Multirole2)</English>
+<Czech>Mi-24VP (Multirole2)</Czech>
+<German>Mi-24WP (Multirole2)</German>
+<Polish>Mi-24WP (Multirole2)</Polish>
+<Russian>Ми-24ВП (В-П/В-В2)</Russian>
+<French>Mi-24VP (Multirole2)</French>
+<Spanish>Mi-24VP (Multirole2)</Spanish>
+<Italian>Mi-24VP (Multirole2)</Italian>
+<Hungarian>Mi-24VP (Multirole2)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP_4AA">
+<English>Mi-24VP (CAP)</English>
+<Czech>Mi-24VP (CAP)</Czech>
+<German>Mi-24WP (CAP)</German>
+<Polish>Mi-24WP (CAP)</Polish>
+<Russian>Ми-24ВП (В-В)</Russian>
+<French>Mi-24VP (CAP)</French>
+<Spanish>Mi-24VP (CAP)</Spanish>
+<Italian>Mi-24VP (CAP)</Italian>
+<Hungarian>Mi-24VP (CAP)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_V_8AT">
+<English>Mi-24V (AT)</English>
+<Czech>Mi-24V (AT)</Czech>
+<German>Mi-24W (AT)</German>
+<Polish>Mi-24W (AT)</Polish>
+<Russian>Ми-24В (ПТ)</Russian>
+<French>Mi-24V (AT)</French>
+<Spanish>Mi-24V (AT)</Spanish>
+<Italian>Mi-24V (AT)</Italian>
+<Hungarian>Mi-24V (AT)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_V_8AA">
+<English>Mi-24V (CAP)</English>
+<Czech>Mi-24V (CAP)</Czech>
+<German>Mi-24W (CAP)</German>
+<Polish>Mi-24W (CAP)</Polish>
+<Russian>Ми-24В (В-В)</Russian>
+<French>Mi-24V (CAP)</French>
+<Spanish>Mi-24V (CAP)</Spanish>
+<Italian>Mi-24V (CAP)</Italian>
+<Hungarian>Mi-24V (CAP)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_V_4AT_4AA">
+<English>Mi-24V (Multirole)</English>
+<Czech>Mi-24V (Multirole)</Czech>
+<German>Mi-24W (Multirole)</German>
+<Polish>Mi-24W (Multirole)</Polish>
+<Russian>Ми-24В (В-П/В-В)</Russian>
+<French>Mi-24V (Multirole)</French>
+<Spanish>Mi-24V (Multirole)</Spanish>
+<Italian>Mi-24V (Multirole)</Italian>
+<Hungarian>Mi-24V (Multirole)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_V_4AA">
+<English>Mi-24V (CAP)</English>
+<Czech>Mi-24V (CAP)</Czech>
+<German>Mi-24W (CAP)</German>
+<Polish>Mi-24W (CAP)</Polish>
+<Russian>Ми-24В (В-В)</Russian>
+<French>Mi-24V (CAP)</French>
+<Spanish>Mi-24V (CAP)</Spanish>
+<Italian>Mi-24V (CAP)</Italian>
+<Hungarian>Mi-24V (CAP)</Hungarian>
+</Key>
+<Key ID="STR_FORM_LIGHTS_ON">
+<English>Formation lights on</English>
+<German>Formation lights on</German>
+<Italian>Formation lights on</Italian>
+<Spanish>Formation lights on</Spanish>
+<Czech>Formation lights on</Czech>
+<Russian>Строевые огни вкл.</Russian>
+<Polish>Formation lights on</Polish>
+<Hungarian>Formation lights on</Hungarian>
+<French>Formation lights on</French>
+</Key>
+<Key ID="STR_FORM_LIGHTS_OFF">
+<English>Formation lights off</English>
+<German>Formation lights off</German>
+<Italian>Formation lights off</Italian>
+<Spanish>Formation lights off</Spanish>
+<Czech>Formation lights off</Czech>
+<Russian>Строевые огни выкл.</Russian>
+<Polish>Formation lights off</Polish>
+<Hungarian>Formation lights off</Hungarian>
+<French>Formation lights off</French>
+</Key>
+<Key ID="STR_OPEN_RDOOR">
+<English>Open right cargo door</English>
+<German>Open right cargo door</German>
+<Italian>Open right cargo door</Italian>
+<Spanish>Open right cargo door</Spanish>
+<Czech>Open right cargo door</Czech>
+<Russian>Открыть правый люк</Russian>
+<Polish>Open right cargo door</Polish>
+<Hungarian>Open right cargo door</Hungarian>
+<French>Open right cargo door</French>
+</Key>
+<Key ID="STR_CLOSE_RDOOR">
+<English>Close right cargo door</English>
+<German>Close right cargo door</German>
+<Italian>Close right cargo door</Italian>
+<Spanish>Close right cargo door</Spanish>
+<Czech>Close right cargo door</Czech>
+<Russian>Закрыть правый люк</Russian>
+<Polish>Close right cargo door</Polish>
+<Hungarian>Close right cargo door</Hungarian>
+<French>Close right cargo door</French>
+</Key>
+<Key ID="STR_OPEN_LDOOR">
+<English>Open left cargo door</English>
+<German>Open left cargo door</German>
+<Italian>Open left cargo door</Italian>
+<Spanish>Open left cargo door</Spanish>
+<Czech>Open left cargo door</Czech>
+<Russian>Открыть левый люк</Russian>
+<Polish>Open left cargo door</Polish>
+<Hungarian>Open left cargo door</Hungarian>
+<French>Open left cargo door</French>
+</Key>
+<Key ID="STR_CLOSE_LDOOR">
+<English>Close left cargo door</English>
+<German>Close left cargo door</German>
+<Italian>Close left cargo door</Italian>
+<Spanish>Close left cargo door</Spanish>
+<Czech>Close left cargo door</Czech>
+<Russian>Закрыть левый люк</Russian>
+<Polish>Close left cargo door</Polish>
+<Hungarian>Close left cargo door</Hungarian>
+<French>Close left cargo door</French>
+</Key>
+<Key ID="STR_OPEN_DOORS">
+<English>Open cargo doors</English>
+<German>Open cargo doors</German>
+<Italian>Open cargo doors</Italian>
+<Spanish>Open cargo doors</Spanish>
+<Czech>Open cargo doors</Czech>
+<Russian>Открыть люки</Russian>
+<Polish>Open cargo doors</Polish>
+<Hungarian>Open cargo doors</Hungarian>
+<French>Open cargo doors</French>
+</Key>
+<Key ID="STR_CLOSE_DOORS">
+<English>Close cargo doors</English>
+<German>Close cargo doors</German>
+<Italian>Close cargo doors</Italian>
+<Spanish>Close cargo doors</Spanish>
+<Czech>Close cargo doors</Czech>
+<Russian>Закрыть люки</Russian>
+<Polish>Close cargo doors</Polish>
+<Hungarian>Close cargo doors</Hungarian>
+<French>Close cargo doors</French>
+</Key>
+<Key ID="STR_OPEN_PDOOR">
+<English>Open pilot door</English>
+<German>Open pilot door</German>
+<Italian>Open pilot door</Italian>
+<Spanish>Open pilot door</Spanish>
+<Czech>Open pilot door</Czech>
+<Russian>Открыть дверь пилота</Russian>
+<Polish>Open pilot door</Polish>
+<Hungarian>Open pilot door</Hungarian>
+<French>Open pilot door</French>
+</Key>
+<Key ID="STR_CLOSE_PDOOR">
+<English>Close pilot doors</English>
+<German>Close pilot doors</German>
+<Italian>Close pilot doors</Italian>
+<Spanish>Close pilot doors</Spanish>
+<Czech>Close pilot doors</Czech>
+<Russian>Закрыть дверь пилота</Russian>
+<Polish>Close pilot doors</Polish>
+<Hungarian>Close pilot doors</Hungarian>
+<French>Close pilot doors</French>
+</Key>
+<Key ID="STR_OPEN_CDOOR">
+<English>Open co-pilot door</English>
+<German>Open co-pilot door</German>
+<Italian>Open co-pilot door</Italian>
+<Spanish>Open co-pilot door</Spanish>
+<Czech>Open co-pilot door</Czech>
+<Russian>Открыть дверь второго пилота</Russian>
+<Polish>Open co-pilot door</Polish>
+<Hungarian>Open co-pilot door</Hungarian>
+<French>Open co-pilot door</French>
+</Key>
+<Key ID="STR_CLOSE_CDOOR">
+<English>Close co-pilot doors</English>
+<German>Close co-pilot doors</German>
+<Italian>Close co-pilot doors</Italian>
+<Spanish>Close co-pilot doors</Spanish>
+<Czech>Close co-pilot doors</Czech>
+<Russian>Закрыть дверь второго пилота</Russian>
+<Polish>Close co-pilot doors</Polish>
+<Hungarian>Close co-pilot doors</Hungarian>
+<French>Close co-pilot doors</French>
+</Key>
+<Key ID="STR_COPILOT">
+<English>co-pilot</English>
+<German>co-pilot</German>
+<Italian>co-pilot</Italian>
+<Spanish>co-pilot</Spanish>
+<Czech>co-pilot</Czech>
+<Russian>второй пилот</Russian>
+<Polish>co-pilot</Polish>
+<Hungarian>co-pilot</Hungarian>
+<French>co-pilot</French>
+</Key>
+<Key ID="STR_MEDIC">
+<English>medic</English>
+<German>medic</German>
+<Italian>medic</Italian>
+<Spanish>medic</Spanish>
+<Czech>medic</Czech>
+<Russian>медик</Russian>
+<Polish>medic</Polish>
+<Hungarian>medic</Hungarian>
+<French>medic</French>
+</Key>
+<Key ID="STR_TU_USMC_AIR_D">
+<English>USMC Aviation (Desert)</English>
+<German>USMC Aviation (Desert)</German>
+<Italian>USMC Aviation (Desert)</Italian>
+<Spanish>USMC Aviation (Desert)</Spanish>
+<Czech>USMC Aviation (Desert)</Czech>
+<Russian>Авиация КМП США (пустыня)</Russian>
+<Polish>USMC Aviation (Desert)</Polish>
+<Hungarian>USMC Aviation (Desert)</Hungarian>
+<French>USMC Aviation (Desert)</French>
+</Key>
+<Key ID="STR_TU_USMC_AIR">
+<English>USMC Aviation</English>
+<German>USMC Aviation</German>
+<Italian>USMC Aviation</Italian>
+<Spanish>USMC Aviation</Spanish>
+<Czech>USMC Aviation</Czech>
+<Russian>Авиация КМП США</Russian>
+<Polish>USMC Aviation</Polish>
+<Hungarian>USMC Aviation</Hungarian>
+<French>USMC Aviation</French>
+</Key>
+<Key ID="STR_TU_USNAVY_AIR">
+<English>US Navy Aviation</English>
+<German>US Navy Aviation</German>
+<Italian>US Navy Aviation</Italian>
+<Spanish>US Navy Aviation</Spanish>
+<Czech>US Navy Aviation</Czech>
+<Russian>Авиация ВМС США</Russian>
+<Polish>US Navy Aviation</Polish>
+<Hungarian>US Navy Aviation</Hungarian>
+<French>US Navy Aviation</French>
+</Key>
+<Key ID="STR_TU_AAF">
+<English>British AAF Aviation</English>
+<German>British AAF Aviation</German>
+<Italian>British AAF Aviation</Italian>
+<Spanish>British AAF Aviation</Spanish>
+<Czech>British AAF Aviation</Czech>
+<Russian>Авиация СВ БВС</Russian>
+<Polish>British AAF Aviation</Polish>
+<Hungarian>British AAF Aviation</Hungarian>
+<French>British AAF Aviation</French>
+</Key>
+<Key ID="STR_TU_RAF">
+<English>British RAF Aviation</English>
+<German>British RAF Aviation</German>
+<Italian>British RAF Aviation</Italian>
+<Spanish>British RAF Aviation</Spanish>
+<Czech>British RAF Aviation</Czech>
+<Russian>Авиация Королевских ВВС</Russian>
+<Polish>British RAF Aviation</Polish>
+<Hungarian>British RAF Aviation</Hungarian>
+<French>British RAF Aviation</French>
+</Key>
+<Key ID="STR_TU_USARMY_AIR">
+<English>US Army Aviation</English>
+<German>US Army Aviation</German>
+<Italian>US Army Aviation</Italian>
+<Spanish>US Army Aviation</Spanish>
+<Czech>US Army Aviation</Czech>
+<Russian>Авиация Армии США</Russian>
+<Polish>US Army Aviation</Polish>
+<Hungarian>US Army Aviation</Hungarian>
+<French>US Army Aviation</French>
+</Key>
+<Key ID="STR_TU_USAF">
+<English>USAF Aviation</English>
+<German>USAF Aviation</German>
+<Italian>USAF Aviation</Italian>
+<Spanish>USAF Aviation</Spanish>
+<Czech>USAF Aviation</Czech>
+<Russian>Авиация ВВС США</Russian>
+<Polish>USAF Aviation</Polish>
+<Hungarian>USAF Aviation</Hungarian>
+<French>USAF Aviation</French>
+</Key>
+<Key ID="STR_TU_USAF_W">
+<English>USAF Aviation (Woodland)</English>
+<German>USAF Aviation (Woodland)</German>
+<Italian>USAF Aviation (Woodland)</Italian>
+<Spanish>USAF Aviation (Woodland)</Spanish>
+<Czech>USAF Aviation (Woodland)</Czech>
+<Russian>Авиация ВВС США (лес)</Russian>
+<Polish>USAF Aviation (Woodland)</Polish>
+<Hungarian>USAF Aviation (Woodland)</Hungarian>
+<French>USAF Aviation (Woodland)</French>
+</Key>
+<Key ID="STR_TU_VVS_RF">
+<English>Russian AF Aviation</English>
+<German>Russian AF Aviation</German>
+<Italian>Russian AF Aviation</Italian>
+<Spanish>Russian AF Aviation</Spanish>
+<Czech>Russian AF Aviation</Czech>
+<Russian>Авиация ВВС России</Russian>
+<Polish>Russian AF Aviation</Polish>
+<Hungarian>Russian AF Aviation</Hungarian>
+<French>Russian AF Aviation</French>
+</Key>
+<Key ID="STR_TU_VVS_RF_D">
+<English>Russian AF Aviation (Desert)</English>
+<German>Russian AF Aviation (Desert)</German>
+<Italian>Russian AF Aviation (Desert)</Italian>
+<Spanish>Russian AF Aviation (Desert)</Spanish>
+<Czech>Russian AF Aviation (Desert)</Czech>
+<Russian>Авиация ВВС России (пустыня)</Russian>
+<Polish>Russian AF Aviation (Desert)</Polish>
+<Hungarian>Russian AF Aviation (Desert)</Hungarian>
+<French>Russian AF Aviation (Desert)</French>
+</Key>
+<Key ID="STR_TU_VVS_TK">
+<English>Takistani Air Force Aviation</English>
+<German>Takistani Air Force Aviation</German>
+<Italian>Takistani Air Force Aviation</Italian>
+<Spanish>Takistani Air Force Aviation</Spanish>
+<Czech>Takistani Air Force Aviation</Czech>
+<Russian>Авиация ВВС Такистана</Russian>
+<Polish>Takistani Air Force Aviation</Polish>
+<Hungarian>Takistani Air Force Aviation</Hungarian>
+<French>Takistani Air Force Aviation</French>
+</Key>
+<Key ID="STR_TU_VVS_CDF">
+<English>CDF Aviation</English>
+<German>CDF Aviation</German>
+<Italian>CDF Aviation</Italian>
+<Spanish>CDF Aviation</Spanish>
+<Czech>CDF Aviation</Czech>
+<Russian>Авиация ЧСО</Russian>
+<Polish>CDF Aviation</Polish>
+<Hungarian>CDF Aviation</Hungarian>
+<French>CDF Aviation</French>
+</Key>
+<Key ID="STR_TU_Su25_250_S8">
+<English>Su-25 (S-8\FAB-250)</English>
+<German>Su-25 (S-8\FAB-250)</German>
+<Italian>Su-25 (S-8\FAB-250)</Italian>
+<Spanish>Su-25 (S-8\FAB-250)</Spanish>
+<Czech>Su-25 (S-8\FAB-250)</Czech>
+<Russian>Су-25 (С-8\ФАБ-250)</Russian>
+<Polish>Su-25 (S-8\FAB-250)</Polish>
+<Hungarian>Su-25 (S-8\FAB-250)</Hungarian>
+<French>Su-25 (S-8\FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25_500_S8">
+<English>Su-25 (S-8\FAB-500)</English>
+<German>Su-25 (S-8\FAB-500)</German>
+<Italian>Su-25 (S-8\FAB-500)</Italian>
+<Spanish>Su-25 (S-8\FAB-500)</Spanish>
+<Czech>Su-25 (S-8\FAB-500)</Czech>
+<Russian>Су-25 (С-8\ФАБ-500)</Russian>
+<Polish>Su-25 (S-8\FAB-500)</Polish>
+<Hungarian>Su-25 (S-8\FAB-500)</Hungarian>
+<French>Su-25 (S-8\FAB-500)</French>
+</Key>
+<Key ID="STR_TU_Su25_250_S13">
+<English>Su-25 (S-13\FAB-250)</English>
+<German>Su-25 (S-13\FAB-250)</German>
+<Italian>Su-25 (S-13\FAB-250)</Italian>
+<Spanish>Su-25 (S-13\FAB-250)</Spanish>
+<Czech>Su-25 (S-13\FAB-250)</Czech>
+<Russian>Су-25 (С-13\ФАБ-250)</Russian>
+<Polish>Su-25 (S-13\FAB-250)</Polish>
+<Hungarian>Su-25 (S-13\FAB-250)</Hungarian>
+<French>Su-25 (S-13\FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25_S24">
+<English>Su-25 (S-24)</English>
+<German>Su-25 (S-24)</German>
+<Italian>Su-25 (S-24)</Italian>
+<Spanish>Su-25 (S-24)</Spanish>
+<Czech>Su-25 (S-24)</Czech>
+<Russian>Су-25 (С-24)</Russian>
+<Polish>Su-25 (S-24)</Polish>
+<Hungarian>Su-25 (S-24)</Hungarian>
+<French>Su-25 (S-24)</French>
+</Key>
+<Key ID="STR_TU_Su25_S24_Kh25">
+<English>Su-25 (S-24\Kh-25ML)</English>
+<German>Su-25 (S-24\Kh-25ML)</German>
+<Italian>Su-25 (S-24\Kh-25ML)</Italian>
+<Spanish>Su-25 (S-24\Kh-25ML)</Spanish>
+<Czech>Su-25 (S-24\Kh-25ML)</Czech>
+<Russian>Су-25 (С-24\Х-25МЛ)</Russian>
+<Polish>Su-25 (S-24\Kh-25ML)</Polish>
+<Hungarian>Su-25 (S-24\Kh-25ML)</Hungarian>
+<French>Su-25 (S-24\Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_Su25_500_S13">
+<English>Su-25 (4xFAB-500\4xS-13)</English>
+<German>Su-25 (4xFAB-500\4xS-13)</German>
+<Italian>Su-25 (4xFAB-500\4xS-13)</Italian>
+<Spanish>Su-25 (4xFAB-500\4xS-13)</Spanish>
+<Czech>Su-25 (4xFAB-500\4xS-13)</Czech>
+<Russian>Су-25 (4xФАБ-500\4xС-13)</Russian>
+<Polish>Su-25 (4xFAB-500\4xS-13)</Polish>
+<Hungarian>Su-25 (4xFAB-500\4xS-13)</Hungarian>
+<French>Su-25 (4xFAB-500\4xS-13)</French>
+</Key>
+<Key ID="STR_TU_Su25_S13">
+<English>Su-25 (S-13)</English>
+<German>Su-25 (S-13)</German>
+<Italian>Su-25 (S-13)</Italian>
+<Spanish>Su-25 (S-13)</Spanish>
+<Czech>Su-25 (S-13)</Czech>
+<Russian>Су-25 (С-13)</Russian>
+<Polish>Su-25 (S-13)</Polish>
+<Hungarian>Su-25 (S-13)</Hungarian>
+<French>Su-25 (S-13)</French>
+</Key>
+<Key ID="STR_TU_SU25_S8">
+<English>Su-25 (S-8)</English>
+<German>Su-25 (S-8)</German>
+<Italian>Su-25 (S-8)</Italian>
+<Spanish>Su-25 (S-8)</Spanish>
+<Czech>Su-25 (S-8)</Czech>
+<Russian>Су-25 (С-8)</Russian>
+<Polish>Su-25 (S-8)</Polish>
+<Hungarian>Su-25 (S-8)</Hungarian>
+<French>Su-25 (S-8)</French>
+</Key>
+<Key ID="STR_TU_Su25_250">
+<English>Su-25 (FAB-250)</English>
+<German>Su-25 (FAB-250)</German>
+<Italian>Su-25 (FAB-250)</Italian>
+<Spanish>Su-25 (FAB-250)</Spanish>
+<Czech>Su-25 (FAB-250)</Czech>
+<Russian>Су-25 (ФАБ-250)</Russian>
+<Polish>Su-25 (FAB-250)</Polish>
+<Hungarian>Su-25 (FAB-250)</Hungarian>
+<French>Su-25 (FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25_500">
+<English>Su-25 (8xFAB-500)</English>
+<German>Su-25 (8xFAB-500)</German>
+<Italian>Su-25 (8xFAB-500)</Italian>
+<Spanish>Su-25 (8xFAB-500)</Spanish>
+<Czech>Su-25 (8xFAB-500)</Czech>
+<Russian>Су-25 (8xФАБ-500)</Russian>
+<Polish>Su-25 (8xFAB-500)</Polish>
+<Hungarian>Su-25 (8xFAB-500)</Hungarian>
+<French>Su-25 (8xFAB-500)</French>
+</Key>
+<Key ID="STR_TU_Su25_Kh25_S8">
+<English>Su-25 (S-8\Kh-25ML)</English>
+<German>Su-25 (S-8\Kh-25ML)</German>
+<Italian>Su-25 (S-8\Kh-25ML)</Italian>
+<Spanish>Su-25 (S-8\Kh-25ML)</Spanish>
+<Czech>Su-25 (S-8\Kh-25ML)</Czech>
+<Russian>Су-25 (С-8\Х-25МЛ)</Russian>
+<Polish>Su-25 (S-8\Kh-25ML)</Polish>
+<Hungarian>Su-25 (S-8\Kh-25ML)</Hungarian>
+<French>Su-25 (S-8\Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_Su25_Kh29L_Kh25_S8">
+<English>Su-25 (S-8\Kh-29L\Kh-25ML)</English>
+<German>Su-25 (S-8\Kh-29L\Kh-25ML)</German>
+<Italian>Su-25 (S-8\Kh-29L\Kh-25ML)</Italian>
+<Spanish>Su-25 (S-8\Kh-29L\Kh-25ML)</Spanish>
+<Czech>Su-25 (S-8\Kh-29L\Kh-25ML)</Czech>
+<Russian>Су-25 (С-8\Х-29Л\Х-25МЛ)</Russian>
+<Polish>Su-25 (S-8\Kh-29L\Kh-25ML)</Polish>
+<Hungarian>Su-25 (S-8\Kh-29L\Kh-25ML)</Hungarian>
+<French>Su-25 (S-8\Kh-29L\Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_Su25_Kh29L_FAB250_S8">
+<English>Su-25 (S-8\Kh-29L\FAB-250)</English>
+<German>Su-25 (S-8\Kh-29L\FAB-250)</German>
+<Italian>Su-25 (S-8\Kh-29L\FAB-250)</Italian>
+<Spanish>Su-25 (S-8\Kh-29L\FAB-250)</Spanish>
+<Czech>Su-25 (S-8\Kh-29L\FAB-250)</Czech>
+<Russian>Су-25 (С-8\Х-29Л\ФАБ-250)</Russian>
+<Polish>Su-25 (S-8\Kh-29L\FAB-250)</Polish>
+<Hungarian>Su-25 (S-8\Kh-29L\FAB-250)</Hungarian>
+<French>Su-25 (S-8\Kh-29L\FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25_Kh29L_S8">
+<English>Su-25 (S-8\Kh-29L)</English>
+<German>Su-25 (S-8\Kh-29L)</German>
+<Italian>Su-25 (S-8\Kh-29L)</Italian>
+<Spanish>Su-25 (S-8\Kh-29L)</Spanish>
+<Czech>Su-25 (S-8\Kh-29L)</Czech>
+<Russian>Су-25 (С-8\Х-29Л)</Russian>
+<Polish>Su-25 (S-8\Kh-29L)</Polish>
+<Hungarian>Su-25 (S-8\Kh-29L)</Hungarian>
+<French>Su-25 (S-8\Kh-29L)</French>
+</Key>
+<Key ID="STR_TU_Su25_R73">
+<English>Su-25 (2xR-73A\2xFAB-250\4xS-8\2xR-60M)</English>
+<German>Su-25 (2xR-73A\2xFAB-250\4xS-8\2xR-60M)</German>
+<Italian>Su-25 (2xR-73A\2xFAB-250\4xS-8\2xR-60M)</Italian>
+<Spanish>Su-25 (2xR-73A\2xFAB-250\4xS-8\2xR-60M)</Spanish>
+<Czech>Su-25 (2xR-73A\2xFAB-250\4xS-8\2xR-60M)</Czech>
+<Russian>Су-25 (2xР-73A\2xФАБ-250\4xС-8\2xР-60М)</Russian>
+<Polish>Su-25 (2xR-73A\2xFAB-250\4xS-8\2xR-60M)</Polish>
+<Hungarian>Su-25 (2xR-73A\2xFAB-250\4xS-8\2xR-60M)</Hungarian>
+<French>Su-25 (2xR-73A\2xFAB-250\4xS-8\2xR-60M)</French>
+</Key>
+<Key ID="STR_TU_Su25K_250_S8">
+<English>Su-25K (S-8\FAB-250)</English>
+<German>Su-25K (S-8\FAB-250)</German>
+<Italian>Su-25K (S-8\FAB-250)</Italian>
+<Spanish>Su-25K (S-8\FAB-250)</Spanish>
+<Czech>Su-25K (S-8\FAB-250)</Czech>
+<Russian>Су-25К (С-8\ФАБ-250)</Russian>
+<Polish>Su-25K (S-8\FAB-250)</Polish>
+<Hungarian>Su-25K (S-8\FAB-250)</Hungarian>
+<French>Su-25K (S-8\FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25K_500_S8">
+<English>Su-25K (S-8\FAB-500)</English>
+<German>Su-25K (S-8\FAB-500)</German>
+<Italian>Su-25K (S-8\FAB-500)</Italian>
+<Spanish>Su-25K (S-8\FAB-500)</Spanish>
+<Czech>Su-25K (S-8\FAB-500)</Czech>
+<Russian>Су-25К (С-8\ФАБ-500)</Russian>
+<Polish>Su-25K (S-8\FAB-500)</Polish>
+<Hungarian>Su-25K (S-8\FAB-500)</Hungarian>
+<French>Su-25K (S-8\FAB-500)</French>
+</Key>
+<Key ID="STR_TU_Su25K_250_S13">
+<English>Su-25K (S-13\FAB-250)</English>
+<German>Su-25K (S-13\FAB-250)</German>
+<Italian>Su-25K (S-13\FAB-250)</Italian>
+<Spanish>Su-25K (S-13\FAB-250)</Spanish>
+<Czech>Su-25K (S-13\FAB-250)</Czech>
+<Russian>Су-25К (С-13\ФАБ-250)</Russian>
+<Polish>Su-25K (S-13\FAB-250)</Polish>
+<Hungarian>Su-25K (S-13\FAB-250)</Hungarian>
+<French>Su-25K (S-13\FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25K_S24">
+<English>Su-25K (S-24)</English>
+<German>Su-25K (S-24)</German>
+<Italian>Su-25K (S-24)</Italian>
+<Spanish>Su-25K (S-24)</Spanish>
+<Czech>Su-25K (S-24)</Czech>
+<Russian>Су-25К (С-24)</Russian>
+<Polish>Su-25K (S-24)</Polish>
+<Hungarian>Su-25K (S-24)</Hungarian>
+<French>Su-25K (S-24)</French>
+</Key>
+<Key ID="STR_TU_Su25K_S24_Kh25">
+<English>Su-25K (S-24\Kh-25ML)</English>
+<German>Su-25K (S-24\Kh-25ML)</German>
+<Italian>Su-25K (S-24\Kh-25ML)</Italian>
+<Spanish>Su-25K (S-24\Kh-25ML)</Spanish>
+<Czech>Su-25K (S-24\Kh-25ML)</Czech>
+<Russian>Су-25К (С-24\Х-25МЛ)</Russian>
+<Polish>Su-25K (S-24\Kh-25ML)</Polish>
+<Hungarian>Su-25K (S-24\Kh-25ML)</Hungarian>
+<French>Su-25K (S-24\Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_Su25K_500_S13">
+<English>Su-25K (4xFAB-500\4xS-13)</English>
+<German>Su-25K (4xFAB-500\4xS-13)</German>
+<Italian>Su-25K (4xFAB-500\4xS-13)</Italian>
+<Spanish>Su-25K (4xFAB-500\4xS-13)</Spanish>
+<Czech>Su-25K (4xFAB-500\4xS-13)</Czech>
+<Russian>Су-25К (4xФАБ-500\4xС-13)</Russian>
+<Polish>Su-25K (4xFAB-500\4xS-13)</Polish>
+<Hungarian>Su-25K (4xFAB-500\4xS-13)</Hungarian>
+<French>Su-25K (4xFAB-500\4xS-13)</French>
+</Key>
+<Key ID="STR_TU_Su25K_S13">
+<English>Su-25K (S-13)</English>
+<German>Su-25K (S-13)</German>
+<Italian>Su-25K (S-13)</Italian>
+<Spanish>Su-25K (S-13)</Spanish>
+<Czech>Su-25K (S-13)</Czech>
+<Russian>Су-25К (С-13)</Russian>
+<Polish>Su-25K (S-13)</Polish>
+<Hungarian>Su-25K (S-13)</Hungarian>
+<French>Su-25K (S-13)</French>
+</Key>
+<Key ID="STR_TU_Su25K_S8">
+<English>Su-25K (S-8)</English>
+<German>Su-25K (S-8)</German>
+<Italian>Su-25K (S-8)</Italian>
+<Spanish>Su-25K (S-8)</Spanish>
+<Czech>Su-25K (S-8)</Czech>
+<Russian>Су-25К (С-8)</Russian>
+<Polish>Su-25K (S-8)</Polish>
+<Hungarian>Su-25K (S-8)</Hungarian>
+<French>Su-25K (S-8)</French>
+</Key>
+<Key ID="STR_TU_Su25K_250">
+<English>Su-25K (FAB-250)</English>
+<German>Su-25K (FAB-250)</German>
+<Italian>Su-25K (FAB-250)</Italian>
+<Spanish>Su-25K (FAB-250)</Spanish>
+<Czech>Su-25K (FAB-250)</Czech>
+<Russian>Су-25К (ФАБ-250)</Russian>
+<Polish>Su-25K (FAB-250)</Polish>
+<Hungarian>Su-25K (FAB-250)</Hungarian>
+<French>Su-25K (FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25K_500">
+<English>Su-25K (8xFAB-500)</English>
+<German>Su-25K (8xFAB-500)</German>
+<Italian>Su-25K (8xFAB-500)</Italian>
+<Spanish>Su-25K (8xFAB-500)</Spanish>
+<Czech>Su-25K (8xFAB-500)</Czech>
+<Russian>Су-25К (8xФАБ-500)</Russian>
+<Polish>Su-25K (8xFAB-500)</Polish>
+<Hungarian>Su-25K (8xFAB-500)</Hungarian>
+<French>Su-25K (8xFAB-500)</French>
+</Key>
+<Key ID="STR_TU_Su25K_Kh25_S8">
+<English>Su-25K (S-8\Kh-25ML)</English>
+<German>Su-25K (S-8\Kh-25ML)</German>
+<Italian>Su-25K (S-8\Kh-25ML)</Italian>
+<Spanish>Su-25K (S-8\Kh-25ML)</Spanish>
+<Czech>Su-25K (S-8\Kh-25ML)</Czech>
+<Russian>Су-25К (С-8\Х-25МЛ)</Russian>
+<Polish>Su-25K (S-8\Kh-25ML)</Polish>
+<Hungarian>Su-25K (S-8\Kh-25ML)</Hungarian>
+<French>Su-25K (S-8\Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_Su25K_Kh29L_Kh25_S8">
+<English>Su-25K (S-8\Kh-29L\Kh-25ML)</English>
+<German>Su-25K (S-8\Kh-29L\Kh-25ML)</German>
+<Italian>Su-25K (S-8\Kh-29L\Kh-25ML)</Italian>
+<Spanish>Su-25K (S-8\Kh-29L\Kh-25ML)</Spanish>
+<Czech>Su-25K (S-8\Kh-29L\Kh-25ML)</Czech>
+<Russian>Су-25К (С-8\Х-29Л\Х-25МЛ)</Russian>
+<Polish>Su-25K (S-8\Kh-29L\Kh-25ML)</Polish>
+<Hungarian>Su-25K (S-8\Kh-29L\Kh-25ML)</Hungarian>
+<French>Su-25K (S-8\Kh-29L\Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_Su25K_Kh29L_FAB250_S8">
+<English>Su-25K (S-8\Kh-29L\FAB-250)</English>
+<German>Su-25K (S-8\Kh-29L\FAB-250)</German>
+<Italian>Su-25K (S-8\Kh-29L\FAB-250)</Italian>
+<Spanish>Su-25K (S-8\Kh-29L\FAB-250)</Spanish>
+<Czech>Su-25K (S-8\Kh-29L\FAB-250)</Czech>
+<Russian>Су-25К (С-8\Х-29Л\ФАБ-250)</Russian>
+<Polish>Su-25K (S-8\Kh-29L\FAB-250)</Polish>
+<Hungarian>Su-25K (S-8\Kh-29L\FAB-250)</Hungarian>
+<French>Su-25K (S-8\Kh-29L\FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25K_Kh29L_S8">
+<English>Su-25K (S-8\Kh-29L)</English>
+<German>Su-25K (S-8\Kh-29L)</German>
+<Italian>Su-25K (S-8\Kh-29L)</Italian>
+<Spanish>Su-25K (S-8\Kh-29L)</Spanish>
+<Czech>Su-25K (S-8\Kh-29L)</Czech>
+<Russian>Су-25К (С-8\Х-29Л)</Russian>
+<Polish>Su-25K (S-8\Kh-29L)</Polish>
+<Hungarian>Su-25K (S-8\Kh-29L)</Hungarian>
+<French>Su-25K (S-8\Kh-29L)</French>
+</Key>
+<Key ID="STR_TU_Su25K_R73">
+<English>Su-25K (2xR-73A\2xFAB-250\4xS-8\2xR-60M)</English>
+<German>Su-25K (2xR-73A\2xFAB-250\4xS-8\2xR-60M)</German>
+<Italian>Su-25K (2xR-73A\2xFAB-250\4xS-8\2xR-60M)</Italian>
+<Spanish>Su-25K (2xR-73A\2xFAB-250\4xS-8\2xR-60M)</Spanish>
+<Czech>Su-25K (2xR-73A\2xFAB-250\4xS-8\2xR-60M)</Czech>
+<Russian>Су-25К (2xР-73A\2xФАБ-250\4xС-8\2xР-60М)</Russian>
+<Polish>Su-25K (2xR-73A\2xFAB-250\4xS-8\2xR-60M)</Polish>
+<Hungarian>Su-25K (2xR-73A\2xFAB-250\4xS-8\2xR-60M)</Hungarian>
+<French>Su-25K (2xR-73A\2xFAB-250\4xS-8\2xR-60M)</French>
+</Key>
+<Key ID="STR_TU_SU25SM_250_S8">
+<English>Su-25SM (S-8\FAB-250)</English>
+<German>Su-25SM (S-8\FAB-250)</German>
+<Italian>Su-25SM (S-8\FAB-250)</Italian>
+<Spanish>Su-25SM (S-8\FAB-250)</Spanish>
+<Czech>Su-25SM (S-8\FAB-250)</Czech>
+<Russian>Су-25СМ (С-8\ФАБ-250)</Russian>
+<Polish>Su-25SM (S-8\FAB-250)</Polish>
+<Hungarian>Su-25SM (S-8\FAB-250)</Hungarian>
+<French>Su-25SM (S-8\FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_500_S8">
+<English>Su-25SM (S-8\FAB-500)</English>
+<German>Su-25SM (S-8\FAB-500)</German>
+<Italian>Su-25SM (S-8\FAB-500)</Italian>
+<Spanish>Su-25SM (S-8\FAB-500)</Spanish>
+<Czech>Su-25SM (S-8\FAB-500)</Czech>
+<Russian>Су-25СМ (С-8\ФАБ-500)</Russian>
+<Polish>Su-25SM (S-8\FAB-500)</Polish>
+<Hungarian>Su-25SM (S-8\FAB-500)</Hungarian>
+<French>Su-25SM (S-8\FAB-500)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_250_S13">
+<English>Su-25SM (S-13\FAB-250)</English>
+<German>Su-25SM (S-13\FAB-250)</German>
+<Italian>Su-25SM (S-13\FAB-250)</Italian>
+<Spanish>Su-25SM (S-13\FAB-250)</Spanish>
+<Czech>Su-25SM (S-13\FAB-250)</Czech>
+<Russian>Су-25СМ (С-13\ФАБ-250)</Russian>
+<Polish>Su-25SM (S-13\FAB-250)</Polish>
+<Hungarian>Su-25SM (S-13\FAB-250)</Hungarian>
+<French>Su-25SM (S-13\FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_S24">
+<English>Su-25SM (S-24)</English>
+<German>Su-25SM (S-24)</German>
+<Italian>Su-25SM (S-24)</Italian>
+<Spanish>Su-25SM (S-24)</Spanish>
+<Czech>Su-25SM (S-24)</Czech>
+<Russian>Су-25СМ (С-24)</Russian>
+<Polish>Su-25SM (S-24)</Polish>
+<Hungarian>Su-25SM (S-24)</Hungarian>
+<French>Su-25SM (S-24)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_S24_Kh25">
+<English>Su-25SM (S-24\Kh-25ML)</English>
+<German>Su-25SM (S-24\Kh-25ML)</German>
+<Italian>Su-25SM (S-24\Kh-25ML)</Italian>
+<Spanish>Su-25SM (S-24\Kh-25ML)</Spanish>
+<Czech>Su-25SM (S-24\Kh-25ML)</Czech>
+<Russian>Су-25СМ (С-24\Х-25МЛ)</Russian>
+<Polish>Su-25SM (S-24\Kh-25ML)</Polish>
+<Hungarian>Su-25SM (S-24\Kh-25ML)</Hungarian>
+<French>Su-25SM (S-24\Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_500_S13">
+<English>Su-25SM (4xFAB-500\4xS-13)</English>
+<German>Su-25SM (4xFAB-500\4xS-13)</German>
+<Italian>Su-25SM (4xFAB-500\4xS-13)</Italian>
+<Spanish>Su-25SM (4xFAB-500\4xS-13)</Spanish>
+<Czech>Su-25SM (4xFAB-500\4xS-13)</Czech>
+<Russian>Су-25СМ (4xФАБ-500\4xС-13)</Russian>
+<Polish>Su-25SM (4xFAB-500\4xS-13)</Polish>
+<Hungarian>Su-25SM (4xFAB-500\4xS-13)</Hungarian>
+<French>Su-25SM (4xFAB-500\4xS-13)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_S13">
+<English>Su-25SM (S-13)</English>
+<German>Su-25SM (S-13)</German>
+<Italian>Su-25SM (S-13)</Italian>
+<Spanish>Su-25SM (S-13)</Spanish>
+<Czech>Su-25SM (S-13)</Czech>
+<Russian>Су-25СМ (С-13)</Russian>
+<Polish>Su-25SM (S-13)</Polish>
+<Hungarian>Su-25SM (S-13)</Hungarian>
+<French>Su-25SM (S-13)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_S8">
+<English>Su-25SM (S-8)</English>
+<German>Su-25SM (S-8)</German>
+<Italian>Su-25SM (S-8)</Italian>
+<Spanish>Su-25SM (S-8)</Spanish>
+<Czech>Su-25SM (S-8)</Czech>
+<Russian>Су-25СМ (С-8)</Russian>
+<Polish>Su-25SM (S-8)</Polish>
+<Hungarian>Su-25SM (S-8)</Hungarian>
+<French>Su-25SM (S-8)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_250">
+<English>Su-25SM (FAB-250)</English>
+<German>Su-25SM (FAB-250)</German>
+<Italian>Su-25SM (FAB-250)</Italian>
+<Spanish>Su-25SM (FAB-250)</Spanish>
+<Czech>Su-25SM (FAB-250)</Czech>
+<Russian>Су-25СМ (ФАБ-250)</Russian>
+<Polish>Su-25SM (FAB-250)</Polish>
+<Hungarian>Su-25SM (FAB-250)</Hungarian>
+<French>Su-25SM (FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_500">
+<English>Su-25SM (8xFAB-500)</English>
+<German>Su-25SM (8xFAB-500)</German>
+<Italian>Su-25SM (8xFAB-500)</Italian>
+<Spanish>Su-25SM (8xFAB-500)</Spanish>
+<Czech>Su-25SM (8xFAB-500)</Czech>
+<Russian>Су-25СМ (8xФАБ-500)</Russian>
+<Polish>Su-25SM (8xFAB-500)</Polish>
+<Hungarian>Su-25SM (8xFAB-500)</Hungarian>
+<French>Su-25SM (8xFAB-500)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_Kh25_S8">
+<English>Su-25SM (S-8\Kh-25ML)</English>
+<German>Su-25SM (S-8\Kh-25ML)</German>
+<Italian>Su-25SM (S-8\Kh-25ML)</Italian>
+<Spanish>Su-25SM (S-8\Kh-25ML)</Spanish>
+<Czech>Su-25SM (S-8\Kh-25ML)</Czech>
+<Russian>Су-25СМ (С-8\Х-25МЛ)</Russian>
+<Polish>Su-25SM (S-8\Kh-25ML)</Polish>
+<Hungarian>Su-25SM (S-8\Kh-25ML)</Hungarian>
+<French>Su-25SM (S-8\Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_Kh29L_Kh25_S8">
+<English>Su-25SM (S-8\Kh-29L\Kh-25ML)</English>
+<German>Su-25SM (S-8\Kh-29L\Kh-25ML)</German>
+<Italian>Su-25SM (S-8\Kh-29L\Kh-25ML)</Italian>
+<Spanish>Su-25SM (S-8\Kh-29L\Kh-25ML)</Spanish>
+<Czech>Su-25SM (S-8\Kh-29L\Kh-25ML)</Czech>
+<Russian>Су-25СМ (С-8\Х-29Л\Х-25МЛ)</Russian>
+<Polish>Su-25SM (S-8\Kh-29L\Kh-25ML)</Polish>
+<Hungarian>Su-25SM (S-8\Kh-29L\Kh-25ML)</Hungarian>
+<French>Su-25SM (S-8\Kh-29L\Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_Kh29L_FAB250_S8">
+<English>Su-25SM (S-8\Kh-29L\FAB-250)</English>
+<German>Su-25SM (S-8\Kh-29L\FAB-250)</German>
+<Italian>Su-25SM (S-8\Kh-29L\FAB-250)</Italian>
+<Spanish>Su-25SM (S-8\Kh-29L\FAB-250)</Spanish>
+<Czech>Su-25SM (S-8\Kh-29L\FAB-250)</Czech>
+<Russian>Су-25СМ (С-8\Х-29Л\ФАБ-250)</Russian>
+<Polish>Su-25SM (S-8\Kh-29L\FAB-250)</Polish>
+<Hungarian>Su-25SM (S-8\Kh-29L\FAB-250)</Hungarian>
+<French>Su-25SM (S-8\Kh-29L\FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_Kh29T_Kh25_S8">
+<English>Su-25SM (2xKh-29T\2xKh-25ML\4xS-8)</English>
+<German>Su-25SM (2xKh-29T\2xKh-25ML\4xS-8)</German>
+<Italian>Su-25SM (2xKh-29T\2xKh-25ML\4xS-8)</Italian>
+<Spanish>Su-25SM (2xKh-29T\2xKh-25ML\4xS-8)</Spanish>
+<Czech>Su-25SM (2xKh-29T\2xKh-25ML\4xS-8)</Czech>
+<Russian>Су-25СМ (2xХ-29Т\2xХ-25МЛ\4xС-8)</Russian>
+<Polish>Su-25SM (2xKh-29T\2xKh-25ML\4xS-8)</Polish>
+<Hungarian>Su-25SM (2xKh-29T\2xKh-25ML\4xS-8)</Hungarian>
+<French>Su-25SM (2xKh-29T\2xKh-25ML\4xS-8)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_Kh29L_S8">
+<English>Su-25SM (S-8\Kh-29L)</English>
+<German>Su-25SM (S-8\Kh-29L)</German>
+<Italian>Su-25SM (S-8\Kh-29L)</Italian>
+<Spanish>Su-25SM (S-8\Kh-29L)</Spanish>
+<Czech>Su-25SM (S-8\Kh-29L)</Czech>
+<Russian>Су-25СМ (С-8\Х-29Л)</Russian>
+<Polish>Su-25SM (S-8\Kh-29L)</Polish>
+<Hungarian>Su-25SM (S-8\Kh-29L)</Hungarian>
+<French>Su-25SM (S-8\Kh-29L)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_Kh29T_S8">
+<English>Su-25SM (2xKh-29T\4xS-8\2xR-73M)</English>
+<German>Su-25SM (2xKh-29T\4xS-8\2xR-73M)</German>
+<Italian>Su-25SM (2xKh-29T\4xS-8\2xR-73M)</Italian>
+<Spanish>Su-25SM (2xKh-29T\4xS-8\2xR-73M)</Spanish>
+<Czech>Su-25SM (2xKh-29T\4xS-8\2xR-73M)</Czech>
+<Russian>Су-25СМ (2xХ-29Т\4xС-8\2xР-73М)</Russian>
+<Polish>Su-25SM (2xKh-29T\4xS-8\2xR-73M)</Polish>
+<Hungarian>Su-25SM (2xKh-29T\4xS-8\2xR-73M)</Hungarian>
+<French>Su-25SM (2xKh-29T\4xS-8\2xR-73M)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_R73">
+<English>Su-25SM (4xR-73M\2xFAB-250\4xS-8)</English>
+<German>Su-25SM (4xR-73M\2xFAB-250\4xS-8)</German>
+<Italian>Su-25SM (4xR-73M\2xFAB-250\4xS-8)</Italian>
+<Spanish>Su-25SM (4xR-73M\2xFAB-250\4xS-8)</Spanish>
+<Czech>Su-25SM (4xR-73M\2xFAB-250\4xS-8)</Czech>
+<Russian>Су-25СМ (4xР-73М\2xФАБ-250\4xС-8)</Russian>
+<Polish>Su-25SM (4xR-73M\2xFAB-250\4xS-8)</Polish>
+<Hungarian>Su-25SM (4xR-73M\2xFAB-250\4xS-8)</Hungarian>
+<French>Su-25SM (4xR-73M\2xFAB-250\4xS-8)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_250_S8">
+<English>Su-25SMK (S-8\FAB-250)</English>
+<German>Su-25SMK (S-8\FAB-250)</German>
+<Italian>Su-25SMK (S-8\FAB-250)</Italian>
+<Spanish>Su-25SMK (S-8\FAB-250)</Spanish>
+<Czech>Su-25SMK (S-8\FAB-250)</Czech>
+<Russian>Су-25СМК (С-8\ФАБ-250)</Russian>
+<Polish>Su-25SMK (S-8\FAB-250)</Polish>
+<Hungarian>Su-25SMK (S-8\FAB-250)</Hungarian>
+<French>Su-25SMK (S-8\FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_500_S8">
+<English>Su-25SMK (S-8\FAB-500)</English>
+<German>Su-25SMK (S-8\FAB-500)</German>
+<Italian>Su-25SMK (S-8\FAB-500)</Italian>
+<Spanish>Su-25SMK (S-8\FAB-500)</Spanish>
+<Czech>Su-25SMK (S-8\FAB-500)</Czech>
+<Russian>Су-25СМК (С-8\ФАБ-500)</Russian>
+<Polish>Su-25SMK (S-8\FAB-500)</Polish>
+<Hungarian>Su-25SMK (S-8\FAB-500)</Hungarian>
+<French>Su-25SMK (S-8\FAB-500)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_250_S13">
+<English>Su-25SMK (S-13\FAB-250)</English>
+<German>Su-25SMK (S-13\FAB-250)</German>
+<Italian>Su-25SMK (S-13\FAB-250)</Italian>
+<Spanish>Su-25SMK (S-13\FAB-250)</Spanish>
+<Czech>Su-25SMK (S-13\FAB-250)</Czech>
+<Russian>Су-25СМК (С-13\ФАБ-250)</Russian>
+<Polish>Su-25SMK (S-13\FAB-250)</Polish>
+<Hungarian>Su-25SMK (S-13\FAB-250)</Hungarian>
+<French>Su-25SMK (S-13\FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_S24">
+<English>Su-25SMK (S-24)</English>
+<German>Su-25SMK (S-24)</German>
+<Italian>Su-25SMK (S-24)</Italian>
+<Spanish>Su-25SMK (S-24)</Spanish>
+<Czech>Su-25SMK (S-24)</Czech>
+<Russian>Су-25СМК (С-24)</Russian>
+<Polish>Su-25SMK (S-24)</Polish>
+<Hungarian>Su-25SMK (S-24)</Hungarian>
+<French>Su-25SMK (S-24)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_S24_Kh25">
+<English>Su-25SMK (S-24\Kh-25ML)</English>
+<German>Su-25SMK (S-24\Kh-25ML)</German>
+<Italian>Su-25SMK (S-24\Kh-25ML)</Italian>
+<Spanish>Su-25SMK (S-24\Kh-25ML)</Spanish>
+<Czech>Su-25SMK (S-24\Kh-25ML)</Czech>
+<Russian>Су-25СМК (С-24\Х-25МЛ)</Russian>
+<Polish>Su-25SMK (S-24\Kh-25ML)</Polish>
+<Hungarian>Su-25SMK (S-24\Kh-25ML)</Hungarian>
+<French>Su-25SMK (S-24\Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_500_S13">
+<English>Su-25SMK (4xFAB-500\4xS-13)</English>
+<German>Su-25SMK (4xFAB-500\4xS-13)</German>
+<Italian>Su-25SMK (4xFAB-500\4xS-13)</Italian>
+<Spanish>Su-25SMK (4xFAB-500\4xS-13)</Spanish>
+<Czech>Su-25SMK (4xFAB-500\4xS-13)</Czech>
+<Russian>Су-25СМК (4xФАБ-500\4xС-13)</Russian>
+<Polish>Su-25SMK (4xFAB-500\4xS-13)</Polish>
+<Hungarian>Su-25SMK (4xFAB-500\4xS-13)</Hungarian>
+<French>Su-25SMK (4xFAB-500\4xS-13)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_S13">
+<English>Su-25SMK (S-13)</English>
+<German>Su-25SMK (S-13)</German>
+<Italian>Su-25SMK (S-13)</Italian>
+<Spanish>Su-25SMK (S-13)</Spanish>
+<Czech>Su-25SMK (S-13)</Czech>
+<Russian>Су-25СМК (С-13)</Russian>
+<Polish>Su-25SMK (S-13)</Polish>
+<Hungarian>Su-25SMK (S-13)</Hungarian>
+<French>Su-25SMK (S-13)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_S8">
+<English>Su-25SMK (S-8)</English>
+<German>Su-25SMK (S-8)</German>
+<Italian>Su-25SMK (S-8)</Italian>
+<Spanish>Su-25SMK (S-8)</Spanish>
+<Czech>Su-25SMK (S-8)</Czech>
+<Russian>Су-25СМК (С-8)</Russian>
+<Polish>Su-25SMK (S-8)</Polish>
+<Hungarian>Su-25SMK (S-8)</Hungarian>
+<French>Su-25SMK (S-8)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_250">
+<English>Su-25SMK (FAB-250)</English>
+<German>Su-25SMK (FAB-250)</German>
+<Italian>Su-25SMK (FAB-250)</Italian>
+<Spanish>Su-25SMK (FAB-250)</Spanish>
+<Czech>Su-25SMK (FAB-250)</Czech>
+<Russian>Су-25СМК (ФАБ-250)</Russian>
+<Polish>Su-25SMK (FAB-250)</Polish>
+<Hungarian>Su-25SMK (FAB-250)</Hungarian>
+<French>Su-25SMK (FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_500">
+<English>Su-25SMK (8xFAB-500)</English>
+<German>Su-25SMK (8xFAB-500)</German>
+<Italian>Su-25SMK (8xFAB-500)</Italian>
+<Spanish>Su-25SMK (8xFAB-500)</Spanish>
+<Czech>Su-25SMK (8xFAB-500)</Czech>
+<Russian>Су-25СМК (8xФАБ-500)</Russian>
+<Polish>Su-25SMK (8xFAB-500)</Polish>
+<Hungarian>Su-25SMK (8xFAB-500)</Hungarian>
+<French>Su-25SMK (8xFAB-500)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_Kh25_S8">
+<English>Su-25SMK (S-8\Kh-25ML)</English>
+<German>Su-25SMK (S-8\Kh-25ML)</German>
+<Italian>Su-25SMK (S-8\Kh-25ML)</Italian>
+<Spanish>Su-25SMK (S-8\Kh-25ML)</Spanish>
+<Czech>Su-25SMK (S-8\Kh-25ML)</Czech>
+<Russian>Су-25СМК (С-8\Х-25МЛ)</Russian>
+<Polish>Su-25SMK (S-8\Kh-25ML)</Polish>
+<Hungarian>Su-25SMK (S-8\Kh-25ML)</Hungarian>
+<French>Su-25SMK (S-8\Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_Kh29L_Kh25_S8">
+<English>Su-25SMK (S-8\Kh-29L\Kh-25ML)</English>
+<German>Su-25SMK (S-8\Kh-29L\Kh-25ML)</German>
+<Italian>Su-25SMK (S-8\Kh-29L\Kh-25ML)</Italian>
+<Spanish>Su-25SMK (S-8\Kh-29L\Kh-25ML)</Spanish>
+<Czech>Su-25SMK (S-8\Kh-29L\Kh-25ML)</Czech>
+<Russian>Су-25СМК (С-8\Х-29Л\Х-25МЛ)</Russian>
+<Polish>Su-25SMK (S-8\Kh-29L\Kh-25ML)</Polish>
+<Hungarian>Su-25SMK (S-8\Kh-29L\Kh-25ML)</Hungarian>
+<French>Su-25SMK (S-8\Kh-29L\Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_Kh29L_FAB250_S8">
+<English>Su-25SMK (S-8\Kh-29L\FAB-250)</English>
+<German>Su-25SMK (S-8\Kh-29L\FAB-250)</German>
+<Italian>Su-25SMK (S-8\Kh-29L\FAB-250)</Italian>
+<Spanish>Su-25SMK (S-8\Kh-29L\FAB-250)</Spanish>
+<Czech>Su-25SMK (S-8\Kh-29L\FAB-250)</Czech>
+<Russian>Су-25СМК (С-8\Х-29Л\ФАБ-250)</Russian>
+<Polish>Su-25SMK (S-8\Kh-29L\FAB-250)</Polish>
+<Hungarian>Su-25SMK (S-8\Kh-29L\FAB-250)</Hungarian>
+<French>Su-25SMK (S-8\Kh-29L\FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_Kh29T_Kh25_S8">
+<English>Su-25SMK (2xKh-29T\2xKh-25ML\4xS-8)</English>
+<German>Su-25SMK (2xKh-29T\2xKh-25ML\4xS-8)</German>
+<Italian>Su-25SMK (2xKh-29T\2xKh-25ML\4xS-8)</Italian>
+<Spanish>Su-25SMK (2xKh-29T\2xKh-25ML\4xS-8)</Spanish>
+<Czech>Su-25SMK (2xKh-29T\2xKh-25ML\4xS-8)</Czech>
+<Russian>Су-25СМК (2xХ-29Т\2xХ-25МЛ\4xС-8)</Russian>
+<Polish>Su-25SMK (2xKh-29T\2xKh-25ML\4xS-8)</Polish>
+<Hungarian>Su-25SMK (2xKh-29T\2xKh-25ML\4xS-8)</Hungarian>
+<French>Su-25SMK (2xKh-29T\2xKh-25ML\4xS-8)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_Kh29L_S8">
+<English>Su-25SMK (S-8\Kh-29L)</English>
+<German>Su-25SMK (S-8\Kh-29L)</German>
+<Italian>Su-25SMK (S-8\Kh-29L)</Italian>
+<Spanish>Su-25SMK (S-8\Kh-29L)</Spanish>
+<Czech>Su-25SMK (S-8\Kh-29L)</Czech>
+<Russian>Су-25СМК (С-8\Х-29Л)</Russian>
+<Polish>Su-25SMK (S-8\Kh-29L)</Polish>
+<Hungarian>Su-25SMK (S-8\Kh-29L)</Hungarian>
+<French>Su-25SMK (S-8\Kh-29L)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_Kh29T_S8">
+<English>Su-25SMK (2xKh-29T\4xS-8\2xR-73M)</English>
+<German>Su-25SMK (2xKh-29T\4xS-8\2xR-73M)</German>
+<Italian>Su-25SMK (2xKh-29T\4xS-8\2xR-73M)</Italian>
+<Spanish>Su-25SMK (2xKh-29T\4xS-8\2xR-73M)</Spanish>
+<Czech>Su-25SMK (2xKh-29T\4xS-8\2xR-73M)</Czech>
+<Russian>Су-25СМК (2xХ-29Т\4xС-8\2xР-73М)</Russian>
+<Polish>Su-25SMK (2xKh-29T\4xS-8\2xR-73M)</Polish>
+<Hungarian>Su-25SMK (2xKh-29T\4xS-8\2xR-73M)</Hungarian>
+<French>Su-25SMK (2xKh-29T\4xS-8\2xR-73M)</French>
+</Key>
+<Key ID="STR_TU_Su25SMK_R73">
+<English>Su-25SMK (4xR-73M\2xFAB-250\4xS-8)</English>
+<German>Su-25SMK (4xR-73M\2xFAB-250\4xS-8)</German>
+<Italian>Su-25SMK (4xR-73M\2xFAB-250\4xS-8)</Italian>
+<Spanish>Su-25SMK (4xR-73M\2xFAB-250\4xS-8)</Spanish>
+<Czech>Su-25SMK (4xR-73M\2xFAB-250\4xS-8)</Czech>
+<Russian>Су-25СМК (4xР-73М\2xФАБ-250\4xС-8)</Russian>
+<Polish>Su-25SMK (4xR-73M\2xFAB-250\4xS-8)</Polish>
+<Hungarian>Su-25SMK (4xR-73M\2xFAB-250\4xS-8)</Hungarian>
+<French>Su-25SMK (4xR-73M\2xFAB-250\4xS-8)</French>
+</Key>
+<Key ID="STR_TU_MI8_MTV">
+<Original>Mi-8MTV</Original>
+<French>Mi-8MTV</French>
+<Spanish>Mi-8MTV</Spanish>
+<Italian>Mi-8MTV</Italian>
+<Hungarian>Mi-8MTV</Hungarian>
+<Polish>Mi-8MTV</Polish>
+<Russian>Ми-8МТВ</Russian>
+<German>Mi-8MTV</German>
+<Czech>Mi-8MTV</Czech>
+<English>Mi-8MTV</English>
+<Japanese>Mi-8MTV</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTVM">
+<Original>Mi-8MTVM (Ambulance)</Original>
+<French>Mi-8MTVM (Ambulance)</French>
+<Spanish>Mi-8MTVM (Ambulance)</Spanish>
+<Italian>Mi-8MTVM (Ambulance)</Italian>
+<Hungarian>Mi-8MTVM (Ambulance)</Hungarian>
+<Polish>Mi-8MTVM (Ambulance)</Polish>
+<Russian>Ми-8МТВМ (медицинский)</Russian>
+<German>Mi-8MTVM (Ambulance)</German>
+<Czech>Mi-8MTVM (Ambulance)</Czech>
+<English>Mi-8MTVM (Ambulance)</English>
+<Japanese>Mi-8MTVM (Ambulance)</Japanese>
+</Key>
+<Key ID="STR_TU_MI17_1VA">
+<Original>Mi-17-1VA (Ambulance)</Original>
+<French>Mi-17-1VA (Ambulance)</French>
+<Spanish>Mi-17-1VA (Ambulance)</Spanish>
+<Italian>Mi-17-1VA (Ambulance)</Italian>
+<Hungarian>Mi-17-1VA (Ambulance)</Hungarian>
+<Polish>Mi-17-1VA (Ambulance)</Polish>
+<Russian>Ми-17-1ВА (медицинский)</Russian>
+<German>Mi-17-1VA (Ambulance)</German>
+<Czech>Mi-17-1VA (Ambulance)</Czech>
+<English>Mi-17-1VA (Ambulance)</English>
+<Japanese>Mi-17-1VA (Ambulance)</Japanese>
+</Key>
+<Key ID="STR_TU_MI17_1V">
+<Original>Mi-17-1V</Original>
+<French>Mi-17-1V</French>
+<Spanish>Mi-17-1V</Spanish>
+<Italian>Mi-17-1V</Italian>
+<Hungarian>Mi-17-1V</Hungarian>
+<Polish>Mi-17-1V</Polish>
+<Russian>Ми-17-1В</Russian>
+<German>Mi-17-1V</German>
+<Czech>Mi-17-1V</Czech>
+<English>Mi-17-1V</English>
+<Japanese>Mi-17-1V</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTV3">
+<Original>Mi-8MTV-3</Original>
+<French>Mi-8MTV-3</French>
+<Spanish>Mi-8MTV-3</Spanish>
+<Italian>Mi-8MTV-3</Italian>
+<Hungarian>Mi-8MTV-3</Hungarian>
+<Polish>Mi-8MTV-3</Polish>
+<Russian>Ми-8МТВ-3</Russian>
+<German>Mi-8MTV-3</German>
+<Czech>Mi-8MTV-3</Czech>
+<English>Mi-8MTV-3</English>
+<Japanese>Mi-8MTV-3</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTV3_S8">
+<Original>Mi-8MTV-3 (S-8)</Original>
+<French>Mi-8MTV-3 (S-8)</French>
+<Spanish>Mi-8MTV-3 (S-8)</Spanish>
+<Italian>Mi-8MTV-3 (S-8)</Italian>
+<Hungarian>Mi-8MTV-3 (S-8)</Hungarian>
+<Polish>Mi-8MTV-3 (S-8)</Polish>
+<Russian>Ми-8МТВ-3 (С-8)</Russian>
+<German>Mi-8MTV-3 (S-8)</German>
+<Czech>Mi-8MTV-3 (S-8)</Czech>
+<English>Mi-8MTV-3 (S-8)</English>
+<Japanese>Mi-8MTV-3 (S-8)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTV3_S5">
+<Original>Mi-8MTV-3 (S-5)</Original>
+<French>Mi-8MTV-3 (S-5)</French>
+<Spanish>Mi-8MTV-3 (S-5)</Spanish>
+<Italian>Mi-8MTV-3 (S-5)</Italian>
+<Hungarian>Mi-8MTV-3 (S-5)</Hungarian>
+<Polish>Mi-8MTV-3 (S-5)</Polish>
+<Russian>Ми-8МТВ-3 (С-5)</Russian>
+<German>Mi-8MTV-3 (S-5)</German>
+<Czech>Mi-8MTV-3 (S-5)</Czech>
+<English>Mi-8MTV-3 (S-5)</English>
+<Japanese>Mi-8MTV-3 (S-5)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTV3_UPK23">
+<Original>Mi-8MTV-3 (UPK-23)</Original>
+<French>Mi-8MTV-3 (UPK-23)</French>
+<Spanish>Mi-8MTV-3 (UPK-23)</Spanish>
+<Italian>Mi-8MTV-3 (UPK-23)</Italian>
+<Hungarian>Mi-8MTV-3 (UPK-23)</Hungarian>
+<Polish>Mi-8MTV-3 (UPK-23)</Polish>
+<Russian>Ми-8МТВ-3 (УПК-23)</Russian>
+<German>Mi-8MTV-3 (UPK-23)</German>
+<Czech>Mi-8MTV-3 (UPK-23)</Czech>
+<English>Mi-8MTV-3 (UPK-23)</English>
+<Japanese>Mi-8MTV-3 (UPK-23)</Japanese>
+</Key>
+<Key ID="STR_TU_MI17_3V_S8">
+<Original>Mi-17-3V (S-8)</Original>
+<French>Mi-17-3V (S-8)</French>
+<Spanish>Mi-17-3V (S-8)</Spanish>
+<Italian>Mi-17-3V (S-8)</Italian>
+<Hungarian>Mi-17-3V (S-8)</Hungarian>
+<Polish>Mi-17-3V (S-8)</Polish>
+<Russian>Ми-17-3В (С-8)</Russian>
+<German>Mi-17-3V (S-8)</German>
+<Czech>Mi-17-3V (S-8)</Czech>
+<English>Mi-17-3V (S-8)</English>
+<Japanese>Mi-17-3V (S-8)</Japanese>
+</Key>
+<Key ID="STR_TU_MI17_3V_S5">
+<Original>Mi-17-3V (S-5)</Original>
+<French>Mi-17-3V (S-5)</French>
+<Spanish>Mi-17-3V (S-5)</Spanish>
+<Italian>Mi-17-3V (S-5)</Italian>
+<Hungarian>Mi-17-3V (S-5)</Hungarian>
+<Polish>Mi-17-3V (S-5)</Polish>
+<Russian>Ми-17-3В (С-5)</Russian>
+<German>Mi-17-3V (S-5)</German>
+<Czech>Mi-17-3V (S-5)</Czech>
+<English>Mi-17-3V (S-5)</English>
+<Japanese>Mi-17-3V (S-5)</Japanese>
+</Key>
+<Key ID="STR_TU_MI17_3V_UPK23">
+<Original>Mi-17-3V (UPK-23)</Original>
+<French>Mi-17-3V (UPK-23)</French>
+<Spanish>Mi-17-3V (UPK-23)</Spanish>
+<Italian>Mi-17-3V (UPK-23)</Italian>
+<Hungarian>Mi-17-3V (UPK-23)</Hungarian>
+<Polish>Mi-17-3V (UPK-23)</Polish>
+<Russian>Ми-17-3В (УПК-23)</Russian>
+<German>Mi-17-3V (UPK-23)</German>
+<Czech>Mi-17-3V (UPK-23)</Czech>
+<English>Mi-17-3V (UPK-23)</English>
+<Japanese>Mi-17-3V (UPK-23)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMT">
+<Original>Mi-8AMT</Original>
+<French>Mi-8AMT</French>
+<Spanish>Mi-8AMT</Spanish>
+<Italian>Mi-8AMT</Italian>
+<Hungarian>Mi-8AMT</Hungarian>
+<Polish>Mi-8AMT</Polish>
+<Russian>Ми-8АМТ</Russian>
+<German>Mi-8AMT</German>
+<Czech>Mi-8AMT</Czech>
+<English>Mi-8AMT</English>
+<Japanese>Mi-8AMT</Japanese>
+</Key>
+<Key ID="STR_TU_MI171">
+<Original>Mi-171</Original>
+<French>Mi-171</French>
+<Spanish>Mi-171</Spanish>
+<Italian>Mi-171</Italian>
+<Hungarian>Mi-171</Hungarian>
+<Polish>Mi-171</Polish>
+<Russian>Ми-171</Russian>
+<German>Mi-171</German>
+<Czech>Mi-171</Czech>
+<English>Mi-171</English>
+<Japanese>Mi-171</Japanese>
+</Key>
+<Key ID="STR_TU_MI171Sh_S5">
+<Original>Mi-171Sh (S-5)</Original>
+<French>Mi-171Sh (S-5)</French>
+<Spanish>Mi-171Sh (S-5)</Spanish>
+<Italian>Mi-171Sh (S-5)</Italian>
+<Hungarian>Mi-171Sh (S-5)</Hungarian>
+<Polish>Mi-171Sh (S-5)</Polish>
+<Russian>Ми-171Ш (С-5)</Russian>
+<German>Mi-171Sh (S-5)</German>
+<Czech>Mi-171Sh (S-5)</Czech>
+<English>Mi-171Sh (S-5)</English>
+<Japanese>Mi-171Sh (S-5)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMTSh_S8">
+<Original>Mi-8AMTSh (S-8)</Original>
+<French>Mi-8AMTSh (S-8)</French>
+<Spanish>Mi-8AMTSh (S-8)</Spanish>
+<Italian>Mi-8AMTSh (S-8)</Italian>
+<Hungarian>Mi-8AMTSh (S-8)</Hungarian>
+<Polish>Mi-8AMTSh (S-8)</Polish>
+<Russian>Ми-8АМТШ (С-8)</Russian>
+<German>Mi-8AMTSh (S-8)</German>
+<Czech>Mi-8AMTSh (S-8)</Czech>
+<English>Mi-8AMTSh (S-8)</English>
+<Japanese>Mi-8AMTSh (S-8)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMTSh_S5">
+<Original>Mi-8AMTSh (S-5)</Original>
+<French>Mi-8AMTSh (S-5)</French>
+<Spanish>Mi-8AMTSh (S-5)</Spanish>
+<Italian>Mi-8AMTSh (S-5)</Italian>
+<Hungarian>Mi-8AMTSh (S-5)</Hungarian>
+<Polish>Mi-8AMTSh (S-5)</Polish>
+<Russian>Ми-8АМТШ (С-5)</Russian>
+<German>Mi-8AMTSh (S-5)</German>
+<Czech>Mi-8AMTSh (S-5)</Czech>
+<English>Mi-8AMTSh (S-5)</English>
+<Japanese>Mi-8AMTSh (S-5)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMTSh_UPK23">
+<Original>Mi-8AMTSh (UPK-23)</Original>
+<French>Mi-8AMTSh (UPK-23)</French>
+<Spanish>Mi-8AMTSh (UPK-23)</Spanish>
+<Italian>Mi-8AMTSh (UPK-23)</Italian>
+<Hungarian>Mi-8AMTSh (UPK-23)</Hungarian>
+<Polish>Mi-8AMTSh (UPK-23)</Polish>
+<Russian>Ми-8АМТШ (УПК-23)</Russian>
+<German>Mi-8AMTSh (UPK-23)</German>
+<Czech>Mi-8AMTSh (UPK-23)</Czech>
+<English>Mi-8AMTSh (UPK-23)</English>
+<Japanese>Mi-8AMTSh (UPK-23)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMTSh_FAB250">
+<Original>Mi-8AMTSh (FAB-250)</Original>
+<French>Mi-8AMTSh (FAB-250)</French>
+<Spanish>Mi-8AMTSh (FAB-250)</Spanish>
+<Italian>Mi-8AMTSh (FAB-250)</Italian>
+<Hungarian>Mi-8AMTSh (FAB-250)</Hungarian>
+<Polish>Mi-8AMTSh (FAB-250)</Polish>
+<Russian>Ми-8АМТШ (ФАБ-250)</Russian>
+<German>Mi-8AMTSh (FAB-250)</German>
+<Czech>Mi-8AMTSh (FAB-250)</Czech>
+<English>Mi-8AMTSh (FAB-250)</English>
+<Japanese>Mi-8AMTSh (FAB-250)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMTSh_Ataka">
+<Original>Mi-8AMTSh (Ataka)</Original>
+<French>Mi-8AMTSh (Ataka)</French>
+<Spanish>Mi-8AMTSh (Ataka)</Spanish>
+<Italian>Mi-8AMTSh (Ataka)</Italian>
+<Hungarian>Mi-8AMTSh (Ataka)</Hungarian>
+<Polish>Mi-8AMTSh (Ataka)</Polish>
+<Russian>Ми-8АМТШ (Атака)</Russian>
+<German>Mi-8AMTSh (Ataka)</German>
+<Czech>Mi-8AMTSh (Ataka)</Czech>
+<English>Mi-8AMTSh (Ataka)</English>
+<Japanese>Mi-8AMTSh (Ataka)</Japanese>
+</Key>
+</Container>
+</Package>
+</Project>

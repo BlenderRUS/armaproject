@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project name="pracs_heli">
+	<Package name="Heli">
+			<Key ID="STR_AIRPRACS">
+				<English>Sahrani Airforce</English>
+				<German>Sahrani Airforce</German>
+				<Italian>Sahrani Airforce</Italian>
+				<Spanish>Sahrani Airforce</Spanish>
+				<Czech>Sahrani Airforce</Czech>
+				<Russian>Авиация Сахрани</Russian>
+				<Polish>Sahrani Airforce</Polish>
+				<Hungarian>Sahrani Airforce</Hungarian>
+				<French>Sahrani Airforce</French>
+			</Key>
+	</Package>
+</Project>
