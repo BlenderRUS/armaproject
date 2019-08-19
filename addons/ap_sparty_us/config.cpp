@@ -136,6 +136,7 @@ class CfgVehicles
 	};
 	class M1129_MC_EP1: M1126_ICV_mk19_EP1
 	{
+		scope=1;
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
