@@ -195,12 +195,12 @@ class CfgVehicles
 		{
 			"RU_Soldier_Crew,RU_Soldier_Crew,RU_Soldier_Crew"
 		};
-		driverAction = "Abrams_Driverout";
+		driverAction = "T72_DriverOut";
 		driverInAction = "Abrams_Driver";
 		getInAction = "GetInMedium";
 		getOutAction = "GetOutMedium";
 		driverForceOptics=1;
-		forceHideDriver=1;
+		forceHideDriver=0;
 		outsidesoundfilter=1;
 		driverCompartments=0;
 		soundarmorcrash[]=
@@ -752,14 +752,27 @@ class CfgVehicles
 				volume="engineOn*(1-camPos)*grass*((rpm factor[1, 2.0]) min (rpm factor[2.0, 1]))";
 			};
 		};
-		class Turrets
+		class Turrets: Turrets
 		{
-			class MainTurret: NewTurret
+			class MainTurret: MainTurret
 			{
+				gunnerOutOpticsShowCursor = 0;
 				body="MainTurretTraverse";
 				animationSourceBody="mainTurret";
 				animationSourceGun="mainGun";
 				animationSourceHatch="hatchGunner";
+				gunBeg="usti hlavne";
+				gunEnd="konec hlavne";
+				
+				maxVerticalRotSpeed= 0.2;
+				maxHorizontalRotSpeed= 0.2;
+				gunnerName="$STR_GN_BMP3_MainTurret";
+				gunnerAction="BMP3_Gunner_OUT";
+				gunnerInAction="BMP3_Gunner";
+				gunnerGetInAction="GetInMedium";
+				gunnerGetOutAction="GetOutMedium";
+				memoryPointsGetInGunner="pos gunner";
+				memoryPointsGetInGunnerDir="pos gunner dir";
 				weapons[]=
 				{
 					"2A31"
@@ -776,25 +789,20 @@ class CfgVehicles
 					1,
 					10
 				};
-				maxVerticalRotSpeed= 0.2;
-				maxHorizontalRotSpeed= 0.2;
+				gunnerOpticsModel="\x\ace\addons\m_veh_optics\pp61";
+				gunnerOutOpticsModel="";
+				gunnerOutOpticsEffect[]={};
 				minElev=-3;
 				maxElev=70;
-				memoryPointGun="kulas";
-				memoryPointGunnerOptics="gunnerview";
-				gunnerAction="BMP3_Gunner_OUT";
-				gunnerInAction="BMP3_Gunner";
-				gunnerGetInAction="GetInMedium";
-				gunnerGetOutAction="GetOutMedium";
-				gunBeg="usti hlavne";
-				gunEnd="konec hlavne";
-				forceHideGunner=1;
-				gunnerOpticsModel="\x\ace\addons\m_veh_optics\pp61";
 				gunnerForceOptics=1;
 				primary="true";
 				primaryGunner="true";
-				memoryPointsGetInGunner="pos gunner";
-				memoryPointsGetInGunnerDir="pos gunner dir";
+				gunnerOpticsEffect[]=
+				{
+					"TankGunnerOptics2",
+					"OpticsBlur1",
+					"OpticsCHAbera1"
+				};
 				class ViewGunner
 				{
 					initAngleX=5;
@@ -848,9 +856,12 @@ class CfgVehicles
 				};
 				class Turrets: Turrets
 				{
-					class CommanderOptics: NewTurret
+					class CommanderOptics: CommanderOptics
 					{
-						gunneropticsmodel="\ca\weapons\2Dscope_com3";
+						gunnerAction="BMP3_Commander_OUT";
+						gunnerInAction="BMP3_Commander";
+						gunnerGetInAction="GetInMedium";
+						gunnerGetOutAction="GetOutMedium";
 						axis="osaVeze2";
 						animationSourceBody="Turret_2";
 						animationSourceGun="Gun_2";
@@ -858,32 +869,67 @@ class CfgVehicles
 						selectionFireAnim="zasleh_2";
 						memorypointsgetingunner="pos commander";
 						memorypointsgetingunnerdir="pos commander dir";
-						minElev=0;
-						maxElev=0;
-						minTurn=-360;
-						maxTurn=360;
-						proxyIndex=1;
-						soundservo[]=
-						{
-							"\ca\sounds\vehicles\servos\turret-1",
-							0.0099999998,
-							1,
-							10
-						};
-						gunnerName="$STR_POSITION_COMMANDER";
-						forceHideGunner=1;
-						commanding=1;
+						outGunnerMayFire = 0;
+						
+						minTurn=-90;
+						maxTurn=90;
+						initTurn=0;
+						gunnerOpticsModel="\ca\weapons\2Dscope_com3";
+						gunnerOutOpticsModel="";
+						gunnerOpticsShowCursor=0;
 						gunBeg="usti hlavne_2";
 						gunEnd="konec hlavne_2";
-						primary="false";
-						primaryObserver="true";
+						soundServo[]=
+						{
+							"\Ca\sounds\Vehicles\Servos\turret-3",
+							0.0099999998,
+							1,
+							20
+						};
+						viewGunnerInExternal=0;
 						memoryPointGun="OtocHlaven2";
 						memoryPointGunnerOptics="gunnerview_2";
 						memoryPointGunneroutOptics="gunnerview_2";
-						gunnerAction="BMP3_Commander_OUT";
-						gunnerInAction="BMP3_Commander";
-						gunnerGetInAction="GetInMedium";
-						gunnerGetOutAction="GetOutMedium";
+						gunnerForceOptics=1;
+						gunnerOpticsEffect[]=
+						{
+							"TankCommanderOptics1"
+						};
+						class ViewOptics
+						{
+							initAngleX=0;
+							minAngleX=-30;
+							maxAngleX=30;
+							initAngleY=0;
+							minAngleY=-100;
+							maxAngleY=100;
+							initFov=0.30000001;
+							minFov=0.025;
+							maxFov=0.30000001;
+						};
+						startEngine="false";
+						gunnerOutOpticsShowCursor = 0;
+						class OpticsIn
+						{
+							class Wide
+							{
+								gunnerOpticsModel="\ca\weapons\2Dscope_com3";
+								initanglex=0;
+								initangley=0;
+								initfov="0.33333/ 1";
+								maxanglex=30;
+								maxangley=100;
+								maxfov="0.33333/ 1";
+								minanglex=-30;
+								minangley=-100;
+								minfov="0.33333/ 1";
+								visionMode[]=
+								{
+									"Normal"
+								};
+								thermalMode[]={0};
+							};
+						};
 					};
 				};
 				class HitPoints: HitPoints
@@ -1033,7 +1079,7 @@ class CfgVehicles
 			"RU_Soldier_Crew,RU_Soldier_Crew,RU_Soldier_Crew"
 		};
 		crew="RU_Soldier_Crew";
-		driverAction = "Abrams_Driverout";
+		driverAction = "T72_DriverOut";
 		driverInAction = "Abrams_Driver";
 		getInAction = "GetInMedium";
 		getOutAction = "GetOutMedium";
@@ -1680,6 +1726,7 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
+				gunnerOutOpticsShowCursor = 0;
 				maxVerticalRotSpeed= 0.2;
 				maxHorizontalRotSpeed= 0.2;
 				gunnerName="$STR_GN_BMP3_MainTurret";
@@ -1786,6 +1833,8 @@ class CfgVehicles
 						gunnerOpticsModel="\ca\weapons\2Dscope_com3";
 						gunnerOutOpticsModel="";
 						gunnerOpticsShowCursor=0;
+						outGunnerMayFire = 0;
+						
 						soundServo[]=
 						{
 							"\Ca\sounds\Vehicles\Servos\turret-3",
@@ -1813,8 +1862,29 @@ class CfgVehicles
 							minFov=0.025;
 							maxFov=0.30000001;
 						};
-						outGunnerMayFire="true";
 						startEngine="false";
+						gunnerOutOpticsShowCursor = 0;
+						class OpticsIn
+						{
+							class Wide
+							{
+								gunnerOpticsModel="\ca\weapons\2Dscope_com3";
+								initanglex=0;
+								initangley=0;
+								initfov="0.33333/ 1";
+								maxanglex=30;
+								maxangley=100;
+								maxfov="0.33333/ 1";
+								minanglex=-30;
+								minangley=-100;
+								minfov="0.33333/ 1";
+								visionMode[]=
+								{
+									"Normal"
+								};
+								thermalMode[]={0};
+							};
+						};
 					};
 				};
 			};

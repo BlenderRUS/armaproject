@@ -398,7 +398,7 @@ class CfgVehicles
 		getInAction = "GetInMedium";
 		getOutAction = "GetOutMedium";
 		driverForceOptics=1;
-		forceHideDriver=1;
+		forceHideDriver=0;
 		outsidesoundfilter=1;
 		driverCompartments=0;
 		soundarmorcrash[]=
