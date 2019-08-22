@@ -337,36 +337,80 @@ class CfgVehicles {
 		side = 1;
 		vehicleclass = "AIRPRACS";
 		faction = "smd_racs_faction";
+		hiddenSelectionsTextures[] =
+			{
+				"smd\smd_assets\vehicles\textures\smd_veh_uh1_atacs_co.paa",
+				"smd\smd_assets\vehicles\textures\smd_veh_uh1_atacs_in_co.paa",
+				"smd\smd_assets\vehicles\textures\smd_veh_uh1_atacs_co.paa"
+			};
+	
 	};
 	
 	class UH1H_SMD_BLOPS : UH1H_TK_EP1 {
 		side = 1;
 		vehicleclass = "AIRPRACS";
 		faction = "smd_racs_faction";
+		hiddenSelectionsTextures[] =
+			{
+				"smd\smd_assets\vehicles\textures\smd_veh_uh1_blackops_co.paa",
+				"smd\smd_assets\vehicles\textures\smd_veh_uh1_blackops_in_co.paa",
+				"pracs_heli\tex\uh1h\default_B_co.paa"
+			};
+	
 	};
 	
 	class UH1H_SMD_BLOPS_DIGI : UH1H_TK_EP1 {
 		side = 1;
 		vehicleclass = "AIRPRACS";
 		faction = "smd_racs_faction";
+		hiddenSelectionsTextures[] =
+			{
+				"smd\smd_assets\vehicles\textures\smd_veh_uh1_blackops_digital_co.paa",
+				"smd\smd_assets\vehicles\textures\smd_veh_uh1_blackops_digital_in_co.paa",
+				"pracs_heli\tex\uh1h\default_B_co.paa"
+			};
+	
 	};
 	
 	class UH1H_SMD_RACS : UH1H_TK_EP1 {
+		displayname = "UH1H-CAS (RACS)";
 		side = 1;
 		vehicleclass = "AIRPRACS";
 		faction = "smd_racs_faction";
+		hiddenSelectionsTextures[] =
+			{
+				"smd\smd_assets\vehicles\textures\smd_veh_uh1_racs_co.paa",
+				"smd\smd_assets\vehicles\textures\smd_veh_uh1_racs_in_co.paa",
+				"pracs_heli\tex\uh1h\default_D_co.paa"
+			};
+	
 	};
 	
 	class UH1H_SMD_RACS_DIGI : UH1H_TK_EP1 {
+		displayname = "UH1H-CAS (RACS) Digital";
 		side = 1;
 		vehicleclass = "AIRPRACS";
 		faction = "smd_racs_faction";
+		hiddenSelectionsTextures[] =
+			{
+				"smd\smd_assets\vehicles\textures\smd_veh_uh1_racs_digi_co.paa",
+				"smd\smd_assets\vehicles\textures\smd_veh_uh1_racs_digi_in_co.paa",
+				"pracs_heli\tex\uh1h\default_D_co.paa"
+			};
+	
 	};
 	
 	class UH1H_SMD_UN : UH1H_TK_EP1 {
-		side = 1;
+		side = 2;
 		vehicleclass = "Air";
-		faction = "smd_racs_faction";
+		faction = "BIS_UN";
+		hiddenSelectionsTextures[] =
+			{
+				"smd\smd_assets\vehicles\textures\smd_veh_uh1_un_co.paa",
+				"smd\smd_assets\vehicles\textures\smd_veh_uh1_un_in_co.paa",
+				"pracs_heli\tex\uh1h\default_UN_co.paa"
+			};
+			
 	};
 	
 	class pzn_uh1_h_cas;
@@ -379,7 +423,19 @@ class CfgVehicles {
 			{
 				"smd\smd_assets\vehicles\textures\smd_veh_uh1_racs_co.paa",
 				"smd\smd_assets\vehicles\textures\smd_veh_uh1_racs_in_co.paa",
-				"ca\air_E\UH1H\data\default_co.paa"
+				"pracs_heli\tex\uh1h\default_D_co.paa"
+			};		
+	};
+	class uh1_h_SMD_DIGI_cas: pzn_uh1_h_cas
+	{
+		side = 1;
+		vehicleclass = "AIRPRACS";
+		faction = "smd_racs_faction";
+		hiddenSelectionsTextures[] =
+			{
+				"smd\smd_assets\vehicles\textures\smd_veh_uh1_racs_digi_co.paa",
+				"smd\smd_assets\vehicles\textures\smd_veh_uh1_racs_digi_in_co.paa",
+				"pracs_heli\tex\uh1h\default_D_co.paa"
 			};		
 	};
 	class AP_CH46;
@@ -551,22 +607,5 @@ class CfgVehicles {
 			tex[] = {};
 			mat[] = {"PRACS_Heli\tex\puma\mat\puma1.rvmat", "PRACS_Heli\tex\puma\mat\puma1.rvmat", "PRACS_Heli\tex\puma\mat\puma1_destruct.rvmat", "PRACS_Heli\tex\puma\mat\puma2.rvmat", "PRACS_Heli\tex\puma\mat\puma2.rvmat", "PRACS_Heli\tex\puma\mat\puma2_destruct.rvmat", "PRACS_Heli\tex\puma\mat\puma_panel.rvmat", "PRACS_Heli\tex\puma\mat\puma_panel.rvmat", "PRACS_Heli\tex\puma\mat\puma_panel_destruct.rvmat", "PRACS_Heli\tex\puma\mat\puma_seat.rvmat", "PRACS_Heli\tex\puma\mat\puma_seat.rvmat", "PRACS_Heli\tex\puma\mat\puma_seat_destruct.rvmat"};
 		};
-	};
-	class PlaneWreck;	// External class reference*/
-	class PRACS_ch_46e_wreck : PlaneWreck {
-		scope = protected;
-		
-		class Armory {
-			disabled = 1;
-		};
-		model = "\PRACS_heli\PRACS_ch_46e_wreck.p3d";
-		typicalCargo[] = {};
-		irTarget = false;
-		transportAmmo = 0;
-		transportRepair = 0;
-		transportFuel = 0;
-		transportSoldier = 1;
-		
-		class Eventhandlers {};
 	};
 };
