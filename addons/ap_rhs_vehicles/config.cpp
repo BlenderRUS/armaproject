@@ -269,9 +269,7 @@ class CfgVehicles
 				brightness = 0.4;
 			};
 		};
-		
-
-		
+	
 		class UserActions
 		{
 			class openDriverViewHatch
@@ -381,8 +379,7 @@ class CfgVehicles
 						maxfov = "0.33333/ 4";
 						minfov = "0.33333/ 4";
 					};
-				};	
-						
+				};
 				class GunFire: WeaponCloudsMGun
 				{
 					interval = 0.01;
@@ -833,9 +830,6 @@ class CfgVehicles
 				name = "telo";
 				visual = "zbytek";
 				passThrough = 0;
-				minimalHit = 0.54;
-				explosionShielding = 0;
-				radius = 0.15;
 			};
 			class HitEngine: HitEngine
 			{
@@ -844,9 +838,6 @@ class CfgVehicles
 				name = "motor";
 				visual = "zbytek";
 				passThrough = 0;
-				minimalHit = 0.139;
-				explosionShielding = 0.009;
-				radius = 0.17;
 			};
 			class HitLTrack: HitLTrack
 			{
@@ -854,9 +845,6 @@ class CfgVehicles
 				material = -1;
 				name = "pas_L";
 				passThrough = 0;
-				minimalHit = 0.15;
-				explosionShielding = 0.15;
-				radius = 0.3;
 			};
 			class HitRTrack: HitRTrack
 			{
@@ -864,9 +852,6 @@ class CfgVehicles
 				material = -1;
 				name = "pas_P";
 				passThrough = 0;
-				minimalHit = 0.15;
-				explosionShielding = 0.15;
-				radius = 0.3;
 			};
 		};
 		class Sounds: Sounds
@@ -1228,9 +1213,6 @@ class CfgVehicles
 						name = "vez";
 						visual = "vez";
 						passThrough = 0;
-						minimalHit = 0.14;
-						explosionShielding = 0.001;
-						radius = 0.25;
 					};
 					class HitGun
 					{
@@ -1239,9 +1221,6 @@ class CfgVehicles
 						name = "zbran";
 						visual = "";
 						passThrough = 0;
-						minimalHit = 0.13;
-						explosionShielding = 0.001;
-						radius = 0.25;
 					};
 				};
 					
