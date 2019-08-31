@@ -185,7 +185,32 @@ class CfgVehicles {
 		class AnimationSources;	// External class reference
 		class ViewPilot;	// External class reference
 	};
-	
+	class C130J;
+	class C130_SMD_UN : C130J
+	{
+		scope = 2;
+		vehicleclass = "Air";
+		faction = "BIS_UN";
+	};
+	class C130_SMD_BLOPS_DIGI : C130J
+	{
+		scope = 2;
+		side = 1;
+		vehicleclass = "AIRPRACS";
+		faction = "smd_racs_faction";
+	};
+	class C130_SMD_BLOPS : C130J
+	{
+		scope = 2;
+		vehicleclass = "AIRPRACS";
+		faction = "smd_racs_faction";
+	};
+	class C130_SMD_ATACS : C130J
+	{
+		scope = 2;
+		vehicleclass = "AIRPRACS";
+		faction = "smd_racs_faction";
+	};
 	
 	class UH1H_TK_EP1;
 	class AH6X_EP1;
