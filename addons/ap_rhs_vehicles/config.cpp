@@ -1311,45 +1311,51 @@ class CfgVehicles
 		{
 			scope = 2;
 			displayName = "$STR_SPRUT_M";
-			class OpticsIn
+			class Turrets: Turrets
 			{
-					class Wide
+				class MainTurret: MainTurret
+				{
+					class OpticsIn
 					{
-						gunneropticsmodel = "\ca\weapons\2Dscope_BMP3gun";
-						initanglex = 0;
-						initangley = 0;
-						initfov = "0.33333/ 2.6";
-						maxanglex = 30;
-						maxangley = 100;
-						maxfov = "0.33333/ 2.6";
-						minanglex = -30;
-						minangley = -100;
-						minfov = "0.33333/ 2.6";
-						visionMode[] = {"Normal"};
+						class Wide
+						{
+							gunneropticsmodel = "\ca\weapons\2Dscope_BMP3gun";
+							initanglex = 0;
+							initangley = 0;
+							initfov = "0.33333/ 2.6";
+							maxanglex = 30;
+							maxangley = 100;
+							maxfov = "0.33333/ 2.6";
+							minanglex = -30;
+							minangley = -100;
+							minfov = "0.33333/ 2.6";
+							visionMode[] = {"Normal"};
+						};
+						class Medium : Wide
+						{
+							initfov = "0.33333/ 5.5";
+							maxfov = "0.33333/ 5.5";
+							minfov = "0.33333/ 5.5";
+							thermalMode[] = {0, 1};
+							visionMode[] = {"Normal", "Ti"};
+						};
+						class Narrow : Wide
+						{
+							initfov = "0.33333/ 12";
+							maxfov = "0.33333/ 12";
+							minfov = "0.33333/ 12";
+							thermalMode[] = {0, 1};
+							visionMode[] = {"Normal", "Ti"};
+						};
+						class VeryNarrow : Wide
+						{
+							initfov = "0.33333/ 5.5";
+							maxfov = "0.33333/ 5.5";
+							minfov = "0.33333/ 5.5";
+							visionmode[] = {"NVG"};
+						};
 					};
-					class Medium : Wide
-					{
-						initfov = "0.33333/ 5.5";
-						maxfov = "0.33333/ 5.5";
-						minfov = "0.33333/ 5.5";
-						thermalMode[] = {0, 1};
-						visionMode[] = {"Normal", "Ti"};
-					};
-					class Narrow : Wide
-					{
-						initfov = "0.33333/ 12";
-						maxfov = "0.33333/ 12";
-						minfov = "0.33333/ 12";
-						thermalMode[] = {0, 1};
-						visionMode[] = {"Normal", "Ti"};
-					};
-					class VeryNarrow : Wide
-					{
-						initfov = "0.33333/ 5.5";
-						maxfov = "0.33333/ 5.5";
-						minfov = "0.33333/ 5.5";
-						visionmode[] = {"NVG"};
-					};
+				};
 			};
 		};
 		
