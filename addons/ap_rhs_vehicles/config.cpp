@@ -680,7 +680,10 @@ class CfgVehicles
 		class Eventhandlers;
 	};
 
-	class ACE_BMD_2_Base: BMP2_Base {};
+	class ACE_BMD_2_Base: BMP2_Base
+	{
+		driverOpticsModel = "\CA\Tracked_E\driverOptics";
+	};
 	class AP_SPRUT_base: ACE_BMD_2_Base {
 		
 		model = "\ap_rhs_vehicles\rhs_sprut.p3d";
@@ -1138,7 +1141,7 @@ class CfgVehicles
 					"250Rnd_762x54_PKT_T90",
 					"250Rnd_762x54_PKT_T90"
 				};
-				
+				stabilizedInAxes = StabilizedInAxesBoth;
 				maxHorizontalRotSpeed = 0.62;
 				maxVerticalRotSpeed = 0.12;
 				minElev = -5;
@@ -1163,6 +1166,21 @@ class CfgVehicles
 				
 				class OpticsIn
 				{
+					class Wide: ViewOptics
+					{
+						initAngleX = 0;
+						minAngleX = -30;
+						maxAngleX = 30;
+						initAngleY = 0;
+						minAngleY = -100;
+						maxAngleY = 100;
+						initFov = "0.3333/1";
+						minFov = "0.3333/1";
+						maxFov = "0.3333/1";
+						visionMode[] = {"Normal"};
+						gunnerOpticsModel = "CA\Tracked_E\driverOptics";
+						gunnerOpticsEffect[] = {};
+					};
 					class DayMain: ViewOptics
 					{
 						initAngleX = 0;
@@ -1174,7 +1192,22 @@ class CfgVehicles
 						initFov = "0.3333/8";
 						minFov = "0.3333/8";
 						maxFov = "0.3333/8";
-						visionMode[] = {"Normal","NVG"};
+						visionMode[] = {"Normal"};
+						gunnerOpticsModel = "\ap_rhs_vehicles\optic\rhs_sprut.p3d";
+						gunnerOpticsEffect[] = {};
+					};
+					class NightMain: ViewOptics
+					{
+						initAngleX = 0;
+						minAngleX = -30;
+						maxAngleX = 30;
+						initAngleY = 0;
+						minAngleY = -100;
+						maxAngleY = 100;
+						initFov = "0.3333/8";
+						minFov = "0.3333/8";
+						maxFov = "0.3333/8";
+						visionMode[] = {"NVG"};
 						gunnerOpticsModel = "\ap_rhs_vehicles\optic\rhs_sprut.p3d";
 						gunnerOpticsEffect[] = {};
 					};
@@ -1271,7 +1304,53 @@ class CfgVehicles
 	
 		class AP_SPRUT : AP_SPRUT_base 
 		{
-			scope = 2;		
+			scope = 2;
+			
+		};
+		class AP_SPRUT_M : AP_SPRUT_base 
+		{
+			scope = 2;
+			displayName = "$STR_SPRUT_M";
+			class OpticsIn
+			{
+					class Wide
+					{
+						gunneropticsmodel = "\ca\weapons\2Dscope_BMP3gun";
+						initanglex = 0;
+						initangley = 0;
+						initfov = "0.33333/ 2.6";
+						maxanglex = 30;
+						maxangley = 100;
+						maxfov = "0.33333/ 2.6";
+						minanglex = -30;
+						minangley = -100;
+						minfov = "0.33333/ 2.6";
+						visionMode[] = {"Normal"};
+					};
+					class Medium : Wide
+					{
+						initfov = "0.33333/ 5.5";
+						maxfov = "0.33333/ 5.5";
+						minfov = "0.33333/ 5.5";
+						thermalMode[] = {0, 1};
+						visionMode[] = {"Normal", "Ti"};
+					};
+					class Narrow : Wide
+					{
+						initfov = "0.33333/ 12";
+						maxfov = "0.33333/ 12";
+						minfov = "0.33333/ 12";
+						thermalMode[] = {0, 1};
+						visionMode[] = {"Normal", "Ti"};
+					};
+					class VeryNarrow : Wide
+					{
+						initfov = "0.33333/ 5.5";
+						maxfov = "0.33333/ 5.5";
+						minfov = "0.33333/ 5.5";
+						visionmode[] = {"NVG"};
+					};
+			};
 		};
 		
 		
@@ -1432,19 +1511,42 @@ class CfgVehicles
 				gunnerOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
 				
 				class OpticsIn {
-					class Wide {
+					class Wide
+					{
 						gunneropticsmodel = "\ca\weapons\2Dscope_BMP3gun";
 						initanglex = 0;
 						initangley = 0;
-						initfov = "0.33333/ 2.5";
+						initfov = "0.33333/ 2.6";
 						maxanglex = 30;
 						maxangley = 100;
-						maxfov = "0.33333/ 2.5";
+						maxfov = "0.33333/ 2.6";
 						minanglex = -30;
 						minangley = -100;
+						minfov = "0.33333/ 2.6";
+						visionMode[] = {"Normal"};
+					};
+					class Medium : Wide
+					{
+						initfov = "0.33333/ 5.5";
+						maxfov = "0.33333/ 5.5";
+						minfov = "0.33333/ 5.5";
+						thermalMode[] = {0, 1};
+						visionMode[] = {"Normal", "Ti"};
+					};
+					class Narrow : Wide
+					{
+						initfov = "0.33333/ 12";
+						maxfov = "0.33333/ 12";
 						minfov = "0.33333/ 12";
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0};
+						thermalMode[] = {0, 1};
+						visionMode[] = {"Normal", "Ti"};
+					};
+					class VeryNarrow : Wide
+					{
+						initfov = "0.33333/ 5.5";
+						maxfov = "0.33333/ 5.5";
+						minfov = "0.33333/ 5.5";
+						visionmode[] = {"NVG"};
 					};
 				};
 				

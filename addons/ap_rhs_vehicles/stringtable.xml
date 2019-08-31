@@ -32,6 +32,10 @@
 <Original>2S25 Sprut-SD</Original>
 <Russian>2С25 Спрут-СД</Russian>
 </Key>
+<Key ID="STR_SPRUT_M">
+<Original>2S25M Sprut-SD</Original>
+<Russian>2С25M Спрут-СД</Russian>
+</Key>
 
 <Key ID="STR_SPRUT_LIB">
 <Original>Self-propelled tank destroyer</Original>
