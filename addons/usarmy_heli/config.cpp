@@ -275,7 +275,7 @@ class CfgVehicles
 			{
 				armor = 0.3;
 				material = 1;
-				name = "vrtule";
+				name = "";
 				visual = "mala vrtule staticka";
 				passThrough = 0.1;
 			};
