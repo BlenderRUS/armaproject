@@ -13,6 +13,10 @@
 				<Original>Second pilot</Original>
 				<Russian>Второй пилот</Russian>
 			</Key>
+			<Key ID="STR_Ramp_Gunner">
+				<Original>Ramp Gunner</Original>
+				<Russian>Стрелок на рампе</Russian>
+			</Key>
 			
 			<Key ID="STR_NAME_CH46">
 				<Original>CH-46E Sea Knight</Original>

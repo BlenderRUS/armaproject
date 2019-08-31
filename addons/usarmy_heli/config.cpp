@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////
 //DeRap: usarmy_heli\config.bin
 //Produced from mikero's Dos Tools Dll version 6.24
-//'now' is Sat Aug 31 17:43:23 2019 : 'file' last modified on Sat Aug 31 17:42:25 2019
+//'now' is Sat Aug 31 20:12:07 2019 : 'file' last modified on Sat Aug 31 20:10:54 2019
 //http://dev-heaven.net/projects/list_files/mikero-pbodll
 ////////////////////////////////////////////////////////////////////
 
@@ -231,6 +231,8 @@ class CfgVehicles
 		expansion = 2;
 		armor = 50;
 		maxSpeed = 265;
+		driverCompartments = "Compartment1";
+		cargoCompartments[] = {"Compartment1"};
 		selectionHRotorStill = "velka vrtule staticka";
 		selectionHRotorMove = "velka vrtule blur";
 		selectionVRotorStill = "mala vrtule staticka";
@@ -241,6 +243,10 @@ class CfgVehicles
 		driverAction = "AH6_Pilot";
 		driverInAction = "AH6_Pilot";
 		transportSoldier = 22;
+		incommingmissliedetectionsystem = 8;
+		lockdetectionsystem = 8;
+		soundIncommingMissile[] = {"\ca\Tracked\Data\Sound\alarm_loop1",0.000316228,4};
+		soundLocked[] = {"\ca\Tracked\Data\Sound\alarm_loop1",0.000316228,2};
 		cargoAction[] = {"M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1"};
 		typicalCargo[] = {"USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier"};
 		memoryPointsGetInCargo = "pos cargo";
@@ -364,6 +370,7 @@ class CfgVehicles
 				primaryGunner = 1;
 				body = "LeftGun_Turret";
 				gun = "LeftGun";
+				gunnerCompartments = "Compartment1";
 				animationSourceBody = "LeftGun_Turret";
 				animationSourceGun = "LeftGun";
 				commanding = -1;
@@ -407,6 +414,7 @@ class CfgVehicles
 				primaryGunner = 0;
 				body = "RightGun_Turret";
 				gun = "RightGun";
+				gunnerCompartments = "Compartment1";
 				animationSourceBody = "RightGun_Turret";
 				animationSourceGun = "RightGun";
 				memoryPointsGetInGunner = "pos gunner";
@@ -450,10 +458,11 @@ class CfgVehicles
 				proxyIndex = 3;
 				body = "RearGun_Turret";
 				gun = "RearGun";
+				gunnerCompartments = "Compartment1";
 				animationSourceBody = "RearGun_Turret";
 				animationSourceGun = "RearGun";
 				commanding = -2;
-				gunnerName = "Ramp Gunner";
+				gunnerName = "$STR_Ramp_Gunner";
 				memoryPointsGetInGunner = "pos gunner";
 				memoryPointsGetInGunnerDir = "pos gunner dir";
 				memoryPointGun = "machinegun_3";
@@ -487,6 +496,25 @@ class CfgVehicles
 					minAngleY = 90;
 					minFov = 0.25;
 				};
+			};
+			class co_pilot: NewTurret
+			{
+				startEngine = 0;
+				outGunnerMayFire = 1;
+				primaryGunner = 0;
+				body = "";
+				gun = "";
+				commanding = -1;
+				proxyIndex = 4;
+				gunnerName = "$STR_pilot_2";
+				gunnerCompartments = "Compartment1";
+				memoryPointsGetInGunner = "pos gunner";
+				memoryPointsGetInGunnerDir = "pos gunner dir";
+				gunnerAction = "AH6_Pilot";
+				gunnerInAction = "AH6_Pilot";
+				initTurn = 0;
+				gunnerOpticsModel = "\ca\weapons\optika_empty";
+				gunnerForceOptics = 0;
 			};
 		};
 	};
@@ -569,6 +597,12 @@ class CfgVehicles
 		castCargoShadow = 1;
 		driverAction = "AH6_Pilot";
 		driverInAction = "AH6_Pilot";
+		incommingmissliedetectionsystem = 8;
+		lockdetectionsystem = 8;
+		soundIncommingMissile[] = {"\ca\Tracked\Data\Sound\alarm_loop1",0.000316228,4};
+		soundLocked[] = {"\ca\Tracked\Data\Sound\alarm_loop1",0.000316228,2};
+		driverCompartments = "Compartment1";
+		cargoCompartments[] = {"Compartment1"};
 		transportSoldier = 28;
 		cargoAction[] = {"M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1"};
 		typicalCargo[] = {"USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier"};
@@ -679,6 +713,7 @@ class CfgVehicles
 				gunBeg = "end";
 				gunEnd = "chamber";
 				selectionFireAnim = "zasleh";
+				gunnerCompartments = "Compartment1";
 				gunnerAction = "Abrams_CommanderOut";
 				gunnerInAction = "Abrams_CommanderOut";
 				weapons[] = {"M2"};
@@ -712,6 +747,7 @@ class CfgVehicles
 				gun = "RightGun";
 				animationSourceBody = "RightGun_Turret";
 				animationSourceGun = "RightGun";
+				gunnerCompartments = "Compartment1";
 				memoryPointsGetInGunner = "pos gunner";
 				memoryPointsGetInGunnerDir = "pos gunner dir";
 				animationSourceHatch = "";
@@ -756,10 +792,11 @@ class CfgVehicles
 				proxyIndex = 4;
 				body = "RearGun_Turret";
 				gun = "RearGun";
+				gunnerCompartments = "Compartment1";
 				animationSourceBody = "RearGun_Turret";
 				animationSourceGun = "RearGun";
 				commanding = -2;
-				gunnerName = "Ramp Gunner";
+				gunnerName = "$STR_Ramp_Gunner";
 				memoryPointsGetInGunner = "pos gunner";
 				memoryPointsGetInGunnerDir = "pos gunner dir";
 				memoryPointGun = "machinegun_3";
@@ -803,6 +840,7 @@ class CfgVehicles
 				gun = "";
 				commanding = -1;
 				proxyIndex = 3;
+				gunnerCompartments = "Compartment1";
 				gunnerName = "$STR_pilot_2";
 				memoryPointsGetInGunner = "pos gunner";
 				memoryPointsGetInGunnerDir = "pos gunner dir";
@@ -1017,6 +1055,17 @@ class CfgVehicles
 				selection = "l svetlo";
 				size = 0.1;
 			};
+			class gun
+			{
+				color[] = {0.8,0.8,1,1};
+				ambient[] = {0.07,0.07,0.07,1};
+				position = "g svelto";
+				direction = "konec G svetla";
+				hitpoint = "G svetlo";
+				selection = "G svetlo";
+				size = 0.5;
+				brightness = 1;
+			};
 		};
 		class Library
 		{
@@ -1042,6 +1091,7 @@ class CfgVehicles
 				commanding = -1;
 				proxyIndex = 1;
 				gunnerName = "$STR_pilot_2";
+				gunnerCompartments = "Compartment1";
 				memoryPointsGetInGunner = "pos co_pilot";
 				memoryPointsGetInGunnerDir = "pos co_pilot dir";
 				gunnerAction = "AH6_Pilot";
@@ -1160,20 +1210,6 @@ class CfgVehicles
 		cargoAction[] = {"M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1"};
 		typicalCargo[] = {"USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier","USMC_Soldier"};
 		class UserActions{};
-		class Reflectors: Reflectors
-		{
-			class Gun
-			{
-				color[] = {0.8,0.8,1,1};
-				ambient[] = {0.07,0.07,0.07,1};
-				position = "G svetlo";
-				direction = "konec G svetla";
-				hitpoint = "G svetlo";
-				selection = "G svetlo";
-				size = 0.5;
-				brightness = 1;
-			};
-		};
 		class Turrets
 		{
 			class co_pilot: NewTurret
@@ -1186,6 +1222,7 @@ class CfgVehicles
 				commanding = -1;
 				proxyIndex = 1;
 				gunnerName = "$STR_pilot_2";
+				gunnerCompartments = "Compartment1";
 				memoryPointsGetInGunner = "pos co_pilot";
 				memoryPointsGetInGunnerDir = "pos co_pilot dir";
 				gunnerAction = "AH6_Pilot";
@@ -1205,6 +1242,7 @@ class CfgVehicles
 				animationSourceBody = "right_turret";
 				animationSourceGun = "right_gun";
 				commanding = -1;
+				gunnerCompartments = "Compartment2";
 				gunnerName = "$STR_gunner_M60";
 				memoryPointsGetInGunner = "pos cargo";
 				memoryPointsGetInGunnerDir = "pos cargo dir";
