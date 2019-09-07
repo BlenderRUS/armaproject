@@ -1305,30 +1305,11 @@ class CfgVehicles
 						};
 						class Medium: Wide
 						{
-							initFov="0.33333/ 5.5";
-							minFov="0.33333/ 5.5";
-							maxFov="0.33333/ 5.5";
-							gunnerOpticsModel = "\ap_rhs_vehicles\optic\rhs_thermalScreen";
-							visionMode[] = {"Normal", "Ti"};
-						};
-						class Narrow: Wide
-						{
-							initFov="0.33333/ 12";
+							initFov="0.33333/ 2.5";
 							minFov="0.33333/ 12";
-							maxFov="0.33333/ 12";
-							gunnerOpticsModel = "\x\ace\addons\m_veh_optics\rhs_thermalScreen_narrow";
+							maxFov="0.33333/ 2.5";
+							gunneropticsmodel = "\ca\air\optika_Ka50_gun";
 							visionMode[] = {"Normal", "Ti"};
-						};
-						class Night: Wide
-						{
-							initFov="0.33333/ 5.5";
-							minFov="0.33333/ 5.5";
-							maxFov="0.33333/ 5.5";
-							visionMode[]=
-							{
-								"NVG"
-							};
-							gunnerOpticsModel = "\x\ace\addons\m_veh_optics\rhs_thermalScreen_wide";
 						};
 					};
 				};
@@ -1493,50 +1474,31 @@ class CfgVehicles
 				gunnerOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
 				
 				class OpticsIn
-				{
-					class Wide: ViewOptics
 					{
-						initAngleX = 0;
-						minAngleX = -30;
-						maxAngleX = 30;
-						initAngleY = 0;
-						minAngleY = -100;
-						maxAngleY = 100;
-						initFov = "0.3333/1";
-						minFov = "0.3333/1";
-						maxFov = "0.3333/1";
-						visionMode[] = {"Normal"};
-						gunnerOpticsModel = "CA\Tracked_E\driverOptics";
-						gunnerOpticsEffect[] = {};
-					};
-					class Medium: Wide
-					{
-						initFov="0.33333/ 5.5";
-						minFov="0.33333/ 5.5";
-						maxFov="0.33333/ 5.5";
-						gunnerOpticsModel = "\ap_rhs_vehicles\optic\T72B_TPN349_optics";
-						visionMode[] = {"Normal", "Ti"};
-					};
-					class Narrow: Wide
-					{
-						initFov="0.33333/ 12";
-						minFov="0.33333/ 12";
-						maxFov="0.33333/ 12";
-						gunnerOpticsModel = "\ap_rhs_vehicles\optic\T72B_TPN349_optics";
-						visionMode[] = {"Normal", "Ti"};
-					};
-					class Night: Wide
-					{
-						initFov="0.33333/ 5.5";
-						minFov="0.33333/ 5.5";
-						maxFov="0.33333/ 5.5";
-						visionMode[]=
+						class Wide: ViewOptics
 						{
-							"NVG"
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov = "0.3333/1";
+							minFov = "0.3333/1";
+							maxFov = "0.3333/1";
+							visionMode[] = {"Normal"};
+							gunnerOpticsModel = "CA\Tracked_E\driverOptics";
+							gunnerOpticsEffect[] = {};
 						};
-						gunnerOpticsModel = "\ap_rhs_vehicles\optic\T72B_TPN349_optics";
+						class Medium: Wide
+						{
+							initFov="0.33333/ 2.5";
+							minFov="0.33333/ 12";
+							maxFov="0.33333/ 2.5";
+							gunneropticsmodel = "\ca\air\optika_Ka50_gun";
+							visionMode[] = {"Normal", "Ti"};
+						};
 					};
-				};
 				class Turrets: Turrets
 				{
 					class CommanderOptics: CommanderOptics

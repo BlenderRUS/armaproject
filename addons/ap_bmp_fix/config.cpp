@@ -2262,30 +2262,11 @@ class CfgVehicles
 						};
 						class Medium: Wide
 						{
-							initFov="0.33333/ 5.5";
-							minFov="0.33333/ 5.5";
-							maxFov="0.33333/ 5.5";
-							gunnerOpticsModel = "\x\ace\addons\m_veh_optics\T72B_TPN349_optics";
-							visionMode[] = {"Normal", "Ti"};
-						};
-						class Narrow: Wide
-						{
-							initFov="0.33333/ 12";
+							initFov="0.33333/ 2.5";
 							minFov="0.33333/ 12";
-							maxFov="0.33333/ 12";
-							gunnerOpticsModel = "\x\ace\addons\m_veh_optics\T72B_TPN349_optics";
+							maxFov="0.33333/ 2.5";
+							gunneropticsmodel = "\ca\air\optika_Ka50_gun";
 							visionMode[] = {"Normal", "Ti"};
-						};
-						class Night: Wide
-						{
-							initFov="0.33333/ 5.5";
-							minFov="0.33333/ 5.5";
-							maxFov="0.33333/ 5.5";
-							visionMode[]=
-							{
-								"NVG"
-							};
-							gunnerOpticsModel = "\x\ace\addons\m_veh_optics\T72B_TPN349_optics";
 						};
 					};
 				};
