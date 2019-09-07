@@ -1296,21 +1296,15 @@ class CfgVehicles
 							initAngleY = 0;
 							minAngleY = -100;
 							maxAngleY = 100;
-							initFov = "0.3333/1";
-							minFov = "0.3333/1";
-							maxFov = "0.3333/1";
-							visionMode[] = {"Normal"};
-							gunnerOpticsModel = "CA\Tracked_E\driverOptics";
-							gunnerOpticsEffect[] = {};
-						};
-						class Medium: Wide
-						{
 							initFov="0.33333/ 2.5";
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
-							gunneropticsmodel = "\ca\air\optika_Ka50_gun";
 							visionMode[] = {"Normal", "Ti"};
+							gunneropticsmodel = "\ca\air\optika_Ka50_gun";
+							gunnerOpticsEffect[] = {};
 						};
+					delete DayMain;
+					delete NightMain;
 					};
 				};
 			};
@@ -1483,20 +1477,12 @@ class CfgVehicles
 							initAngleY = 0;
 							minAngleY = -100;
 							maxAngleY = 100;
-							initFov = "0.3333/1";
-							minFov = "0.3333/1";
-							maxFov = "0.3333/1";
-							visionMode[] = {"Normal"};
-							gunnerOpticsModel = "CA\Tracked_E\driverOptics";
-							gunnerOpticsEffect[] = {};
-						};
-						class Medium: Wide
-						{
 							initFov="0.33333/ 2.5";
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
 							gunneropticsmodel = "\ca\air\optika_Ka50_gun";
 							visionMode[] = {"Normal", "Ti"};
+							gunnerOpticsEffect[] = {};
 						};
 					};
 				class Turrets: Turrets

@@ -2253,21 +2253,24 @@ class CfgVehicles
 				{
 					class OpticsIn
 					{
-					};
-					gunneropticsmodel = "\ca\air\optika_Ka50_gun";
-					class ViewOptics
-					{
-						initAngleX = 0;
-						initAngleY = 0;
-						initFov = "0.33333/ 2.7";
-						maxAngleX = 30;
-						maxAngleY = 100;
-						maxFov = "0.33333/ 2.7";
-						minAngleX = -30;
-						minAngleY = -100;
-						minFov = "0.33333/ 12";
-						thermalMode[] = {0, 1};
-						visionMode[] = {"Normal", "Ti"};
+						class Wide: ViewOptics
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov="0.33333/ 2.5";
+							minFov="0.33333/ 12";
+							maxFov="0.33333/ 2.5";
+							gunneropticsmodel = "\ca\air\optika_Ka50_gun";
+							visionMode[] = {"Normal", "Ti"};
+							gunnerOpticsEffect[] = {};
+						};
+						delete Medium;
+						delete Narrow;
+						delete VeryNarrow;
 					};
 				};
 			};
