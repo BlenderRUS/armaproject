@@ -52,13 +52,20 @@ class CfgFactionClasses
 
 class CfgVehicles
 {
-	class Tank;
+	class LandVehicle;
+	class Tank : LandVehicle
+	{
+		class Turrets;	
+	};
 	class Tracked_APC: Tank
 	{
-		class Turrets;
 		class NewTurret;
 		class ViewOptics;
 		class Sounds;
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};	
 	};
 	class BMP2_Base: Tracked_APC
 	{
@@ -83,6 +90,7 @@ class CfgVehicles
 	class rhs_bmp_base: BMP2_Base
 	{
 		scope = 1;
+		driverOpticsModel = "\CA\Tracked_E\driverOptics";
 		class Sounds: Sounds
 		{
 			class Engine: Engine
@@ -562,6 +570,7 @@ class CfgVehicles
 	};
 	class rhs_bmd_base: BMP2_Base
 	{
+		driverOpticsModel = "\CA\Tracked_E\driverOptics";
 		class GPMGTurret1;
 		class LeftBack;
 		class RightBack;
@@ -2171,5 +2180,115 @@ class CfgVehicles
 	{
 		displayName = "$STR_rhs_bmd2k";
 		scope = 2;
+	};
+	
+	class BMP3 : Tracked_APC
+	{
+		class Turrets: Turrets
+			{
+				class MainTurret: MainTurret
+				{
+					class OpticsIn
+					{
+						class Wide
+						{
+							initAngleX=0;
+							minAngleX=-30;
+							maxAngleX=30;
+							initAngleY=0;
+							minAngleY=-100;
+							maxAngleY=100;
+							initFov="0.33333/ 1";
+							minFov="0.33333/ 1";
+							maxFov="0.33333/ 1";
+							visionMode[]=
+							{
+								"Normal"
+							};
+							gunnerOpticsModel="\ap_rhs_vehicles\optic\rhs_1k13_3s_1x";
+							gunnerOutOpticsEffect[]={};
+						};
+						class Medium: Wide
+						{
+							initFov="0.33333/ 5";
+							minFov="0.33333/ 5";
+							maxFov="0.33333/ 5";
+							gunnerOpticsModel="\ap_rhs_vehicles\optic\rhs_1k13_3s_5x";
+						};
+						class Narrow: Wide
+						{
+							initFov="0.33333/ 14";
+							minFov="0.33333/ 14";
+							maxFov="0.33333/ 14";
+							gunnerOpticsModel="\ap_rhs_vehicles\optic\rhs_1k13_3s_14x";
+						};
+						class Night: Wide
+						{
+							initFov="0.33333/ 5";
+							minFov="0.33333/ 5";
+							maxFov="0.33333/ 5";
+							visionMode[]=
+							{
+								"NVG"
+							};
+							gunnerOpticsModel="\ap_rhs_vehicles\optic\rhs_1k13_3s_5x_nvg.p3d";
+						};
+					};
+				};
+			};
+	};
+	class TU_BMP3_BAKHCHA : BMP3
+	{
+		class Turrets: Turrets
+			{
+				class MainTurret: MainTurret
+				{
+					class OpticsIn
+					{
+						class Wide: ViewOptics
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov = "0.3333/1";
+							minFov = "0.3333/1";
+							maxFov = "0.3333/1";
+							visionMode[] = {"Normal"};
+							gunnerOpticsModel = "CA\Tracked_E\driverOptics";
+							gunnerOpticsEffect[] = {};
+						};
+						class Medium: Wide
+						{
+							initFov="0.33333/ 5.5";
+							minFov="0.33333/ 5.5";
+							maxFov="0.33333/ 5.5";
+							gunnerOpticsModel = "\x\ace\addons\m_veh_optics\T72B_TPN349_optics";
+							visionMode[] = {"Normal", "Ti"};
+						};
+						class Narrow: Wide
+						{
+							initFov="0.33333/ 12";
+							minFov="0.33333/ 12";
+							maxFov="0.33333/ 12";
+							gunnerOpticsModel = "\x\ace\addons\m_veh_optics\T72B_TPN349_optics";
+							visionMode[] = {"Normal", "Ti"};
+						};
+						class Night: Wide
+						{
+							initFov="0.33333/ 5.5";
+							minFov="0.33333/ 5.5";
+							maxFov="0.33333/ 5.5";
+							visionMode[]=
+							{
+								"NVG"
+							};
+							gunnerOpticsModel = "\x\ace\addons\m_veh_optics\T72B_TPN349_optics";
+						};
+					};
+				};
+			};
 	};
 };

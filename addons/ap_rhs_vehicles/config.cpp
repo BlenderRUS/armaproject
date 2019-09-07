@@ -1043,7 +1043,6 @@ class CfgVehicles
 									"Normal"
 								};
 								gunnerOpticsModel="\ap_rhs_vehicles\optic\rhs_1k13_3s_1x";
-								//gunnerOutOpticsModel="\ca\weapons\empty";
 								gunnerOutOpticsEffect[]={};
 							};
 							class Medium: Wide
@@ -1052,13 +1051,6 @@ class CfgVehicles
 								minFov="0.33333/ 5";
 								maxFov="0.33333/ 5";
 								gunnerOpticsModel="\ap_rhs_vehicles\optic\rhs_1k13_3s_5x";
-							};
-							class Narrow: Wide
-							{
-								initFov="0.33333/ 14";
-								minFov="0.33333/ 14";
-								maxFov="0.33333/ 14";
-								gunnerOpticsModel="\ap_rhs_vehicles\optic\rhs_1k13_3s_14x";
 							};
 							class Night: Wide
 							{
@@ -1296,42 +1288,47 @@ class CfgVehicles
 				{
 					class OpticsIn
 					{
-						class Wide
+						class Wide: ViewOptics
 						{
-							gunneropticsmodel = "\ca\weapons\2Dscope_BMP3gun";
-							initanglex = 0;
-							initangley = 0;
-							initfov = "0.33333/ 2.6";
-							maxanglex = 30;
-							maxangley = 100;
-							maxfov = "0.33333/ 2.6";
-							minanglex = -30;
-							minangley = -100;
-							minfov = "0.33333/ 2.6";
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov = "0.3333/1";
+							minFov = "0.3333/1";
+							maxFov = "0.3333/1";
 							visionMode[] = {"Normal"};
+							gunnerOpticsModel = "CA\Tracked_E\driverOptics";
+							gunnerOpticsEffect[] = {};
 						};
-						class Medium : Wide
+						class Medium: Wide
 						{
-							initfov = "0.33333/ 5.5";
-							maxfov = "0.33333/ 5.5";
-							minfov = "0.33333/ 5.5";
-							thermalMode[] = {0, 1};
+							initFov="0.33333/ 5.5";
+							minFov="0.33333/ 5.5";
+							maxFov="0.33333/ 5.5";
+							gunnerOpticsModel = "\ap_rhs_vehicles\optic\rhs_thermalScreen";
 							visionMode[] = {"Normal", "Ti"};
 						};
-						class Narrow : Wide
+						class Narrow: Wide
 						{
-							initfov = "0.33333/ 12";
-							maxfov = "0.33333/ 12";
-							minfov = "0.33333/ 12";
-							thermalMode[] = {0, 1};
+							initFov="0.33333/ 12";
+							minFov="0.33333/ 12";
+							maxFov="0.33333/ 12";
+							gunnerOpticsModel = "\x\ace\addons\m_veh_optics\rhs_thermalScreen_narrow";
 							visionMode[] = {"Normal", "Ti"};
 						};
-						class VeryNarrow : Wide
+						class Night: Wide
 						{
-							initfov = "0.33333/ 5.5";
-							maxfov = "0.33333/ 5.5";
-							minfov = "0.33333/ 5.5";
-							visionmode[] = {"NVG"};
+							initFov="0.33333/ 5.5";
+							minFov="0.33333/ 5.5";
+							maxFov="0.33333/ 5.5";
+							visionMode[]=
+							{
+								"NVG"
+							};
+							gunnerOpticsModel = "\x\ace\addons\m_veh_optics\rhs_thermalScreen_wide";
 						};
 					};
 				};
@@ -1341,7 +1338,7 @@ class CfgVehicles
 		
 		class AP_BMD4M : AP_SPRUT_base 
 		{
-			scope = 2;	
+			scope = 2;
 			model = "\ap_rhs_vehicles\rhs_bmd_4m.p3d";
 			displayName = "$STR_BMD4M";		
 			picture = "\ap_rhs_vehicles\data\rhs_bmd4m_pic_ca.paa";			
@@ -1495,53 +1492,51 @@ class CfgVehicles
 				gunnerForceOptics = 1;
 				gunnerOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
 				
-				class OpticsIn {
-					class Wide
+				class OpticsIn
+				{
+					class Wide: ViewOptics
 					{
-						gunneropticsmodel = "\ca\weapons\2Dscope_BMP3gun";
-						initanglex = 0;
-						initangley = 0;
-						initfov = "0.33333/ 2.6";
-						maxanglex = 30;
-						maxangley = 100;
-						maxfov = "0.33333/ 2.6";
-						minanglex = -30;
-						minangley = -100;
-						minfov = "0.33333/ 2.6";
+						initAngleX = 0;
+						minAngleX = -30;
+						maxAngleX = 30;
+						initAngleY = 0;
+						minAngleY = -100;
+						maxAngleY = 100;
+						initFov = "0.3333/1";
+						minFov = "0.3333/1";
+						maxFov = "0.3333/1";
 						visionMode[] = {"Normal"};
+						gunnerOpticsModel = "CA\Tracked_E\driverOptics";
+						gunnerOpticsEffect[] = {};
 					};
-					class Medium : Wide
+					class Medium: Wide
 					{
-						initfov = "0.33333/ 5.5";
-						maxfov = "0.33333/ 5.5";
-						minfov = "0.33333/ 5.5";
-						thermalMode[] = {0, 1};
+						initFov="0.33333/ 5.5";
+						minFov="0.33333/ 5.5";
+						maxFov="0.33333/ 5.5";
+						gunnerOpticsModel = "\ap_rhs_vehicles\optic\T72B_TPN349_optics";
 						visionMode[] = {"Normal", "Ti"};
 					};
-					class Narrow : Wide
+					class Narrow: Wide
 					{
-						initfov = "0.33333/ 12";
-						maxfov = "0.33333/ 12";
-						minfov = "0.33333/ 12";
-						thermalMode[] = {0, 1};
+						initFov="0.33333/ 12";
+						minFov="0.33333/ 12";
+						maxFov="0.33333/ 12";
+						gunnerOpticsModel = "\ap_rhs_vehicles\optic\T72B_TPN349_optics";
 						visionMode[] = {"Normal", "Ti"};
 					};
-					class VeryNarrow : Wide
+					class Night: Wide
 					{
-						initfov = "0.33333/ 5.5";
-						maxfov = "0.33333/ 5.5";
-						minfov = "0.33333/ 5.5";
-						visionmode[] = {"NVG"};
+						initFov="0.33333/ 5.5";
+						minFov="0.33333/ 5.5";
+						maxFov="0.33333/ 5.5";
+						visionMode[]=
+						{
+							"NVG"
+						};
+						gunnerOpticsModel = "\ap_rhs_vehicles\optic\T72B_TPN349_optics";
 					};
 				};
-				
-				
-				
-				
-				
-				
-				
-				
 				class Turrets: Turrets
 				{
 					class CommanderOptics: CommanderOptics
@@ -1593,30 +1588,23 @@ class CfgVehicles
 						
 						class OpticsIn {
 							class Wide: ViewOptics {
-								initAngleX=0;
-								minAngleX=-30;
-								maxAngleX=+30;
-								initAngleY=0;
-								minAngleY=-100;
-								maxAngleY=+100;
-								initFov=0.33333/3;
-								minFov=0.33333/3;
-								maxFov=0.33333/3;
-								visionMode[] = {"Normal","Ti"};
-								thermalMode[] = {0};
-								gunnerOpticsModel = "\ap_rhs_vehicles\optic\rhs_thermalscreen_wide.p3d";
+								gunnerOpticsModel = "\ca\weapons\2Dscope_com3";
+								initAngleX = 0;
+								initAngleY = 0;
+								initFov = "0.33333/ 1.2";
+								maxAngleX = 30;
+								maxAngleY = 100;
+								maxFov = "0.33333/ 1.2";
+								minAngleX = -30;
+								minAngleY = -100;
+								minFov = "0.33333/ 1.2";
+								visionmode[] = {"Normal", "NVG", "Ti"};
 							};
 							class Medium: Wide {
-								gunnerOpticsModel = "\ap_rhs_vehicles\optic\rhs_thermalscreen.p3d";
-								initFov=0.33333/12;
-								minFov=0.33333/12;
-								maxFov=0.33333/12;
-							};
-							class Narrow: Wide {
-								gunnerOpticsModel = "\ap_rhs_vehicles\optic\rhs_thermalscreen_narrow.p3d";
-								initFov=0.33333/24;
-								minFov=0.33333/24;
-								maxFov=0.33333/24;
+								gunnerOpticsModel = "\ca\weapons\2Dscope_com3";
+								initFov="0.33333/4";
+								minFov="0.33333/4";
+								maxFov="0.33333/4";
 							};
 						};
 						
