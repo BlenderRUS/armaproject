@@ -2230,7 +2230,7 @@ class CfgVehicles
 								"Normal"
 							};
 						};
-						class Night: Wide
+						class VeryNarrow: Wide
 						{
 							initFov="0.33333/ 5";
 							minFov="0.33333/ 5";
@@ -2247,13 +2247,18 @@ class CfgVehicles
 	};
 	class TU_BMP3_BAKHCHA : BMP3
 	{
+		scope = 1;
+	};	
+	class AP_BMP3_BAKHCHA : TU_BMP3_BAKHCHA
+	{
+		scope = 2;
 		class Turrets: Turrets
 			{
 				class MainTurret: MainTurret
 				{
 					class OpticsIn
 					{
-						class Wide: ViewOptics
+						class Wide
 						{
 							initAngleX = 0;
 							minAngleX = -30;
@@ -2265,12 +2270,43 @@ class CfgVehicles
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
 							gunneropticsmodel = "\ca\air\optika_Ka50_gun";
+							thermalMode[] = {0, 1};
 							visionMode[] = {"Normal", "Ti"};
 							gunnerOpticsEffect[] = {};
 						};
-						delete Medium;
-						delete Narrow;
-						delete VeryNarrow;
+					};
+				};
+			};
+	};
+	class TU_BMP3_BAKHCHA_TK : TU_BMP3_BAKHCHA
+	{
+		scope = 1;
+	};
+	class AP_BMP3_BAKHCHA_TK : TU_BMP3_BAKHCHA_TK
+	{
+		scope = 2;
+		class Turrets: Turrets
+			{
+				class MainTurret: MainTurret
+				{
+					class OpticsIn
+					{
+						class Wide
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov="0.33333/ 2.5";
+							minFov="0.33333/ 12";
+							maxFov="0.33333/ 2.5";
+							gunneropticsmodel = "\ca\air\optika_Ka50_gun";
+							thermalMode[] = {0, 1};
+							visionMode[] = {"Normal", "Ti"};
+							gunnerOpticsEffect[] = {};
+						};
 					};
 				};
 			};

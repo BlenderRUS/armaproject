@@ -589,7 +589,7 @@ class CfgVehicles
 						minangley = -100;
 						minfov = "0.33333/ 2";
 						visionMode[] = {"Normal","NVG","Ti"};
-						thermalMode[] = {0};
+						thermalMode[] = {0, 1};
 					};
 					class Medium: Wide 
 					{
@@ -1299,6 +1299,7 @@ class CfgVehicles
 							initFov="0.33333/ 2.5";
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
+							thermalMode[] = {0, 1};
 							visionMode[] = {"Normal", "Ti"};
 							gunneropticsmodel = "\ca\air\optika_Ka50_gun";
 							gunnerOpticsEffect[] = {};
@@ -1480,6 +1481,7 @@ class CfgVehicles
 							initFov="0.33333/ 2.5";
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
+							thermalMode[] = {0, 1};
 							gunneropticsmodel = "\ca\air\optika_Ka50_gun";
 							visionMode[] = {"Normal", "Ti"};
 							gunnerOpticsEffect[] = {};
