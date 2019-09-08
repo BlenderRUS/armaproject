@@ -711,6 +711,7 @@ class CfgVehicles
 	
 	class rhs_bmd2: rhs_bmd2_base
 	{
+		class ViewOptics;
 		displayName = "$STR_rhs_bmd2";
 		scope = 2;
 	};
@@ -739,48 +740,24 @@ class CfgVehicles
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
 				turretInfoType = "rhs_gui_optic_thermalscreen";
 				class OpticsIn
-				{
-					class gunnerSightWide
 					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.14;
-						opticsZoomMax = 0.14;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.14;
-						minFov = 0.14;
-						maxFov = 0.14;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+						class Wide: ViewOptics
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov="0.33333/ 2.5";
+							minFov="0.33333/ 12";
+							maxFov="0.33333/ 2.5";
+							thermalMode[] = {0, 1};
+							visionMode[] = {"Normal", "Ti"};
+							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
+							gunnerOpticsEffect[] = {};
+						};
 					};
-					class gunnerSightNarrow
-					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.047;
-						opticsZoomMax = 0.047;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.047;
-						minFov = 0.047;
-						maxFov = 0.047;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
-					};
-				};
 			};
 			class CommanderOptics2: CommanderOptics1{};
 			class GPMGTurretBMD2: GPMGTurretBMD1{};
@@ -1368,48 +1345,24 @@ class CfgVehicles
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
 				turretInfoType = "rhs_gui_optic_thermalscreen";
 				class OpticsIn
-				{
-					class gunnerSightWide
 					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.14;
-						opticsZoomMax = 0.14;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.14;
-						minFov = 0.14;
-						maxFov = 0.14;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+						class Wide: ViewOptics
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov="0.33333/ 2.5";
+							minFov="0.33333/ 12";
+							maxFov="0.33333/ 2.5";
+							thermalMode[] = {0, 1};
+							visionMode[] = {"Normal", "Ti"};
+							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
+							gunnerOpticsEffect[] = {};
+						};
 					};
-					class gunnerSightNarrow
-					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.047;
-						opticsZoomMax = 0.047;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.047;
-						minFov = 0.047;
-						maxFov = 0.047;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
-					};
-				};
 			};
 			class CommanderOptics2: CommanderOptics1{};
 			class GPMGTurretBMD2: GPMGTurretBMD1{};
@@ -1476,48 +1429,24 @@ class CfgVehicles
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
 				turretInfoType = "rhs_gui_optic_thermalscreen";
 				class OpticsIn
-				{
-					class gunnerSightWide
 					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.14;
-						opticsZoomMax = 0.14;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.14;
-						minFov = 0.14;
-						maxFov = 0.14;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+						class Wide: ViewOptics
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov="0.33333/ 2.5";
+							minFov="0.33333/ 12";
+							maxFov="0.33333/ 2.5";
+							thermalMode[] = {0, 1};
+							visionMode[] = {"Normal", "Ti"};
+							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
+							gunnerOpticsEffect[] = {};
+						};
 					};
-					class gunnerSightNarrow
-					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.047;
-						opticsZoomMax = 0.047;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.047;
-						minFov = 0.047;
-						maxFov = 0.047;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
-					};
-				};
 			};
 			class CommanderOptics2: CommanderOptics1{};
 			class GPMGTurretBMD2: GPMGTurretBMD1{};
@@ -1584,48 +1513,24 @@ class CfgVehicles
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
 				turretInfoType = "rhs_gui_optic_thermalscreen";
 				class OpticsIn
-				{
-					class gunnerSightWide
 					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.14;
-						opticsZoomMax = 0.14;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.14;
-						minFov = 0.14;
-						maxFov = 0.14;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+						class Wide: ViewOptics
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov="0.33333/ 2.5";
+							minFov="0.33333/ 12";
+							maxFov="0.33333/ 2.5";
+							thermalMode[] = {0, 1};
+							visionMode[] = {"Normal", "Ti"};
+							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
+							gunnerOpticsEffect[] = {};
+						};
 					};
-					class gunnerSightNarrow
-					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.047;
-						opticsZoomMax = 0.047;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.047;
-						minFov = 0.047;
-						maxFov = 0.047;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
-					};
-				};
 			};
 			class CommanderOptics2: CommanderOptics1{};
 			class GPMGTurretBMD2: GPMGTurretBMD1{};
@@ -1692,48 +1597,24 @@ class CfgVehicles
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
 				turretInfoType = "rhs_gui_optic_thermalscreen";
 				class OpticsIn
-				{
-					class gunnerSightWide
 					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.14;
-						opticsZoomMax = 0.14;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.14;
-						minFov = 0.14;
-						maxFov = 0.14;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+						class Wide: ViewOptics
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov="0.33333/ 2.5";
+							minFov="0.33333/ 12";
+							maxFov="0.33333/ 2.5";
+							thermalMode[] = {0, 1};
+							visionMode[] = {"Normal", "Ti"};
+							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
+							gunnerOpticsEffect[] = {};
+						};
 					};
-					class gunnerSightNarrow
-					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.047;
-						opticsZoomMax = 0.047;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.047;
-						minFov = 0.047;
-						maxFov = 0.047;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
-					};
-				};
 			};
 			class CommanderOptics2: CommanderOptics1{};
 			class GPMGTurretBMD2: GPMGTurretBMD1{};
@@ -1800,48 +1681,24 @@ class CfgVehicles
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
 				turretInfoType = "rhs_gui_optic_thermalscreen";
 				class OpticsIn
-				{
-					class gunnerSightWide
 					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.14;
-						opticsZoomMax = 0.14;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.14;
-						minFov = 0.14;
-						maxFov = 0.14;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+						class Wide: ViewOptics
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov="0.33333/ 2.5";
+							minFov="0.33333/ 12";
+							maxFov="0.33333/ 2.5";
+							thermalMode[] = {0, 1};
+							visionMode[] = {"Normal", "Ti"};
+							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
+							gunnerOpticsEffect[] = {};
+						};
 					};
-					class gunnerSightNarrow
-					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.047;
-						opticsZoomMax = 0.047;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.047;
-						minFov = 0.047;
-						maxFov = 0.047;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
-					};
-				};
 			};
 			class CommanderOptics2: CommanderOptics1{};
 			class GPMGTurretBMD2: GPMGTurretBMD1{};
@@ -1908,48 +1765,24 @@ class CfgVehicles
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
 				turretInfoType = "rhs_gui_optic_thermalscreen";
 				class OpticsIn
-				{
-					class gunnerSightWide
 					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.14;
-						opticsZoomMax = 0.14;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.14;
-						minFov = 0.14;
-						maxFov = 0.14;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+						class Wide: ViewOptics
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov="0.33333/ 2.5";
+							minFov="0.33333/ 12";
+							maxFov="0.33333/ 2.5";
+							thermalMode[] = {0, 1};
+							visionMode[] = {"Normal", "Ti"};
+							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
+							gunnerOpticsEffect[] = {};
+						};
 					};
-					class gunnerSightNarrow
-					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.047;
-						opticsZoomMax = 0.047;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.047;
-						minFov = 0.047;
-						maxFov = 0.047;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
-					};
-				};
 			};
 			class CommanderOptics2: CommanderOptics1{};
 			class GPMGTurretBMD2: GPMGTurretBMD1{};
@@ -2017,48 +1850,24 @@ class CfgVehicles
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
 				turretInfoType = "rhs_gui_optic_thermalscreen";
 				class OpticsIn
-				{
-					class gunnerSightWide
 					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.14;
-						opticsZoomMax = 0.14;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.14;
-						minFov = 0.14;
-						maxFov = 0.14;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+						class Wide: ViewOptics
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov="0.33333/ 2.5";
+							minFov="0.33333/ 12";
+							maxFov="0.33333/ 2.5";
+							thermalMode[] = {0, 1};
+							visionMode[] = {"Normal", "Ti"};
+							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
+							gunnerOpticsEffect[] = {};
+						};
 					};
-					class gunnerSightNarrow
-					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.047;
-						opticsZoomMax = 0.047;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.047;
-						minFov = 0.047;
-						maxFov = 0.047;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
-					};
-				};
 			};
 			class CommanderOptics2: CommanderOptics1{};
 			class GPMGTurretBMD2: GPMGTurretBMD1{};
@@ -2126,48 +1935,24 @@ class CfgVehicles
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
 				turretInfoType = "rhs_gui_optic_thermalscreen";
 				class OpticsIn
-				{
-					class gunnerSightWide
 					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.14;
-						opticsZoomMax = 0.14;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.14;
-						minFov = 0.14;
-						maxFov = 0.14;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_wide";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+						class Wide: ViewOptics
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov="0.33333/ 2.5";
+							minFov="0.33333/ 12";
+							maxFov="0.33333/ 2.5";
+							thermalMode[] = {0, 1};
+							visionMode[] = {"Normal", "Ti"};
+							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
+							gunnerOpticsEffect[] = {};
+						};
 					};
-					class gunnerSightNarrow
-					{
-						initAngleX = 0;
-						minAngleX = -110;
-						maxAngleX = 110;
-						initAngleY = 0;
-						minAngleY = -110;
-						maxAngleY = 110;
-						opticsZoomMin = 0.047;
-						opticsZoomMax = 0.047;
-						distanceZoomMin = 200;
-						distanceZoomMax = 2000;
-						initFov = 0.047;
-						minFov = 0.047;
-						maxFov = 0.047;
-						visionMode[] = {"Normal","Ti"};
-						thermalMode[] = {0,1};
-						gunnerOpticsModel = "\rhs\addons\rhs_optics\vehicles\rhs_thermalScreen_narrow";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
-					};
-				};
 			};
 			class CommanderOptics2: CommanderOptics1{};
 			class GPMGTurretBMD2: GPMGTurretBMD1{};
@@ -2184,6 +1969,7 @@ class CfgVehicles
 	
 	class BMP3 : Tracked_APC
 	{
+		driverCompartments = "Compartment2";
 		class Turrets: Turrets
 			{
 				class MainTurret: MainTurret
@@ -2243,6 +2029,18 @@ class CfgVehicles
 						};
 					};
 				};
+				class LeftTurret : NewTurret
+				{
+					memoryPointGunnerOptics = "gun_L";
+					gunnerOpticsModel = "\x\acex_ru\addons\m_veh_bmd2\Sights\o915_TNPP220A_sight";
+					gunnerOutOpticsModel = "\x\acex_ru\addons\m_veh_bmd2\Sights\o915_TNPP220A_sight";
+					gunnerCompartments = "Compartment2";
+				};
+				class RightTurret : LeftTurret
+				{
+					memoryPointGunnerOptics = "gun_R";
+					gunnerCompartments = "Compartment2";
+				};
 			};
 	};
 	class TU_BMP3_BAKHCHA : BMP3
@@ -2256,6 +2054,8 @@ class CfgVehicles
 			{
 				class MainTurret: MainTurret
 				{
+					turretInfoType = "rhs_gui_optic_thermalscreen";
+					gunnerOpticsColor[] = {1,1,1,1};
 					class OpticsIn
 					{
 						class Wide
@@ -2269,7 +2069,7 @@ class CfgVehicles
 							initFov="0.33333/ 2.5";
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
-							gunneropticsmodel = "\ca\air\optika_Ka50_gun";
+							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
 							thermalMode[] = {0, 1};
 							visionMode[] = {"Normal", "Ti"};
 							gunnerOpticsEffect[] = {};
@@ -2289,6 +2089,8 @@ class CfgVehicles
 			{
 				class MainTurret: MainTurret
 				{
+					turretInfoType = "rhs_gui_optic_thermalscreen";
+					gunnerOpticsColor[] = {1,1,1,1};
 					class OpticsIn
 					{
 						class Wide
@@ -2302,7 +2104,7 @@ class CfgVehicles
 							initFov="0.33333/ 2.5";
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
-							gunneropticsmodel = "\ca\air\optika_Ka50_gun";
+							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
 							thermalMode[] = {0, 1};
 							visionMode[] = {"Normal", "Ti"};
 							gunnerOpticsEffect[] = {};

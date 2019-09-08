@@ -1286,6 +1286,8 @@ class CfgVehicles
 			{
 				class MainTurret: MainTurret
 				{
+					turretInfoType = "rhs_gui_optic_thermalscreen";
+					gunnerOpticsColor[] = {1,1,1,1};
 					class OpticsIn
 					{
 						class Wide: ViewOptics
@@ -1301,7 +1303,7 @@ class CfgVehicles
 							maxFov="0.33333/ 2.5";
 							thermalMode[] = {0, 1};
 							visionMode[] = {"Normal", "Ti"};
-							gunneropticsmodel = "\ca\air\optika_Ka50_gun";
+							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
 							gunnerOpticsEffect[] = {};
 						};
 					delete DayMain;
@@ -1340,7 +1342,7 @@ class CfgVehicles
 		ace_tankfcs_maxranges[] = {"250Rnd_30mmHE_2A72",3000,"250Rnd_30mmAP_2A72",3000,"34Rnd_100mm_HE_2A70",4000,"250Rnd_762x54_PKT_T90",1600};
 		ace_armor_hull[] = {{30,30},{10,10},{10,10},{10,10},{10,10}};
 		ace_armor_turret[] = {{30,30},{16,16},{16,16},{16,16},{16,16}};
-		
+		driverCompartments = "Compartment2";
 		driverAction = "Abrams_Driverout";
 		driverInAction = "Abrams_Driver";
 		
@@ -1433,7 +1435,7 @@ class CfgVehicles
 				startEngine = 0;
 				primaryGunner = 1;
 				primaryObserver = 0;
-				
+				gunnerCompartments = "Compartment1";
 				maxHorizontalRotSpeed = 0.55;	
 				maxVerticalRotSpeed = 0.55;		
 
@@ -1467,7 +1469,8 @@ class CfgVehicles
 				initElev = 0;
 				gunnerForceOptics = 1;
 				gunnerOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
-				
+				turretInfoType = "rhs_gui_optic_thermalscreen";
+				gunnerOpticsColor[] = {1,1,1,1};
 				class OpticsIn
 					{
 						class Wide: ViewOptics
@@ -1482,7 +1485,7 @@ class CfgVehicles
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
 							thermalMode[] = {0, 1};
-							gunneropticsmodel = "\ca\air\optika_Ka50_gun";
+							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
 							visionMode[] = {"Normal", "Ti"};
 							gunnerOpticsEffect[] = {};
 						};
@@ -1501,7 +1504,7 @@ class CfgVehicles
 							"SmokeLauncherMag",
 							"SmokeLauncherMag"
 						};
-						
+						gunnerCompartments = "Compartment1";
 						animationSourceBody = "obsTurret";
 						animationSourceGun = "obsGun";
 						viewGunnerInExternal = 1;
@@ -1587,6 +1590,7 @@ class CfgVehicles
 				maxTurn = 10;
 				weapons[] = {"ACE_PKT_out"};
 				magazines[] = {"250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90"};			
+				gunnerCompartments = "Compartment2";
 				gunnerAction = "sa_bmd2_gunner";
 				gunnerInAction = "BMP3_Gunner";
 				gunnerGetInAction = "GetInMedium";
@@ -1669,6 +1673,7 @@ class CfgVehicles
 				gunEnd = "";
 				memoryPointGun = "kulas";
 				memoryPointGunnerOptics = "lseat_view";
+				gunnerCompartments = "Compartment2";
 				gunnerAction = "";
 				gunnerInAction = "BMP2_Gunner";
 				weapons[] = {"FakeWeapon"};
