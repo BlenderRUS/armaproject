@@ -1282,11 +1282,16 @@ class CfgVehicles
 		{
 			scope = 2;
 			displayName = "$STR_SPRUT_M";
+			
+			ace_tankfcs_digitsstyle = 0;
+			ace_tankfcs_rdystyle = 0;
+			ace_tankfcs_digitscolor[] = {1,1,1,1};
+			
 			class Turrets: Turrets
 			{
 				class MainTurret: MainTurret
 				{
-					turretInfoType = "rhs_gui_optic_thermalscreen";
+					turretInfoType = "RscWeaponZeroing";
 					gunnerOpticsColor[] = {1,1,1,1};
 					class OpticsIn
 					{
@@ -1336,10 +1341,12 @@ class CfgVehicles
 		ace_tankfcs_lrfcooldowntime = 3;
 		ace_tankfcs_maxlead = 2;
 		ace_tankfcs_battlesight = 1200;
-		ace_tankfcs_digitscolor[] = {0.396,0.886,0.396,1};
-		ace_tankfcs_digitsstyle = 1;
-		ace_tankfcs_rdystyle = 1;
 		ace_tankfcs_maxranges[] = {"250Rnd_30mmHE_2A72",3000,"250Rnd_30mmAP_2A72",3000,"34Rnd_100mm_HE_2A70",4000,"250Rnd_762x54_PKT_T90",1600};
+		
+		ace_tankfcs_digitsstyle = 0;
+		ace_tankfcs_rdystyle = 0;
+		ace_tankfcs_digitscolor[] = {1,1,1,1};
+		
 		ace_armor_hull[] = {{30,30},{10,10},{10,10},{10,10},{10,10}};
 		ace_armor_turret[] = {{30,30},{16,16},{16,16},{16,16},{16,16}};
 		driverCompartments = "Compartment2";
@@ -1469,7 +1476,8 @@ class CfgVehicles
 				initElev = 0;
 				gunnerForceOptics = 1;
 				gunnerOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
-				turretInfoType = "rhs_gui_optic_thermalscreen";
+				
+				turretInfoType = "RscWeaponZeroing";
 				gunnerOpticsColor[] = {1,1,1,1};
 				class OpticsIn
 					{

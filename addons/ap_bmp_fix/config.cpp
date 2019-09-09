@@ -49,6 +49,38 @@ class CfgFactionClasses
 		side = "TEast";
 	};
 };
+class Cfgammo
+{
+	class ACE_M430Round;
+	class AP_G_30mm_HE : ACE_M430Round
+	{
+		ace_heat = 0;
+		ace_hit = 30;
+		airFriction = -0.000552;
+		hit = 13;
+		timetolive = 27;
+	};
+};
+class Cfgmagazines
+{
+	class 48Rnd_40mm_MK19;
+	class 29Rnd_30mm_AGS30_fsc : 48Rnd_40mm_MK19
+	{
+		ammo = "AP_G_30mm_HE";
+		count = 29;
+		displayName = "ОФС";
+	};
+};
+class CfgWeapons
+{
+	class ACE_AGS30;
+	class AP_AGS30_fsc : ACE_AGS30
+	{
+		magazines[] = {"29Rnd_30mm_AGS30_fsc"};
+		muzzleEnd = "konec granatometu";
+		muzzlePos = "usti granatometu";
+	};
+};
 
 class CfgVehicles
 {
@@ -293,16 +325,10 @@ class CfgVehicles
 		};
 		class Turrets: Turrets
 			{
-				
-				
-				
-				
-				
+				class MainTurret;				
 				class CommanderOptics: NewTurret
-					{
-				
-						
-						gunnerCompartments = 1;
+				{
+				gunnerCompartments = 1;
 				proxyType = "CPCommander";
 				proxyIndex = 1;
 				gunnerName = "$STR_Commander";
@@ -429,8 +455,78 @@ class CfgVehicles
 			"\ap_bmp_fix\data\bmp2_02_des_co.paa"
 		};
 	};
-	class TU_BMP2M;
-	class ACE_BMP2M_ru1: TU_BMP2M
+	
+	class TU_BMP2M : ACE_BMP2_RU
+	{
+		scope=1;
+		class Turrets: Turrets
+			{
+				class MainTurret: MainTurret
+				{
+				};
+			};
+	};
+	class ACE_BMP2M_ru : TU_BMP2M
+	{
+		scope = 2;
+		ace_tankfcs_digitsstyle = 0;
+		ace_tankfcs_rdystyle = 0;
+		ace_tankfcs_digitscolor[] = {1,1,1,1};
+		ace_sys_reticles_gunneroptics = 0;
+		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42", 2500, "ACE_120Rnd_30mmHE_2A42", 2500, "250Rnd_762x54_PKT_T90", 1600, "29Rnd_30mm_AGS30_fsc", 1700};
+				
+		class Turrets: Turrets
+			{
+				class MainTurret: MainTurret
+				{
+					turretInfoType = "RscWeaponZeroing";
+					gunnerOpticsColor[] = {1,1,1,1};
+					
+					weapons[] = {"ACE_2A42", "PKT_veh", "AP_AGS30_fsc", "AT5LauncherSingle", "ACE_SACLOS_Guidance"};
+					magazines[] = {"250Rnd_30mmAP_2A42", "29Rnd_30mm_AGS30_fsc", "29Rnd_30mm_AGS30_fsc", "29Rnd_30mm_AGS30_fsc", "29Rnd_30mm_AGS30_fsc", "29Rnd_30mm_AGS30_fsc", "250Rnd_30mmHE_2A42", "2000Rnd_762x54_PKT", "ACE_AT5B", "ACE_AT5B", "ACE_AT5B", "ACE_AT5B"};
+	
+					class OpticsIn
+					{
+						class Wide
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov="0.33333/ 2.5";
+							minFov="0.33333/ 12";
+							maxFov="0.33333/ 2.5";
+							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
+							thermalMode[] = {0, 1};
+							visionMode[] = {"Normal", "Ti"};
+							gunnerOpticsEffect[] = {};
+						};						
+					};
+				};
+			};
+	};
+	class TU_BMP2M_TK : TU_BMP2M
+	{
+		scope=1;
+	};
+	class ACE_BMP2M_TK : ACE_BMP2M_ru
+	{
+		scope=2;
+		crew = "TK_Soldier_EP1";
+		faction = "BIS_TK";
+		hiddenselections[] = {"camo02", "camo01"};
+		typicalCargo[] = {"TK_Soldier_EP1", "TK_Soldier_AAT_EP1", "TK_Soldier_MG_EP1", "TK_Soldier_HAT_EP1", "TK_Soldier_AR_EP1", "TK_Commander_EP1", "TK_Soldier_Engineer_EP1", "TK_Soldier_GL_EP1", "TK_Soldier_AMG_EP1"};
+		vehicleClass = "Armored";
+		hiddenselectionstextures[] =
+		{
+			"\ap_bmp_fix\data\bmp2m_02_tka_co.paa",
+			"ca\Tracked_E\BMP\data\BMP2_01_TKA_CO"
+		};	
+		
+	};
+	class ACE_BMP2M_ru1: ACE_BMP2M_ru
 	{
 		hiddenselectionstextures[] =
 		{
@@ -438,7 +534,7 @@ class CfgVehicles
 			"\x\acex_ru\addons\t_veh_bmp2\bmp2_01_co.paa"
 		};
 	};
-	class ACE_BMP2M_des: TU_BMP2M
+	class ACE_BMP2M_des: ACE_BMP2M_ru
 	{
 		displayName = "$STR_ace_bmp2m_des";
 		hiddenselectionstextures[] =
@@ -718,8 +814,6 @@ class CfgVehicles
 	class rhs_bmd2m: rhs_bmd2
 	{
 		ace_sys_reticles_gunneroptics = 0;
-		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
-		ace_tankfcs_digitsstyle = 1;
 		ace_tankfcs_enabled = 1;
 		ace_tankfcs_lrfaccuracy = 20;
 		ace_tankfcs_lrfcooldowntime = 3;
@@ -727,7 +821,10 @@ class CfgVehicles
 		ace_tankfcs_maxlrfrange = 5200;
 		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
 		ace_tankfcs_minlrfrange = 200;
-		ace_tankfcs_rdystyle = 1;
+		
+		ace_tankfcs_digitsstyle = 0;
+		ace_tankfcs_rdystyle = 0;
+		ace_tankfcs_digitscolor[] = {1,1,1,1};
 		scope = 2;
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
 		displayName = "$STR_rhs_bmd2m";
@@ -738,7 +835,8 @@ class CfgVehicles
 			{
 				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
-				turretInfoType = "rhs_gui_optic_thermalscreen";
+				turretInfoType = "RscWeaponZeroing";
+				gunnerOpticsColor[] = {1,1,1,1};
 				class OpticsIn
 					{
 						class Wide: ViewOptics
@@ -1323,8 +1421,6 @@ class CfgVehicles
 	class rhs_bmd2m_rus1: rhs_bmd2_rus1_base
 	{
 		ace_sys_reticles_gunneroptics = 0;
-		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
-		ace_tankfcs_digitsstyle = 1;
 		ace_tankfcs_enabled = 1;
 		ace_tankfcs_lrfaccuracy = 20;
 		ace_tankfcs_lrfcooldowntime = 3;
@@ -1332,7 +1428,10 @@ class CfgVehicles
 		ace_tankfcs_maxlrfrange = 5200;
 		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
 		ace_tankfcs_minlrfrange = 200;
-		ace_tankfcs_rdystyle = 1;
+		
+		ace_tankfcs_digitsstyle = 0;
+		ace_tankfcs_rdystyle = 0;
+		ace_tankfcs_digitscolor[] = {1,1,1,1};
 		scope = 2;
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
 		displayName = "$STR_rhs_bmd2m_c1";
@@ -1343,7 +1442,8 @@ class CfgVehicles
 			{
 				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
-				turretInfoType = "rhs_gui_optic_thermalscreen";
+				turretInfoType = "RscWeaponZeroing";
+				gunnerOpticsColor[] = {1,1,1,1};
 				class OpticsIn
 					{
 						class Wide: ViewOptics
@@ -1407,8 +1507,6 @@ class CfgVehicles
 	class rhs_bmd2m_rus2: rhs_bmd2_rus2_base
 	{
 		ace_sys_reticles_gunneroptics = 0;
-		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
-		ace_tankfcs_digitsstyle = 1;
 		ace_tankfcs_enabled = 1;
 		ace_tankfcs_lrfaccuracy = 20;
 		ace_tankfcs_lrfcooldowntime = 3;
@@ -1416,7 +1514,10 @@ class CfgVehicles
 		ace_tankfcs_maxlrfrange = 5200;
 		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
 		ace_tankfcs_minlrfrange = 200;
-		ace_tankfcs_rdystyle = 1;
+		
+		ace_tankfcs_digitsstyle = 0;
+		ace_tankfcs_rdystyle = 0;
+		ace_tankfcs_digitscolor[] = {1,1,1,1};
 		scope = 2;
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
 		displayName = "$STR_rhs_bmd2m_c2";
@@ -1427,7 +1528,8 @@ class CfgVehicles
 			{
 				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
-				turretInfoType = "rhs_gui_optic_thermalscreen";
+				turretInfoType = "RscWeaponZeroing";
+				gunnerOpticsColor[] = {1,1,1,1};
 				class OpticsIn
 					{
 						class Wide: ViewOptics
@@ -1491,8 +1593,6 @@ class CfgVehicles
 	class rhs_bmd2m_rus3: rhs_bmd2_rus3_base
 	{
 		ace_sys_reticles_gunneroptics = 0;
-		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
-		ace_tankfcs_digitsstyle = 1;
 		ace_tankfcs_enabled = 1;
 		ace_tankfcs_lrfaccuracy = 20;
 		ace_tankfcs_lrfcooldowntime = 3;
@@ -1500,7 +1600,10 @@ class CfgVehicles
 		ace_tankfcs_maxlrfrange = 5200;
 		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
 		ace_tankfcs_minlrfrange = 200;
-		ace_tankfcs_rdystyle = 1;
+		
+		ace_tankfcs_digitsstyle = 0;
+		ace_tankfcs_rdystyle = 0;
+		ace_tankfcs_digitscolor[] = {1,1,1,1};
 		scope = 2;
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
 		displayName = "$STR_rhs_bmd2m_c3";
@@ -1511,7 +1614,8 @@ class CfgVehicles
 			{
 				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
-				turretInfoType = "rhs_gui_optic_thermalscreen";
+				turretInfoType = "RscWeaponZeroing";
+				gunnerOpticsColor[] = {1,1,1,1};
 				class OpticsIn
 					{
 						class Wide: ViewOptics
@@ -1575,8 +1679,6 @@ class CfgVehicles
 	class rhs_bmd2m_des: rhs_bmd2_des_base
 	{
 		ace_sys_reticles_gunneroptics = 0;
-		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
-		ace_tankfcs_digitsstyle = 1;
 		ace_tankfcs_enabled = 1;
 		ace_tankfcs_lrfaccuracy = 20;
 		ace_tankfcs_lrfcooldowntime = 3;
@@ -1584,7 +1686,10 @@ class CfgVehicles
 		ace_tankfcs_maxlrfrange = 5200;
 		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
 		ace_tankfcs_minlrfrange = 200;
-		ace_tankfcs_rdystyle = 1;
+		
+		ace_tankfcs_digitsstyle = 0;
+		ace_tankfcs_rdystyle = 0;
+		ace_tankfcs_digitscolor[] = {1,1,1,1};
 		scope = 2;
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
 		displayName = "$STR_rhs_bmd2m_des";
@@ -1595,7 +1700,8 @@ class CfgVehicles
 			{
 				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
-				turretInfoType = "rhs_gui_optic_thermalscreen";
+				turretInfoType = "RscWeaponZeroing";
+				gunnerOpticsColor[] = {1,1,1,1};
 				class OpticsIn
 					{
 						class Wide: ViewOptics
@@ -1659,8 +1765,6 @@ class CfgVehicles
 	class rhs_bmd2m_dirt: rhs_bmd2_dirt_base
 	{
 		ace_sys_reticles_gunneroptics = 0;
-		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
-		ace_tankfcs_digitsstyle = 1;
 		ace_tankfcs_enabled = 1;
 		ace_tankfcs_lrfaccuracy = 20;
 		ace_tankfcs_lrfcooldowntime = 3;
@@ -1668,8 +1772,11 @@ class CfgVehicles
 		ace_tankfcs_maxlrfrange = 5200;
 		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
 		ace_tankfcs_minlrfrange = 200;
-		ace_tankfcs_rdystyle = 1;
 		scope = 2;
+		
+		ace_tankfcs_digitsstyle = 0;
+		ace_tankfcs_rdystyle = 0;
+		ace_tankfcs_digitscolor[] = {1,1,1,1};
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
 		displayName = "$STR_rhs_bmd2m_dirt";
 		transportSoldier = 0;
@@ -1679,7 +1786,8 @@ class CfgVehicles
 			{
 				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
-				turretInfoType = "rhs_gui_optic_thermalscreen";
+				turretInfoType = "RscWeaponZeroing";
+				gunnerOpticsColor[] = {1,1,1,1};
 				class OpticsIn
 					{
 						class Wide: ViewOptics
@@ -1743,8 +1851,6 @@ class CfgVehicles
 	class rhs_bmd2m_peace: rhs_bmd2_peace_base
 	{
 		ace_sys_reticles_gunneroptics = 0;
-		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
-		ace_tankfcs_digitsstyle = 1;
 		ace_tankfcs_enabled = 1;
 		ace_tankfcs_lrfaccuracy = 20;
 		ace_tankfcs_lrfcooldowntime = 3;
@@ -1752,7 +1858,10 @@ class CfgVehicles
 		ace_tankfcs_maxlrfrange = 5200;
 		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
 		ace_tankfcs_minlrfrange = 200;
-		ace_tankfcs_rdystyle = 1;
+		
+		ace_tankfcs_digitsstyle = 0;
+		ace_tankfcs_rdystyle = 0;
+		ace_tankfcs_digitscolor[] = {1,1,1,1};
 		scope = 2;
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
 		displayName = "$STR_rhs_bmd2m_c4";
@@ -1763,7 +1872,8 @@ class CfgVehicles
 			{
 				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
-				turretInfoType = "rhs_gui_optic_thermalscreen";
+				turretInfoType = "RscWeaponZeroing";
+				gunnerOpticsColor[] = {1,1,1,1};
 				class OpticsIn
 					{
 						class Wide: ViewOptics
@@ -1828,8 +1938,6 @@ class CfgVehicles
 	class rhs_bmd2m_cdf: rhs_bmd2_cdf_base
 	{
 		ace_sys_reticles_gunneroptics = 0;
-		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
-		ace_tankfcs_digitsstyle = 1;
 		ace_tankfcs_enabled = 1;
 		ace_tankfcs_lrfaccuracy = 20;
 		ace_tankfcs_lrfcooldowntime = 3;
@@ -1837,7 +1945,10 @@ class CfgVehicles
 		ace_tankfcs_maxlrfrange = 5200;
 		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
 		ace_tankfcs_minlrfrange = 200;
-		ace_tankfcs_rdystyle = 1;
+		
+		ace_tankfcs_digitsstyle = 0;
+		ace_tankfcs_rdystyle = 0;
+		ace_tankfcs_digitscolor[] = {1,1,1,1};
 		scope = 2;
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
 		displayName = "$STR_rhs_bmd2m";
@@ -1848,7 +1959,8 @@ class CfgVehicles
 			{
 				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
-				turretInfoType = "rhs_gui_optic_thermalscreen";
+				turretInfoType = "RscWeaponZeroing";
+				gunnerOpticsColor[] = {1,1,1,1};
 				class OpticsIn
 					{
 						class Wide: ViewOptics
@@ -1913,8 +2025,6 @@ class CfgVehicles
 	class rhs_bmd2m_ins: rhs_bmd2_ins_base
 	{
 		ace_sys_reticles_gunneroptics = 0;
-		ace_tankfcs_digitscolor[] = {0.93,0.96,0.294,1};
-		ace_tankfcs_digitsstyle = 1;
 		ace_tankfcs_enabled = 1;
 		ace_tankfcs_lrfaccuracy = 20;
 		ace_tankfcs_lrfcooldowntime = 3;
@@ -1922,7 +2032,10 @@ class CfgVehicles
 		ace_tankfcs_maxlrfrange = 5200;
 		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42",2500,"ACE_120Rnd_30mmHE_2A42",2500,"250Rnd_762x54_PKT_T90",1600};
 		ace_tankfcs_minlrfrange = 200;
-		ace_tankfcs_rdystyle = 1;
+		
+		ace_tankfcs_digitsstyle = 0;
+		ace_tankfcs_rdystyle = 0;
+		ace_tankfcs_digitscolor[] = {1,1,1,1};
 		scope = 2;
 		model = "\rhs\addons\rhs_bmd\rhs_bmd2m.p3d";
 		displayName = "$STR_rhs_bmd2m";
@@ -1933,7 +2046,8 @@ class CfgVehicles
 			{
 				weapons[] = {"ACE_2A42","PKT_veh","AT5LauncherSingle","ACE_SACLOS_Guidance"};
 				magazines[] = {"ACE_180Rnd_30mmAP_2A42","ACE_120Rnd_30mmHE_2A42","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","250Rnd_762x54_PKT_T90","ACE_AT5B","ACE_AT5B"};
-				turretInfoType = "rhs_gui_optic_thermalscreen";
+				turretInfoType = "RscWeaponZeroing";
+				gunnerOpticsColor[] = {1,1,1,1};
 				class OpticsIn
 					{
 						class Wide: ViewOptics
@@ -2047,14 +2161,24 @@ class CfgVehicles
 	{
 		scope = 1;
 	};	
-	class AP_BMP3_BAKHCHA : TU_BMP3_BAKHCHA
+	class AP_BMP3_BAKHCHA : BMP3
 	{
 		scope = 2;
+		ace_tankfcs_digitsstyle = 0;
+		ace_tankfcs_rdystyle = 0;
+		ace_tankfcs_digitscolor[] = {1,1,1,1};
+		
+		magazines[] = {"4Rnd_AT10_BMP3", "34Rnd_100mm_HE_2A70", "250Rnd_30mmAP_2A72", "250Rnd_30mmHE_2A72", "2000Rnd_762x54_PKT"};
+		maxhorizontalrotspeed = 1.4;
+		maxverticalrotspeed = 1.4;
+		
+		displayName = "$STR_bmd3_bah";
+		
 		class Turrets: Turrets
 			{
 				class MainTurret: MainTurret
 				{
-					turretInfoType = "rhs_gui_optic_thermalscreen";
+					turretInfoType = "RscWeaponZeroing";
 					gunnerOpticsColor[] = {1,1,1,1};
 					class OpticsIn
 					{
@@ -2075,6 +2199,12 @@ class CfgVehicles
 							gunnerOpticsEffect[] = {};
 						};
 					};
+				};
+				class LeftTurret : LeftTurret
+				{
+				};
+				class RightTurret : RightTurret
+				{
 				};
 			};
 	};
@@ -2082,35 +2212,13 @@ class CfgVehicles
 	{
 		scope = 1;
 	};
-	class AP_BMP3_BAKHCHA_TK : TU_BMP3_BAKHCHA_TK
+	class AP_BMP3_BAKHCHA_TK : AP_BMP3_BAKHCHA
 	{
-		scope = 2;
-		class Turrets: Turrets
-			{
-				class MainTurret: MainTurret
-				{
-					turretInfoType = "rhs_gui_optic_thermalscreen";
-					gunnerOpticsColor[] = {1,1,1,1};
-					class OpticsIn
-					{
-						class Wide
-						{
-							initAngleX = 0;
-							minAngleX = -30;
-							maxAngleX = 30;
-							initAngleY = 0;
-							minAngleY = -100;
-							maxAngleY = 100;
-							initFov="0.33333/ 2.5";
-							minFov="0.33333/ 12";
-							maxFov="0.33333/ 2.5";
-							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
-							thermalMode[] = {0, 1};
-							visionMode[] = {"Normal", "Ti"};
-							gunnerOpticsEffect[] = {};
-						};
-					};
-				};
-			};
+		crew = "TK_Soldier_Crew_EP1";
+		faction = "BIS_TK";
+		hiddenSelections[] = {"Camo1", "Camo2", "Camo3"};
+		hiddenSelectionsTextures[] = {"retex_vehicles\bmp3\bmp3_body_des_co.paa", "retex_vehicles\bmp3\bmp3_body2_des_co.paa", "retex_vehicles\bmp3\bmp3_wheels_des_co.paa"};
+		typicalCargo[] = {"TK_Soldier_AAT_EP1", "TK_Soldier_MG_EP1", "TK_Soldier_AR_EP1", "TK_Soldier_Engineer_EP1", "TK_Soldier_GL_EP1", "TK_Soldier_AMG_EP1", "TK_Soldier_Medic_EP1", "TK_Soldier_Officer_EP1", "TK_Soldier_EP1", "TK_Soldier_LAT_EP1", "TK_Soldier_SL_EP1"};
+		vehicleClass = "Armored";
 	};
 };
