@@ -500,7 +500,7 @@ class CfgVehicles
 							maxFov="0.33333/ 2.5";
 							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
 							thermalMode[] = {0, 1};
-							visionMode[] = {"Normal", "Ti"};
+							visionMode[] = {"Normal", "Ti", "NVG"};
 							gunnerOpticsEffect[] = {};
 						};						
 					};
@@ -851,7 +851,7 @@ class CfgVehicles
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
 							thermalMode[] = {0, 1};
-							visionMode[] = {"Normal", "Ti"};
+							visionMode[] = {"Normal", "Ti", "NVG"};
 							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
 							gunnerOpticsEffect[] = {};
 						};
@@ -1458,7 +1458,7 @@ class CfgVehicles
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
 							thermalMode[] = {0, 1};
-							visionMode[] = {"Normal", "Ti"};
+							visionMode[] = {"Normal", "Ti", "NVG"};
 							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
 							gunnerOpticsEffect[] = {};
 						};
@@ -1544,7 +1544,7 @@ class CfgVehicles
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
 							thermalMode[] = {0, 1};
-							visionMode[] = {"Normal", "Ti"};
+							visionMode[] = {"Normal", "Ti", "NVG"};
 							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
 							gunnerOpticsEffect[] = {};
 						};
@@ -1630,7 +1630,7 @@ class CfgVehicles
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
 							thermalMode[] = {0, 1};
-							visionMode[] = {"Normal", "Ti"};
+							visionMode[] = {"Normal", "Ti", "NVG"};
 							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
 							gunnerOpticsEffect[] = {};
 						};
@@ -1716,7 +1716,7 @@ class CfgVehicles
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
 							thermalMode[] = {0, 1};
-							visionMode[] = {"Normal", "Ti"};
+							visionMode[] = {"Normal", "Ti", "NVG"};
 							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
 							gunnerOpticsEffect[] = {};
 						};
@@ -1802,7 +1802,7 @@ class CfgVehicles
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
 							thermalMode[] = {0, 1};
-							visionMode[] = {"Normal", "Ti"};
+							visionMode[] = {"Normal", "Ti", "NVG"};
 							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
 							gunnerOpticsEffect[] = {};
 						};
@@ -1888,7 +1888,7 @@ class CfgVehicles
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
 							thermalMode[] = {0, 1};
-							visionMode[] = {"Normal", "Ti"};
+							visionMode[] = {"Normal", "Ti", "NVG"};
 							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
 							gunnerOpticsEffect[] = {};
 						};
@@ -1975,7 +1975,7 @@ class CfgVehicles
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
 							thermalMode[] = {0, 1};
-							visionMode[] = {"Normal", "Ti"};
+							visionMode[] = {"Normal", "Ti", "NVG"};
 							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
 							gunnerOpticsEffect[] = {};
 						};
@@ -2062,7 +2062,7 @@ class CfgVehicles
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
 							thermalMode[] = {0, 1};
-							visionMode[] = {"Normal", "Ti"};
+							visionMode[] = {"Normal", "Ti", "NVG"};
 							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
 							gunnerOpticsEffect[] = {};
 						};
@@ -2195,7 +2195,7 @@ class CfgVehicles
 							maxFov="0.33333/ 2.5";
 							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
 							thermalMode[] = {0, 1};
-							visionMode[] = {"Normal", "Ti"};
+							visionMode[] = {"Normal", "Ti", "NVG"};
 							gunnerOpticsEffect[] = {};
 						};
 					};

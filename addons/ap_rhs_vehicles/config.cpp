@@ -588,7 +588,7 @@ class CfgVehicles
 						minanglex = -30;
 						minangley = -100;
 						minfov = "0.33333/ 2";
-						visionMode[] = {"Normal","NVG","Ti"};
+						visionMode[] = {"Normal","Ti","NVG"};
 						thermalMode[] = {0, 1};
 					};
 					class Medium: Wide 
@@ -1307,7 +1307,7 @@ class CfgVehicles
 							minFov="0.33333/ 12";
 							maxFov="0.33333/ 2.5";
 							thermalMode[] = {0, 1};
-							visionMode[] = {"Normal", "Ti"};
+							visionMode[] = {"Normal", "Ti", "NVG"};
 							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
 							gunnerOpticsEffect[] = {};
 						};
@@ -1494,7 +1494,7 @@ class CfgVehicles
 							maxFov="0.33333/ 2.5";
 							thermalMode[] = {0, 1};
 							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
-							visionMode[] = {"Normal", "Ti"};
+							visionMode[] = {"Normal", "Ti", "NVG"};
 							gunnerOpticsEffect[] = {};
 						};
 					};
@@ -1559,7 +1559,7 @@ class CfgVehicles
 								minAngleX = -30;
 								minAngleY = -100;
 								minFov = "0.33333/ 1.2";
-								visionmode[] = {"Normal", "NVG", "Ti"};
+								visionmode[] = {"Normal", "Ti", "NVG"};
 							};
 							class Medium: Wide {
 								gunnerOpticsModel = "\ca\weapons\2Dscope_com3";
@@ -1965,7 +1965,7 @@ class CfgVehicles
 				stabilizedInAxes = 3;
 				class ViewOptics
 				{
-					visionMode[] = {"Normal","TI"};
+					visionMode[] = {"Normal","TI", "NVG"};
 					thermalMode[] = {2,3};
 					initAngleX = 0;
 					minAngleX = -30;
@@ -1989,7 +1989,7 @@ class CfgVehicles
 						minanglex = -30;
 						minangley = -100;
 						minfov = "0.33333/ 1.2";
-						visionMode[] = {"Normal","NVG","Ti"};
+						visionMode[] = {"Normal", "Ti", "NVG"};
 						thermalmode[] = {2};
 					};
 					class Medium: Wide {

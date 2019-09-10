@@ -203,7 +203,7 @@ class CfgVehicles
 						minFov = "0.33333/1.1";
 						opticsDisplayName = "E";
 						thermalMode[] = {0, 1};
-						visionMode[] = {"Normal", "TI"};
+						visionMode[] = {"Normal", "TI", "NVG"};
 					};
 					class Medium: Wide
 					{
