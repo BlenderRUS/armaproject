@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project name="AP_AC_130H">
+	<Package name="AC_130H">
+			<Key ID="STR_AP_AC_130H">
+				<Original>AC-130H Spectre</Original>
+				<English>AC-130H Spectre</English>
+			</Key>
+			<Key ID="STR_Lib_AP_AC_130H">
+				<Original>A flying battery provides to support ground forces on the battlefield. Based on Lockheed’s C-130 transport aircraft. Upgraded version of the AC-130E. Armament 1x20 mm M61 Vulcan, 1x40 mm L60, 1x105 mm M102.</Original>
+				<English>A flying battery provides to support ground forces on the battlefield. Based on Lockheed’s C-130 transport aircraft. Upgraded version of the AC-130E. Armament 1x20 mm M61 Vulcan, 1x40 mm L60, 1x105 mm M102.</English>
+				<Russian>Летающая батарея непосредственной поддержки подразделений сухопутных войск на поле боя. Основана на базе транспортного самолёта C-130 фирмы Lockheed. Модернизированный вариант AC-130E. Вооружение 1х20-мм M61 Vulcan, 1х40-мм L60, 1х105-мм М102.</Russian>
+			</Key>
+	</Package>
+</Project>
