@@ -291,5 +291,10 @@
 				<Russian>БМД-1 (Грязь)</Russian>
 			</Key>
 			
+			<Key ID="STR_bmd3_bah">
+				<Original>BMP-3 Bahcha-Y</Original>
+				<English>BMP-3 Bahcha-Y</English>
+				<Russian>БМП-3 Бахча-У</Russian>
+			</Key>
 	</Package>
 </Project>
