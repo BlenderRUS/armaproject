@@ -1529,7 +1529,7 @@ class CfgVehicles
 				direction="konec L svetla";
 				hitpoint="L svetlo";
 				selection="L svetlo";
-				size=0.5;
+				size=1;
 				brightness=1;
 			};
 			class Right
@@ -1540,7 +1540,7 @@ class CfgVehicles
 				direction="konec P svetla";
 				hitpoint="P svetlo";
 				selection="P svetlo";
-				size=0.5;
+				size=1;
 				brightness=1;
 			};
 			class Cab
@@ -1563,7 +1563,7 @@ class CfgVehicles
 				direction="konec G svetla";
 				hitpoint="G svetlo";
 				selection="G svetlo";
-				size=0.5;
+				size=1;
 				brightness=1;
 			};
 		};
@@ -1835,7 +1835,7 @@ class CfgVehicles
 				direction="konec G svetla";
 				hitpoint="G svetlo";
 				selection="G svetlo";
-				size=0.5;
+				size=1;
 				brightness=1;
 			};
 		};*/
@@ -2218,6 +2218,46 @@ class CfgVehicles
 		class EventHandlers: DefaultEventHandlers
 		{
 			init="_this execVM '\USArmy_Heli\Num\script\Num_white.sqf';";
+		};
+	};
+	class UH1H_base;
+	class TU_UH1C_GUNSHIP : UH1H_base
+	{
+		class Reflectors
+		{
+			class Left
+			{
+				ambient[] = {0.07, 0.07, 0.07, 1};
+				brightness = 1;
+				color[] = {0.8, 0.8, 1, 1};
+				direction = "konec L svetla";
+				hitpoint = "L svetlo";
+				position = "L svetlo";
+				selection = "L svetlo";
+				size = 1;
+			};
+			class Right
+			{
+				color[]={0.80000001,0.80000001,1,1};
+				ambient[]={0.07,0.07,0.07,1};
+				position="P svetlo";
+				direction="konec P svetla";
+				hitpoint="P svetlo";
+				selection="p svetlo";
+				size=1;
+				brightness=1;
+			};
+			class gun
+			{
+				color[]={0.80000001,0.80000001,1,1};
+				ambient[]={0.07,0.07,0.07,1};
+				position="lg svetlo";
+				direction="konec lg svetla";
+				hitpoint="G svetlo";
+				selection="lg svetlo";
+				size=1;
+				brightness=1;
+			};
 		};
 	};
 };
