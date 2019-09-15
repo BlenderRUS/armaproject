@@ -81,15 +81,13 @@ class CfgVehicles
 			"USMC_Soldier_Pilot",
 			"USMC_Soldier"
 		};
+		unitInfoType = "RscUnitInfoAir";
 		transportSoldier=0;
 		driverCompartments="Compartment1";
 		cargoCompartments[]=
 		{
 			"Compartment1"
 		};
-		driverisCommander=1;
-		driverisGunner=0;
-		gunneriscommander=0;
 		class Reflectors
 		{
 			class Left
@@ -152,8 +150,6 @@ class CfgVehicles
 				gunnerAction="BRDM2_Gunner";
 				gunnerName="20mm M61 Vulcan";
 				
-				turretInfoType="RscWeaponRangeZeroing";
-				
 				gunnerOpticsModel="\ca\air_e\gunnerOptics_ah64";
 				proxyIndex=1;
 				castGunnerShadow=0;
@@ -166,6 +162,7 @@ class CfgVehicles
 				maxTurn=110;
 				initTurn=90;
 				radarType = 4;
+				laserScanner = 1;
 				weapons[] = {"M168"};
 				magazines[] = {"2100Rnd_20mm_M168"};
 				soundServo[]=
@@ -182,7 +179,6 @@ class CfgVehicles
 				forceHideGunner=1;
 				outGunnerMayFire=1;
 				inGunnerMayFire=1;
-				irScanToEyeFactor=0.1;
 				hasgunner=1;
 				gunBeg="muzzle_GAU_12";
 				gunEnd="chamber_GAU_12";
