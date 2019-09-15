@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project name="SSSR">
+	<Package name="mi6">
+			<Key ID="STR_CoPilotObs">
+				<Original>Observer</Original>
+				<Russian>Наблюдатель</Russian>
+			</Key>
+			<Key ID="STR_Radist">
+				<Original>Radio operator</Original>
+				<Russian>Радист</Russian>
+			</Key>
+	</Package>
+</Project>
