@@ -1,0 +1,5 @@
+///'usarmy_heli.pbo' from Mikero's dos tools, dll version 6.24///
+prefix=usarmy_heli
+Pbo Type is: Arma Addon
+Sha: '21B5F6A86873146566181062104A489DECE53420'
+//////</HEADER>//////

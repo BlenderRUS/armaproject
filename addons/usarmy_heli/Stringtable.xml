@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project name="USA">
+	<Package name="Heli">
+			<Key ID="STR_2xM2">
+				<Original>Twin M2</Original>
+				<English>Twin M2</English>
+			</Key>
+			<Key ID="STR_gunner_M60">
+				<Original>Gunner M60</Original>
+				<Russian>Стрелок М60</Russian>
+			</Key>
+			<Key ID="STR_pilot_2">
+				<Original>Second pilot</Original>
+				<Russian>Второй пилот</Russian>
+			</Key>
+			<Key ID="STR_Ramp_Gunner">
+				<Original>Ramp Gunner</Original>
+				<Russian>Стрелок на рампе</Russian>
+			</Key>
+			
+			<Key ID="STR_NAME_CH46">
+				<Original>CH-46E Sea Knight</Original>
+				<English>CH-46E Sea Knight</English>
+			</Key>
+			<Key ID="STR_NAME_CH46_M">
+				<Original>CH-46E Sea Knight MARINES</Original>
+				<English>CH-46E Sea Knight MARINES</English>
+			</Key>
+			<Key ID="STR_NAME_CH46_M_G">
+				<Original>CH-46E Sea Knight MARINES (Green)</Original>
+				<English>CH-46E Sea Knight MARINES (Green)</English>
+			</Key>
+			<Key ID="STR_NAME_CH46_N">
+				<Original>CH-46E Sea Knight NAVY</Original>
+				<English>CH-46E Sea Knight NAVY</English>
+			</Key>
+			<Key ID="STR_NAME_CH46_N_G">
+				<Original>CH-46E Sea Knight NAVY (Green)</Original>
+				<English>CH-46E Sea Knight NAVY (Green)</English>
+			</Key>
+			<Key ID="STR_NAME_CH46_N_B">
+				<Original>CH-46E Sea Knight NAVY (Black)</Original>
+				<English>CH-46E Sea Knight NAVY (Black)</English>
+			</Key>
+			<Key ID="STR_SNAME_CH46">
+				<Original>CH-46E</Original>
+				<English>CH-46E</English>
+			</Key>
+
+			<Key ID="STR_NAME_CH53">
+				<Original>CH-53D Sea Stallion</Original>
+				<English>CH-53D Sea Stallion</English>
+			</Key>
+			<Key ID="STR_NAME_CH53_M">
+				<Original>CH-53D Sea Stallion MARINES</Original>
+				<English>CH-53D Sea Stallion MARINES</English>
+			</Key>
+			<Key ID="STR_NAME_CH53_M_G">
+				<Original>CH-53D Sea Stallion MARINES (Green)</Original>
+				<English>CH-53D Sea Stallion MARINES (Green)</English>
+			</Key>
+			<Key ID="STR_NAME_CH53_N">
+				<Original>CH-53D Sea Stallion NAVY</Original>
+				<English>CH-53D Sea Stallion NAVY</English>
+			</Key>
+			<Key ID="STR_NAME_CH53_N_G">
+				<Original>CH-53D Sea Stallion NAVY (Green)</Original>
+				<English>CH-53D Sea Stallion NAVY (Green)</English>
+			</Key>
+			<Key ID="STR_NAME_CH53_N_B">
+				<Original>CH-53D Sea Stallion NAVY (Black)</Original>
+				<English>CH-53D Sea Stallion NAVY (Black)</English>
+			</Key>
+			<Key ID="STR_SNAME_CH53">
+				<Original>CH-53D</Original>
+				<English>CH-53D</English>
+			</Key>
+
+			<Key ID="STR_NAME_CH34">
+				<Original>H-34 Sea Horse</Original>
+				<English>H-34 Sea Horse</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_CL">
+				<Original>H-34 Sea Horse (Classic)</Original>
+				<English>H-34 Sea Horse (Classic)</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_M">
+				<Original>H-34 Sea Horse MARINES</Original>
+				<English>H-34 Sea Horse MARINES</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_M_G">
+				<Original>H-34 Sea Horse MARINES (Green)</Original>
+				<English>H-34 Sea Horse MARINES (Green)</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_N">
+				<Original>H-34 Sea Horse NAVY</Original>
+				<English>H-34 Sea Horse NAVY</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_N_G">
+				<Original>H-34 Sea Horse NAVY (Green)</Original>
+				<English>H-34 Sea Horse NAVY (Green)</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_N_B">
+				<Original>H-34 Sea Horse NAVY (Black)</Original>
+				<English>H-34 Sea Horse NAVY (Black)</English>
+			</Key>
+			<Key ID="STR_SNAME_CH34">
+				<Original>H-34</Original>
+				<English>H-34</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_M60">
+				<Original>H-34 Sea Horse, M60</Original>
+				<English>H-34 Sea Horse, M60</English>
+			</Key>
+			
+			<Key ID="STR_SNAME_CH34_M60">
+				<Original>H-34, M60</Original>
+				<English>H-34, M60</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_M_M60">
+				<Original>H-34 Sea Horse MARINES, M60</Original>
+				<English>H-34 Sea Horse MARINES, M60</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_M_G_M60">
+				<Original>H-34 Sea Horse MARINES, M60 (Green)</Original>
+				<English>H-34 Sea Horse MARINES, M60 (Green)</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_N_M60">
+				<Original>H-34 Sea Horse NAVY, M60</Original>
+				<English>H-34 Sea Horse NAVY, M60</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_N_G_M60">
+				<Original>H-34 Sea Horse NAVY, M60 (Green)</Original>
+				<English>H-34 Sea Horse NAVY, M60 (Green)</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_N_B_M60">
+				<Original>H-34 Sea Horse NAVY, M60 (Black)</Original>
+				<English>H-34 Sea Horse NAVY, M60 (Black)</English>
+			</Key>
+			
+			<Key ID="STR_NAME_CH34_Gunship">
+				<Original>H-34 Sea Horse, Gunship</Original>
+				<English>H-34 Sea Horse, Gunship</English>
+			</Key>
+			<Key ID="STR_SNAME_CH34_Gunship">
+				<Original>H-34, Gunship</Original>
+				<English>H-34, Gunship</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_M_Gunship">
+				<Original>H-34 Sea Horse MARINES, Gunship</Original>
+				<English>H-34 Sea Horse MARINES, Gunship</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_M_G_Gunship">
+				<Original>H-34 Sea Horse MARINES, Gunship (Green)</Original>
+				<English>H-34 Sea Horse MARINES, Gunship (Green)</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_N_Gunship">
+				<Original>H-34 Sea Horse NAVY, Gunship</Original>
+				<English>H-34 Sea Horse NAVY, Gunship</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_N_G_Gunship">
+				<Original>H-34 Sea Horse NAVY, Gunship (Green)</Original>
+				<English>H-34 Sea Horse NAVY, Gunship (Green)</English>
+			</Key>
+			<Key ID="STR_NAME_CH34_N_B_Gunship">
+				<Original>H-34 Sea Horse NAVY, Gunship (Black)</Original>
+				<English>H-34 Sea Horse NAVY, Gunship (Black)</English>
+			</Key>
+	</Package>
+</Project>
