@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX">
+<Package name="tu_weapons">
+<Container name="STR_TU">
+<Key ID="STR_CDF_SPN">
+	<German>Men (SpecOps)</German>
+	<English>Men (SpecOps)</English>
+	<Italian>Men (SpecOps)</Italian>
+	<Spanish>Men (SpecOps)</Spanish>
+	<French>Men (SpecOps)</French>
+	<Czech>Men (SpecOps)</Czech>
+	<Russian>Люди (Спецназ)</Russian>
+	<Polish>Men (SpecOps)</Polish>
+	<Hungarian>Men (SpecOps)</Hungarian>
+</Key>
+<Key ID="STR_TU_SPECOPS">
+	<German>Operator</German>
+	<English>Operator</English>
+	<Italian>Operatore</Italian>
+	<Spanish>Operador</Spanish>
+	<French>Servant</French>
+	<Czech>Střelec</Czech>
+	<Russian>Оператор</Russian>
+	<Polish>Operator</Polish>
+	<Hungarian>Operátor</Hungarian>
+</Key>
+<Key ID="STR_TU_URALOPEN_MOR">
+<German>Ural-375 (open)</German>
+<English>Ural-375 (open)</English>
+<Italian>Ural-375 (open)</Italian>
+<Spanish>Ural-375 (open)</Spanish>
+<French>Ural-375 (open)</French>
+<Czech>Ural-375 (open)</Czech>
+<Russian>Урал-375 ВМФ (тент)</Russian>
+<Polish>Ural-375 (open)</Polish>
+<Hungarian>Ural-375 (open)</Hungarian>
+</Key>
+<Key ID="STR_TU_URALOPEN_MOR">
+<German>Ural-375</German>
+<English>Ural-375</English>
+<Italian>Ural-375</Italian>
+<Spanish>Ural-375</Spanish>
+<French>Ural-375</French>
+<Czech>Ural-375</Czech>
+<Russian>Урал-375 ВМФ</Russian>
+<Polish>Ural-375</Polish>
+<Hungarian>Ural-375</Hungarian>
+</Key>
+<Key ID="STR_TU_UAZ_D">
+<German>UAZ-469 (desert)</German>
+<English>UAZ-469 (desert)</English>
+<Italian>UAZ-469 (desert)</Italian>
+<Spanish>UAZ-469 (desert)</Spanish>
+<French>UAZ-469 (desert)</French>
+<Czech>UAZ-469 (desert)</Czech>
+<Russian>УАЗ-469 (пустыня)</Russian>
+<Polish>UAZ-469 (desert)</Polish>
+<Hungarian>UAZ-469 (desert)</Hungarian>
+</Key>
+<Key ID="STR_TU_UAZ">
+<German>UAZ-469</German>
+<English>UAZ-469</English>
+<Italian>UAZ-469</Italian>
+<Spanish>UAZ-469</Spanish>
+<French>UAZ-469</French>
+<Czech>UAZ-469</Czech>
+<Russian>УАЗ-469</Russian>
+<Polish>UAZ-469</Polish>
+<Hungarian>UAZ-469</Hungarian>
+</Key>
+<Key ID="STR_TU_BRDM2_MOR">
+<German>BRDM-2</German>
+<English>BRDM-2</English>
+<Italian>BRDM-2</Italian>
+<Spanish>BRDM-2</Spanish>
+<French>BRDM-2</French>
+<Czech>BRDM-2</Czech>
+<Russian>БРДМ-2 ВМФ</Russian>
+<Polish>BRDM-2</Polish>
+<Hungarian>BRDM-2</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

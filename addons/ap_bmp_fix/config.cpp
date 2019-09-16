@@ -458,75 +458,8 @@ class CfgVehicles
 	
 	class TU_BMP2M : ACE_BMP2_RU
 	{
-		scope=1;
-		class Turrets: Turrets
-			{
-				class MainTurret: MainTurret
-				{
-				};
-			};
 	};
-	class ACE_BMP2M_ru : TU_BMP2M
-	{
-		scope = 2;
-		ace_tankfcs_digitsstyle = 0;
-		ace_tankfcs_rdystyle = 0;
-		ace_tankfcs_digitscolor[] = {1,1,1,1};
-		ace_sys_reticles_gunneroptics = 0;
-		ace_tankfcs_maxranges[] = {"ACE_180Rnd_30mmAP_2A42", 2500, "ACE_120Rnd_30mmHE_2A42", 2500, "250Rnd_762x54_PKT_T90", 1600, "29Rnd_30mm_AGS30_fsc", 1700};
-				
-		class Turrets: Turrets
-			{
-				class MainTurret: MainTurret
-				{
-					turretInfoType = "RscWeaponZeroing";
-					gunnerOpticsColor[] = {1,1,1,1};
-					
-					weapons[] = {"ACE_2A42", "PKT_veh", "AP_AGS30_fsc", "AT5LauncherSingle", "ACE_SACLOS_Guidance"};
-					magazines[] = {"250Rnd_30mmAP_2A42", "29Rnd_30mm_AGS30_fsc", "29Rnd_30mm_AGS30_fsc", "29Rnd_30mm_AGS30_fsc", "29Rnd_30mm_AGS30_fsc", "29Rnd_30mm_AGS30_fsc", "250Rnd_30mmHE_2A42", "2000Rnd_762x54_PKT", "ACE_AT5B", "ACE_AT5B", "ACE_AT5B", "ACE_AT5B"};
-	
-					class OpticsIn
-					{
-						class Wide
-						{
-							initAngleX = 0;
-							minAngleX = -30;
-							maxAngleX = 30;
-							initAngleY = 0;
-							minAngleY = -100;
-							maxAngleY = 100;
-							initFov="0.33333/ 2.5";
-							minFov="0.33333/ 12";
-							maxFov="0.33333/ 2.5";
-							gunneropticsmodel = "ap_bmp_fix\optika_Vesna-K_gun";
-							thermalMode[] = {0, 1};
-							visionMode[] = {"Normal", "Ti", "NVG"};
-							gunnerOpticsEffect[] = {};
-						};						
-					};
-				};
-			};
-	};
-	class TU_BMP2M_TK : TU_BMP2M
-	{
-		scope=1;
-	};
-	class ACE_BMP2M_TK : ACE_BMP2M_ru
-	{
-		scope=2;
-		crew = "TK_Soldier_EP1";
-		faction = "BIS_TK";
-		hiddenselections[] = {"camo02", "camo01"};
-		typicalCargo[] = {"TK_Soldier_EP1", "TK_Soldier_AAT_EP1", "TK_Soldier_MG_EP1", "TK_Soldier_HAT_EP1", "TK_Soldier_AR_EP1", "TK_Commander_EP1", "TK_Soldier_Engineer_EP1", "TK_Soldier_GL_EP1", "TK_Soldier_AMG_EP1"};
-		vehicleClass = "Armored";
-		hiddenselectionstextures[] =
-		{
-			"\ap_bmp_fix\data\bmp2m_02_tka_co.paa",
-			"ca\Tracked_E\BMP\data\BMP2_01_TKA_CO"
-		};	
-		
-	};
-	class ACE_BMP2M_ru1: ACE_BMP2M_ru
+	class ACE_BMP2M_ru1: TU_BMP2M
 	{
 		hiddenselectionstextures[] =
 		{
@@ -534,7 +467,7 @@ class CfgVehicles
 			"\x\acex_ru\addons\t_veh_bmp2\bmp2_01_co.paa"
 		};
 	};
-	class ACE_BMP2M_des: ACE_BMP2M_ru
+	class ACE_BMP2M_des: TU_BMP2M
 	{
 		displayName = "$STR_ace_bmp2m_des";
 		hiddenselectionstextures[] =
