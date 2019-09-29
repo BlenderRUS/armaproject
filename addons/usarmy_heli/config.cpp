@@ -84,9 +84,8 @@ class CfgVehicles
 		ace_cargo_exposed = 0;
 		ace_ejection_seat = "ParachuteC";
 		ace_exposed = 0;
-		ace_geolifterattachment[] = {{0,3,-3.5}};
-		ace_lademeister = 1;
-		ace_ropeattachment[] = {{1.5,6,0.5},{-1,-5,0}};
+		ACE_GeoLifterAttachment[] = {{0, 0, -5.6}};
+		ACE_RopeAttachment[] = {{0, 0.14, -3}, {0, -7.5, -1.1}};
 		ace_sys_air_rwr_type = "ACE_Default";
 		ace_sys_autorotation_horizontal_gain = "0.75/75";
 		ace_sys_autorotation_vertical_gain = "0.5/1.5";
