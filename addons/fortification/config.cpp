@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////
 //DeRap: fortification\config.bin
 //Produced from mikero's Dos Tools Dll version 6.24
-//'now' is Sat Aug 31 20:06:41 2019 : 'file' last modified on Sat Aug 31 20:00:20 2019
+//'now' is Mon Oct 14 21:58:45 2019 : 'file' last modified on Mon Oct 14 21:53:59 2019
 //http://dev-heaven.net/projects/list_files/mikero-pbodll
 ////////////////////////////////////////////////////////////////////
 
@@ -11,7 +11,7 @@ class CfgPatches
 {
 	class Fortification_Pack
 	{
-		units[] = {"Dot_Little","Dot_Little_F","Dot_Big","Dot_Big_tr","Dot_Big_tr_D","Trench_L_Cov","Trench_T_Cov","Trench_F_Cov","Trench_30_Cov","Trench_90_Cov","Trench_L","Trench_T","Trench_F","Trench_30","Trench_90","Trench_L_Cov_D","Trench_T_Cov_D","Trench_F_Cov_D","Trench_30_Cov_D","Trench_90_Cov_D","Trench_L_D","Trench_T_D","Trench_F_D","Trench_30_D","Trench_90_D","Concertainer_pillbox","Concertainer_triple_WC","Concertainer_triple_W","Concertainer_triple","Concertainer_x1","Concertainer_x2","Concertainer_x3","Concertainer_x4","Concertainer_W2","Concertainer_pillbox_D","Concertainer_triple_WC_D","Concertainer_triple_W_D","Concertainer_triple_D","Concertainer_x1_D","Concertainer_x2_D","Concertainer_x3_D","Concertainer_x4_D","Concertainer_W2_D"};
+		units[] = {"cage","Dot_Little","Dot_Little_F","Dot_Big","Dot_Big_tr","Dot_Big_tr_D","Dot_Wall","Dot_Wall_30","Dot_Wall_90","Trench_L_Cov","Trench_T_Cov","Trench_F_Cov","Trench_30_Cov","Trench_90_Cov","Trench_L","Trench_T","Trench_F","Trench_30","Trench_90","Trench_L_Cov_D","Trench_T_Cov_D","Trench_F_Cov_D","Trench_30_Cov_D","Trench_90_Cov_D","Trench_L_D","Trench_T_D","Trench_F_D","Trench_30_D","Trench_90_D","Concertainer_pillbox","Concertainer_pillbox_30","Concertainer_pillbox_90","Concertainer_triple_WC","Concertainer_triple_W","Concertainer_triple","Concertainer_x1","Concertainer_x2","Concertainer_x3","Concertainer_x4","Concertainer_W2","Concertainer_pillbox_D","Concertainer_pillbox_30_D","Concertainer_pillbox_90_D","Concertainer_triple_WC_D","Concertainer_triple_W_D","Concertainer_triple_D","Concertainer_x1_D","Concertainer_x2_D","Concertainer_x3_D","Concertainer_x4_D","Concertainer_W2_D"};
 		weapons[] = {};
 		requiredVersion = 1.5;
 		requiredAddons[] = {"CAStructures"};
@@ -31,16 +31,118 @@ class CfgVehicleClasses
 	{
 		displayName = "$STR_NAME_Fortification_DOT_AP";
 	};
+	class Fortification_decor_AP
+	{
+		displayName = "$STR_NAME_Fortification_decor_AP";
+	};
 };
 class CfgVehicles
 {
 	class Shed;
+	class cage: Shed
+	{
+		scope = 2;
+		vehicleClass = "Fortification_decor_AP";
+		displayName = "$STR_NAME_cage";
+		destrType = "DestructNo";
+		placement = "vertical";
+		mapSize = 48;
+		icon = "\Fortification\data\ico_cage_ca.paa";
+		model = "\Fortification\cage.p3d";
+		ladders[] = {};
+		class AnimationSources
+		{
+			class door
+			{
+				animPeriod = 1.5;
+				source = "user";
+			};
+		};
+		class UserActions
+		{
+			class OpenDoor
+			{
+				displayName = "$STR_DN_OUT_O_DOOR";
+				position = "door";
+				radius = 3;
+				condition = "this animationPhase ""door"" < 0.5";
+				statement = "this animate[""door"",1];";
+				onlyforplayer = 0;
+			};
+			class CloseDoor
+			{
+				displayName = "$STR_DN_OUT_C_DOOR";
+				position = "door";
+				radius = 3;
+				condition = "this animationPhase ""door"" > 0.5";
+				statement = "this animate[""door"",0];";
+				onlyforplayer = 0;
+			};
+		};
+	};
+	class cage_close: Shed
+	{
+		scope = 2;
+		vehicleClass = "Fortification_decor_AP";
+		displayName = "$STR_NAME_cage_close";
+		destrType = "DestructNo";
+		placement = "vertical";
+		mapSize = 48;
+		icon = "\Fortification\data\ico_cage_ca.paa";
+		model = "\Fortification\cage.p3d";
+		ladders[] = {};
+		class AnimationSources
+		{
+			class door
+			{
+				animPeriod = 1.5;
+				source = "user";
+			};
+		};
+	};
+	class Dot_Wall: Shed
+	{
+		scope = 2;
+		vehicleClass = "Fortification_DOT_AP";
+		displayName = "$STR_NAME_Dot_Wall";
+		destrType = "DestructNo";
+		placement = "vertical";
+		mapSize = 24;
+		icon = "\Fortification\data\ico_Dot_Wall_ca.paa";
+		model = "\Fortification\Dot_Wall.p3d";
+		ladders[] = {};
+	};
+	class Dot_Wall_30: Shed
+	{
+		scope = 2;
+		vehicleClass = "Fortification_DOT_AP";
+		displayName = "$STR_NAME_Dot_Wall_30";
+		destrType = "DestructNo";
+		placement = "vertical";
+		mapSize = 24;
+		icon = "\Fortification\data\ico_Dot_Wall_30_ca.paa";
+		model = "\Fortification\Dot_Wall_30.p3d";
+		ladders[] = {};
+	};
+	class Dot_Wall_90: Shed
+	{
+		scope = 2;
+		vehicleClass = "Fortification_DOT_AP";
+		displayName = "$STR_NAME_Dot_Wall_90";
+		destrType = "DestructNo";
+		placement = "vertical";
+		mapSize = 24;
+		icon = "\Fortification\data\ico_Dot_Wall_90_ca.paa";
+		model = "\Fortification\Dot_Wall_90.p3d";
+		ladders[] = {};
+	};
 	class Dot_Little: Shed
 	{
 		scope = 2;
 		vehicleClass = "Fortification_DOT_AP";
 		displayName = "$STR_NAME_Dot_little";
 		destrType = "DestructNo";
+		placement = "vertical";
 		mapSize = 24;
 		icon = "\Fortification\data\ico_Dot_little_ca.paa";
 		model = "\Fortification\Dot_little.p3d";
@@ -308,7 +410,7 @@ class CfgVehicles
 		displayName = "$STR_NAME_Concertainer_pillbox";
 		destrType = "DestructNo";
 		placement = "vertical";
-		mapSize = 28;
+		mapSize = 24;
 		icon = "\Fortification\data\ico_Concertainer_pillbox_ca.paa";
 		model = "\Fortification\Concertainer_pillbox.p3d";
 		ladders[] = {};
@@ -322,7 +424,7 @@ class CfgVehicles
 		displayName = "$STR_NAME_Concertainer_triple_WC";
 		destrType = "DestructNo";
 		placement = "vertical";
-		mapSize = 28;
+		mapSize = 24;
 		icon = "\Fortification\data\ico_Concertainer_triple_WC_ca.paa";
 		model = "\Fortification\Concertainer_triple_WC.p3d";
 		ladders[] = {};
@@ -336,9 +438,37 @@ class CfgVehicles
 		displayName = "$STR_NAME_Concertainer_triple_W";
 		destrType = "DestructNo";
 		placement = "vertical";
-		mapSize = 28;
+		mapSize = 24;
 		icon = "\Fortification\data\ico_Concertainer_triple_W_ca.paa";
 		model = "\Fortification\Concertainer_triple_W.p3d";
+		ladders[] = {};
+		hiddenSelections[] = {"hesco"};
+		hiddenSelectionsTextures[] = {"fortification\data\hesco_co.paa"};
+	};
+	class Concertainer_triple_90: Shed
+	{
+		scope = 2;
+		vehicleClass = "Fortification_Concertainer_AP";
+		displayName = "$STR_NAME_Concertainer_triple_90";
+		destrType = "DestructNo";
+		placement = "vertical";
+		mapSize = 24;
+		icon = "\Fortification\data\ico_Concertainer_triple_90_ca.paa";
+		model = "\Fortification\Concertainer_triple_90.p3d";
+		ladders[] = {};
+		hiddenSelections[] = {"hesco"};
+		hiddenSelectionsTextures[] = {"fortification\data\hesco_co.paa"};
+	};
+	class Concertainer_triple_30: Shed
+	{
+		scope = 2;
+		vehicleClass = "Fortification_Concertainer_AP";
+		displayName = "$STR_NAME_Concertainer_triple_30";
+		destrType = "DestructNo";
+		placement = "vertical";
+		mapSize = 24;
+		icon = "\Fortification\data\ico_Concertainer_triple_30_ca.paa";
+		model = "\Fortification\Concertainer_triple_30.p3d";
 		ladders[] = {};
 		hiddenSelections[] = {"hesco"};
 		hiddenSelectionsTextures[] = {"fortification\data\hesco_co.paa"};
@@ -350,7 +480,7 @@ class CfgVehicles
 		displayName = "$STR_NAME_Concertainer_triple";
 		destrType = "DestructNo";
 		placement = "vertical";
-		mapSize = 28;
+		mapSize = 24;
 		icon = "\Fortification\data\ico_Concertainer_triple_ca.paa";
 		model = "\Fortification\Concertainer_triple.p3d";
 		ladders[] = {};
@@ -364,7 +494,7 @@ class CfgVehicles
 		displayName = "$STR_NAME_Concertainer_x1";
 		destrType = "DestructNo";
 		placement = "vertical";
-		mapSize = 28;
+		mapSize = 24;
 		icon = "\Fortification\data\ico_Concertainer_x1_ca.paa";
 		model = "\Fortification\Concertainer_X1.p3d";
 		ladders[] = {};
@@ -378,7 +508,7 @@ class CfgVehicles
 		displayName = "$STR_NAME_Concertainer_x2";
 		destrType = "DestructNo";
 		placement = "vertical";
-		mapSize = 28;
+		mapSize = 24;
 		icon = "\Fortification\data\ico_Concertainer_x2_ca.paa";
 		model = "\Fortification\Concertainer_X2.p3d";
 		ladders[] = {};
@@ -392,7 +522,7 @@ class CfgVehicles
 		displayName = "$STR_NAME_Concertainer_x3";
 		destrType = "DestructNo";
 		placement = "vertical";
-		mapSize = 28;
+		mapSize = 24;
 		icon = "\Fortification\data\ico_Concertainer_x3_ca.paa";
 		model = "\Fortification\Concertainer_X3.p3d";
 		ladders[] = {};
@@ -406,7 +536,7 @@ class CfgVehicles
 		displayName = "$STR_NAME_Concertainer_x4";
 		destrType = "DestructNo";
 		placement = "vertical";
-		mapSize = 28;
+		mapSize = 24;
 		icon = "\Fortification\data\ico_Concertainer_x4_ca.paa";
 		model = "\Fortification\Concertainer_X4.p3d";
 		ladders[] = {};
@@ -420,7 +550,7 @@ class CfgVehicles
 		displayName = "$STR_NAME_Concertainer_W2";
 		destrType = "DestructNo";
 		placement = "vertical";
-		mapSize = 28;
+		mapSize = 24;
 		icon = "\Fortification\data\ico_Concertainer_W2_ca.paa";
 		model = "\Fortification\Concertainer_W2.p3d";
 		ladders[] = {};
@@ -445,6 +575,20 @@ class CfgVehicles
 	{
 		vehicleClass = "Fortification_Concertainer_AP";
 		displayName = "$STR_NAME_Concertainer_triple_W_D";
+		hiddenSelections[] = {"hesco"};
+		hiddenSelectionsTextures[] = {"fortification\data\hesco_D_co.paa"};
+	};
+	class Concertainer_triple_90_D: Concertainer_triple_90
+	{
+		vehicleClass = "Fortification_Concertainer_AP";
+		displayName = "$STR_NAME_Concertainer_triple_90_D";
+		hiddenSelections[] = {"hesco"};
+		hiddenSelectionsTextures[] = {"fortification\data\hesco_D_co.paa"};
+	};
+	class Concertainer_triple_30_D: Concertainer_triple_30
+	{
+		vehicleClass = "Fortification_Concertainer_AP";
+		displayName = "$STR_NAME_Concertainer_triple_30_D";
 		hiddenSelections[] = {"hesco"};
 		hiddenSelectionsTextures[] = {"fortification\data\hesco_D_co.paa"};
 	};

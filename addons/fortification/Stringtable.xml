@@ -16,6 +16,21 @@
 				<English>Fortification AP - DOT's</English>
 				<Russian>Фортификации АР - ДОТы</Russian>
 			</Key>
+			<Key ID="STR_NAME_Fortification_decor_AP">
+				<Original>Fortification AP - Decor</Original>
+				<English>Fortification AP - Decor</English>
+				<Russian>Фортификации АР - Декор</Russian>
+			</Key>
+			<Key ID="STR_NAME_cage">
+				<Original>Cage</Original>
+				<English>Cage</English>
+				<Russian>Клетка</Russian>
+			</Key>
+			<Key ID="STR_NAME_cage_close">
+				<Original>Cage Close</Original>
+				<English>Cage Close</English>
+				<Russian>Клетка Закрыта</Russian>
+			</Key>
 			<Key ID="STR_NAME_Dot_little">
 				<Original>DOT Little</Original>
 				<English>DOT Little</English>
@@ -36,7 +51,22 @@
 				<English>DOT BigTrench</English>
 				<Russian>ДОТ Большой c Траншеей</Russian>
 			</Key>
-
+			<Key ID="STR_NAME_Dot_Wall">
+				<Original>DOT Wall</Original>
+				<English>DOT Wall</English>
+				<Russian>ДОТ Стена</Russian>
+			</Key>
+			<Key ID="STR_NAME_Dot_Wall_30">
+				<Original>DOT Wall 30</Original>
+				<English>DOT Wall 30</English>
+				<Russian>ДОТ Стена 30</Russian>
+			</Key>
+			<Key ID="STR_NAME_Dot_Wall_90">
+				<Original>DOT Wall 90</Original>
+				<English>DOT Wall 90</English>
+				<Russian>ДОТ Стена 90</Russian>
+			</Key>
+			
 			<Key ID="STR_NAME_Trench_L">
 				<Original>Trench Straight</Original>
 				<English>Trench Straight</English>
@@ -153,6 +183,16 @@
 				<English>HESCO Wall</English>
 				<Russian>HESCO Стена</Russian>
 			</Key>
+			<Key ID="STR_NAME_Concertainer_triple_90">
+				<Original>HESCO Wall Turn90</Original>
+				<English>HESCO Wall Turn90</English>
+				<Russian>HESCO Стена Поворот90</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_triple_30">
+				<Original>HESCO Wall Turn30</Original>
+				<English>HESCO Wall Turn30</English>
+				<Russian>HESCO Стена Поворот30</Russian>
+			</Key>
 			<Key ID="STR_NAME_Concertainer_triple_W">
 				<Original>HESCO Wall climd</Original>
 				<English>HESCO Wall climd</English>
@@ -197,6 +237,16 @@
 				<Original>HESCO Wall (Desert)</Original>
 				<English>HESCO Wall (Desert)</English>
 				<Russian>HESCO Стена (Пустыня)</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_triple_90_D">
+				<Original>HESCO Wall Turn90</Original>
+				<English>HESCO Wall Turn90</English>
+				<Russian>HESCO Стена Поворот90 (Пустыня)</Russian>
+			</Key>
+			<Key ID="STR_NAME_Concertainer_triple_30_D">
+				<Original>HESCO Wall Turn30 (Desert)</Original>
+				<English>HESCO Wall Turn30 (Desert)</English>
+				<Russian>HESCO Стена Поворот30 (Пустыня)</Russian>
 			</Key>
 			<Key ID="STR_NAME_Concertainer_triple_W_D">
 				<Original>HESCO Wall climd (Desert)</Original>

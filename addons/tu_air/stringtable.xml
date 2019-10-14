@@ -2,6 +2,928 @@
 <Project name="ACEX">
 <Package name="tu_uh60">
 <Container name="STR">
+<Key ID="STR_VVS_RF_N">
+<English>Russian AF Aviation (2010)</English>
+<German>Russian AF Aviation (2010)</German>
+<Italian>Russian AF Aviation (2010)</Italian>
+<Spanish>Russian AF Aviation (2010)</Spanish>
+<Czech>Russian AF Aviation (2010)</Czech>
+<Russian>Авиация ВВС России (2010)</Russian>
+<Polish>Russian AF Aviation (2010)</Polish>
+<Hungarian>Russian AF Aviation (2010)</Hungarian>
+<French>Russian AF Aviation (2010)</French>
+</Key>
+<Key ID="STR_VVS_RF_ND">
+<English>Russian AF Aviation (2010 desert)</English>
+<German>Russian AF Aviation (2010 desert)</German>
+<Italian>Russian AF Aviation (2010 desert)</Italian>
+<Spanish>Russian AF Aviation (2010 desert)</Spanish>
+<Czech>Russian AF Aviation (2010 desert)</Czech>
+<Russian>Авиация ВВС России (2010 пуст.)</Russian>
+<Polish>Russian AF Aviation (2010 desert)</Polish>
+<Hungarian>Russian AF Aviation (2010 desert)</Hungarian>
+<French>Russian AF Aviation (2010 desert)</French>
+</Key>
+<Key ID="STR_AVDV_RF">
+<English>Russian Airborne Aviation</English>
+<German>Russian Airborne Aviation</German>
+<Italian>Russian Airborne Aviation</Italian>
+<Spanish>Russian Airborne Aviation</Spanish>
+<Czech>Russian Airborne Aviation</Czech>
+<Russian>Авиация ВДВ России</Russian>
+<Polish>Russian Airborne Aviation</Polish>
+<Hungarian>Russian Airborne Aviation</Hungarian>
+<French>Russian Airborne Aviation</French>
+</Key>
+
+
+
+
+
+
+
+
+
+
+
+<Key ID="STR_Mi24_VP_B">
+<English>Mi-24VP black</English>
+<Czech>Mi-24VP black</Czech>
+<German>Mi-24WP black</German>
+<Polish>Mi-24WP black</Polish>
+<Russian>Ми-24ВП черный</Russian>
+<French>Mi-24VP black</French>
+<Spanish>Mi-24VP black</Spanish>
+<Italian>Mi-24VP black</Italian>
+<Hungarian>Mi-24VP black</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP2_B">
+<English>Mi-24VP black 2</English>
+<Czech>Mi-24VP black 2</Czech>
+<German>Mi-24WP black 2</German>
+<Polish>Mi-24WP black 2</Polish>
+<Russian>Ми-24ВП черный 2</Russian>
+<French>Mi-24VP black 2</French>
+<Spanish>Mi-24VP black 2</Spanish>
+<Italian>Mi-24VP black 2</Italian>
+<Hungarian>Mi-24VP black 2</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP_8AT_B">
+<English>Mi-24VP black (AT)</English>
+<Czech>Mi-24VP black (AT)</Czech>
+<German>Mi-24WP black (AT)</German>
+<Polish>Mi-24WP black (AT)</Polish>
+<Russian>Ми-24ВП черный (ПТ)</Russian>
+<French>Mi-24VP black (AT)</French>
+<Spanish>Mi-24VP black (AT)</Spanish>
+<Italian>Mi-24VP black (AT)</Italian>
+<Hungarian>Mi-24VP black (AT)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP_4AT_4AA_B">
+<English>Mi-24VP black (Multirole)</English>
+<Czech>Mi-24VP black (Multirole)</Czech>
+<German>Mi-24WP black (Multirole)</German>
+<Polish>Mi-24WP black (Multirole)</Polish>
+<Russian>Ми-24ВП черный (В-П/В-В)</Russian>
+<French>Mi-24VP black (Multirole)</French>
+<Spanish>Mi-24VP black (Multirole)</Spanish>
+<Italian>Mi-24VP black (Multirole)</Italian>
+<Hungarian>Mi-24VP black (Multirole)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP_4AT_2AA_B">
+<English>Mi-24VP black (Multirole2)</English>
+<Czech>Mi-24VP black (Multirole2)</Czech>
+<German>Mi-24WP black (Multirole2)</German>
+<Polish>Mi-24WP black (Multirole2)</Polish>
+<Russian>Ми-24ВП черный (В-П/В-В2)</Russian>
+<French>Mi-24VP black (Multirole2)</French>
+<Spanish>Mi-24VP black (Multirole2)</Spanish>
+<Italian>Mi-24VP black (Multirole2)</Italian>
+<Hungarian>Mi-24VP black (Multirole2)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP_4AA_B">
+<English>Mi-24VP black (CAP)</English>
+<Czech>Mi-24VP black (CAP)</Czech>
+<German>Mi-24WP black (CAP)</German>
+<Polish>Mi-24WP black (CAP)</Polish>
+<Russian>Ми-24ВП черный (В-В)</Russian>
+<French>Mi-24VP black (CAP)</French>
+<Spanish>Mi-24VP black (CAP)</Spanish>
+<Italian>Mi-24VP black (CAP)</Italian>
+<Hungarian>Mi-24VP black (CAP)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_P_NB">
+<English>Mi-24P black</English>
+<Czech>Mi-24P black</Czech>
+<German>Mi-24P black</German>
+<Polish>Mi-24P black</Polish>
+<Russian>Ми-24П черный</Russian>
+<French>Mi-24P black</French>
+<Spanish>Mi-24P black</Spanish>
+<Italian>Mi-24P black</Italian>
+<Hungarian>Mi-24P black</Hungarian>
+</Key>
+
+
+
+
+
+
+
+<Key ID="STR_TU_MI8_AMT_B">
+<Original>Mi-8AMT black</Original>
+<French>Mi-8AMT black</French>
+<Spanish>Mi-8AMT black</Spanish>
+<Italian>Mi-8AMT black</Italian>
+<Hungarian>Mi-8AMT black</Hungarian>
+<Polish>Mi-8AMT black</Polish>
+<Russian>Ми-8АМТ черный</Russian>
+<German>Mi-8AMT black</German>
+<Czech>Mi-8AMT black</Czech>
+<English>Mi-8AMT black</English>
+<Japanese>Mi-8AMT black</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMTSh_S8_B">
+<Original>Mi-8AMTSh black (S-8)</Original>
+<French>Mi-8AMTSh black (S-8)</French>
+<Spanish>Mi-8AMTSh black (S-8)</Spanish>
+<Italian>Mi-8AMTSh black (S-8)</Italian>
+<Hungarian>Mi-8AMTSh black (S-8)</Hungarian>
+<Polish>Mi-8AMTSh black (S-8)</Polish>
+<Russian>Ми-8АМТШ черный (С-8)</Russian>
+<German>Mi-8AMTSh black (S-8)</German>
+<Czech>Mi-8AMTSh black (S-8)</Czech>
+<English>Mi-8AMTSh black (S-8)</English>
+<Japanese>Mi-8AMTSh black (S-8)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMTSh_S5_B">
+<Original>Mi-8AMTSh black (S-5)</Original>
+<French>Mi-8AMTSh black (S-5)</French>
+<Spanish>Mi-8AMTSh black (S-5)</Spanish>
+<Italian>Mi-8AMTSh black (S-5)</Italian>
+<Hungarian>Mi-8AMTSh black (S-5)</Hungarian>
+<Polish>Mi-8AMTSh black (S-5)</Polish>
+<Russian>Ми-8АМТШ черный (С-5)</Russian>
+<German>Mi-8AMTSh black (S-5)</German>
+<Czech>Mi-8AMTSh black (S-5)</Czech>
+<English>Mi-8AMTSh black (S-5)</English>
+<Japanese>Mi-8AMTSh black (S-5)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMTSh_UPK23_B">
+<Original>Mi-8AMTSh black (UPK-23)</Original>
+<French>Mi-8AMTSh black (UPK-23)</French>
+<Spanish>Mi-8AMTSh black (UPK-23)</Spanish>
+<Italian>Mi-8AMTSh black (UPK-23)</Italian>
+<Hungarian>Mi-8AMTSh black (UPK-23)</Hungarian>
+<Polish>Mi-8AMTSh black (UPK-23)</Polish>
+<Russian>Ми-8АМТШ черный (УПК-23)</Russian>
+<German>Mi-8AMTSh black (UPK-23)</German>
+<Czech>Mi-8AMTSh black (UPK-23)</Czech>
+<English>Mi-8AMTSh black (UPK-23)</English>
+<Japanese>Mi-8AMTSh black (UPK-23)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMTSh_FAB250_B">
+<Original>Mi-8AMTSh black (FAB-250)</Original>
+<French>Mi-8AMTSh black (FAB-250)</French>
+<Spanish>Mi-8AMTSh black (FAB-250)</Spanish>
+<Italian>Mi-8AMTSh black (FAB-250)</Italian>
+<Hungarian>Mi-8AMTSh black (FAB-250)</Hungarian>
+<Polish>Mi-8AMTSh black (FAB-250)</Polish>
+<Russian>Ми-8АМТШ черный (ФАБ-250)</Russian>
+<German>Mi-8AMTSh black (FAB-250)</German>
+<Czech>Mi-8AMTSh black (FAB-250)</Czech>
+<English>Mi-8AMTSh black (FAB-250)</English>
+<Japanese>Mi-8AMTSh black (FAB-250)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMTSh_Ataka_B">
+<Original>Mi-8AMTSh black (Ataka)</Original>
+<French>Mi-8AMTSh black (Ataka)</French>
+<Spanish>Mi-8AMTSh black (Ataka)</Spanish>
+<Italian>Mi-8AMTSh black (Ataka)</Italian>
+<Hungarian>Mi-8AMTSh black (Ataka)</Hungarian>
+<Polish>Mi-8AMTSh black (Ataka)</Polish>
+<Russian>Ми-8АМТШ черный (Атака)</Russian>
+<German>Mi-8AMTSh black (Ataka)</German>
+<Czech>Mi-8AMTSh black (Ataka)</Czech>
+<English>Mi-8AMTSh black (Ataka)</English>
+<Japanese>Mi-8AMTSh black (Ataka)</Japanese>
+</Key>
+
+
+
+
+
+
+
+<Key ID="STR_TU_MI8_MTVM_B">
+<Original>Mi-8MTVM black (Ambulance)</Original>
+<French>Mi-8MTVM black (Ambulance)</French>
+<Spanish>Mi-8MTVM black (Ambulance)</Spanish>
+<Italian>Mi-8MTVM black (Ambulance)</Italian>
+<Hungarian>Mi-8MTVM black (Ambulance)</Hungarian>
+<Polish>Mi-8MTVM black (Ambulance)</Polish>
+<Russian>Ми-8МТВМ черный (медицинский)</Russian>
+<German>Mi-8MTVM black (Ambulance)</German>
+<Czech>Mi-8MTVM black (Ambulance)</Czech>
+<English>Mi-8MTVM black (Ambulance)</English>
+<Japanese>Mi-8MTVM black (Ambulance)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTV3_B">
+<Original>Mi-8MTV-3 black</Original>
+<French>Mi-8MTV-3 black</French>
+<Spanish>Mi-8MTV-3 black</Spanish>
+<Italian>Mi-8MTV-3 black</Italian>
+<Hungarian>Mi-8MTV-3 black</Hungarian>
+<Polish>Mi-8MTV-3 black</Polish>
+<Russian>Ми-8МТВ-3 черный</Russian>
+<German>Mi-8MTV-3 black</German>
+<Czech>Mi-8MTV-3 black</Czech>
+<English>Mi-8MTV-3 black</English>
+<Japanese>Mi-8MTV-3 black</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTV3_S8_B">
+<Original>Mi-8MTV-3 black (S-8)</Original>
+<French>Mi-8MTV-3 black (S-8)</French>
+<Spanish>Mi-8MTV-3 black (S-8)</Spanish>
+<Italian>Mi-8MTV-3 black (S-8)</Italian>
+<Hungarian>Mi-8MTV-3 black (S-8)</Hungarian>
+<Polish>Mi-8MTV-3 black (S-8)</Polish>
+<Russian>Ми-8МТВ-3 черный (С-8)</Russian>
+<German>Mi-8MTV-3 black (S-8)</German>
+<Czech>Mi-8MTV-3 black (S-8)</Czech>
+<English>Mi-8MTV-3 black (S-8)</English>
+<Japanese>Mi-8MTV-3 black (S-8)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTV3_S5_B">
+<Original>Mi-8MTV-3 black (S-5)</Original>
+<French>Mi-8MTV-3 black (S-5)</French>
+<Spanish>Mi-8MTV-3 black (S-5)</Spanish>
+<Italian>Mi-8MTV-3 black (S-5)</Italian>
+<Hungarian>Mi-8MTV-3 black (S-5)</Hungarian>
+<Polish>Mi-8MTV-3 black (S-5)</Polish>
+<Russian>Ми-8МТВ-3 черный (С-5)</Russian>
+<German>Mi-8MTV-3 black (S-5)</German>
+<Czech>Mi-8MTV-3 black (S-5)</Czech>
+<English>Mi-8MTV-3 black (S-5)</English>
+<Japanese>Mi-8MTV-3 black (S-5)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTV3_UPK23_B">
+<Original>Mi-8MTV-3 black (UPK-23)</Original>
+<French>Mi-8MTV-3 black (UPK-23)</French>
+<Spanish>Mi-8MTV-3 black (UPK-23)</Spanish>
+<Italian>Mi-8MTV-3 black (UPK-23)</Italian>
+<Hungarian>Mi-8MTV-3 black (UPK-23)</Hungarian>
+<Polish>Mi-8MTV-3 black (UPK-23)</Polish>
+<Russian>Ми-8МТВ-3 черный (УПК-23)</Russian>
+<German>Mi-8MTV-3 black (UPK-23)</German>
+<Czech>Mi-8MTV-3 black (UPK-23)</Czech>
+<English>Mi-8MTV-3 black (UPK-23)</English>
+<Japanese>Mi-8MTV-3 black (UPK-23)</Japanese>
+</Key>
+
+
+
+
+
+
+<Key ID="STR_TU_MI8_MTVM_N">
+<Original>Mi-8MTVM (Ambulance)</Original>
+<French>Mi-8MTVM (Ambulance)</French>
+<Spanish>Mi-8MTVM (Ambulance)</Spanish>
+<Italian>Mi-8MTVM (Ambulance)</Italian>
+<Hungarian>Mi-8MTVM (Ambulance)</Hungarian>
+<Polish>Mi-8MTVM (Ambulance)</Polish>
+<Russian>Ми-8МТВМ (медицинский)</Russian>
+<German>Mi-8MTVM (Ambulance)</German>
+<Czech>Mi-8MTVM (Ambulance)</Czech>
+<English>Mi-8MTVM (Ambulance)</English>
+<Japanese>Mi-8MTVM (Ambulance)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTV3_N">
+<Original>Mi-8MTV-3</Original>
+<French>Mi-8MTV-3</French>
+<Spanish>Mi-8MTV-3</Spanish>
+<Italian>Mi-8MTV-3</Italian>
+<Hungarian>Mi-8MTV-3</Hungarian>
+<Polish>Mi-8MTV-3</Polish>
+<Russian>Ми-8МТВ-3</Russian>
+<German>Mi-8MTV-3</German>
+<Czech>Mi-8MTV-3</Czech>
+<English>Mi-8MTV-3</English>
+<Japanese>Mi-8MTV-3</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTV3_S8_N">
+<Original>Mi-8MTV-3 (S-8)</Original>
+<French>Mi-8MTV-3 (S-8)</French>
+<Spanish>Mi-8MTV-3 (S-8)</Spanish>
+<Italian>Mi-8MTV-3 (S-8)</Italian>
+<Hungarian>Mi-8MTV-3 (S-8)</Hungarian>
+<Polish>Mi-8MTV-3 (S-8)</Polish>
+<Russian>Ми-8МТВ-3 (С-8)</Russian>
+<German>Mi-8MTV-3 (S-8)</German>
+<Czech>Mi-8MTV-3 (S-8)</Czech>
+<English>Mi-8MTV-3 (S-8)</English>
+<Japanese>Mi-8MTV-3 (S-8)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTV3_S5_N">
+<Original>Mi-8MTV-3 (S-5)</Original>
+<French>Mi-8MTV-3 (S-5)</French>
+<Spanish>Mi-8MTV-3 (S-5)</Spanish>
+<Italian>Mi-8MTV-3 (S-5)</Italian>
+<Hungarian>Mi-8MTV-3 (S-5)</Hungarian>
+<Polish>Mi-8MTV-3 (S-5)</Polish>
+<Russian>Ми-8МТВ-3 (С-5)</Russian>
+<German>Mi-8MTV-3 (S-5)</German>
+<Czech>Mi-8MTV-3 (S-5)</Czech>
+<English>Mi-8MTV-3 (S-5)</English>
+<Japanese>Mi-8MTV-3 (S-5)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTV3_UPK23_N">
+<Original>Mi-8MTV-3 (UPK-23)</Original>
+<French>Mi-8MTV-3 (UPK-23)</French>
+<Spanish>Mi-8MTV-3 (UPK-23)</Spanish>
+<Italian>Mi-8MTV-3 (UPK-23)</Italian>
+<Hungarian>Mi-8MTV-3 (UPK-23)</Hungarian>
+<Polish>Mi-8MTV-3 (UPK-23)</Polish>
+<Russian>Ми-8МТВ-3 (УПК-23)</Russian>
+<German>Mi-8MTV-3 (UPK-23)</German>
+<Czech>Mi-8MTV-3 (UPK-23)</Czech>
+<English>Mi-8MTV-3 (UPK-23)</English>
+<Japanese>Mi-8MTV-3 (UPK-23)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMT_N">
+<Original>Mi-8AMT</Original>
+<French>Mi-8AMT</French>
+<Spanish>Mi-8AMT</Spanish>
+<Italian>Mi-8AMT</Italian>
+<Hungarian>Mi-8AMT</Hungarian>
+<Polish>Mi-8AMT</Polish>
+<Russian>Ми-8АМТ</Russian>
+<German>Mi-8AMT</German>
+<Czech>Mi-8AMT</Czech>
+<English>Mi-8AMT</English>
+<Japanese>Mi-8AMT</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMTSh_S8_N">
+<Original>Mi-8AMTSh (S-8)</Original>
+<French>Mi-8AMTSh (S-8)</French>
+<Spanish>Mi-8AMTSh (S-8)</Spanish>
+<Italian>Mi-8AMTSh (S-8)</Italian>
+<Hungarian>Mi-8AMTSh (S-8)</Hungarian>
+<Polish>Mi-8AMTSh (S-8)</Polish>
+<Russian>Ми-8АМТШ (С-8)</Russian>
+<German>Mi-8AMTSh (S-8)</German>
+<Czech>Mi-8AMTSh (S-8)</Czech>
+<English>Mi-8AMTSh (S-8)</English>
+<Japanese>Mi-8AMTSh (S-8)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMTSh_S5_N">
+<Original>Mi-8AMTSh (S-5)</Original>
+<French>Mi-8AMTSh (S-5)</French>
+<Spanish>Mi-8AMTSh (S-5)</Spanish>
+<Italian>Mi-8AMTSh (S-5)</Italian>
+<Hungarian>Mi-8AMTSh (S-5)</Hungarian>
+<Polish>Mi-8AMTSh (S-5)</Polish>
+<Russian>Ми-8АМТШ (С-5)</Russian>
+<German>Mi-8AMTSh (S-5)</German>
+<Czech>Mi-8AMTSh (S-5)</Czech>
+<English>Mi-8AMTSh (S-5)</English>
+<Japanese>Mi-8AMTSh (S-5)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMTSh_UPK23_N">
+<Original>Mi-8AMTSh (UPK-23)</Original>
+<French>Mi-8AMTSh (UPK-23)</French>
+<Spanish>Mi-8AMTSh (UPK-23)</Spanish>
+<Italian>Mi-8AMTSh (UPK-23)</Italian>
+<Hungarian>Mi-8AMTSh (UPK-23)</Hungarian>
+<Polish>Mi-8AMTSh (UPK-23)</Polish>
+<Russian>Ми-8АМТШ (УПК-23)</Russian>
+<German>Mi-8AMTSh (UPK-23)</German>
+<Czech>Mi-8AMTSh (UPK-23)</Czech>
+<English>Mi-8AMTSh (UPK-23)</English>
+<Japanese>Mi-8AMTSh (UPK-23)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMTSh_FAB250_N">
+<Original>Mi-8AMTSh (FAB-250)</Original>
+<French>Mi-8AMTSh (FAB-250)</French>
+<Spanish>Mi-8AMTSh (FAB-250)</Spanish>
+<Italian>Mi-8AMTSh (FAB-250)</Italian>
+<Hungarian>Mi-8AMTSh (FAB-250)</Hungarian>
+<Polish>Mi-8AMTSh (FAB-250)</Polish>
+<Russian>Ми-8АМТШ (ФАБ-250)</Russian>
+<German>Mi-8AMTSh (FAB-250)</German>
+<Czech>Mi-8AMTSh (FAB-250)</Czech>
+<English>Mi-8AMTSh (FAB-250)</English>
+<Japanese>Mi-8AMTSh (FAB-250)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_AMTSh_Ataka_N">
+<Original>Mi-8AMTSh (Ataka)</Original>
+<French>Mi-8AMTSh (Ataka)</French>
+<Spanish>Mi-8AMTSh (Ataka)</Spanish>
+<Italian>Mi-8AMTSh (Ataka)</Italian>
+<Hungarian>Mi-8AMTSh (Ataka)</Hungarian>
+<Polish>Mi-8AMTSh (Ataka)</Polish>
+<Russian>Ми-8АМТШ (Атака)</Russian>
+<German>Mi-8AMTSh (Ataka)</German>
+<Czech>Mi-8AMTSh (Ataka)</Czech>
+<English>Mi-8AMTSh (Ataka)</English>
+<Japanese>Mi-8AMTSh (Ataka)</Japanese>
+</Key>
+
+
+
+
+
+
+
+
+
+<Key ID="STR_Mi24_P_VDV">
+<English>Mi-24P VDV</English>
+<Czech>Mi-24P VDV</Czech>
+<German>Mi-24P VDV</German>
+<Polish>Mi-24P VDV</Polish>
+<Russian>Ми-24П ВДВ</Russian>
+<French>Mi-24P VDV</French>
+<Spanish>Mi-24P VDV</Spanish>
+<Italian>Mi-24P VDV</Italian>
+<Hungarian>Mi-24P VDV</Hungarian>
+</Key>
+<Key ID="STR_Mi24_V_VDV">
+<English>Mi-24V VDV</English>
+<Czech>Mi-24V VDV</Czech>
+<German>Mi-24W VDV</German>
+<Polish>Mi-24W VDV</Polish>
+<Russian>Ми-24В ВДВ</Russian>
+<French>Mi-24V VDV</French>
+<Spanish>Mi-24V VDV</Spanish>
+<Italian>Mi-24V VDV</Italian>
+<Hungarian>Mi-24V VDV</Hungarian>
+</Key>
+<Key ID="STR_Mi24_V_UPK23_VDV">
+<English>Mi-24V VDV (UPK-23)</English>
+<Czech>Mi-24V VDV (UPK-23)</Czech>
+<German>Mi-24W VDV (UPK-23)</German>
+<Polish>Mi-24W VDV (UPK-23)</Polish>
+<Russian>Ми-24В ВДВ (УПК-23)</Russian>
+<French>Mi-24V VDV (UPK-23)</French>
+<Spanish>Mi-24V VDV (UPK-23)</Spanish>
+<Italian>Mi-24V VDV (UPK-23)</Italian>
+<Hungarian>Mi-24V VDV (UPK-23)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_V_FAB250_VDV">
+<English>Mi-24V VDV (FAB-250)</English>
+<Czech>Mi-24V VDV (FAB-250)</Czech>
+<German>Mi-24W VDV (FAB-250)</German>
+<Polish>Mi-24W VDV (FAB-250)</Polish>
+<Russian>Ми-24В ВДВ (ФАБ-250)</Russian>
+<French>Mi-24V VDV (FAB-250)</French>
+<Spanish>Mi-24V VDV (FAB-250)</Spanish>
+<Italian>Mi-24V VDV (FAB-250)</Italian>
+<Hungarian>Mi-24V VDV (FAB-250)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_V_8AT_VDV">
+<English>Mi-24V VDV (AT)</English>
+<Czech>Mi-24V VDV (AT)</Czech>
+<German>Mi-24W VDV (AT)</German>
+<Polish>Mi-24W VDV (AT)</Polish>
+<Russian>Ми-24В ВДВ (ПТ)</Russian>
+<French>Mi-24V VDV (AT)</French>
+<Spanish>Mi-24V VDV (AT)</Spanish>
+<Italian>Mi-24V VDV (AT)</Italian>
+<Hungarian>Mi-24V VDV (AT)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_V_4AT_4AA_VDV">
+<English>Mi-24V VDV (Multirole)</English>
+<Czech>Mi-24V VDV (Multirole)</Czech>
+<German>Mi-24W VDV (Multirole)</German>
+<Polish>Mi-24W VDV (Multirole)</Polish>
+<Russian>Ми-24В ВДВ (В-П/В-В)</Russian>
+<French>Mi-24V VDV (Multirole)</French>
+<Spanish>Mi-24V VDV (Multirole)</Spanish>
+<Italian>Mi-24V VDV (Multirole)</Italian>
+<Hungarian>Mi-24V VDV (Multirole)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_V_4AA_VDV">
+<English>Mi-24V VDV (CAP)</English>
+<Czech>Mi-24V VDV (CAP)</Czech>
+<German>Mi-24W VDV (CAP)</German>
+<Polish>Mi-24W VDV (CAP)</Polish>
+<Russian>Ми-24В ВДВ (В-В)</Russian>
+<French>Mi-24V VDV (CAP)</French>
+<Spanish>Mi-24V VDV (CAP)</Spanish>
+<Italian>Mi-24V VDV (CAP)</Italian>
+<Hungarian>Mi-24V VDV (CAP)</Hungarian>
+</Key>
+<Key ID="STR_TU_MI8_MTVM_VDV">
+<Original>Mi-8MTVM VDV (Ambulance)</Original>
+<French>Mi-8MTVM VDV (Ambulance)</French>
+<Spanish>Mi-8MTVM VDV (Ambulance)</Spanish>
+<Italian>Mi-8MTVM VDV (Ambulance)</Italian>
+<Hungarian>Mi-8MTVM VDV (Ambulance)</Hungarian>
+<Polish>Mi-8MTVM VDV (Ambulance)</Polish>
+<Russian>Ми-8МТВМ ВДВ (медицинский)</Russian>
+<German>Mi-8MTVM VDV (Ambulance)</German>
+<Czech>Mi-8MTVM VDV (Ambulance)</Czech>
+<English>Mi-8MTVM VDV (Ambulance)</English>
+<Japanese>Mi-8MTVM VDV (Ambulance)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTV3_VDV">
+<Original>Mi-8MTV-3 VDV</Original>
+<French>Mi-8MTV-3 VDV</French>
+<Spanish>Mi-8MTV-3 VDV</Spanish>
+<Italian>Mi-8MTV-3 VDV</Italian>
+<Hungarian>Mi-8MTV-3 VDV</Hungarian>
+<Polish>Mi-8MTV-3 VDV</Polish>
+<Russian>Ми-8МТВ-3 ВДВ</Russian>
+<German>Mi-8MTV-3 VDV</German>
+<Czech>Mi-8MTV-3 VDV</Czech>
+<English>Mi-8MTV-3 VDV</English>
+<Japanese>Mi-8MTV-3 VDV</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTV3_S8_VDV">
+<Original>Mi-8MTV-3 VDV (S-8)</Original>
+<French>Mi-8MTV-3 VDV (S-8)</French>
+<Spanish>Mi-8MTV-3 VDV (S-8)</Spanish>
+<Italian>Mi-8MTV-3 VDV (S-8)</Italian>
+<Hungarian>Mi-8MTV-3 VDV (S-8)</Hungarian>
+<Polish>Mi-8MTV-3 VDV (S-8)</Polish>
+<Russian>Ми-8МТВ-3 ВДВ (С-8)</Russian>
+<German>Mi-8MTV-3 VDV (S-8)</German>
+<Czech>Mi-8MTV-3 VDV (S-8)</Czech>
+<English>Mi-8MTV-3 VDV (S-8)</English>
+<Japanese>Mi-8MTV-3 VDV (S-8)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTV3_S5_VDV">
+<Original>Mi-8MTV-3 VDV (S-5)</Original>
+<French>Mi-8MTV-3 VDV (S-5)</French>
+<Spanish>Mi-8MTV-3 VDV (S-5)</Spanish>
+<Italian>Mi-8MTV-3 VDV (S-5)</Italian>
+<Hungarian>Mi-8MTV-3 VDV (S-5)</Hungarian>
+<Polish>Mi-8MTV-3 VDV (S-5)</Polish>
+<Russian>Ми-8МТВ-3 ВДВ (С-5)</Russian>
+<German>Mi-8MTV-3 VDV (S-5)</German>
+<Czech>Mi-8MTV-3 VDV (S-5)</Czech>
+<English>Mi-8MTV-3 VDV (S-5)</English>
+<Japanese>Mi-8MTV-3 VDV (S-5)</Japanese>
+</Key>
+<Key ID="STR_TU_MI8_MTV3_UPK23_VDV">
+<Original>Mi-8MTV-3 VDV (UPK-23)</Original>
+<French>Mi-8MTV-3 VDV (UPK-23)</French>
+<Spanish>Mi-8MTV-3 VDV (UPK-23)</Spanish>
+<Italian>Mi-8MTV-3 VDV (UPK-23)</Italian>
+<Hungarian>Mi-8MTV-3 VDV (UPK-23)</Hungarian>
+<Polish>Mi-8MTV-3 VDV (UPK-23)</Polish>
+<Russian>Ми-8МТВ-3 ВДВ (УПК-23)</Russian>
+<German>Mi-8MTV-3 VDV (UPK-23)</German>
+<Czech>Mi-8MTV-3 VDV (UPK-23)</Czech>
+<English>Mi-8MTV-3 VDV (UPK-23)</English>
+<Japanese>Mi-8MTV-3 VDV (UPK-23)</Japanese>
+</Key>
+
+
+
+
+
+
+
+
+
+<Key ID="STR_Mi24_VP_G">
+<English>Mi-24VP</English>
+<Czech>Mi-24VP</Czech>
+<German>Mi-24WP</German>
+<Polish>Mi-24WP</Polish>
+<Russian>Ми-24ВП</Russian>
+<French>Mi-24VP</French>
+<Spanish>Mi-24VP</Spanish>
+<Italian>Mi-24VP</Italian>
+<Hungarian>Mi-24VP</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP2_G">
+<English>Mi-24VP 2</English>
+<Czech>Mi-24VP 2</Czech>
+<German>Mi-24WP 2</German>
+<Polish>Mi-24WP 2</Polish>
+<Russian>Ми-24ВП 2</Russian>
+<French>Mi-24VP 2</French>
+<Spanish>Mi-24VP 2</Spanish>
+<Italian>Mi-24VP 2</Italian>
+<Hungarian>Mi-24VP 2</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP_8AT_G">
+<English>Mi-24VP (AT)</English>
+<Czech>Mi-24VP (AT)</Czech>
+<German>Mi-24WP (AT)</German>
+<Polish>Mi-24WP (AT)</Polish>
+<Russian>Ми-24ВП (ПТ)</Russian>
+<French>Mi-24VP (AT)</French>
+<Spanish>Mi-24VP (AT)</Spanish>
+<Italian>Mi-24VP (AT)</Italian>
+<Hungarian>Mi-24VP (AT)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP_4AT_4AA_G">
+<English>Mi-24VP (Multirole)</English>
+<Czech>Mi-24VP (Multirole)</Czech>
+<German>Mi-24WP (Multirole)</German>
+<Polish>Mi-24WP (Multirole)</Polish>
+<Russian>Ми-24ВП (В-П/В-В)</Russian>
+<French>Mi-24VP (Multirole)</French>
+<Spanish>Mi-24VP (Multirole)</Spanish>
+<Italian>Mi-24VP (Multirole)</Italian>
+<Hungarian>Mi-24VP (Multirole)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP_4AT_2AA_G">
+<English>Mi-24VP (Multirole2)</English>
+<Czech>Mi-24VP (Multirole2)</Czech>
+<German>Mi-24WP (Multirole2)</German>
+<Polish>Mi-24WP (Multirole2)</Polish>
+<Russian>Ми-24ВП (В-П/В-В2)</Russian>
+<French>Mi-24VP (Multirole2)</French>
+<Spanish>Mi-24VP (Multirole2)</Spanish>
+<Italian>Mi-24VP (Multirole2)</Italian>
+<Hungarian>Mi-24VP (Multirole2)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_VP_4AA_G">
+<English>Mi-24VP (CAP)</English>
+<Czech>Mi-24VP (CAP)</Czech>
+<German>Mi-24WP (CAP)</German>
+<Polish>Mi-24WP (CAP)</Polish>
+<Russian>Ми-24ВП (В-В)</Russian>
+<French>Mi-24VP (CAP)</French>
+<Spanish>Mi-24VP (CAP)</Spanish>
+<Italian>Mi-24VP (CAP)</Italian>
+<Hungarian>Mi-24VP (CAP)</Hungarian>
+</Key>
+
+
+
+
+
+
+
+<Key ID="STR_Mi24_V_D">
+<English>Mi-24V</English>
+<Czech>Mi-24V</Czech>
+<German>Mi-24W</German>
+<Polish>Mi-24W</Polish>
+<Russian>Ми-24В</Russian>
+<French>Mi-24V</French>
+<Spanish>Mi-24V</Spanish>
+<Italian>Mi-24V</Italian>
+<Hungarian>Mi-24V</Hungarian>
+</Key>
+<Key ID="STR_Mi24_V_UPK23_D">
+<English>Mi-24V (UPK-23)</English>
+<Czech>Mi-24V (UPK-23)</Czech>
+<German>Mi-24W (UPK-23)</German>
+<Polish>Mi-24W (UPK-23)</Polish>
+<Russian>Ми-24В (УПК-23)</Russian>
+<French>Mi-24V (UPK-23)</French>
+<Spanish>Mi-24V (UPK-23)</Spanish>
+<Italian>Mi-24V (UPK-23)</Italian>
+<Hungarian>Mi-24V (UPK-23)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_V_FAB250_D">
+<English>Mi-24V (FAB-250)</English>
+<Czech>Mi-24V (FAB-250)</Czech>
+<German>Mi-24W (FAB-250)</German>
+<Polish>Mi-24W (FAB-250)</Polish>
+<Russian>Ми-24В (ФАБ-250)</Russian>
+<French>Mi-24V (FAB-250)</French>
+<Spanish>Mi-24V (FAB-250)</Spanish>
+<Italian>Mi-24V (FAB-250)</Italian>
+<Hungarian>Mi-24V (FAB-250)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_V_8AT_D">
+<English>Mi-24V (AT)</English>
+<Czech>Mi-24V (AT)</Czech>
+<German>Mi-24W (AT)</German>
+<Polish>Mi-24W (AT)</Polish>
+<Russian>Ми-24В (ПТ)</Russian>
+<French>Mi-24V (AT)</French>
+<Spanish>Mi-24V (AT)</Spanish>
+<Italian>Mi-24V (AT)</Italian>
+<Hungarian>Mi-24V (AT)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_V_4AT_4AA_D">
+<English>Mi-24V (Multirole)</English>
+<Czech>Mi-24V (Multirole)</Czech>
+<German>Mi-24W (Multirole)</German>
+<Polish>Mi-24W (Multirole)</Polish>
+<Russian>Ми-24В (В-П/В-В)</Russian>
+<French>Mi-24V (Multirole)</French>
+<Spanish>Mi-24V (Multirole)</Spanish>
+<Italian>Mi-24V (Multirole)</Italian>
+<Hungarian>Mi-24V (Multirole)</Hungarian>
+</Key>
+<Key ID="STR_Mi24_V_4AA_D">
+<English>Mi-24V (CAP)</English>
+<Czech>Mi-24V (CAP)</Czech>
+<German>Mi-24W (CAP)</German>
+<Polish>Mi-24W (CAP)</Polish>
+<Russian>Ми-24В (В-В)</Russian>
+<French>Mi-24V (CAP)</French>
+<Spanish>Mi-24V (CAP)</Spanish>
+<Italian>Mi-24V (CAP)</Italian>
+<Hungarian>Mi-24V (CAP)</Hungarian>
+</Key>
+
+
+
+
+
+
+
+
+
+<Key ID="STR_TU_SU25SM_250_S8_B">
+<English>Su-25SM black (S-8\FAB-250)</English>
+<German>Su-25SM black (S-8\FAB-250)</German>
+<Italian>Su-25SM black (S-8\FAB-250)</Italian>
+<Spanish>Su-25SM black (S-8\FAB-250)</Spanish>
+<Czech>Su-25SM black (S-8\FAB-250)</Czech>
+<Russian>Су-25СМ черный (С-8\ФАБ-250)</Russian>
+<Polish>Su-25SM black (S-8\FAB-250)</Polish>
+<Hungarian>Su-25SM black (S-8\FAB-250)</Hungarian>
+<French>Su-25SM black (S-8\FAB-250)</French>
+</Key>
+<Key ID="STR_TU_SU25SM_500_S8_B">
+<English>Su-25SM black (S-8\FAB-500)</English>
+<German>Su-25SM black (S-8\FAB-500)</German>
+<Italian>Su-25SM black (S-8\FAB-500)</Italian>
+<Spanish>Su-25SM black (S-8\FAB-500)</Spanish>
+<Czech>Su-25SM black (S-8\FAB-500)</Czech>
+<Russian>Су-25СМ черный (С-8\ФАБ-500)</Russian>
+<Polish>Su-25SM black (S-8\FAB-500)</Polish>
+<Hungarian>Su-25SM black (S-8\FAB-500)</Hungarian>
+<French>Su-25SM black (S-8\FAB-500)</French>
+</Key>
+<Key ID="STR_TU_SU25SM_250_S13_B">
+<English>Su-25SM black (S-13\FAB-250)</English>
+<German>Su-25SM black (S-13\FAB-250)</German>
+<Italian>Su-25SM black (S-13\FAB-250)</Italian>
+<Spanish>Su-25SM black (S-13\FAB-250)</Spanish>
+<Czech>Su-25SM black (S-13\FAB-250)</Czech>
+<Russian>Су-25СМ черный (С-13\ФАБ-250)</Russian>
+<Polish>Su-25SM black (S-13\FAB-250)</Polish>
+<Hungarian>Su-25SM black (S-13\FAB-250)</Hungarian>
+<French>Su-25SM black (S-13\FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_500_S13_B">
+<English>Su-25SM black (4xFAB-500\4xS-13)</English>
+<German>Su-25SM black (4xFAB-500\4xS-13)</German>
+<Italian>Su-25SM black (4xFAB-500\4xS-13)</Italian>
+<Spanish>Su-25SM black (4xFAB-500\4xS-13)</Spanish>
+<Czech>Su-25SM black (4xFAB-500\4xS-13)</Czech>
+<Russian>Су-25СМ черный (4xФАБ-500\4xС-13)</Russian>
+<Polish>Su-25SM black (4xFAB-500\4xS-13)</Polish>
+<Hungarian>Su-25SM black (4xFAB-500\4xS-13)</Hungarian>
+<French>Su-25SM black (4xFAB-500\4xS-13)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_S13_B">
+<English>Su-25SM black (S-13)</English>
+<German>Su-25SM black (S-13)</German>
+<Italian>Su-25SM black (S-13)</Italian>
+<Spanish>Su-25SM black (S-13)</Spanish>
+<Czech>Su-25SM black (S-13)</Czech>
+<Russian>Су-25СМ черный (С-13)</Russian>
+<Polish>Su-25SM black (S-13)</Polish>
+<Hungarian>Su-25SM black (S-13)</Hungarian>
+<French>Su-25SM black (S-13)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_S8_B">
+<English>Su-25SM black (S-8)</English>
+<German>Su-25SM black (S-8)</German>
+<Italian>Su-25SM black (S-8)</Italian>
+<Spanish>Su-25SM black (S-8)</Spanish>
+<Czech>Su-25SM black (S-8)</Czech>
+<Russian>Су-25СМ черный (С-8)</Russian>
+<Polish>Su-25SM black (S-8)</Polish>
+<Hungarian>Su-25SM black (S-8)</Hungarian>
+<French>Su-25SM black (S-8)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_250_B">
+<English>Su-25SM black (FAB-250)</English>
+<German>Su-25SM black (FAB-250)</German>
+<Italian>Su-25SM black (FAB-250)</Italian>
+<Spanish>Su-25SM black (FAB-250)</Spanish>
+<Czech>Su-25SM black (FAB-250)</Czech>
+<Russian>Су-25СМ черный (ФАБ-250)</Russian>
+<Polish>Su-25SM black (FAB-250)</Polish>
+<Hungarian>Su-25SM black (FAB-250)</Hungarian>
+<French>Su-25SM black (FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_500_B">
+<English>Su-25SM black (8xFAB-500)</English>
+<German>Su-25SM black (8xFAB-500)</German>
+<Italian>Su-25SM black (8xFAB-500)</Italian>
+<Spanish>Su-25SM black (8xFAB-500)</Spanish>
+<Czech>Su-25SM black (8xFAB-500)</Czech>
+<Russian>Су-25СМ черный (8xФАБ-500)</Russian>
+<Polish>Su-25SM black (8xFAB-500)</Polish>
+<Hungarian>Su-25SM black (8xFAB-500)</Hungarian>
+<French>Su-25SM black (8xFAB-500)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_Kh25_S8_B">
+<English>Su-25SM black (S-8\Kh-25ML)</English>
+<German>Su-25SM black (S-8\Kh-25ML)</German>
+<Italian>Su-25SM black (S-8\Kh-25ML)</Italian>
+<Spanish>Su-25SM black (S-8\Kh-25ML)</Spanish>
+<Czech>Su-25SM black (S-8\Kh-25ML)</Czech>
+<Russian>Су-25СМ черный (С-8\Х-25МЛ)</Russian>
+<Polish>Su-25SM black (S-8\Kh-25ML)</Polish>
+<Hungarian>Su-25SM black (S-8\Kh-25ML)</Hungarian>
+<French>Su-25SM black (S-8\Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_Kh29L_Kh25_S8_B">
+<English>Su-25SM black (S-8\Kh-29L\Kh-25ML)</English>
+<German>Su-25SM black (S-8\Kh-29L\Kh-25ML)</German>
+<Italian>Su-25SM black (S-8\Kh-29L\Kh-25ML)</Italian>
+<Spanish>Su-25SM black (S-8\Kh-29L\Kh-25ML)</Spanish>
+<Czech>Su-25SM black (S-8\Kh-29L\Kh-25ML)</Czech>
+<Russian>Су-25СМ черный (С-8\Х-29Л\Х-25МЛ)</Russian>
+<Polish>Su-25SM black (S-8\Kh-29L\Kh-25ML)</Polish>
+<Hungarian>Su-25SM black (S-8\Kh-29L\Kh-25ML)</Hungarian>
+<French>Su-25SM black (S-8\Kh-29L\Kh-25ML)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_Kh29L_FAB250_S8_B">
+<English>Su-25SM black (S-8\Kh-29L\FAB-250)</English>
+<German>Su-25SM black (S-8\Kh-29L\FAB-250)</German>
+<Italian>Su-25SM black (S-8\Kh-29L\FAB-250)</Italian>
+<Spanish>Su-25SM black (S-8\Kh-29L\FAB-250)</Spanish>
+<Czech>Su-25SM black (S-8\Kh-29L\FAB-250)</Czech>
+<Russian>Су-25СМ черный (С-8\Х-29Л\ФАБ-250)</Russian>
+<Polish>Su-25SM black (S-8\Kh-29L\FAB-250)</Polish>
+<Hungarian>Su-25SM black (S-8\Kh-29L\FAB-250)</Hungarian>
+<French>Su-25SM black (S-8\Kh-29L\FAB-250)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_Kh29T_Kh25_S8_B">
+<English>Su-25SM black (2xKh-29T\2xKh-25ML\4xS-8)</English>
+<German>Su-25SM black (2xKh-29T\2xKh-25ML\4xS-8)</German>
+<Italian>Su-25SM black (2xKh-29T\2xKh-25ML\4xS-8)</Italian>
+<Spanish>Su-25SM black (2xKh-29T\2xKh-25ML\4xS-8)</Spanish>
+<Czech>Su-25SM black (2xKh-29T\2xKh-25ML\4xS-8)</Czech>
+<Russian>Су-25СМ черный (2xХ-29Т\2xХ-25МЛ\4xС-8)</Russian>
+<Polish>Su-25SM black (2xKh-29T\2xKh-25ML\4xS-8)</Polish>
+<Hungarian>Su-25SM black (2xKh-29T\2xKh-25ML\4xS-8)</Hungarian>
+<French>Su-25SM black (2xKh-29T\2xKh-25ML\4xS-8)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_Kh29L_S8_B">
+<English>Su-25SM black (S-8\Kh-29L)</English>
+<German>Su-25SM black (S-8\Kh-29L)</German>
+<Italian>Su-25SM black (S-8\Kh-29L)</Italian>
+<Spanish>Su-25SM black (S-8\Kh-29L)</Spanish>
+<Czech>Su-25SM black (S-8\Kh-29L)</Czech>
+<Russian>Су-25СМ черный (С-8\Х-29Л)</Russian>
+<Polish>Su-25SM black (S-8\Kh-29L)</Polish>
+<Hungarian>Su-25SM black (S-8\Kh-29L)</Hungarian>
+<French>Su-25SM black (S-8\Kh-29L)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_Kh29T_S8_B">
+<English>Su-25SM black (2xKh-29T\4xS-8\2xR-73M)</English>
+<German>Su-25SM black (2xKh-29T\4xS-8\2xR-73M)</German>
+<Italian>Su-25SM black (2xKh-29T\4xS-8\2xR-73M)</Italian>
+<Spanish>Su-25SM black (2xKh-29T\4xS-8\2xR-73M)</Spanish>
+<Czech>Su-25SM black (2xKh-29T\4xS-8\2xR-73M)</Czech>
+<Russian>Су-25СМ черный (2xХ-29Т\4xС-8\2xР-73М)</Russian>
+<Polish>Su-25SM black (2xKh-29T\4xS-8\2xR-73M)</Polish>
+<Hungarian>Su-25SM black (2xKh-29T\4xS-8\2xR-73M)</Hungarian>
+<French>Su-25SM black (2xKh-29T\4xS-8\2xR-73M)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_R73_B">
+<English>Su-25SM black (4xR-73M\2xFAB-250\4xS-8)</English>
+<German>Su-25SM black (4xR-73M\2xFAB-250\4xS-8)</German>
+<Italian>Su-25SM black (4xR-73M\2xFAB-250\4xS-8)</Italian>
+<Spanish>Su-25SM black (4xR-73M\2xFAB-250\4xS-8)</Spanish>
+<Czech>Su-25SM black (4xR-73M\2xFAB-250\4xS-8)</Czech>
+<Russian>Су-25СМ черный (4xР-73М\2xФАБ-250\4xС-8)</Russian>
+<Polish>Su-25SM black (4xR-73M\2xFAB-250\4xS-8)</Polish>
+<Hungarian>Su-25SM black (4xR-73M\2xFAB-250\4xS-8)</Hungarian>
+<French>Su-25SM black (4xR-73M\2xFAB-250\4xS-8)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_S24_B">
+<English>Su-25SM black (S-24)</English>
+<German>Su-25SM black (S-24)</German>
+<Italian>Su-25SM black (S-24)</Italian>
+<Spanish>Su-25SM black (S-24)</Spanish>
+<Czech>Su-25SM black (S-24)</Czech>
+<Russian>Су-25СМ черный (С-24)</Russian>
+<Polish>Su-25SM black (S-24)</Polish>
+<Hungarian>Su-25SM black (S-24)</Hungarian>
+<French>Su-25SM black (S-24)</French>
+</Key>
+<Key ID="STR_TU_Su25SM_S24_Kh25_B">
+<English>Su-25SM black (S-24\Kh-25ML)</English>
+<German>Su-25SM black (S-24\Kh-25ML)</German>
+<Italian>Su-25SM black (S-24\Kh-25ML)</Italian>
+<Spanish>Su-25SM black (S-24\Kh-25ML)</Spanish>
+<Czech>Su-25SM black (S-24\Kh-25ML)</Czech>
+<Russian>Су-25СМ черный (С-24\Х-25МЛ)</Russian>
+<Polish>Su-25SM black (S-24\Kh-25ML)</Polish>
+<Hungarian>Su-25SM black (S-24\Kh-25ML)</Hungarian>
+<French>Su-25SM black (S-24\Kh-25ML)</French>
+</Key>
 <Key ID="STR_TU_FOLD_WINGS">
 <English>Fold wings</English>
 <Czech>Fold wings</Czech>

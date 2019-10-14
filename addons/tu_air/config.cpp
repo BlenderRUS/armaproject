@@ -182,6 +182,24 @@ class CfgVehicleClasses {
 	class TU_PARACHUTE {
 		displayName = "PARACHUTE";
 	};
+	class TU_VVS_RF_N
+	{
+		side = "TEast";
+		faction = "RU";
+		displayName = $STR_VVS_RF_N;
+	};
+	class TU_VVS_RF_ND
+	{
+		side = "TEast";
+		faction = "RU";
+		displayName = $STR_VVS_RF_ND;
+	};
+	class TU_AVDV_RF
+	{
+		side = "TEast";
+		faction = "RU";
+		displayName = $STR_AVDV_RF;
+	};
 };
 
 class CfgAmmo {
@@ -3613,10 +3631,35 @@ class CfgVehicles {
 		};
 	};
 	
-	class CH47_base_EP1: Helicopter {};
+	class CH47_base_EP1: Helicopter {
+		class HitPoints;
+	};
 	
 	class CH_47F_EP1: CH47_base_EP1 {
+		armor = 60;
 		vehicleclass = "TU_USARMY_AIR";
+		maxSpeed = 285;
+		scope = 2;
+		
+		class HitPoints: HitPoints
+		{
+			class HitHull
+			{
+				armor = 1;
+				material = 51;
+				name = "NETtrup";
+				passThrough = 1;
+				visual = "trup";
+			};
+			class HitEngine
+			{
+				armor = 0.5;
+				material = 51;
+				name = "motor";
+				passThrough = 1;
+				visual = "trup";
+			};
+		};
 	};
 	
 	class CH_47F_black: CH_47F_EP1 {
@@ -3635,7 +3678,7 @@ class CfgVehicles {
 	class Ka60_PMC: Ka60_Base_PMC {};
 
 	class TU_KA60: Ka60_PMC {
-		vehicleclass = "TU_VVS_RF";
+		vehicleclass="TU_VVS_RF_N";
 		memorypointcm[] = {"l strela", "p strela"};
 		memorypointcmdir[] = {"p strela", "l strela"};
 		model="\tu_air\ka60_camo.p3d";
@@ -3648,7 +3691,7 @@ class CfgVehicles {
 	};
 	
 	class TU_KA60_B: TU_KA60 {
-		vehicleclass = "TU_VVS_RF";
+		vehicleclass="TU_VVS_RF_N";
 		model="\tu_air\ka60.p3d";
 		displayname = $STR_KA60_B;
 	};
@@ -4377,6 +4420,44 @@ class CfgVehicles {
 		typicalCargo[] = {"RU_Pilot","RU_Pilot","RU_Doctor","RU_Doctor"};
 		side = 3;
 	};
+	class TU_Mi8_MTVM_RU_B: Mi17_medevac_RU
+	{
+		displayname = $STR_TU_MI8_MTVM_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3",
+			"Camo4"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi8_body_gray_co.paa",
+			"\tu_air\data\mi8_det_gray_co.paa",
+			"\tu_air\data\vvs_ca.paa",
+			"\tu_air\data\mi8_decals_ca.paa"
+		};
+	};
+	class TU_Mi8_MTVM_RU_ND: Mi17_medevac_RU
+	{
+		displayname = $STR_TU_MI8_MTVM_N;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3",
+			"Camo4"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi8_body_des_co.paa",
+			"\tu_air\data\mi8_det_des_co.paa",
+			"\tu_air\data\vvs_ca.paa",
+			"\tu_air\data\mi8_decals_ca.paa"
+		};
+	};
 /////////////////////////////////////////////////////////////////////
 //Mi8MTV
 	class Mi17_Ins: Mi17_base_Ins {
@@ -4695,6 +4776,182 @@ class CfgVehicles {
 		//invisible
 		"128Rnd_57mm","120Rnd_CMFlareMagazine"};
 	};
+	class TU_Mi8_MTV3_RU_B: ACE_Mi17_RU
+	{
+		displayname = $STR_TU_MI8_MTV3_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi8_body_gray_co.paa",
+			"\tu_air\data\mi8_det_gray_co.paa",
+			"\tu_air\data\vvs_ca.paa",
+			"\tu_air\data\mi8_decals_ca.paa"
+		};
+		class AnimationSources: AnimationSources {
+            class HUDaction {
+                animperiod = 0;
+                initphase = 1;
+                source = "user";
+            };
+            class HUDaction_Hide
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 1;
+            };    
+            class ReloadAnim_3 {
+                source = "reload";
+                weapon = "ACE_PKT_out_3";
+            };
+            class ReloadMagazine_3 {
+                source = "reloadmagazine";
+                weapon = "ACE_PKT_out_3";
+            };
+            class Revolving_3 {
+                source = "revolving";
+                weapon = "ACE_PKT_out_3";
+            };
+            class HIDE_weapon_holders{
+                source = "user";
+                animPeriod = 1e-007;
+                initPhase = 1;
+            };
+            class HIDE_front_armor: HIDE_weapon_holders    {
+                initPhase = 1;
+            };
+            class HIDE_exhaust: HIDE_weapon_holders    {
+                initPhase = 0;
+            };
+        };
+	};
+	class TU_Mi8_MTV3_S8_RU_B: Mi17_rockets_RU
+	{
+		displayname = $STR_TU_MI8_MTV3_S8_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi8_body_gray_co.paa",
+			"\tu_air\data\mi8_det_gray_co.paa",
+			"\tu_air\data\vvs_ca.paa",
+			"\tu_air\data\mi8_decals_ca.paa"
+		};
+		
+	};
+	class TU_Mi8_MTV3_S5_RU_B: TU_Mi8_MTV3_S5_RU
+	{
+		displayname = $STR_TU_MI8_MTV3_S5_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi8_body_gray_co.paa",
+			"\tu_air\data\mi8_det_gray_co.paa",
+			"\tu_air\data\vvs_ca.paa",
+			"\tu_air\data\mi8_decals_ca.paa"
+		};
+	};
+	class TU_Mi8_MTV3_UPK23_RU_B: TU_Mi8_MTV3_UPK23_RU
+	{
+		displayname = $STR_TU_MI8_MTV3_UPK23_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi8_body_gray_co.paa",
+			"\tu_air\data\mi8_det_gray_co.paa",
+			"\tu_air\data\vvs_ca.paa",
+			"\tu_air\data\mi8_decals_ca.paa"
+		};
+	};
+	class TU_Mi8_MTV3_RU_ND: ACE_Mi17_RU
+	{
+		displayname = $STR_TU_MI8_MTV3_N;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3",
+			"Camo4"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi8_body_des_co.paa",
+			"\tu_air\data\mi8_det_des_co.paa",
+			"\tu_air\data\vvs_ca.paa",
+			"\tu_air\data\mi8_decals_ca.paa"
+		};
+		class AnimationSources: AnimationSources {
+            class HUDaction {
+                animperiod = 0;
+                initphase = 1;
+                source = "user";
+            };
+            class HUDaction_Hide
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 1;
+            };    
+            class ReloadAnim_3 {
+                source = "reload";
+                weapon = "ACE_PKT_out_3";
+            };
+            class ReloadMagazine_3 {
+                source = "reloadmagazine";
+                weapon = "ACE_PKT_out_3";
+            };
+            class Revolving_3 {
+                source = "revolving";
+                weapon = "ACE_PKT_out_3";
+            };
+            class HIDE_weapon_holders{
+                source = "user";
+                animPeriod = 1e-007;
+                initPhase = 1;
+            };
+            class HIDE_front_armor: HIDE_weapon_holders    {
+                initPhase = 1;
+            };
+            class HIDE_exhaust: HIDE_weapon_holders    {
+                initPhase = 0;
+            };
+        };
+	};
+	class TU_Mi8_MTV3_S8_RU_ND: Mi17_rockets_RU
+	{
+		displayname = $STR_TU_MI8_MTV3_S8_N;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi8_body_des_co.paa",
+			"\tu_air\data\mi8_det_des_co.paa",
+			"\tu_air\data\vvs_ca.paa",
+			"\tu_air\data\mi8_decals_ca.paa"
+		};
+	};
+	class TU_Mi8_MTV3_S5_RU_ND: TU_Mi8_MTV3_S5_RU
+	{
+		displayname = $STR_TU_MI8_MTV3_S5_N;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi8_body_des_co.paa",
+			"\tu_air\data\mi8_det_des_co.paa",
+			"\tu_air\data\vvs_ca.paa",
+			"\tu_air\data\mi8_decals_ca.paa"
+		};
+	};
+	class TU_Mi8_MTV3_UPK23_RU_ND: TU_Mi8_MTV3_UPK23_RU
+	{
+		displayname = $STR_TU_MI8_MTV3_UPK23_N;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi8_body_des_co.paa",
+			"\tu_air\data\mi8_det_des_co.paa",
+			"\tu_air\data\vvs_ca.paa",
+			"\tu_air\data\mi8_decals_ca.paa"
+		};
+	};
 //Mi17-3V
 	class TU_Mi17_3V_CDF: Mi17_rockets_RU {
 		crew = "CDF_Soldier_Pilot";
@@ -4917,12 +5174,37 @@ class CfgVehicles {
 //////////////////////////////////////////////////////////////////////////
 //Mi8AMT
 	class TU_Mi8_AMT_RU: TU_Mi8_AMT_Base {
-		vehicleclass = "TU_VVS_RF";
+		displayname = $STR_TU_MI8_AMT_N;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_camo_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
 		selectionFireAnim = "zasleh_1";
 		gunBeg[] = {"muzzle_4", "muzzle_5"};
 		gunEnd[] = {"chamber_4", "chamber_5"};
-		model = "\FRL_Mi17\FRL_Mi8_AMT_RU";
 		scope = 2;
+	};
+	class TU_Mi8_AMT_RU_B: TU_Mi8_AMT_RU
+	{
+		displayname = $STR_TU_MI8_AMT_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_gray_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
+	};
+	class TU_Mi8_AMT_RU_D: TU_Mi8_AMT_RU
+	{
+		displayname = $STR_TU_MI8_AMT_N;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_des_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
 	};
 //Mi171
 	class Mi17_base_CZ_EP1: TU_Mi8_AMT_Base {	
@@ -4987,7 +5269,7 @@ class CfgVehicles {
 		selectionFireAnim = "zasleh_1";
 		gunBeg[] = {"muzzle_4", "muzzle_5"};
 		gunEnd[] = {"chamber_4", "chamber_5"};	
-		model = "\FRL_Mi17\FRL_Mi8_AMT";
+		model = "\FRL_Mi17\FRL_Mi8_AMT";		
 		hiddenselectionstextures[] = {"\ca\air_e\Mi17\data\mi_171_co.paa", "\ca\air_E\Data\mi17_decals2_ACR_CA.paa"};
 		displayname = $STR_TU_MI171Sh_S5;
 		scope = 2;
@@ -5036,15 +5318,20 @@ class CfgVehicles {
 	};
 //Mi8AMTSh
 	class TU_Mi8_AMTSh_RU: Mi171Sh_rockets_CZ_EP1 {	
-		vehicleclass = "TU_VVS_RF";
+		displayname = $STR_TU_MI8_AMTSh_S8_N;
+		vehicleclass="TU_VVS_RF_N";
+		model = "\nm_air\Mi8_AMT";
+		hiddenSelections[] = {"Camo5", "Camo7"};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_camo_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
 		lockdetectionsystem = 8;
 		side = 0;
 		faction = "RU";
 		crew = "RU_Soldier_Pilot";
-		model = "\FRL_Mi17\FRL_Mi8_AMT_RU";
 		typicalCargo[] = {"RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RUS_Soldier_AT","RUS_Soldier_MG"};
-		hiddenSelectionsTextures[] = {"\FRL_Mi17\data\mi171_nov_co.paa","\ca\air\data\clear_empty.paa"};
-		displayname = $STR_TU_MI8_AMTSh_S8;
 		scope = 2;
 		weapons[] = {"ACE_S8Launcher", "CMFlareLauncher"};
 		magazines[] = {
@@ -5058,7 +5345,13 @@ class CfgVehicles {
 		"120Rnd_80mm","120Rnd_CMFlareMagazine"};
 	};
 	class TU_Mi8_AMTSh_UPK23_RU: TU_Mi8_AMTSh_RU {
-		displayname = $STR_TU_MI8_AMTSh_UPK23;
+		displayname = $STR_TU_MI8_AMTSh_UPK23_N;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_camo_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
 		weapons[] = {"ACE_S8Launcher", "ACE_UPK23", "CMFlareLauncher"};
 		magazines[] = {
 		//outer
@@ -5071,7 +5364,13 @@ class CfgVehicles {
 		"80Rnd_80mm","ACE_500Rnd_23mm_UPK23","120Rnd_CMFlareMagazine"};
 	};
 	class TU_Mi8_AMTSh_S5_RU: TU_Mi8_AMTSh_RU {
-		displayname = $STR_TU_MI8_AMTSh_S5;
+		displayname = $STR_TU_MI8_AMTSh_S5_N;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_camo_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
 		weapons[] = {"57mmLauncher", "CMFlareLauncher"};
 		magazines[] = {
 		//outer
@@ -5084,7 +5383,13 @@ class CfgVehicles {
 		"128Rnd_57mm","120Rnd_CMFlareMagazine"};
 	};
 	class TU_Mi8_AMTSh_FAB250_RU: TU_Mi8_AMTSh_RU {
-		displayname = $STR_TU_MI8_AMTSh_FAB250;
+		displayname = $STR_TU_MI8_AMTSh_FAB250_N;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_camo_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
 		weapons[] = {"ACE_S8Launcher", "HeliBombLauncher", "CMFlareLauncher"};
 		magazines[] = {
 		//outer
@@ -5097,7 +5402,13 @@ class CfgVehicles {
 		"80Rnd_80mm","120Rnd_CMFlareMagazine"};
 	};
 	class TU_Mi8_AMTSh_Ataka_RU: TU_Mi8_AMTSh_RU {
-		displayname = $STR_TU_MI8_AMTSh_Ataka;
+		displayname = $STR_TU_MI8_AMTSh_Ataka_N;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_camo_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
 		weapons[] = {"ACE_S8Launcher", "AT9Launcher", "CMFlareLauncher"};
 		magazines[] = {
 		//outer
@@ -5109,6 +5420,117 @@ class CfgVehicles {
 		//invisible
 		"80Rnd_80mm","4Rnd_AT9_Mi24P","120Rnd_CMFlareMagazine"};
 	};
+	class TU_Mi8_AMTSh_RU_B: TU_Mi8_AMTSh_RU
+	{
+		displayname = $STR_TU_MI8_AMTSh_S8_B;
+		vehicleclass="TU_VVS_RF_N";
+		model = "\nm_air\Mi8_AMT_B";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_gray_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
+	};
+	class TU_Mi8_AMTSh_UPK23_RU_B: TU_Mi8_AMTSh_UPK23_RU
+	{
+		displayname = $STR_TU_MI8_AMTSh_UPK23_B;
+		vehicleclass="TU_VVS_RF_N";
+		model = "\nm_air\Mi8_AMT_B";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_gray_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
+	};
+	class TU_Mi8_AMTSh_S5_RU_B: TU_Mi8_AMTSh_S5_RU
+	{
+		displayname = $STR_TU_MI8_AMTSh_S5_B;
+		vehicleclass="TU_VVS_RF_N";
+		model = "\nm_air\Mi8_AMT_B";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_gray_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
+	};
+	class TU_Mi8_AMTSh_FAB250_RU_B: TU_Mi8_AMTSh_FAB250_RU
+	{
+		displayname = $STR_TU_MI8_AMTSh_FAB250_B;
+		vehicleclass="TU_VVS_RF_N";
+		model = "\nm_air\Mi8_AMT_B";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_gray_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
+	};
+	class TU_Mi8_AMTSh_Ataka_RU_B: TU_Mi8_AMTSh_Ataka_RU
+	{
+		displayname = $STR_TU_MI8_AMTSh_Ataka_B;
+		vehicleclass="TU_VVS_RF_N";
+		model = "\nm_air\Mi8_AMT_B";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_gray_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
+	};
+	class TU_Mi8_AMTSh_RU_D: TU_Mi8_AMTSh_RU
+	{
+		displayname = $STR_TU_MI8_AMTSh_S8_N;
+		vehicleclass="TU_VVS_RF_ND";
+		model = "\nm_air\Mi8_AMT_D";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_des_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
+	};
+	class TU_Mi8_AMTSh_UPK23_RU_D: TU_Mi8_AMTSh_UPK23_RU
+	{
+		displayname = $STR_TU_MI8_AMTSh_UPK23_N;
+		vehicleclass="TU_VVS_RF_ND";
+		model = "\nm_air\Mi8_AMT_D";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_des_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
+	};
+	class TU_Mi8_AMTSh_S5_RU_D: TU_Mi8_AMTSh_S5_RU
+	{
+		displayname = $STR_TU_MI8_AMTSh_S5_N;
+		vehicleclass="TU_VVS_RF_ND";
+		model = "\nm_air\Mi8_AMT_D";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_des_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
+	};
+	class TU_Mi8_AMTSh_FAB250_RU_D: TU_Mi8_AMTSh_FAB250_RU
+	{
+		displayname = $STR_TU_MI8_AMTSh_FAB250_N;
+		vehicleclass="TU_VVS_RF_ND";
+		model = "\nm_air\Mi8_AMT_D";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_des_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
+	};
+	class TU_Mi8_AMTSh_Ataka_RU_D: TU_Mi8_AMTSh_Ataka_RU
+	{
+		displayname = $STR_TU_MI8_AMTSh_Ataka_N;
+		vehicleclass="TU_VVS_RF_ND";
+		model = "\nm_air\Mi8_AMT_D";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi_171_body_des_co.paa",
+			"\tu_air\data\vvs_ca.paa"
+		};
+	};
+	
 //////////////////////////////////////////////////////////////////////////
 //Mi8TV
 /*	class TU_Mi8_TV_RU: ACE_Mi17_RU {
@@ -5480,7 +5902,12 @@ class CfgVehicles {
 	
 	class Ka52: Kamov_Base {
 		displayname = $STR_TU_KA52_OD;
-		vehicleclass = "TU_VVS_RF";
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\ka52_body_camo_co1.paa",
+			"\tu_air\data\ka52_body_camo_co2.paa"
+		};
 		class Turrets: Turrets {
 			class MainTurret: MainTurret {
 				class OpticsIn {				
@@ -5528,6 +5955,12 @@ class CfgVehicles {
 	
 	class Ka52Black: Ka52 {
 		displayname = $STR_TU_KA52B_OD;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\ka52_body_gray_co1.paa",
+			"\tu_air\data\ka52_body_gray_co2.paa"
+		};
 		class Turrets: Turrets {
 			class MainTurret: MainTurret {};
 		};
@@ -5539,6 +5972,12 @@ class CfgVehicles {
 		gunBeg[] = {"muzzle_1", "muzzle_2"};
 		gunEnd[] = {"chamber_1", "chamber_2"};
 		model = "\tu_air\FRL_Ka52.p3d";
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\ka52_body_camo_co1.paa",
+			"\tu_air\data\ka52_body_camo_co2.paa"
+		};
 		class Turrets: Turrets {
 			class MainTurret: MainTurret {
 				weapons[] = {"ACE_2A42", "TU_AT9Launcher_Mi24"};
@@ -5580,6 +6019,12 @@ class CfgVehicles {
 	
 	class TU_KA52B_OD_Ataka: Ka52Black {
 		displayname = $STR_TU_KA52B_OD_ATAKA;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\ka52_body_gray_co1.paa",
+			"\tu_air\data\ka52_body_gray_co2.paa"
+		};
 		selectionFireAnim = "zasleh_1";
 		gunBeg[] = {"muzzle_1", "muzzle_2"};
 		gunEnd[] = {"chamber_1", "chamber_2"};
@@ -5625,7 +6070,12 @@ class CfgVehicles {
 	
 	class TU_KA52: Ka52 {
 		displayname = $STR_TU_KA52;
-		vehicleclass = "TU_VVS_RF";
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\ka52_body_camo_co1.paa",
+			"\tu_air\data\ka52_body_camo_co2.paa"
+		};
 		incommingmissliedetectionsystem = 8;
 		lockdetectionsystem = 8;
 		class Turrets: Turrets {
@@ -5635,7 +6085,12 @@ class CfgVehicles {
 	
 	class TU_KA52B: Ka52Black {
 		displayname = $STR_TU_KA52B;
-		vehicleclass = "TU_VVS_RF";
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\ka52_body_gray_co1.paa",
+			"\tu_air\data\ka52_body_gray_co2.paa"
+		};
 		incommingmissliedetectionsystem = 8;
 		lockdetectionsystem = 8;
 		class Turrets: Turrets {
@@ -5645,6 +6100,12 @@ class CfgVehicles {
 		
 	class TU_KA52_Ataka: TU_KA52 {
 		displayname = $STR_TU_KA52_ATAKA;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\ka52_body_camo_co1.paa",
+			"\tu_air\data\ka52_body_camo_co2.paa"
+		};
 		selectionFireAnim = "zasleh_1";
 		gunBeg[] = {"muzzle_1", "muzzle_2"};
 		gunEnd[] = {"chamber_1", "chamber_2"};
@@ -5690,6 +6151,12 @@ class CfgVehicles {
 	
 	class TU_KA52B_Ataka: TU_KA52B {
 		displayname = $STR_TU_KA52B_ATAKA;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\ka52_body_gray_co1.paa",
+			"\tu_air\data\ka52_body_gray_co2.paa"
+		};
 		selectionFireAnim = "zasleh_1";
 		gunBeg[] = {"muzzle_1", "muzzle_2"};
 		gunEnd[] = {"chamber_1", "chamber_2"};
@@ -7206,22 +7673,22 @@ class CfgVehicles {
 	};
 	*/
 	class TU_Su25SM_250_S8: Su39 {
+		displayname = $STR_TU_SU25SM_250_S8;
+		vehicleclass="TU_VVS_RF_N";
 		hiddenselections[] = 
-        {
-            "camo1",
-            "camo2",
-            "clan_sign"
-        };
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
 		hiddenSelectionsTextures[]=
-        {
-            "\Ca\air2\Su25\data\su25_body1_rus_co.paa",
-            "\Ca\air2\Su25\data\su25_body2_rus_co.paa"
-        };
-		vehicleclass = "TU_VVS_RF";
+		{
+			"\tu_air\data\su25_body_camo_co1.paa",
+			"\tu_air\data\su25_body_camo_co2.paa"
+		};
 		incommingmissliedetectionsystem = 16;
 		scope = public;
 		optics = 1;
-		displayname = $STR_TU_Su25SM_250_S8;
 		model = "\frl_su25\FRL_su25";
 		driveropticsmodel = "\ca\air\optika_Ka50_gun";
 		memorypointdriveroptics = "kulomet";
@@ -7288,22 +7755,22 @@ class CfgVehicles {
 	};
 	
 	class TU_Su25SM_500_S8: Su39 {
+		displayname = $STR_TU_SU25SM_500_S8;
+		vehicleclass="TU_VVS_RF_N";
 		hiddenselections[] = 
-        {
-            "camo1",
-            "camo2",
-            "clan_sign"
-        };
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
 		hiddenSelectionsTextures[]=
-        {
-            "\Ca\air2\Su25\data\su25_body1_rus_co.paa",
-            "\Ca\air2\Su25\data\su25_body2_rus_co.paa"
-        };
-		vehicleclass = "TU_VVS_RF";
+		{
+			"\tu_air\data\su25_body_camo_co1.paa",
+			"\tu_air\data\su25_body_camo_co2.paa"
+		};
 		incommingmissliedetectionsystem = 16;
 		scope = public;
 		optics = 1;
-		displayname = $STR_TU_Su25SM_500_S8;
 		memorypointdriveroptics = "kulomet";
 		model = "\frl_su25\FRL_su25";
 		driveropticsmodel = "\ca\air\optika_Ka50_gun";
@@ -7370,22 +7837,22 @@ class CfgVehicles {
 	};
 	
 	class TU_Su25SM_250_S13: Su39 {
+		displayname = $STR_TU_SU25SM_250_S13;
+		vehicleclass="TU_VVS_RF_N";
 		hiddenselections[] = 
-        {
-            "camo1",
-            "camo2",
-            "clan_sign"
-        };
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
 		hiddenSelectionsTextures[]=
-        {
-            "\Ca\air2\Su25\data\su25_body1_rus_co.paa",
-            "\Ca\air2\Su25\data\su25_body2_rus_co.paa"
-        };
-		vehicleclass = "TU_VVS_RF";
+		{
+			"\tu_air\data\su25_body_camo_co1.paa",
+			"\tu_air\data\su25_body_camo_co2.paa"
+		};
 		incommingmissliedetectionsystem = 16;
 		scope = public;
 		optics = 1;
-		displayname = $STR_TU_Su25SM_250_S13;
 		memorypointdriveroptics = "kulomet";
 		model = "\frl_su25\FRL_su25";
 		driveropticsmodel = "\ca\air\optika_Ka50_gun";
@@ -7452,20 +7919,20 @@ class CfgVehicles {
 	};
 	
 	class TU_Su25SM_S24: Su39 {
-		hiddenselections[] = 
-        {
-            "camo1",
-            "camo2",
-            "clan_sign"
-        };
-		hiddenSelectionsTextures[]=
-        {
-            "\Ca\air2\Su25\data\su25_body1_rus_co.paa",
-            "\Ca\air2\Su25\data\su25_body2_rus_co.paa"
-        };
-		vehicleclass = "TU_VVS_RF";
-		scope = public;
 		displayname = $STR_TU_Su25SM_S24;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenselections[] = 
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\su25_body_camo_co1.paa",
+			"\tu_air\data\su25_body_camo_co2.paa"
+		};
+		scope = public;
 		model = "\frl_su25\FRL_su25";
 		weapons[] = {"GSh302","R60MLauncher","TU_S24Launcher","CMFlareLauncher"};
 		magazines[] = {
@@ -7515,20 +7982,20 @@ class CfgVehicles {
 	};
 	
 	class TU_Su25SM_S24_Kh25: Su39 {
-		hiddenselections[] = 
-        {
-            "camo1",
-            "camo2",
-            "clan_sign"
-        };
-		hiddenSelectionsTextures[]=
-        {
-            "\Ca\air2\Su25\data\su25_body1_rus_co.paa",
-            "\Ca\air2\Su25\data\su25_body2_rus_co.paa"
-        };
-		vehicleclass = "TU_VVS_RF";
-		scope = public;
 		displayname = $STR_TU_Su25SM_S24_Kh25;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenselections[] = 
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\su25_body_camo_co1.paa",
+			"\tu_air\data\su25_body_camo_co2.paa"
+		};
+		scope = public;
 		model = "\frl_su25\FRL_su25";
 		weapons[] = {"GSh302","ACE_Kh25Launcher","R60MLauncher","TU_S24Launcher","CMFlareLauncher"};
 		magazines[] = {
@@ -7657,22 +8124,22 @@ class CfgVehicles {
 	};
 	*/
 	class TU_Su25SM_S13: Su39 {
+		displayname = $STR_TU_Su25SM_S13;
+		vehicleclass="TU_VVS_RF_N";
 		hiddenselections[] = 
-        {
-            "camo1",
-            "camo2",
-            "clan_sign"
-        };
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
 		hiddenSelectionsTextures[]=
-        {
-            "\Ca\air2\Su25\data\su25_body1_rus_co.paa",
-            "\Ca\air2\Su25\data\su25_body2_rus_co.paa"
-        };
-		vehicleclass = "TU_VVS_RF";
+		{
+			"\tu_air\data\su25_body_camo_co1.paa",
+			"\tu_air\data\su25_body_camo_co2.paa"
+		};
 		incommingmissliedetectionsystem = 16;
 		scope = public;
 		optics = 1;
-		displayname = $STR_TU_Su25SM_S13;
 		memorypointdriveroptics = "kulomet";
 		model = "\frl_su25\FRL_su25";
 		driveropticsmodel = "\ca\air\optika_Ka50_gun";
@@ -7740,22 +8207,22 @@ class CfgVehicles {
 	};
 	
 	class TU_Su25SM_S8: Su39 {
+		displayname = $STR_TU_Su25SM_S8;
+		vehicleclass="TU_VVS_RF_N";
 		hiddenselections[] = 
-        {
-            "camo1",
-            "camo2",
-            "clan_sign"
-        };
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
 		hiddenSelectionsTextures[]=
-        {
-            "\Ca\air2\Su25\data\su25_body1_rus_co.paa",
-            "\Ca\air2\Su25\data\su25_body2_rus_co.paa"
-        };
-		vehicleclass = "TU_VVS_RF";
+		{
+			"\tu_air\data\su25_body_camo_co1.paa",
+			"\tu_air\data\su25_body_camo_co2.paa"
+		};
 		incommingmissliedetectionsystem = 16;
 		scope = public;
 		optics = 1;
-		displayname = $STR_TU_Su25SM_S8;
 		memorypointdriveroptics = "kulomet";
 		model = "\frl_su25\FRL_su25";
 		driveropticsmodel = "\ca\air\optika_Ka50_gun";
@@ -7823,22 +8290,22 @@ class CfgVehicles {
 	};
 	
 	class TU_Su25SM_250: Su39 {
+		displayname = $STR_TU_Su25SM_250;
+		vehicleclass="TU_VVS_RF_N";
 		hiddenselections[] = 
-        {
-            "camo1",
-            "camo2",
-            "clan_sign"
-        };
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
 		hiddenSelectionsTextures[]=
-        {
-            "\Ca\air2\Su25\data\su25_body1_rus_co.paa",
-            "\Ca\air2\Su25\data\su25_body2_rus_co.paa"
-        };
-		vehicleclass = "TU_VVS_RF";
+		{
+			"\tu_air\data\su25_body_camo_co1.paa",
+			"\tu_air\data\su25_body_camo_co2.paa"
+		};
 		incommingmissliedetectionsystem = 16;
 		scope = public;
 		optics = 1;
-		displayname = $STR_TU_Su25SM_250;
 		memorypointdriveroptics = "kulomet";
 		model = "\frl_su25\FRL_su25";
 		driveropticsmodel = "\ca\air\optika_Ka50_gun";
@@ -7981,22 +8448,22 @@ class CfgVehicles {
 	};
 	*/
 	class TU_Su25SM_Kh25_S8: Su39 {
+		displayname = $STR_TU_Su25SM_Kh25_S8;
+		vehicleclass="TU_VVS_RF_N";
 		hiddenselections[] = 
-        {
-            "camo1",
-            "camo2",
-            "clan_sign"
-        };
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
 		hiddenSelectionsTextures[]=
-        {
-            "\Ca\air2\Su25\data\su25_body1_rus_co.paa",
-            "\Ca\air2\Su25\data\su25_body2_rus_co.paa"
-        };
-		vehicleclass = "TU_VVS_RF";
+		{
+			"\tu_air\data\su25_body_camo_co1.paa",
+			"\tu_air\data\su25_body_camo_co2.paa"
+		};
 		incommingmissliedetectionsystem = 16;
 		scope = public;
 		optics = 1;
-		displayname = $STR_TU_Su25SM_Kh25_S8;
 		memorypointdriveroptics = "kulomet";
 		model = "\frl_su25\FRL_su25";
 		driveropticsmodel = "\ca\air\optika_Ka50_gun";
@@ -8063,21 +8530,21 @@ class CfgVehicles {
 	};
 	
 	class TU_Su25SM_Kh29L_Kh25_S8: Su39 {
+		displayname = $STR_TU_Su25SM_Kh29L_Kh25_S8;
+		vehicleclass="TU_VVS_RF_N";
 		hiddenselections[] = 
-        {
-            "camo1",
-            "camo2",
-            "clan_sign"
-        };
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
 		hiddenSelectionsTextures[]=
-        {
-            "\Ca\air2\Su25\data\su25_body1_rus_co.paa",
-            "\Ca\air2\Su25\data\su25_body2_rus_co.paa"
-        };
-		vehicleclass = "TU_VVS_RF";
+		{
+			"\tu_air\data\su25_body_camo_co1.paa",
+			"\tu_air\data\su25_body_camo_co2.paa"
+		};
 		incommingmissliedetectionsystem = 16;
 		scope = public;
-		displayname = $STR_TU_Su25SM_Kh29L_Kh25_S8;
 		optics = 1;
 		memorypointdriveroptics = "kulomet";
 		model = "\frl_su25\FRL_su25";
@@ -8227,21 +8694,21 @@ class CfgVehicles {
 	};
 	*/
 	class TU_Su25SM_Kh29L_FAB250_S8: Su39 {
+		displayname = $STR_TU_Su25SM_Kh29L_FAB250_S8;
+		vehicleclass="TU_VVS_RF_N";
 		hiddenselections[] = 
-        {
-            "camo1",
-            "camo2",
-            "clan_sign"
-        };
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
 		hiddenSelectionsTextures[]=
-        {
-            "\Ca\air2\Su25\data\su25_body1_rus_co.paa",
-            "\Ca\air2\Su25\data\su25_body2_rus_co.paa"
-        };
-		vehicleclass = "TU_VVS_RF";
+		{
+			"\tu_air\data\su25_body_camo_co1.paa",
+			"\tu_air\data\su25_body_camo_co2.paa"
+		};
 		incommingmissliedetectionsystem = 16;
 		scope = public;
-		displayname = $STR_TU_Su25SM_Kh29L_FAB250_S8;
 		optics = 1;
 		memorypointdriveroptics = "kulomet";
 		model = "\frl_su25\FRL_su25";
@@ -8310,21 +8777,21 @@ class CfgVehicles {
 	};
 	
 	class TU_Su25SM_Kh29L_S8: Su39 {
+		displayname = $STR_TU_Su25SM_Kh29L_S8;
+		vehicleclass="TU_VVS_RF_N";
 		hiddenselections[] = 
-        {
-            "camo1",
-            "camo2",
-            "clan_sign"
-        };
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
 		hiddenSelectionsTextures[]=
-        {
-            "\Ca\air2\Su25\data\su25_body1_rus_co.paa",
-            "\Ca\air2\Su25\data\su25_body2_rus_co.paa"
-        };
-		vehicleclass = "TU_VVS_RF";
+		{
+			"\tu_air\data\su25_body_camo_co1.paa",
+			"\tu_air\data\su25_body_camo_co2.paa"
+		};
 		incommingmissliedetectionsystem = 16;
 		scope = public;
-		displayname = $STR_TU_Su25SM_Kh29L_S8;
 		memorypointdriveroptics = "kulomet";
 		optics = 1;
 		model = "\frl_su25\FRL_su25";
@@ -8364,7 +8831,328 @@ class CfgVehicles {
 //INVISIBLE		
 		};
 	};
-		
+	class TU_Su25SM_250_S8_B: TU_Su25SM_250_S8
+	{
+		displayname = $STR_TU_SU25SM_250_S8_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenselections[] = 
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\su25_body_gray_co1.paa",
+			"\tu_air\data\su25_body_gray_co2.paa"
+		};
+	};
+	class TU_Su25SM_500_S8_B: TU_Su25SM_500_S8
+	{
+		displayname = $STR_TU_SU25SM_500_S8_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenselections[] = 
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\su25_body_gray_co1.paa",
+			"\tu_air\data\su25_body_gray_co2.paa"
+		};
+	};
+	class TU_Su25SM_250_S13_B: TU_Su25SM_250_S13
+	{
+		displayname = $STR_TU_SU25SM_250_S13_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenselections[] = 
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\su25_body_gray_co1.paa",
+			"\tu_air\data\su25_body_gray_co2.paa"
+		};
+	};
+	class TU_Su25SM_S13_B: TU_Su25SM_S13
+	{
+		displayname = $STR_TU_Su25SM_S13_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenselections[] = 
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\su25_body_gray_co1.paa",
+			"\tu_air\data\su25_body_gray_co2.paa"
+		};
+	};
+	class TU_Su25SM_S8_B: TU_Su25SM_S8
+	{
+		displayname = $STR_TU_Su25SM_S8_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenselections[] = 
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\su25_body_gray_co1.paa",
+			"\tu_air\data\su25_body_gray_co2.paa"
+		};
+	};
+	class TU_Su25SM_250_B: TU_Su25SM_250
+	{
+		displayname = $STR_TU_Su25SM_250_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenselections[] = 
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\su25_body_gray_co1.paa",
+			"\tu_air\data\su25_body_gray_co2.paa"
+		};
+	};
+	class TU_Su25SM_Kh25_S8_B: TU_Su25SM_Kh25_S8
+	{
+		displayname = $STR_TU_Su25SM_Kh25_S8_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenselections[] = 
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\su25_body_gray_co1.paa",
+			"\tu_air\data\su25_body_gray_co2.paa"
+		};
+	};
+	class TU_Su25SM_Kh29L_Kh25_S8_B: TU_Su25SM_Kh29L_Kh25_S8
+	{
+		displayname = $STR_TU_Su25SM_Kh29L_Kh25_S8_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenselections[] = 
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\su25_body_gray_co1.paa",
+			"\tu_air\data\su25_body_gray_co2.paa"
+		};
+	};
+	class TU_Su25SM_Kh29L_FAB250_S8_B: TU_Su25SM_Kh29L_FAB250_S8
+	{
+		displayname = $STR_TU_Su25SM_Kh29L_FAB250_S8_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenselections[] = 
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\su25_body_gray_co1.paa",
+			"\tu_air\data\su25_body_gray_co2.paa"
+		};
+	};
+	class TU_Su25SM_Kh29L_S8_B: TU_Su25SM_Kh29L_S8
+	{
+		displayname = $STR_TU_Su25SM_Kh29L_S8_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenselections[] = 
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\su25_body_gray_co1.paa",
+			"\tu_air\data\su25_body_gray_co2.paa"
+		};
+	};
+	class TU_Su25SM_S24_B: TU_Su25SM_S24
+	{
+		displayname = $STR_TU_Su25SM_S24_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenselections[] = 
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\su25_body_gray_co1.paa",
+			"\tu_air\data\su25_body_gray_co2.paa"
+		};
+	};
+	class TU_Su25SM_S24_Kh25_B: TU_Su25SM_S24_Kh25
+	{
+		displayname = $STR_TU_Su25SM_S24_Kh25_B;
+		vehicleclass="TU_VVS_RF_N";
+		hiddenselections[] = 
+		{
+			"camo1",
+			"camo2",
+			"clan_sign"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\su25_body_gray_co1.paa",
+			"\tu_air\data\su25_body_gray_co2.paa"
+		};
+	};
+	class TU_Mi24_V_ND: Mi24_V
+	{
+		displayname = $STR_Mi24_V_D;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi24_body_des_co1.paa",
+			"\tu_air\data\mi24_body_des_co2.paa"
+		};
+	};
+	class TU_Mi24_V_FAB250_ND: ACE_Mi24_V_FAB250_RU
+	{
+		displayname = $STR_Mi24_V_FAB250_D;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi24_body_des_co1.paa",
+			"\tu_air\data\mi24_body_des_co2.paa"
+		};
+	};
+	class TU_Mi24_V_UPK23_ND: ACE_Mi24_V_UPK23_RU
+	{
+		displayname = $STR_Mi24_V_UPK23_D;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi24_body_des_co1.paa",
+			"\tu_air\data\mi24_body_des_co2.paa"
+		};
+	};
+	class TU_Mi24_V_8AT_ND: TU_Mi24_V_8AT
+	{
+		displayname = $STR_Mi24_V_8AT_D;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi24_body_des_co1.paa",
+			"\tu_air\data\mi24_body_des_co2.paa"
+		};
+	};
+	class TU_Mi24_V_4AT_4AA_ND: TU_Mi24_V_4AT_4AA
+	{
+		displayname = $STR_Mi24_V_4AT_4AA_D;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi24_body_des_co1.paa",
+			"\tu_air\data\mi24_body_des_co2.paa"
+		};
+	};
+	class TU_Mi24_V_4AA_ND: TU_Mi24_V_4AA
+	{
+		displayname = $STR_Mi24_V_4AA_D;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi24_body_des_co1.paa",
+			"\tu_air\data\mi24_body_des_co2.paa"
+		};
+	};
+	class TU_Mi24_P_D: Mi24_P
+	{
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi24_body_des_co1.paa",
+			"\tu_air\data\mi24_body_des_co2.paa"
+		};
+	};
+	class TU_Mi24_VP_D: TU_Mi24_VP
+	{
+		displayname = $STR_Mi24_VP_G;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi24_body_des_co1.paa",
+			"\tu_air\data\mi24_body_des_co2.paa"
+		};
+	};
+	class TU_Mi24_VP2_D: TU_Mi24_VP2
+	{
+		displayname = $STR_Mi24_VP2_G;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi24_body_des_co1.paa",
+			"\tu_air\data\mi24_body_des_co2.paa"
+		};
+	};
+	class TU_Mi24_VP_8AT_D: TU_Mi24_VP_8AT
+	{
+		displayname = $STR_Mi24_VP_8AT_G;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi24_body_des_co1.paa",
+			"\tu_air\data\mi24_body_des_co2.paa"
+		};
+	};
+	class TU_Mi24_VP_4AT_4AA_D: TU_Mi24_VP_4AT_4AA
+	{
+		displayname = $STR_Mi24_VP_4AT_4AA_G;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi24_body_des_co1.paa",
+			"\tu_air\data\mi24_body_des_co2.paa"
+		};
+	};
+	class TU_Mi24_VP_4AT_2AA_D: TU_Mi24_VP_4AT_2AA
+	{
+		displayname = $STR_Mi24_VP_4AT_2AA_G;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi24_body_des_co1.paa",
+			"\tu_air\data\mi24_body_des_co2.paa"
+		};
+	};
+	class TU_Mi24_VP_4AA_D: TU_Mi24_VP_4AA
+	{
+		displayname = $STR_Mi24_VP_4AA_G;
+		vehicleclass="TU_VVS_RF_ND";
+		hiddenSelectionsTextures[]=
+		{
+			"\tu_air\data\mi24_body_des_co1.paa",
+			"\tu_air\data\mi24_body_des_co2.paa"
+		};
+	};
+	
 	class TU_Su25SM_Kh29L_S8_CDF: TU_Su25SM_Kh29L_S8 {
 		vehicleclass = "TU_VVS_CDF";
 		incommingmissliedetectionsystem = 16;

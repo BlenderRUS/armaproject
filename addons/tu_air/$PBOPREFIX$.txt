@@ -1,0 +1,5 @@
+///'tu_air.pbo' from Mikero's dos tools, dll version 6.24///
+prefix=tu_air
+Pbo Type is: Arma Addon
+Sha: '1B1469A482876A367386CA6A9A6E2F227D4BF3D0'
+//////</HEADER>//////

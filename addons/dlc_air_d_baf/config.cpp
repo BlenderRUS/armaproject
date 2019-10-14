@@ -336,80 +336,10 @@ class CfgVehicles
 		transportMaxMagazines="90*2";
 		class TransportMagazines
 		{
-			class _xx_30Rnd_556x45_Stanag
-			{
-				magazine="30Rnd_556x45_Stanag";
-				count="10*2";
-			};
-			class _xx_5Rnd_127x99_AS50
-			{
-				magazine="5Rnd_127x99_AS50";
-				count="5*2";
-			};
-			class _xx_5Rnd_86x70_L115A1
-			{
-				magazine="5Rnd_86x70_L115A1";
-				count="5*2";
-			};
-			class _xx_200Rnd_556x45_L110A1
-			{
-				magazine="200Rnd_556x45_L110A1";
-				count="2*2";
-			};
-			class _xx_1Rnd_HE_M203
-			{
-				magazine="1Rnd_HE_M203";
-				count="3*2";
-			};
-			class _xx_BAF_L109A1_HE
-			{
-				magazine="BAF_L109A1_HE";
-				count="5*2";
-			};
-			class _xx_SmokeShellRed
-			{
-				magazine="SmokeShellRed";
-				count=2;
-			};
-			class _xx_SmokeShellGreen
-			{
-				magazine="SmokeShellGreen";
-				count=2;
-			};
-			class _xx_SmokeShellYellow
-			{
-				magazine="SmokeShellYellow";
-				count=2;
-			};
-			class _xx_SmokeShellPurple
-			{
-				magazine="SmokeShellPurple";
-				count=2;
-			};
-			class _xx_SmokeShell
-			{
-				magazine="SmokeShell";
-				count="2*2";
-			};
-			class _xx_IR_Strobe_Marker
-			{
-				magazine="IR_Strobe_Marker";
-				count="2*2";
-			};
 		};
 		transportMaxWeapons="18*1";
 		class TransportWeapons
 		{
-			class _xx_BAF_L85A2_RIS_SUSAT
-			{
-				weapon="BAF_L85A2_RIS_SUSAT";
-				count=1;
-			};
-			class _xx_BAF_L85A2_UGL_ACOG
-			{
-				weapon="BAF_L85A2_UGL_ACOG";
-				count=1;
-			};
 		};
 		maxMainRotorDive=1;
 		minMainRotorDive=1;
@@ -2228,12 +2158,20 @@ class CfgVehicles
 			{
 				armor=0.5;
 			};
+			class HitHull
+			{
+				armor = 1;
+				material = 51;
+				name = "NETtrup";
+				passThrough = 1;
+				visual = "trup";
+			};
 			class HitEngine
 			{
 				armor = 0.5;
 				material = 2;
 				name = "motor";
-				visual = "motor";
+				visual = "trup";
 				passThrough = 0.5;
 			};
 			class HitAvionics
@@ -2460,80 +2398,10 @@ class CfgVehicles
 		transportMaxMagazines="90*2";
 		class TransportMagazines
 		{
-			class _xx_30Rnd_556x45_Stanag
-			{
-				magazine="30Rnd_556x45_Stanag";
-				count="10*2";
-			};
-			class _xx_5Rnd_127x99_AS50
-			{
-				magazine="5Rnd_127x99_AS50";
-				count="5*2";
-			};
-			class _xx_5Rnd_86x70_L115A1
-			{
-				magazine="5Rnd_86x70_L115A1";
-				count="5*2";
-			};
-			class _xx_200Rnd_556x45_L110A1
-			{
-				magazine="200Rnd_556x45_L110A1";
-				count="2*2";
-			};
-			class _xx_1Rnd_HE_M203
-			{
-				magazine="1Rnd_HE_M203";
-				count="3*2";
-			};
-			class _xx_BAF_L109A1_HE
-			{
-				magazine="BAF_L109A1_HE";
-				count="5*2";
-			};
-			class _xx_SmokeShellRed
-			{
-				magazine="SmokeShellRed";
-				count=2;
-			};
-			class _xx_SmokeShellGreen
-			{
-				magazine="SmokeShellGreen";
-				count=2;
-			};
-			class _xx_SmokeShellYellow
-			{
-				magazine="SmokeShellYellow";
-				count=2;
-			};
-			class _xx_SmokeShellPurple
-			{
-				magazine="SmokeShellPurple";
-				count=2;
-			};
-			class _xx_SmokeShell
-			{
-				magazine="SmokeShell";
-				count="2*2";
-			};
-			class _xx_IR_Strobe_Marker
-			{
-				magazine="IR_Strobe_Marker";
-				count="2*2";
-			};
 		};
 		transportMaxWeapons="18*1";
 		class TransportWeapons
 		{
-			class _xx_BAF_L85A2_RIS_SUSAT
-			{
-				weapon="BAF_L85A2_RIS_SUSAT";
-				count=1;
-			};
-			class _xx_BAF_L85A2_UGL_ACOG
-			{
-				weapon="BAF_L85A2_UGL_ACOG";
-				count=1;
-			};
 		};
 	};
 	class BAF_Merlin_HC3_D: Helicopter
@@ -2725,8 +2593,16 @@ class CfgVehicles
 				armor = 0.5;
 				material = 2;
 				name = "motor";
-				visual = "motor";
+				visual = "trup";
 				passThrough = 0.5;
+			};
+			class HitHull
+			{
+				armor = 1;
+				material = 51;
+				name = "NETtrup";
+				passThrough = 1;
+				visual = "trup";
 			};
 			class HitAvionics
 			{
@@ -3050,80 +2926,10 @@ class CfgVehicles
 		transportMaxMagazines="90*2";
 		class TransportMagazines
 		{
-			class _xx_30Rnd_556x45_Stanag
-			{
-				magazine="30Rnd_556x45_Stanag";
-				count="10*2";
-			};
-			class _xx_5Rnd_127x99_AS50
-			{
-				magazine="5Rnd_127x99_AS50";
-				count="5*2";
-			};
-			class _xx_5Rnd_86x70_L115A1
-			{
-				magazine="5Rnd_86x70_L115A1";
-				count="5*2";
-			};
-			class _xx_200Rnd_556x45_L110A1
-			{
-				magazine="200Rnd_556x45_L110A1";
-				count="2*2";
-			};
-			class _xx_1Rnd_HE_M203
-			{
-				magazine="1Rnd_HE_M203";
-				count="3*2";
-			};
-			class _xx_BAF_L109A1_HE
-			{
-				magazine="BAF_L109A1_HE";
-				count="5*2";
-			};
-			class _xx_SmokeShellRed
-			{
-				magazine="SmokeShellRed";
-				count=2;
-			};
-			class _xx_SmokeShellGreen
-			{
-				magazine="SmokeShellGreen";
-				count=2;
-			};
-			class _xx_SmokeShellYellow
-			{
-				magazine="SmokeShellYellow";
-				count=2;
-			};
-			class _xx_SmokeShellPurple
-			{
-				magazine="SmokeShellPurple";
-				count=2;
-			};
-			class _xx_SmokeShell
-			{
-				magazine="SmokeShell";
-				count="2*2";
-			};
-			class _xx_IR_Strobe_Marker
-			{
-				magazine="IR_Strobe_Marker";
-				count="2*2";
-			};
 		};
 		transportMaxWeapons="18*1";
 		class TransportWeapons
 		{
-			class _xx_BAF_L85A2_RIS_SUSAT
-			{
-				weapon="BAF_L85A2_RIS_SUSAT";
-				count=1;
-			};
-			class _xx_BAF_L85A2_UGL_ACOG
-			{
-				weapon="BAF_L85A2_UGL_ACOG";
-				count=1;
-			};
 		};
 	};
 };
