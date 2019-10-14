@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project name="SPArty_fix">
+	<Package name="SPA">
+
+			<Key ID="STR_SNAME_M270_D">
+				<Original>M270 MLRS (Desert)</Original>
+				<English>M270 MLRS (Desert)</English>
+				<Russian>М270 РСЗО (Пустыня)</Russian>
+			</Key>
+			<Key ID="STR_SNAME_M270_G">
+				<Original>M270 MLRS</Original>
+				<English>M270 MLRS</English>
+				<Russian>М270 РСЗО</Russian>
+			</Key>
+	</Package>
+</Project>

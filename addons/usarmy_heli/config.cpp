@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////
 //DeRap: usarmy_heli\config.bin
 //Produced from mikero's Dos Tools Dll version 6.24
-//'now' is Mon Sep 16 02:08:47 2019 : 'file' last modified on Mon Sep 16 02:02:32 2019
+//'now' is Mon Oct 14 21:55:56 2019 : 'file' last modified on Fri Oct 11 19:46:04 2019
 //http://dev-heaven.net/projects/list_files/mikero-pbodll
 ////////////////////////////////////////////////////////////////////
 
@@ -84,8 +84,9 @@ class CfgVehicles
 		ace_cargo_exposed = 0;
 		ace_ejection_seat = "ParachuteC";
 		ace_exposed = 0;
-		ACE_GeoLifterAttachment[] = {{0, 0, -5.6}};
-		ACE_RopeAttachment[] = {{0, 0.14, -3}, {0, -7.5, -1.1}};
+		ace_lademeister = 1;
+		ace_geolifterattachment[] = {{0,3,-3.5}};
+		ace_ropeattachment[] = {{1.5,6,0.5},{-1,-5,0}};
 		ace_sys_air_rwr_type = "ACE_Default";
 		ace_sys_autorotation_horizontal_gain = "0.75/75";
 		ace_sys_autorotation_vertical_gain = "0.5/1.5";
@@ -222,6 +223,8 @@ class CfgVehicles
 		mapSize = 24;
 		ace_maxload = 4500;
 		ace_weight = 7000;
+		ace_geolifterattachment[] = {{0,0,-4.4}};
+		ace_ropeattachment[] = {{-1,-4,-4.4},{1,-4,-4.4}};
 		model = "\USArmy_Heli\CH46";
 		picture = "\USArmy_Heli\ico\CH46pic.paa";
 		Icon = "\USArmy_Heli\ico\CH46icon.paa";
@@ -581,6 +584,8 @@ class CfgVehicles
 		mapSize = 24;
 		ace_maxload = 7000;
 		ace_weight = 10000;
+		ace_geolifterattachment[] = {{0,7,-2.28}};
+		ace_ropeattachment[] = {{-1.1,0,-2.28},{1.1,0,-2.28}};
 		model = "\USArmy_Heli\CH53";
 		picture = "\USArmy_Heli\ico\CH53pic.paa";
 		Icon = "\USArmy_Heli\ico\CH53icon.paa";
@@ -921,6 +926,8 @@ class CfgVehicles
 	{
 		ace_maxload = 3500;
 		ace_weight = 6000;
+		ace_canlift = 0;
+		ace_canfastrope = 0;
 		scope = 2;
 		side = 1;
 		armor = 30;

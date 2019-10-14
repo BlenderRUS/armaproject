@@ -1,5 +1,5 @@
 ///'ap_mi6.pbo' from Mikero's dos tools, dll version 6.24///
 prefix=ap_mi6
 Pbo Type is: Arma Addon
-Sha: 'CA034298C6430B0B8ABE21F5E10450CE74F71429'
+Sha: '6576D7C81DF6BAA041D550B6BC196FE21EAE00C4'
 //////</HEADER>//////

@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////
 //DeRap: ap_mi6\config.bin
 //Produced from mikero's Dos Tools Dll version 6.24
-//'now' is Mon Sep 16 02:03:42 2019 : 'file' last modified on Mon Sep 16 02:03:20 2019
+//'now' is Mon Oct 14 21:54:45 2019 : 'file' last modified on Thu Oct 10 17:34:15 2019
 //http://dev-heaven.net/projects/list_files/mikero-pbodll
 ////////////////////////////////////////////////////////////////////
 
@@ -35,17 +35,15 @@ class CfgVehicles
 	class ap_mi6a: Helicopter
 	{
 		model = "\ap_mi6\mi6a.p3d";
-		displayName = "Mi-6A Hoop Cargo (CCCP AF)";
 		Icon = "\ap_mi6\icons\mi6icon_ca.paa";
 		Picture = "\ap_mi6\icons\mi6pic_ca.paa";
 		simulation = "helicopter";
 		type = "VAir";
 		driverIsCommander = 1;
-		mapSize = 40;
+		mapSize = 20;
 		scope = 2;
 		nameSound = "chopper";
 		side = 0;
-		faction = "RU";
 		extCameraPosition[] = {0,2.5,-25};
 		armor = 20;
 		cost = 10000000;
@@ -65,16 +63,23 @@ class CfgVehicles
 		driverInAction = "Mi17_Pilot";
 		memoryPointsGetInCargo = "pos cargo";
 		memoryPointsGetInCargoDir = "pos cargo dir";
-		cargoAction[] = {"M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1"};
-		typicalCargo[] = {"RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot"};
-		transportSoldier = 27;
+		displayName = "$STR_Mi6_G";
+		vehicleClass = "Air";
+		faction = "RU";
+		hiddenSelections[] = {"fus1","fus2","fus3","wings"};
+		hiddenSelectionsTextures[] = {"ap_mi6\data\mi6fus1_co.paa","ap_mi6\data\mi6fus2_co.paa","ap_mi6\data\mi6fus3_co.paa","ap_mi6\data\mi6wings_co.paa"};
+		cargoAction[] = {"M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1","M113_Cargo02_EP1","M113_Cargo01_EP1"};
+		typicalCargo[] = {"RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot","RU_Soldier_Pilot"};
+		transportSoldier = 43;
 		gearRetracting = 0;
 		crewVulnerable = 1;
 		damageResistance = 0.00242;
-		weapons[] = {};
-		magazines[] = {};
-		memoryPointCM[] = {};
-		memoryPointCMDir[] = {};
+		weapons[] = {"CMFlareLauncher"};
+		magazines[] = {"120Rnd_CMFlareMagazine"};
+		memoryPointLMissile = "L strela";
+		memoryPointRMissile = "P strela";
+		memoryPointCM[] = {"flare_launcher1","flare_launcher2"};
+		memoryPointCMDir[] = {"flare_launcher1_dir","flare_launcher2_dir"};
 		memoryPointsGetInDriver = "pos driver";
 		memoryPointsGetInDriverDir = "pos driver dir";
 		occludeSoundsWhenIn = 0.6;
@@ -176,24 +181,20 @@ class CfgVehicles
 		ACE_SYS_EJECT_JUMP = 1;
 		ACE_canlift = 1;
 		ACE_canFastrope = 0;
-		ace_geolifterattachment[] = {{0,-1,-2.8}};
-		ace_ropeattachment[] = {};
+		ACE_GeoLifterAttachment[] = {{0,5.4,-5}};
+		ACE_RopeAttachment[] = {{0,0.14,-3},{0,-7.5,-1.1}};
 		ace_lademeister = 1;
 		ace_sys_autorotation_horizontal_gain = "0.75/50";
 		ace_sys_autorotation_vertical_gain = 0.5;
 		ace_sys_rotoreffects_disable_manshred = 0;
 		ace_maxload = 12570;
 		ace_weight = 23500;
-		class EventHandlers
-		{
-			init = "_b2a = _this execvm ""\ap_mi6\mi6_init.sqf""; _bc2a = _this execvm ""\ap_mi6\scripts\mi6rain.sqf""; _dc2a = _this execvm ""\ap_mi6\scripts\mi6rainsound.sqf""";
-			engine = "_b4a = _this execvm ""\ap_mi6\scripts\mi6maxengine.sqf""";
-		};
+		class EventHandlers{};
 		class Reflectors
 		{
 			class Right
 			{
-				color[] = {0.5,0.8,1,1};
+				color[] = {0.8,0.8,1,1};
 				ambient[] = {0.07,0.07,0.07,1};
 				position = "P svetlo";
 				direction = "konec P svetla";
@@ -204,7 +205,7 @@ class CfgVehicles
 			};
 			class Left
 			{
-				color[] = {0.5,0.8,1,1};
+				color[] = {0.8,0.8,1,1};
 				ambient[] = {0.07,0.07,0.07,1};
 				position = "L svetlo";
 				direction = "konec L svetla";
@@ -286,20 +287,20 @@ class CfgVehicles
 				memoryPointsGetInGunner = "pos gunner";
 				memoryPointsGetInGunnerDir = "pos gunner dir";
 				gunnerUsesPilotView = "true";
-				minElev = -80;
+				minElev = -45;
 				maxElev = 15;
 				initElev = 0;
-				minTurn = -150;
-				maxTurn = 150;
-				initTurn = 0;
+				minTurn = 10;
+				maxTurn = 170;
+				initTurn = 90;
 				proxyIndex = 2;
 				soundServo[] = {"",0.01,1};
 				gunBeg = "light";
 				gunEnd = "lightEnd";
 				animationSourceBody = "mainGun";
 				animationSourceGun = "mainTurret";
-				weapons[] = {"int73_fakeweap"};
-				magazines[] = {"int73_fakeweap"};
+				weapons[] = {};
+				magazines[] = {};
 				gunnerName = "$STR_CoPilotObs";
 				gunnerOpticsModel = "";
 				gunnerOpticsEffect[] = {"TankCommanderOptics1"};
@@ -322,18 +323,6 @@ class CfgVehicles
 				gunnerForceOptics = 0;
 				lockWhenDriverOut = 0;
 				gunnerCompartments = "Compartment1";
-				class ViewOptics
-				{
-					initAngleX = -20;
-					minAngleX = -80;
-					maxAngleX = 20;
-					initAngleY = 0;
-					minAngleY = -160;
-					maxAngleY = 160;
-					initFov = 0.5;
-					minFov = 0.25;
-					maxFov = 1.1;
-				};
 			};
 			class CREWCHIEF: co_pilot
 			{
@@ -356,17 +345,9 @@ class CfgVehicles
 			{
 				armor = 1;
 				material = 51;
-				name = "trup";
-				visual = "trup";
+				name = "NEtrup";
 				passThrough = 1;
-			};
-			class HitFuel
-			{
-				armor = 0.8;
-				material = 51;
-				name = "palivo";
-				visual = "palivo";
-				passThrough = 0.2;
+				visual = "trup";
 			};
 			class HitEngine
 			{
@@ -374,7 +355,7 @@ class CfgVehicles
 				material = 51;
 				name = "motor";
 				visual = "motor";
-				passThrough = 0.2;
+				passThrough = 1;
 			};
 			class HitAvionics
 			{
@@ -382,22 +363,22 @@ class CfgVehicles
 				material = 51;
 				name = "elektronika";
 				visual = "elektronika";
-				passThrough = 0.2;
+				passThrough = 1;
 			};
 			class HitVRotor
 			{
-				armor = 0.2;
+				armor = 0.3;
 				material = 51;
 				name = "mala vrtule";
-				visual = "mala vrtule";
-				passThrough = 0.1;
+				visual = "mala vrtule staticka";
+				passThrough = 0.3;
 			};
 			class HitHRotor
 			{
 				armor = 0.2;
 				material = 51;
 				name = "velka vrtule";
-				visual = "velka vrtule";
+				visual = "velka vrtule staticka";
 				passThrough = 0.1;
 			};
 			class HitGlass1
@@ -761,8 +742,103 @@ class CfgVehicles
 				animPeriod = 6;
 				initPhase = 0;
 			};
+			class seatslf
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class seatslc
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class seatsla
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class seatsrf
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class seatsrc
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class seatsra
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
 		};
-		class UserActions{};
+		class UserActions
+		{
+			class landing_lights
+			{
+				displayName = "landing lights ready";
+				position = "switch";
+				onlyforplayer = 0;
+				radius = 14;
+				condition = "(player == (driver this)) && this animationPhase ""landing_lights"" < 0.01";
+				statement = "this animate[""landing_lights"",1];";
+				priority = -1;
+				showWindow = 0;
+				shortcut = "";
+			};
+			class landing_lights_hide
+			{
+				displayName = "landing lights hide";
+				position = "switch";
+				onlyforplayer = 0;
+				radius = 14;
+				condition = "(player == (driver this)) && this animationPhase ""landing_lights"" > 0.9";
+				statement = "this animate[""landing_lights"",0];";
+				priority = -1;
+				showWindow = 0;
+				shortcut = "";
+			};
+		};
+	};
+	class ap_mi6a_civ: ap_mi6a
+	{
+		displayName = "$STR_Mi6_civ";
+		hiddenSelectionsTextures[] = {"ap_mi6\data\skin\AERO\mi6fus1_co.paa","ap_mi6\data\skin\AERO\mi6fus2_co.paa","ap_mi6\data\skin\AERO\mi6fus3_co.paa","ap_mi6\data\skin\AERO\mi6wings_co.paa"};
+	};
+	class ap_mi6a_ru: ap_mi6a
+	{
+		displayName = "$STR_Mi6";
+		vehicleclass = "TU_VVS_RF";
+		faction = "RU";
+		hiddenSelectionsTextures[] = {"ap_mi6\data\skin\RUS\mi6fus1_co.paa","ap_mi6\data\skin\RUS\mi6fus2_co.paa","ap_mi6\data\skin\RUS\mi6fus3_co.paa","ap_mi6\data\skin\RUS\mi6wings_co.paa"};
+	};
+	class ap_mi6a_sov: ap_mi6a
+	{
+		displayName = "$STR_Mi6_sov";
+		vehicleClass = "P85_SA_air";
+		faction = "P85_SOV_Army_TuSG";
+		hiddenSelectionsTextures[] = {"ap_mi6\data\skin\SSSR\mi6fus1_co.paa","ap_mi6\data\skin\SSSR\mi6fus2_co.paa","ap_mi6\data\skin\SSSR\mi6fus3_co.paa","ap_mi6\data\skin\SSSR\mi6wings_co.paa"};
+	};
+	class ap_mi6a_INS: ap_mi6a
+	{
+		displayName = "$STR_Mi6";
+		vehicleClass = "Air";
+		faction = "INS";
+		hiddenSelectionsTextures[] = {"ap_mi6\data\skin\CHDKZ\mi6fus1_co.paa","ap_mi6\data\skin\CHDKZ\mi6fus2_co.paa","ap_mi6\data\skin\CHDKZ\mi6fus3_co.paa","ap_mi6\data\skin\CHDKZ\mi6wings_co.paa"};
+	};
+	class ap_mi6a_TK: ap_mi6a
+	{
+		displayName = "$STR_Mi6";
+		vehicleclass = "TU_VVS_TK";
+		faction = "BIS_TK";
+		hiddenSelectionsTextures[] = {"ap_mi6\data\skin\TAK\mi6fus1_co.paa","ap_mi6\data\skin\TAK\mi6fus2_co.paa","ap_mi6\data\skin\TAK\mi6fus3_co.paa","ap_mi6\data\skin\TAK\mi6wings_co.paa"};
 	};
 };
 class CfgSounds

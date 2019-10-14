@@ -9,5 +9,21 @@
 				<Original>Radio operator</Original>
 				<Russian>Радист</Russian>
 			</Key>
+			<Key ID="STR_Mi6_G">
+				<Original>MI-6A Green</Original>
+				<Russian>Ми-6А Green</Russian>
+			</Key>
+			<Key ID="STR_Mi6">
+				<Original>MI-6A</Original>
+				<Russian>Ми-6А</Russian>
+			</Key>
+			<Key ID="STR_Mi6_sov">
+				<Original>MI-6A SSSR</Original>
+				<Russian>Ми-6А СССР</Russian>
+			</Key>
+			<Key ID="STR_Mi6_civ">
+				<Original>MI-6A Aeroflot</Original>
+				<Russian>Ми-6А Аэрофлот</Russian>
+			</Key>
 	</Package>
 </Project>
