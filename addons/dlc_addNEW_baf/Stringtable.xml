@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project name="dlc_addtracked_d_baf">
+	<Package name="Armored">
+			<Key ID="STR_ArmoredBAFM">
+				<English>Armored Great Britain</English>
+				<German>Armored Great Britain</German>
+				<Italian>Armored Great Britain</Italian>
+				<Spanish>Armored Great Britain</Spanish>
+				<Czech>Armored Great Britain</Czech>
+				<Russian>Бронетехника Великобритании</Russian>
+				<Polish>Armored Great Britain</Polish>
+				<Hungarian>Armored Great Britain</Hungarian>
+				<French>Armored Great Britain</French>
+			</Key>
+			<Key ID="STR_BAF_FV510_W">
+				<Original>FV510 'Warrior' (wood)</Original>
+				<English>FV510 'Warrior' (wood)</English>
+				<Russian>FV510 'Warrior' (лес)</Russian>
+			</Key>
+			<Key ID="STR_BAF_FV510_D">
+				<Original>FV510 'Warrior' (desert)</Original>
+				<English>FV510 'Warrior' (desert)</English>
+				<Russian>FV510 'Warrior' (пустыня)</Russian>
+			</Key>
+			<Key ID="STR_BAF_FV101_W">
+				<Original>FV101 'Scorpion' (wood)</Original>
+				<English>FV101 'Scorpion' (wood)</English>
+				<Russian>FV101 'Scorpion' (лес)</Russian>
+			</Key>
+			<Key ID="STR_BAF_FV101_D">
+				<Original>FV101 'Scorpion' (desert)</Original>
+				<English>FV101 'Scorpion' (desert)</English>
+				<Russian>FV101 'Scorpion' (пустыня)</Russian>
+			</Key>
+			<Key ID="STR_BAF_FV107_W">
+				<Original>FV107 'Scimitar' (wood)</Original>
+				<English>FV107 'Scimitar' (wood)</English>
+				<Russian>FV107 'Scimitar' (лес)</Russian>
+			</Key>
+			<Key ID="STR_BAF_FV107_D">
+				<Original>FV107 'Scimitar' (desert)</Original>
+				<English>FV107 'Scimitar' (desert)</English>
+				<Russian>FV107 'Scimitar' (пустыня)</Russian>
+			</Key>
+	</Package>
+</Project>
