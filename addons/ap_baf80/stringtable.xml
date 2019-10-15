@@ -154,12 +154,20 @@
 			<Russian>Снайперская винтовка британской армии под патрон 7,62-мм НАТО</Russian>
 		</Key>		
 		<Key ID="STR_L42_MAG_NAME">
-			<Original>L42A1 Magazine</Original>
-			<Russian>Магазин L42A1</Russian>
+			<Original>L42A1 Magazine (10 Bullet)</Original>
+			<Russian>Магазин L42A1 (10 патр.)</Russian>
 		</Key>		
 		<Key ID="STR_L42_MAG_DESCRIPTION">
 			<Original>Box magazine for 10 rounds 7,62×51mm</Original>
 			<Russian>Коробчатый магазин на 10 патронов 7,62×51мм</Russian>
+		</Key>
+		<Key ID="STR_L42_T_MAG_NAME">
+			<Original>L42A1 Magazine (10 Bullet Tracer)</Original>
+			<Russian>Магазин L42A1 (10 патр. Трасс.)</Russian>
+		</Key>		
+		<Key ID="STR_L42_T_MAG_DESCRIPTION">
+			<Original>Box magazine for 10 rounds 7,62×51mm (Tracer)</Original>
+			<Russian>Коробчатый магазин на 10 патронов 7,62×51мм (Трасс.)</Russian>
 		</Key>
 		
 		<Key ID="STR_BLOWPIPE_NAME">

@@ -214,17 +214,25 @@ class CfgMagazines
 		initSpeed = 320;
 		descriptionShort = "$STR_MK4_SD_MAG_DESCRIPTION";
 	};
-
-	class AP_10Rnd_762x51_L42 : CA_Magazine 
+	class 5Rnd_762x51_M24;
+	class AP_10Rnd_762x51_L42 : 5Rnd_762x51_M24 
 	{
 		scope = 2;
 		displayName = "$STR_L42_MAG_NAME";
 		picture = "\ap_baf80\weapons\l42\data\m_g3.paa";
 		count = 10;
-		ammo = "B_762x51_Ball";
-		initSpeed = 800;
 		descriptionShort = "$STR_L42_MAG_DESCRIPTION";
-		ace_weight = 0.4;
+		ace_weight = 0.3;
+	};
+	class ACE_5Rnd_762x51_T_M24;
+	class AP_10Rnd_762x51_T_L42 : ACE_5Rnd_762x51_T_M24 
+	{
+		scope = 2;
+		displayName = "$STR_L42_T_MAG_NAME";
+		picture = "\ap_baf80\weapons\l42\data\m_g3.paa";
+		count = 10;
+		descriptionShort = "$STR_L42_T_MAG_DESCRIPTION";
+		ace_weight = 0.3;
 	};
 };	
 
@@ -240,45 +248,22 @@ class cfgWeapons
 		picture = "\us_military_units\icons\pack_st138_prc77_icon_ca.paa";
 	};*/
 	
-	class huntingrifle;
-	class AP_L42 : huntingrifle 
+	class M24;
+	class AP_L42 : M24 
 	{
 		scope = 2;
-		opticsZoomMin = 0.083;
-		opticsZoomMax = 0.083;
-		magazineReloadTime = 3;
 		ace_weight = 4.4;
-		magazines[] = {"AP_10Rnd_762x51_L42"};
+		magazines[] = {"AP_10Rnd_762x51_L42", "AP_10Rnd_762x51_T_L42"};
 		reloadMagazineSound[] = {"\ap_baf80\weapons\l42\sounds\reload.wss", 0.005, 1, 20};
-		modeloptics = "\ca\weapons\2Dscope_Hunter_12";
-		opticsppeffects[] = {"OpticsCHAbera2", "OpticsBlur2"};
 		model = "\ap_baf80\weapons\l42\l42";
 		displayName = "$STR_L42_NAME";
 		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\M24.rtm"};
-		SIX_tracerEnable = 0;
-		SIX_tracerDiff = 0;
 		picture = "\CA\weapons\data\equip\w_m24_green_ca.paa";
 		class Library { libtextdesc = "$STR_L42_DESCRIPTION"; };
-		modes[] = {"Single"};
-		class Single: Mode_SemiAuto
-		{
-			begin1[] = {"\ap_baf80\weapons\l42\sounds\l42fire.wss", 10, 1, 1000};
-			begin2[] = {"\ap_baf80\weapons\l42\sounds\l42fire.wss", 10, 1, 1000};
-			begin3[] = {"\ap_baf80\weapons\l42\sounds\l42fire.wss", 10, 1, 1000};
-			soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
-			soundBurst = 0;
-			reloadTime = 2;
-			recoil = "ACE_762x51_Rifle_Recoil";
-			recoilProne = "ACE_762x51_Rifle_RecoilProne";
-			dispersion = 0.003;
-			minRange = 2;
-			minRangeProbab = 0.1;
-			midRange = 500;
-			midRangeProbab = 0.7;
-			maxRange = 800;
-			maxRangeProbab = 0.05;
-		};
-};
+		begin1[] = {"\ap_baf80\weapons\l42\sounds\l42fire.wss", 1.77828, 1, 1700};
+		begin2[] = {"\ap_baf80\weapons\l42\sounds\l42fire.wss", 1.77828, 1, 1700};
+		begin3[] = {"\ap_baf80\weapons\l42\sounds\l42fire.wss", 1.77828, 1, 1700};
+	};
 	
 	
 	
@@ -686,7 +671,7 @@ class CfgVehicles
 		model = "\ap_baf80\units\uk_soldier_scout.p3d";
 		threat[] = {1.0,0.2,0.1};
 		weapons[] = {"AP_L42","ACE_L9A1","Throw","Put","ACE_Map","ItemCompass","ItemRadio","ItemWatch","ItemMap","Binocular"};
-		magazines[] = {"AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","ACE_13Rnd_9x19_L9A1","ACE_13Rnd_9x19_L9A1","ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage","BAF_L109A1_HE","BAF_L109A1_HE","SmokeShell","SmokeShell"};
+		magazines[] = {"AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_L42","AP_10Rnd_762x51_T_L42","AP_10Rnd_762x51_T_L42","ACE_13Rnd_9x19_L9A1","ACE_13Rnd_9x19_L9A1","ACE_Bandage","ACE_Bandage","ACE_Morphine","ACE_Morphine","ACE_Epinephrine","ACE_LargeBandage","BAF_L109A1_HE","BAF_L109A1_HE","SmokeShell","SmokeShell"};
 	};
 	
 	class AP_OfficerUK: AP_SoldierUK
